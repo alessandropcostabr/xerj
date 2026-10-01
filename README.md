@@ -3,7 +3,10 @@
 You are on the **`corpus-hub` branch** of [xerj-org/xerj](https://github.com/xerj-org/xerj).
 This branch is the public contribution surface for the Corpus Hub: **open a pull request
 targeting `corpus-hub`** to add or update a corpus. The project README lives on
-[`main`](https://github.com/xerj-org/xerj/tree/main#readme).
+[`main`](https://github.com/xerj-org/xerj/tree/main#readme). The walkthrough with the
+measured use case and the A/B we published as a tie is
+[the launch post](https://xerj.org/blog/the-corpus-hub); the reader-facing guide is
+[xerj.org/docs/corpus-hub](https://xerj.org/docs/corpus-hub).
 
 A **corpus** is a body of knowledge an AI agent retrieves from — peer-engine source code,
 vulnerability advisories, internal documents, datasets — indexed into [XERJ](https://xerj.org)

@@ -4,7 +4,9 @@ One pull request to the [`corpus-hub`](https://github.com/xerj-org/xerj/tree/cor
 branch per corpus. This guide is the whole process: what makes a good corpus, which lane
 it goes down, the licence rules, and the checklist a reviewer will run. The general
 engineering bar is [`CONTRIBUTING.md` on `main`](https://github.com/xerj-org/xerj/blob/main/CONTRIBUTING.md);
-everything here is corpus-specific.
+everything here is corpus-specific. A gentler walkthrough of the same material lives at
+[xerj.org/docs/corpus-hub](https://xerj.org/docs/corpus-hub); this file is the source of
+record — when the two disagree, this one wins.
 
 ---
 
