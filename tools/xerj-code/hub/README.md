@@ -48,6 +48,12 @@ pasting ES source would make that claim false.
 
 ## Contributing a corpus
 
+The public contribution surface is the
+[`corpus-hub` branch](https://github.com/xerj-org/xerj/tree/corpus-hub): **branch from it
+and open your PR targeting `corpus-hub`** — full guide with templates, licence rules and
+the review checklist in [CONTRIBUTING.md](CONTRIBUTING.md) (pack recipes:
+[`tools/packs/TEMPLATE-recipe.toml`](../../packs/TEMPLATE-recipe.toml)). Short version:
+
 1. Build it locally: `xerj corpus add <name> <git-url>...`
 2. Copy the generated `~/.xerj-code/corpora/<name>/corpus.json` to
    `hub/<name>.json` — the filename must match the `corpus` field.

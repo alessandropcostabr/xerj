@@ -1,0 +1,21 @@
+{
+  "corpus": "<name>",
+  "cloned_at": "<UTC timestamp the build ran>",
+  "repos": [
+    {
+      "repo": "<short-name>",
+      "url": "<git url>",
+      "licence": "<what the detector read — do not trust this alone>",
+      "sha": "<full 40-hex commit the build actually used>",
+      "files": 0,
+      "bytes": 0,
+      "review": {
+        "spdx": "<SPDX id YOU confirmed by opening the licence file>",
+        "use": "adapt-with-attribution | approach-only | mixed",
+        "by": "<your handle>",
+        "at": "<YYYY-MM-DD>",
+        "note": "<one line: what you opened, what you concluded, anything odd>"
+      }
+    }
+  ]
+}

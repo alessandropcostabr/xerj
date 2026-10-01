@@ -1,0 +1,44 @@
+name: corpus-hub validate
+
+# Validation for contributions to the corpus-hub branch: every hub/*.json
+# manifest and every tools/packs/*/recipe.toml must satisfy the registry's
+# format rules (§5 of tools/xerj-code/hub/CONTRIBUTING.md). Python stdlib
+# only — no engine build, no dependencies, nothing to supply-chain.
+#
+# NOTE for contributors: branch FROM corpus-hub (not main) so this workflow
+# is present in your pull request's merge ref; it also re-runs on every push
+# to corpus-hub after merge, which is the authoritative pass.
+
+on:
+  push:
+    branches: [corpus-hub]
+  pull_request:
+    branches: [corpus-hub]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate hub manifests and pack recipes
+        run: python3 tools/xerj-code/hub/validate_hub.py
+      - name: No binaries in the registry
+        run: |
+          # Recipes and manifests only: anything large committed under the
+          # registry paths is a built pack or key material that must not be
+          # in git (maintainers attach signed packs to Releases instead).
+          found=$(find tools/xerj-code/hub tools/packs -type f -size +5M \
+            -not -path "*/keys/*" | tee /dev/stderr | wc -l)
+          # tools/packs/keys holds PUBLIC halves only; guard anyway:
+          if find tools/packs/keys -type f 2>/dev/null | grep -q .; then
+            if grep -rlE 'BEGIN .*PRIVATE KEY' tools/packs/keys 2>/dev/null; then
+              echo "::error::private key material under tools/packs/keys"; exit 1
+            fi
+          fi
+          [ "$found" -eq 0 ] || { echo "::error::$found file(s) over 5MB in the registry"; exit 1; }
