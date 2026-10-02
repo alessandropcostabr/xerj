@@ -1,0 +1,2 @@
+2026-10-02T18:50:56Z code iceberg HIVE_ICEBERG_METADATA_REFRESH_MAX_RETRIES_DEFAULT constant value --url http://localhost:9200
+2026-10-02T18:51:05Z code iceberg hive metastore metadata refresh max retries HiveTableOperations --url http://localhost:9200

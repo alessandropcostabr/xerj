@@ -3,5 +3,106 @@
  "subject": "iceberg",
  "pin": "8102f4cb60",
  "generated": "2026-10-02",
- "tasks": []
+ "tasks": [
+  {
+   "id": "T1",
+   "class": "state",
+   "name": "HIVE_ICEBERG_METADATA_REFRESH_MAX_RETRIES_DEFAULT",
+   "q": "In the current development source of iceberg, what is the exact value of HIVE_ICEBERG_METADATA_REFRESH_MAX_RETRIES_DEFAULT? Answer with the value only.",
+   "re": [
+    "0x2|2"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T2",
+   "class": "state",
+   "name": "PARQUET_ROW_GROUP_CHECK_MIN_RECORD_COUNT_DEFAULT",
+   "q": "In the current development source of iceberg, what is the exact value of PARQUET_ROW_GROUP_CHECK_MIN_RECORD_COUNT_DEFAULT? Answer with the value only.",
+   "re": [
+    "0x64|100"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T3",
+   "class": "state",
+   "name": "PARQUET_ROW_GROUP_CHECK_MAX_RECORD_COUNT_DEFAULT",
+   "q": "In the current development source of iceberg, what is the exact value of PARQUET_ROW_GROUP_CHECK_MAX_RECORD_COUNT_DEFAULT? Answer with the value only.",
+   "re": [
+    "0x2710|10000|9\\ \\?\\[kK\\]"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T4",
+   "class": "state",
+   "name": "SAMPLE_METRIC_DATA_COMPRESSED_ZSTD_FOOTER_SIZE",
+   "q": "In the current development source of iceberg, what is the exact value of SAMPLE_METRIC_DATA_COMPRESSED_ZSTD_FOOTER_SIZE? Answer with the value only.",
+   "re": [
+    "0x13a|314"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T5",
+   "class": "state",
+   "name": "METRICS_MAX_INFERRED_COLUMN_DEFAULTS_DEFAULT",
+   "q": "In the current development source of iceberg, what is the exact value of METRICS_MAX_INFERRED_COLUMN_DEFAULTS_DEFAULT? Answer with the value only.",
+   "re": [
+    "0x64|100"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T6",
+   "class": "state",
+   "name": "REST_SCAN_PLANNING_POLL_NUM_RETRIES_DEFAULT",
+   "q": "In the current development source of iceberg, what is the exact value of REST_SCAN_PLANNING_POLL_NUM_RETRIES_DEFAULT? Answer with the value only.",
+   "re": [
+    "0xa|10"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T7",
+   "class": "state",
+   "name": "APACHE_DATASKETCHES_THETA_V1_NDV_PROPERTY",
+   "q": "In the current development source of iceberg, what is the exact value of APACHE_DATASKETCHES_THETA_V1_NDV_PROPERTY? Answer with the value only.",
+   "re": [
+    "ndv"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T8",
+   "class": "state",
+   "name": "COMMIT_STATUS_CHECKS_MIN_WAIT_MS_DEFAULT",
+   "q": "In the current development source of iceberg, what is the exact value of COMMIT_STATUS_CHECKS_MIN_WAIT_MS_DEFAULT? Answer with the value only.",
+   "re": [
+    "0x3e8|1000"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T9",
+   "class": "state",
+   "name": "CATALOG_TABLE_CREATION_WAIT_ATTEMPTS_MAX",
+   "q": "In the current development source of iceberg, what is the exact value of CATALOG_TABLE_CREATION_WAIT_ATTEMPTS_MAX? Answer with the value only.",
+   "re": [
+    "0x5|5"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T10",
+   "class": "state",
+   "name": "COORDINATOR_TARGET_PARTITIONS_MULTIPLIER",
+   "q": "In the current development source of iceberg, what is the exact value of COORDINATOR_TARGET_PARTITIONS_MULTIPLIER? Answer with the value only.",
+   "re": [
+    "0x64|100"
+   ],
+   "need": 1
+  }
+ ]
 }

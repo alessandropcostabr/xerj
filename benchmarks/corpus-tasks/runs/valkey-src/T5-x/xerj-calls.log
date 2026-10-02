@@ -1,0 +1,3 @@
+2026-10-02T20:29:10Z code valkey-src VALKEYMODULE_SUBEVENT_ATOMIC_SLOT_MIGRATION_IMPORT_ABORTED define value --url http://localhost:9200
+2026-10-02T20:29:16Z code valkey-src VALKEYMODULE_SUBEVENT_ATOMIC_SLOT_MIGRATION enum defines valkeymodule.h atomic slot migration subevents --url http://localhost:9200
+2026-10-02T20:29:27Z code valkey-src #define VALKEYMODULE_SUBEVENT_ATOMIC_SLOT_MIGRATION_IMPORT_STARTED IMPORT_COMPLETED IMPORT_ABORTED numeric values --url http://localhost:9200

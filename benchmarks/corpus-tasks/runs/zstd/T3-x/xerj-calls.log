@@ -1,0 +1,2 @@
+2026-10-02T19:16:38Z code zstd FRAME_V02_SIZE definition constant value --url http://localhost:9200
+2026-10-02T19:16:46Z code zstd legacy format zstd_v02 frame header size FRAME_V02 --url http://localhost:9200

@@ -1,0 +1,4 @@
+2026-10-02T19:22:29Z code faiss FAISS_RVV_HAS_INTRINSICS define value --url http://localhost:9200
+2026-10-02T19:22:36Z code faiss FAISS_RVV_HAS_INTRINSICS macro definition platform_macros --url http://localhost:9200
+2026-10-02T19:22:46Z code faiss RVV intrinsics detection __riscv_v_intrinsic has include guard --url http://localhost:9200
+2026-10-02T19:22:56Z code faiss sq-rvv.cpp FAISS_RVV_HAS_INTRINSICS 0 or 1 scalar fallback ifdef --url http://localhost:9200

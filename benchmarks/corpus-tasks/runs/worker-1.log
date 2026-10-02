@@ -17,3 +17,41 @@ kafka-src: 10 tasks (0 drift, 10 state)
 ── kafka-src: 10 tasks, drive 18:24:56
 graphql-spec already driven
 ── iceberg: index 18:26:58
+iceberg: 10 tasks (0 drift, 10 state)
+── iceberg: 10 tasks, drive 18:50:52
+iceberg: done in 176s
+json-schema-spec already driven
+kafka-protocol already driven
+── kafka-src: index 18:53:49
+kafka-src: 10 tasks (0 drift, 10 state)
+── kafka-src: 10 tasks, drive 19:07:23
+kafka-src: done in 48s
+libuv already driven
+── lz4: index 19:08:11
+lz4: 10 tasks (10 drift, 0 state)
+── lz4: 10 tasks, drive 19:20:58
+lz4: done in 174s
+── mozilla-ssl-configs: index 19:23:52
+mozilla-ssl-configs: 0 tasks (0 drift, 0 state)
+── mozilla-ssl-configs: 0 tasks, drive 20:08:04
+mozilla-ssl-configs: INFEASIBLE (0 tasks)
+── msft-api-guidelines: index 20:08:04
+msft-api-guidelines: 0 tasks (0 drift, 0 state)
+── msft-api-guidelines: 0 tasks, drive 20:18:28
+msft-api-guidelines: INFEASIBLE (0 tasks)
+── msgpack-c: index 20:18:28
+msgpack-c: 0 tasks (0 drift, 0 state)
+── msgpack-c: 0 tasks, drive 20:27:06
+msgpack-c: INFEASIBLE (0 tasks)
+── nats-protocol: index 20:27:06
+nats-protocol: 0 tasks (0 drift, 0 state)
+── nats-protocol: 0 tasks, drive 20:27:54
+nats-protocol: INFEASIBLE (0 tasks)
+── nats-server: index 20:27:54
+nats-server: 10 tasks (0 drift, 10 state)
+── nats-server: 10 tasks, drive 20:39:56
+nats-server: done in 170s
+── nghttp2: index 20:42:46
+nghttp2: 10 tasks (0 drift, 10 state)
+── nghttp2: 10 tasks, drive 20:53:32
+nghttp2: done in 185s

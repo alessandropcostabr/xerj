@@ -1,0 +1,1 @@
+{"id": "T9", "answered": true, "hits": 1, "need": 1, "pass": true, "answer": "{http.request.body_base64}", "seconds": 15, "arm": "x", "xerj_calls": 2, "cost_usd": 0.09207099999999999, "turns": 3, "task": "T9"}

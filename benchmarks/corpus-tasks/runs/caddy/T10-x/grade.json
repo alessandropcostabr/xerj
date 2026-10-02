@@ -1,0 +1,1 @@
+{"id": "T10", "answered": true, "hits": 1, "need": 1, "pass": true, "answer": "{http.response.body}", "seconds": 28, "arm": "x", "xerj_calls": 3, "cost_usd": 0.11677100000000001, "turns": 4, "task": "T10"}

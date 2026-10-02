@@ -10,13 +10,11 @@ import json, pathlib, re, sys
 HERE = pathlib.Path(__file__).resolve().parents[1]
 RUNS, TASKS = HERE / "runs", HERE / "tasks"
 
-UNIVERSE = []  # 70 manifest corpora + rust-vulns = 71
-for m in sorted((pathlib.Path("/root/hub-branch/tools/xerj-code/hub")).glob("*.json")):
-    s = m.stem
-    if s in ("corpus-schema", "TEMPLATE"):
-        continue
-    UNIVERSE.append(s)
-UNIVERSE.append("rust-vulns")
+# The 71-row universe is FIXED (snapshot at benchmark start, 2026-10-02):
+# the 70 manifest stems present then + rust-vulns. Later hub additions (e.g.
+# the non-IT lane) must not grow the denominator of an in-flight measurement.
+UNIVERSE = sorted((HERE / "runs" / "universe-71.txt").read_text().split())
+assert len(UNIVERSE) == 71, len(UNIVERSE)
 
 def slug_row(slug):
     d = RUNS / slug

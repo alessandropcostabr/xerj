@@ -1,0 +1,2 @@
+2026-10-02T20:56:09Z code nghttp2 NGHTTP2_EXTPRI_DEFAULT_URGENCY macro definition value --url http://localhost:9200
+2026-10-02T20:56:13Z code nghttp2 define NGHTTP2_EXTPRI_DEFAULT_URGENCY NGHTTP2_EXTPRI_URGENCY_HIGH extpri default urgency inc --url http://localhost:9200

@@ -1,0 +1,2 @@
+2026-10-02T18:52:00Z code iceberg METRICS_MAX_INFERRED_COLUMN_DEFAULTS_DEFAULT constant value definition --url http://localhost:9200
+2026-10-02T18:52:10Z code iceberg max-inferred-column-defaults write.metadata.metrics TableProperties --url http://localhost:9200

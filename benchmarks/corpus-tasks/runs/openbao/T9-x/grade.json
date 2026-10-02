@@ -1,0 +1,1 @@
+{"id": "T9", "answered": true, "hits": 1, "need": 1, "pass": true, "answer": "\"/dbplugin.Database/RotateRootCredentials\"", "seconds": 20, "arm": "x", "xerj_calls": 2, "cost_usd": 0.094806, "turns": 3, "task": "T9"}

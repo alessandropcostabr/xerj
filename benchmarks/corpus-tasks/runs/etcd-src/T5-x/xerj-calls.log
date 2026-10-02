@@ -1,0 +1,2 @@
+2026-10-02T18:47:51Z code etcd-src totalWatchers value --url http://localhost:9200
+2026-10-02T18:47:56Z code etcd-src totalWatchers gauge metric registered --url http://localhost:9200

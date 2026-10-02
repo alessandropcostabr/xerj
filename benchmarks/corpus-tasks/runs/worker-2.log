@@ -12,3 +12,38 @@ openapi-spec: INFEASIBLE (0 tasks)
 nginx already driven
 openapi-spec already driven
 ── openbao: index 18:26:58
+openbao: 10 tasks (0 drift, 10 state)
+openbao: 10 tasks (0 drift, 10 state)
+── openbao: 10 tasks, drive 18:50:50
+openbao: done in 188s
+openbsd-faq INDEX-PATHOLOGICAL (giant file: eurobsdcon2017-opensmtpd.pdf)
+openssl INDEX-PATHOLOGICAL (giant file: evppkey_slh_dsa_siggen.txt)
+osquery-config-examples already driven
+── otel-proto: index 18:53:59
+otel-proto: 0 tasks (0 drift, 0 state)
+── otel-proto: 0 tasks, drive 19:13:42
+otel-proto: INFEASIBLE (0 tasks)
+── parquet-format: index 19:13:42
+parquet-format: 0 tasks (0 drift, 0 state)
+── parquet-format: 0 tasks, drive 19:19:26
+parquet-format: INFEASIBLE (0 tasks)
+── postgres-src: index 19:19:26
+postgres-src INDEX-FAILED
+prometheus-src INDEX-PATHOLOGICAL (giant file: 20kseries.json)
+protobuf INDEX-PATHOLOGICAL (giant file: generic_test_protos-speed.srcjar)
+── rabbitmq: index 20:17:22
+rabbitmq: 0 tasks (0 drift, 0 state)
+── rabbitmq: 0 tasks, drive 20:27:04
+rabbitmq: INFEASIBLE (0 tasks)
+── raft-rs: index 20:27:04
+raft-rs: 8 tasks (4 drift, 4 state)
+── raft-rs: 8 tasks, drive 20:28:01
+raft-rs: done in 88s
+── rocksdb: index 20:29:29
+rocksdb: 10 tasks (10 drift, 0 state)
+── rocksdb: 10 tasks, drive 20:44:31
+rocksdb: done in 247s
+── rust-api-guidelines: index 20:48:39
+rust-api-guidelines: 0 tasks (0 drift, 0 state)
+── rust-api-guidelines: 0 tasks, drive 20:48:45
+rust-api-guidelines: INFEASIBLE (0 tasks)

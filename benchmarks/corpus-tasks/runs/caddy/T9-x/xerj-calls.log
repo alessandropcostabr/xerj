@@ -1,0 +1,2 @@
+2026-10-02T18:42:21Z code caddy placeholderRequestBodyBase64 constant value --url http://localhost:9200
+2026-10-02T18:42:25Z code caddy requestbody handler placeholderRequestBodyBase64 http.request.body base64 read limit --url http://localhost:9200

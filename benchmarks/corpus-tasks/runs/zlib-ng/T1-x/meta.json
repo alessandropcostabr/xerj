@@ -1,0 +1,25 @@
+{
+ "rc": 1,
+ "seconds": 47,
+ "cost_usd": 0.257465,
+ "num_turns": 11,
+ "usage": {
+  "input_tokens": 15015,
+  "cache_creation_input_tokens": 0,
+  "cache_read_input_tokens": 273280,
+  "output_tokens": 1830,
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 0,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "",
+  "iterations": [],
+  "speed": "standard"
+ },
+ "xerj_calls": 3
+}

@@ -1,0 +1,2 @@
+2026-10-02T18:43:06Z code zlib-ng definition of BUFSIZE macro #define --url http://localhost:9200
+2026-10-02T18:43:13Z code zlib-ng BUFSIZE define 8192 benchmark buffer size macro --url http://localhost:9200

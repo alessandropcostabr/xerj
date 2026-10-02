@@ -1,0 +1,2 @@
+2026-10-02T20:55:37Z code nghttp2 NGHTTP2_DEFAULT_STREAM_RESET_RATE define value nghttp2.h --url http://localhost:9200
+2026-10-02T20:55:45Z code nghttp2 DEFAULT_STREAM_RESET_RATE burst default value macro definition session.h SETTINGS_MAX_CONCURRENT_STREAMS --url http://localhost:9200

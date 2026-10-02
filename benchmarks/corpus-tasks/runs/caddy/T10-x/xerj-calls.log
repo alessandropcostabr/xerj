@@ -1,0 +1,3 @@
+2026-10-02T18:42:45Z code caddy placeholderResponseBody definition and value --url http://localhost:9200
+2026-10-02T18:42:50Z code caddy const placeholderResponseBody placeholderResponseBodyBase64 declaration string literal --url http://localhost:9200
+2026-10-02T18:42:54Z code caddy logappend.go const block placeholderResponseBody http.response.body --url http://localhost:9200

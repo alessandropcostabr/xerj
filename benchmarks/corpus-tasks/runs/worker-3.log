@@ -43,3 +43,20 @@ school-of-sre already driven
 snappy already driven
 sqlite-src already driven
 ── tldr-pages: index 18:26:58
+tldr-pages INDEX-FAILED
+── twelve-factor: index 18:57:18
+twelve-factor: 0 tasks (0 drift, 0 state)
+── twelve-factor: 0 tasks, drive 19:19:23
+twelve-factor: INFEASIBLE (0 tasks)
+unicode-cldr INDEX-PATHOLOGICAL (giant file: FractionalUCA.txt)
+── valkey-docs: index 19:19:23
+valkey-docs: 0 tasks (0 drift, 0 state)
+── valkey-docs: 0 tasks, drive 20:03:05
+valkey-docs: INFEASIBLE (0 tasks)
+── valkey-src: index 20:03:05
+valkey-src: 10 tasks (0 drift, 10 state)
+── valkey-src: 10 tasks, drive 20:28:26
+valkey-src: done in 131s
+w3c-css INDEX-PATHOLOGICAL (giant file: Coated_Fogra39L_VIGC_300.icc)
+whatwg-specs INDEX-PATHOLOGICAL (giant file: source)
+xerj-columnar INDEX-PATHOLOGICAL (giant file: e60db19f11f94175ac682c5898cce0f77cc508ea.tar.gz)

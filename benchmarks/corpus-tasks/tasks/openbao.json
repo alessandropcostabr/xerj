@@ -1,0 +1,108 @@
+{
+ "corpus": "openbao",
+ "subject": "openbao",
+ "pin": "a4f7e56987",
+ "generated": "2026-10-02",
+ "tasks": [
+  {
+   "id": "T1",
+   "class": "state",
+   "name": "RequestForwarding_AdvertiseNamespaceKeys_FullMethodName",
+   "q": "In the current development source of openbao, what is the exact value of RequestForwarding_AdvertiseNamespaceKeys_FullMethodName? Answer with the value only.",
+   "re": [
+    "/forwarding\\.RequestForwarding/AdvertiseNamespaceKeys"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T2",
+   "class": "state",
+   "name": "SystemView_GeneratePasswordFromPolicy_FullMethodName",
+   "q": "In the current development source of openbao, what is the exact value of SystemView_GeneratePasswordFromPolicy_FullMethodName? Answer with the value only.",
+   "re": [
+    "/pb\\.SystemView/GeneratePasswordFromPolicy"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T3",
+   "class": "state",
+   "name": "RequestForwarding_StartInvalidations_FullMethodName",
+   "q": "In the current development source of openbao, what is the exact value of RequestForwarding_StartInvalidations_FullMethodName? Answer with the value only.",
+   "re": [
+    "/forwarding\\.RequestForwarding/StartInvalidations"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T4",
+   "class": "state",
+   "name": "RequestForwarding_CheckInvalidations_FullMethodName",
+   "q": "In the current development source of openbao, what is the exact value of RequestForwarding_CheckInvalidations_FullMethodName? Answer with the value only.",
+   "re": [
+    "/forwarding\\.RequestForwarding/CheckInvalidations"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T5",
+   "class": "state",
+   "name": "groupPolicyApplicationModeWithinNamespaceHierarchy",
+   "q": "In the current development source of openbao, what is the exact value of groupPolicyApplicationModeWithinNamespaceHierarchy? Answer with the value only.",
+   "re": [
+    "within_namespace_hierarchy"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T6",
+   "class": "state",
+   "name": "RequestForwarding_SendNamespaceKeys_FullMethodName",
+   "q": "In the current development source of openbao, what is the exact value of RequestForwarding_SendNamespaceKeys_FullMethodName? Answer with the value only.",
+   "re": [
+    "/forwarding\\.RequestForwarding/SendNamespaceKeys"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T7",
+   "class": "state",
+   "name": "RequestForwarding_GetNamespaceKeys_FullMethodName",
+   "q": "In the current development source of openbao, what is the exact value of RequestForwarding_GetNamespaceKeys_FullMethodName? Answer with the value only.",
+   "re": [
+    "/forwarding\\.RequestForwarding/GetNamespaceKeys"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T8",
+   "class": "state",
+   "name": "RequestForwarding_ForwardRequest_FullMethodName",
+   "q": "In the current development source of openbao, what is the exact value of RequestForwarding_ForwardRequest_FullMethodName? Answer with the value only.",
+   "re": [
+    "/forwarding\\.RequestForwarding/ForwardRequest"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T9",
+   "class": "state",
+   "name": "Database_RotateRootCredentials_FullMethodName",
+   "q": "In the current development source of openbao, what is the exact value of Database_RotateRootCredentials_FullMethodName? Answer with the value only.",
+   "re": [
+    "/dbplugin\\.Database/RotateRootCredentials"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T10",
+   "class": "state",
+   "name": "Backend_HandleExistenceCheck_FullMethodName",
+   "q": "In the current development source of openbao, what is the exact value of Backend_HandleExistenceCheck_FullMethodName? Answer with the value only.",
+   "re": [
+    "/pb\\.Backend/HandleExistenceCheck"
+   ],
+   "need": 1
+  }
+ ]
+}

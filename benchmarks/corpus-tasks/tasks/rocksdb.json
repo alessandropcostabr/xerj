@@ -1,0 +1,142 @@
+{
+ "corpus": "rocksdb",
+ "subject": "rocksdb",
+ "pin": "4cd0450f31",
+ "generated": "2026-10-02",
+ "tasks": [
+  {
+   "id": "T1",
+   "class": "drift",
+   "name": "kMaxScanWitnessEventBytes",
+   "kind": "added",
+   "changed": "2026-09-25",
+   "olds": [],
+   "q": "In the current development source of rocksdb, what is the exact value of kMaxScanWitnessEventBytes? Answer with the value only.",
+   "re": [
+    "0x1000|4096|4\\ \\?\\[kK\\]"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T2",
+   "class": "drift",
+   "name": "kMaxFullHexBytes",
+   "kind": "added",
+   "changed": "2026-09-25",
+   "olds": [],
+   "q": "In the current development source of rocksdb, what is the exact value of kMaxFullHexBytes? Answer with the value only.",
+   "re": [
+    "0x50|80"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T3",
+   "class": "drift",
+   "name": "kPrefixBytes",
+   "kind": "added",
+   "changed": "2026-09-25",
+   "olds": [],
+   "q": "In the current development source of rocksdb, what is the exact value of kPrefixBytes? Answer with the value only.",
+   "re": [
+    "0x40|64"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T4",
+   "class": "drift",
+   "name": "kSuffixBytes",
+   "kind": "added",
+   "changed": "2026-09-25",
+   "olds": [],
+   "q": "In the current development source of rocksdb, what is the exact value of kSuffixBytes? Answer with the value only.",
+   "re": [
+    "0x10|16"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T5",
+   "class": "drift",
+   "name": "ROCKSDB_MINOR",
+   "kind": "changed",
+   "changed": "2026-09-23",
+   "olds": [
+    "0",
+    "1",
+    "10"
+   ],
+   "q": "In the current development source of rocksdb, what is the exact value of ROCKSDB_MINOR? Answer with the value only.",
+   "re": [
+    "0xc|12"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T6",
+   "class": "drift",
+   "name": "kNumKeysUnderPrefix",
+   "kind": "added",
+   "changed": "2026-09-21",
+   "olds": [],
+   "q": "In the current development source of rocksdb, what is the exact value of kNumKeysUnderPrefix? Answer with the value only.",
+   "re": [
+    "0x28|40"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T7",
+   "class": "drift",
+   "name": "kNumOtherPrefixes",
+   "kind": "added",
+   "changed": "2026-09-21",
+   "olds": [],
+   "q": "In the current development source of rocksdb, what is the exact value of kNumOtherPrefixes? Answer with the value only.",
+   "re": [
+    "0xa|10"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T8",
+   "class": "drift",
+   "name": "kLimit",
+   "kind": "added",
+   "changed": "2026-09-17",
+   "olds": [],
+   "q": "In the current development source of rocksdb, what is the exact value of kLimit? Answer with the value only.",
+   "re": [
+    "0x5|5"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T9",
+   "class": "drift",
+   "name": "kUnknownLevel",
+   "kind": "added",
+   "changed": "2026-09-17",
+   "olds": [],
+   "q": "In the current development source of rocksdb, what is the exact value of kUnknownLevel? Answer with the value only.",
+   "re": [
+    "\\-0x1|\\-1"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T10",
+   "class": "drift",
+   "name": "kLsmLevelBits",
+   "kind": "added",
+   "changed": "2026-09-17",
+   "olds": [],
+   "q": "In the current development source of rocksdb, what is the exact value of kLsmLevelBits? Answer with the value only.",
+   "re": [
+    "0x8|8"
+   ],
+   "need": 1
+  }
+ ]
+}

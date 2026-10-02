@@ -1,0 +1,2 @@
+2026-10-02T20:54:53Z code nghttp2 NGHTTP2_DEFAULT_STREAM_RESET_BURST macro definition value --url http://localhost:9200
+2026-10-02T20:55:01Z code nghttp2 DEFAULT_STREAM_RESET_BURST stream reset rate limit burst --url http://localhost:9200

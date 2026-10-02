@@ -1,0 +1,4 @@
+2026-10-02T18:42:17Z code zlib-ng ROLL_HASH_SIZE definition roll hash size --url http://localhost:9200
+2026-10-02T18:42:23Z code zlib-ng insert_string_p.h ROLL_HASH_SIZE ifndef define minimum hash size SIMD --url http://localhost:9200
+2026-10-02T18:42:38Z code zlib-ng insert_string_sse sse42 crc32c ROLL_HASH_SIZE 32 hash table entries quick deflate --url http://localhost:9200
+2026-10-02T18:42:38Z code zlib-ng insert_string_rollback roll_hash3 update_hash ROLL_HASH_SIZE --url http://localhost:9200

@@ -1,0 +1,1 @@
+{"id": "T10", "answered": true, "hits": 0, "need": 1, "pass": false, "answer": "((4 * 1024 * 1024) + 64)", "seconds": 167, "arm": "x", "xerj_calls": 2, "cost_usd": 0.36513500000000004, "turns": 9, "task": "T10"}

@@ -1,0 +1,2 @@
+2026-10-02T18:41:13Z code caddy panicErrorLevel definition and value --url http://localhost:9200
+2026-10-02T18:41:19Z code caddy panicErrorLevel zap level constant server.go recover panic --url http://localhost:9200

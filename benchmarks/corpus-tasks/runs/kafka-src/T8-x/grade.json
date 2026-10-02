@@ -1,0 +1,1 @@
+{"id": "T8", "answered": true, "hits": 1, "need": 1, "pass": true, "answer": "\"alter.log.dirs.replication.quota.window.size.seconds\"", "seconds": 47, "arm": "x", "xerj_calls": 4, "cost_usd": 0.14979900000000002, "turns": 5, "task": "T8"}

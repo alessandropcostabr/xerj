@@ -37,3 +37,16 @@ zalando-restful-api-guidelines: 0 tasks (0 drift, 0 state)
 ── zalando-restful-api-guidelines: 0 tasks, drive 18:17:27
 zalando-restful-api-guidelines: INFEASIBLE (0 tasks)
 ── zlib-ng: index 18:17:27
+zlib-ng: 10 tasks (0 drift, 10 state)
+zlib-ng: 10 tasks (10 drift, 0 state)
+── zlib-ng: 10 tasks, drive 18:40:55
+zlib-ng: done in 291s
+── zstd: index 18:45:46
+zstd: 10 tasks (10 drift, 0 state)
+── zstd: 10 tasks, drive 19:16:04
+zstd: done in 131s
+── xerj-vector: index 19:18:15
+xerj-vector INDEX-FAILED
+xerj-storage INDEX-PATHOLOGICAL (giant file: english_words.txt)
+xerj-search INDEX-PATHOLOGICAL (giant file: crates-io-demo.gif)
+zalando-restful-api-guidelines already driven

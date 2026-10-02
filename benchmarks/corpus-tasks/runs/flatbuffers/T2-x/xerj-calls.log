@@ -1,0 +1,2 @@
+2026-10-02T20:18:00Z code flatbuffers ENUM_MAX_TEST_ENUM definition exact value --url http://localhost:9200
+2026-10-02T20:18:04Z code flatbuffers ENUM_MAX TEST_ENUM macro define MAX_VALUE TestEnum enum max sentinel value --url http://localhost:9200

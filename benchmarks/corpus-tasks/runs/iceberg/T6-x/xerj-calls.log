@@ -1,0 +1,3 @@
+2026-10-02T18:52:11Z code iceberg REST_SCAN_PLANNING_POLL_NUM_RETRIES_DEFAULT constant definition value --url http://localhost:9200
+2026-10-02T18:52:24Z code iceberg scan planning poll num retries RESTSessionCatalog scan-planning-poll --url http://localhost:9200
+2026-10-02T18:52:38Z code iceberg REST_SCAN_PLANNING_POLL_NUM_RETRIES_DEFAULT integer default value poll retries --url http://localhost:9200

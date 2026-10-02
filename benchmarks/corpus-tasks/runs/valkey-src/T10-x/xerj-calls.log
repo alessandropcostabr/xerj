@@ -1,0 +1,2 @@
+2026-10-02T20:30:25Z code valkey-src CLUSTERMSG_FAILOVER_AUTH_NACK_REASON_ALREADY_VOTED definition value --url http://localhost:9200
+2026-10-02T20:30:28Z code valkey-src cluster.h CLUSTERMSG_FAILOVER_AUTH_NACK_REASON enum nack reason already voted --url http://localhost:9200

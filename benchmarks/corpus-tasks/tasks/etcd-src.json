@@ -6,101 +6,131 @@
  "tasks": [
   {
    "id": "T1",
-   "class": "state",
-   "name": "Auth_RoleRevokePermission_FullMethodName",
-   "q": "In the current development source of etcd-src, what is the exact value of Auth_RoleRevokePermission_FullMethodName? Answer with the value only.",
+   "class": "drift",
+   "name": "snapCount",
+   "kind": "added",
+   "changed": "2026-09-10",
+   "olds": [],
+   "q": "In the current development source of etcd-src, what is the exact value of snapCount? Answer with the value only.",
    "re": [
-    "/etcdserverpb\\.Auth/RoleRevokePermission"
+    "0xa|10"
    ],
    "need": 1
   },
   {
    "id": "T2",
-   "class": "state",
-   "name": "Auth_RoleGrantPermission_FullMethodName",
-   "q": "In the current development source of etcd-src, what is the exact value of Auth_RoleGrantPermission_FullMethodName? Answer with the value only.",
+   "class": "drift",
+   "name": "keyCount",
+   "kind": "added",
+   "changed": "2026-09-10",
+   "olds": [],
+   "q": "In the current development source of etcd-src, what is the exact value of keyCount? Answer with the value only.",
    "re": [
-    "/etcdserverpb\\.Auth/RoleGrantPermission"
+    "0x400|1024"
    ],
    "need": 1
   },
   {
    "id": "T3",
-   "class": "state",
-   "name": "Auth_UserChangePassword_FullMethodName",
-   "q": "In the current development source of etcd-src, what is the exact value of Auth_UserChangePassword_FullMethodName? Answer with the value only.",
+   "class": "drift",
+   "name": "readRawSnapshotLine",
+   "kind": "added",
+   "changed": "2026-05-15",
+   "olds": [],
+   "q": "In the current development source of etcd-src, what is the exact value of readRawSnapshotLine? Answer with the value only.",
    "re": [
-    "/etcdserverpb\\.Auth/UserChangePassword"
+    "Snapshot:\\ index:0\\ term:0\\\\n"
    ],
    "need": 1
   },
   {
    "id": "T4",
-   "class": "state",
-   "name": "Maintenance_Defragment_FullMethodName",
-   "q": "In the current development source of etcd-src, what is the exact value of Maintenance_Defragment_FullMethodName? Answer with the value only.",
+   "class": "drift",
+   "name": "readRawSnapshotLineWithExtraSpace",
+   "kind": "added",
+   "changed": "2026-05-15",
+   "olds": [],
+   "q": "In the current development source of etcd-src, what is the exact value of readRawSnapshotLineWithExtraSpace? Answer with the value only.",
    "re": [
-    "/etcdserverpb\\.Maintenance/Defragment"
+    "Snapshot:\\ index:0\\ \\ term:0\\\\n"
    ],
    "need": 1
   },
   {
    "id": "T5",
-   "class": "state",
-   "name": "Maintenance_MoveLeader_FullMethodName",
-   "q": "In the current development source of etcd-src, what is the exact value of Maintenance_MoveLeader_FullMethodName? Answer with the value only.",
+   "class": "drift",
+   "name": "totalWatchers",
+   "kind": "added",
+   "changed": "2026-05-11",
+   "olds": [],
+   "q": "In the current development source of etcd-src, what is the exact value of totalWatchers? Answer with the value only.",
    "re": [
-    "/etcdserverpb\\.Maintenance/MoveLeader"
+    "0xa|10"
    ],
    "need": 1
   },
   {
    "id": "T6",
-   "class": "state",
-   "name": "Lease_LeaseTimeToLive_FullMethodName",
-   "q": "In the current development source of etcd-src, what is the exact value of Lease_LeaseTimeToLive_FullMethodName? Answer with the value only.",
+   "class": "drift",
+   "name": "watchersWithPrev",
+   "kind": "added",
+   "changed": "2026-05-11",
+   "olds": [],
+   "q": "In the current development source of etcd-src, what is the exact value of watchersWithPrev? Answer with the value only.",
    "re": [
-    "/etcdserverpb\\.Lease/LeaseTimeToLive"
+    "0x5|5"
    ],
    "need": 1
   },
   {
    "id": "T7",
-   "class": "state",
-   "name": "Cluster_MemberPromote_FullMethodName",
-   "q": "In the current development source of etcd-src, what is the exact value of Cluster_MemberPromote_FullMethodName? Answer with the value only.",
+   "class": "drift",
+   "name": "updates",
+   "kind": "added",
+   "changed": "2026-05-11",
+   "olds": [],
+   "q": "In the current development source of etcd-src, what is the exact value of updates? Answer with the value only.",
    "re": [
-    "/etcdserverpb\\.Cluster/MemberPromote"
+    "0xa|10"
    ],
    "need": 1
   },
   {
    "id": "T8",
-   "class": "state",
-   "name": "Maintenance_Downgrade_FullMethodName",
-   "q": "In the current development source of etcd-src, what is the exact value of Maintenance_Downgrade_FullMethodName? Answer with the value only.",
+   "class": "drift",
+   "name": "KV_Range_FullMethodName",
+   "kind": "added",
+   "changed": "2026-02-11",
+   "olds": [],
+   "q": "In the current development source of etcd-src, what is the exact value of KV_Range_FullMethodName? Answer with the value only.",
    "re": [
-    "/etcdserverpb\\.Maintenance/Downgrade"
+    "/etcdserverpb\\.KV/Range"
    ],
    "need": 1
   },
   {
    "id": "T9",
-   "class": "state",
-   "name": "DefaultDistributedTracingServiceName",
-   "q": "In the current development source of etcd-src, what is the exact value of DefaultDistributedTracingServiceName? Answer with the value only.",
+   "class": "drift",
+   "name": "KV_Put_FullMethodName",
+   "kind": "added",
+   "changed": "2026-02-11",
+   "olds": [],
+   "q": "In the current development source of etcd-src, what is the exact value of KV_Put_FullMethodName? Answer with the value only.",
    "re": [
-    "etcd"
+    "/etcdserverpb\\.KV/Put"
    ],
    "need": 1
   },
   {
    "id": "T10",
-   "class": "state",
-   "name": "Lease_LeaseKeepAlive_FullMethodName",
-   "q": "In the current development source of etcd-src, what is the exact value of Lease_LeaseKeepAlive_FullMethodName? Answer with the value only.",
+   "class": "drift",
+   "name": "KV_DeleteRange_FullMethodName",
+   "kind": "added",
+   "changed": "2026-02-11",
+   "olds": [],
+   "q": "In the current development source of etcd-src, what is the exact value of KV_DeleteRange_FullMethodName? Answer with the value only.",
    "re": [
-    "/etcdserverpb\\.Lease/LeaseKeepAlive"
+    "/etcdserverpb\\.KV/DeleteRange"
    ],
    "need": 1
   }

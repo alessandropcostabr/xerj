@@ -1,3 +1,21 @@
 ── badger: index 18:26:58
 badger: 10 tasks (5 drift, 5 state)
 ── badger: 10 tasks, drive 18:26:59
+badger: done in 98s
+── caddy: index 18:28:37
+caddy: 10 tasks (10 drift, 0 state)
+── caddy: 10 tasks, drive 18:40:53
+caddy: done in 129s
+── dragonboat: index 18:43:02
+dragonboat: 10 tasks (0 drift, 10 state)
+── dragonboat: 10 tasks, drive 18:43:02
+dragonboat: done in 137s
+── iceberg: index 18:45:19
+iceberg: 10 tasks (0 drift, 10 state)
+── iceberg: 10 tasks, drive 18:55:23
+iceberg: done in 0s
+etcd-src already driven
+── kafka-src: index 18:55:23
+kafka-src: 10 tasks (0 drift, 10 state)
+── kafka-src: 10 tasks, drive 19:07:25
+kafka-src: done in 47s

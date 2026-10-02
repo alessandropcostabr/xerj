@@ -1,0 +1,148 @@
+{
+ "corpus": "flatbuffers",
+ "subject": "flatbuffers",
+ "pin": "b8431fbcd7",
+ "generated": "2026-10-02",
+ "tasks": [
+  {
+   "id": "T1",
+   "class": "drift",
+   "name": "ENUM_MIN_TEST_ENUM",
+   "kind": "added",
+   "changed": "2026-03-06",
+   "olds": [],
+   "q": "In the current development source of flatbuffers, what is the exact value of ENUM_MIN_TEST_ENUM? Answer with the value only.",
+   "re": [
+    "0|0x0"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T2",
+   "class": "drift",
+   "name": "ENUM_MAX_TEST_ENUM",
+   "kind": "added",
+   "changed": "2026-03-06",
+   "olds": [],
+   "q": "In the current development source of flatbuffers, what is the exact value of ENUM_MAX_TEST_ENUM? Answer with the value only.",
+   "re": [
+    "0x2|2"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T3",
+   "class": "drift",
+   "name": "ENUM_MIN",
+   "kind": "changed",
+   "changed": "2026-03-06",
+   "olds": [
+    "-1"
+   ],
+   "q": "In the current development source of flatbuffers, what is the exact value of ENUM_MIN? Answer with the value only.",
+   "re": [
+    "0|0x0"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T4",
+   "class": "drift",
+   "name": "ARRAY_TABLE_IDENTIFIER",
+   "kind": "added",
+   "changed": "2026-03-06",
+   "olds": [],
+   "q": "In the current development source of flatbuffers, what is the exact value of ARRAY_TABLE_IDENTIFIER? Answer with the value only.",
+   "re": [
+    "ARRT"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T5",
+   "class": "drift",
+   "name": "ARRAY_TABLE_EXTENSION",
+   "kind": "added",
+   "changed": "2026-03-06",
+   "olds": [],
+   "q": "In the current development source of flatbuffers, what is the exact value of ARRAY_TABLE_EXTENSION? Answer with the value only.",
+   "re": [
+    "mon"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T6",
+   "class": "drift",
+   "name": "FLATBUFFERS_VERSION_MINOR",
+   "kind": "changed",
+   "changed": "2025-12-19",
+   "olds": [
+    "1",
+    "2",
+    "3"
+   ],
+   "q": "In the current development source of flatbuffers, what is the exact value of FLATBUFFERS_VERSION_MINOR? Answer with the value only.",
+   "re": [
+    "0xc|12"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T7",
+   "class": "drift",
+   "name": "FLATBUFFERS_VERSION_REVISION",
+   "kind": "changed",
+   "changed": "2025-12-19",
+   "olds": [
+    "10",
+    "21",
+    "23"
+   ],
+   "q": "In the current development source of flatbuffers, what is the exact value of FLATBUFFERS_VERSION_REVISION? Answer with the value only.",
+   "re": [
+    "0x13|19"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T8",
+   "class": "drift",
+   "name": "HAS_ABSL_CONTAINERS",
+   "kind": "added",
+   "changed": "2025-12-19",
+   "olds": [],
+   "q": "In the current development source of flatbuffers, what is the exact value of HAS_ABSL_CONTAINERS? Answer with the value only.",
+   "re": [
+    "0x1|1"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T9",
+   "class": "drift",
+   "name": "kMinInputLength",
+   "kind": "added",
+   "changed": "2025-11-27",
+   "olds": [],
+   "q": "In the current development source of flatbuffers, what is the exact value of kMinInputLength? Answer with the value only.",
+   "re": [
+    "0x1|1"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T10",
+   "class": "drift",
+   "name": "kMaxInputLength",
+   "kind": "added",
+   "changed": "2025-11-27",
+   "olds": [],
+   "q": "In the current development source of flatbuffers, what is the exact value of kMaxInputLength? Answer with the value only.",
+   "re": [
+    "0x4000|16384|16\\ \\?\\[kK\\]"
+   ],
+   "need": 1
+  }
+ ]
+}

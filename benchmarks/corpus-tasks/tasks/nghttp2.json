@@ -1,0 +1,108 @@
+{
+ "corpus": "nghttp2",
+ "subject": "nghttp2",
+ "pin": "19d06e6218",
+ "generated": "2026-10-02",
+ "tasks": [
+  {
+   "id": "T1",
+   "class": "state",
+   "name": "NGHTTP2_DEFAULT_MAX_OUTBOUND_QUEUE_SIZE",
+   "q": "In the current development source of nghttp2, what is the exact value of NGHTTP2_DEFAULT_MAX_OUTBOUND_QUEUE_SIZE? Answer with the value only.",
+   "re": [
+    "0x1388|4\\ \\?\\[kK\\]|5000"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T2",
+   "class": "state",
+   "name": "NGHTTP2_CLEARTEXT_PROTO_VERSION_ID_LEN",
+   "q": "In the current development source of nghttp2, what is the exact value of NGHTTP2_CLEARTEXT_PROTO_VERSION_ID_LEN? Answer with the value only.",
+   "re": [
+    "0x3|3"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T3",
+   "class": "state",
+   "name": "NGHTTP2_MAX_INCOMING_RESERVED_STREAMS",
+   "q": "In the current development source of nghttp2, what is the exact value of NGHTTP2_MAX_INCOMING_RESERVED_STREAMS? Answer with the value only.",
+   "re": [
+    "0xc8|200"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T4",
+   "class": "state",
+   "name": "NGHTTP2_FRAME_SETTINGS_ENTRY_LENGTH",
+   "q": "In the current development source of nghttp2, what is the exact value of NGHTTP2_FRAME_SETTINGS_ENTRY_LENGTH? Answer with the value only.",
+   "re": [
+    "0x6|6"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T5",
+   "class": "state",
+   "name": "NGHTTP2_DEFAULT_MAX_OBQ_FLOOD_ITEM",
+   "q": "In the current development source of nghttp2, what is the exact value of NGHTTP2_DEFAULT_MAX_OBQ_FLOOD_ITEM? Answer with the value only.",
+   "re": [
+    "0x3e8|1000"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T6",
+   "class": "state",
+   "name": "NGHTTP2_DEFAULT_STREAM_RESET_BURST",
+   "q": "In the current development source of nghttp2, what is the exact value of NGHTTP2_DEFAULT_STREAM_RESET_BURST? Answer with the value only.",
+   "re": [
+    "0x3e8|1000"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T7",
+   "class": "state",
+   "name": "NGHTTP2_CLEARTEXT_PROTO_VERSION_ID",
+   "q": "In the current development source of nghttp2, what is the exact value of NGHTTP2_CLEARTEXT_PROTO_VERSION_ID? Answer with the value only.",
+   "re": [
+    "h2c"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T8",
+   "class": "state",
+   "name": "NGHTTP2_DEFAULT_STREAM_RESET_RATE",
+   "q": "In the current development source of nghttp2, what is the exact value of NGHTTP2_DEFAULT_STREAM_RESET_RATE? Answer with the value only.",
+   "re": [
+    "0x21|33"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T9",
+   "class": "state",
+   "name": "NGHTTP2_DEFAULT_MAX_CONTINUATIONS",
+   "q": "In the current development source of nghttp2, what is the exact value of NGHTTP2_DEFAULT_MAX_CONTINUATIONS? Answer with the value only.",
+   "re": [
+    "0x8|8"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T10",
+   "class": "state",
+   "name": "NGHTTP2_EXTPRI_DEFAULT_URGENCY",
+   "q": "In the current development source of nghttp2, what is the exact value of NGHTTP2_EXTPRI_DEFAULT_URGENCY? Answer with the value only.",
+   "re": [
+    "0x3|3"
+   ],
+   "need": 1
+  }
+ ]
+}

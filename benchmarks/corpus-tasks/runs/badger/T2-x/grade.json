@@ -1,0 +1,1 @@
+{"id": "T2", "answered": true, "hits": 0, "need": 1, "pass": false, "answer": "16 << 20 // 16 MB", "seconds": 10, "arm": "x", "xerj_calls": 1, "cost_usd": 0.072104, "turns": 2, "task": "T2"}

@@ -1,0 +1,2 @@
+2026-10-02T20:29:55Z code valkey-src CLUSTERMSG_FAILOVER_AUTH_NACK_REASON_REQ_IS_PRIMARY define value cluster.h --url http://localhost:9200
+2026-10-02T20:30:01Z code valkey-src CLUSTERMSG_FAILOVER_AUTH_NACK_REASON enum cluster.h failover authorization denied reason --url http://localhost:9200

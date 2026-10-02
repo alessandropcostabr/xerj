@@ -1,0 +1,2 @@
+2026-10-02T19:22:36Z code faiss FAISS_VERSION_PATCH version macro definition --url http://localhost:9200
+2026-10-02T19:22:49Z code faiss FAISS_VERSION_MAJOR FAISS_VERSION_MINOR FAISS_VERSION_PATCH define version.h --url http://localhost:9200

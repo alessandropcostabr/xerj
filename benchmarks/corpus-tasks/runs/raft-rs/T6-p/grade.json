@@ -1,0 +1,1 @@
+{"id": "T6", "answered": true, "hits": 1, "need": 1, "pass": true, "answer": "u64::MAX (18446744073709551615)", "seconds": 9, "arm": "p", "xerj_calls": 0, "cost_usd": 0.061188000000000006, "turns": 1, "task": "T6"}

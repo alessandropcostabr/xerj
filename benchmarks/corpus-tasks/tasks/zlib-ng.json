@@ -1,0 +1,144 @@
+{
+ "corpus": "zlib-ng",
+ "subject": "zlib-ng",
+ "pin": "a7f510904e",
+ "generated": "2026-10-02",
+ "tasks": [
+  {
+   "id": "T1",
+   "class": "drift",
+   "name": "DICT_INPUT_SIZE",
+   "kind": "added",
+   "changed": "2026-09-15",
+   "olds": [],
+   "q": "In the current development source of zlib-ng, what is the exact value of DICT_INPUT_SIZE? Answer with the value only.",
+   "re": [
+    "4096u"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T2",
+   "class": "drift",
+   "name": "MIN_ROLL_LEVEL",
+   "kind": "added",
+   "changed": "2026-09-14",
+   "olds": [],
+   "q": "In the current development source of zlib-ng, what is the exact value of MIN_ROLL_LEVEL? Answer with the value only.",
+   "re": [
+    "0x9|9"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T3",
+   "class": "drift",
+   "name": "ARM_PART_NEOVERSE_V3",
+   "kind": "changed",
+   "changed": "2026-08-19",
+   "olds": [
+    "0xd8e"
+   ],
+   "q": "In the current development source of zlib-ng, what is the exact value of ARM_PART_NEOVERSE_V3? Answer with the value only.",
+   "re": [
+    "0xd84|3460|3\\ \\?\\[kK\\]"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T4",
+   "class": "drift",
+   "name": "ARM_PART_NEOVERSE_V3AE",
+   "kind": "added",
+   "changed": "2026-08-19",
+   "olds": [],
+   "q": "In the current development source of zlib-ng, what is the exact value of ARM_PART_NEOVERSE_V3AE? Answer with the value only.",
+   "re": [
+    "0xd83|3459|3\\ \\?\\[kK\\]"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T5",
+   "class": "drift",
+   "name": "LIT3_DIST1_MASK",
+   "kind": "added",
+   "changed": "2026-07-28",
+   "olds": [],
+   "q": "In the current development source of zlib-ng, what is the exact value of LIT3_DIST1_MASK? Answer with the value only.",
+   "re": [
+    "0x000000FFFF000000ULL"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T6",
+   "class": "drift",
+   "name": "LIT3_DIST_MASK",
+   "kind": "added",
+   "changed": "2026-07-28",
+   "olds": [],
+   "q": "In the current development source of zlib-ng, what is the exact value of LIT3_DIST_MASK? Answer with the value only.",
+   "re": [
+    "0xFFFF00FFFF00FFFFULL"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T7",
+   "class": "drift",
+   "name": "ROLL_HASH_SIZE",
+   "kind": "added",
+   "changed": "2026-07-15",
+   "olds": [],
+   "q": "In the current development source of zlib-ng, what is the exact value of ROLL_HASH_SIZE? Answer with the value only.",
+   "re": [
+    "0x10000|64\\ \\?\\[kK\\]|65536"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T8",
+   "class": "drift",
+   "name": "MAX_HOOKS",
+   "kind": "added",
+   "changed": "2026-07-15",
+   "olds": [],
+   "q": "In the current development source of zlib-ng, what is the exact value of MAX_HOOKS? Answer with the value only.",
+   "re": [
+    "0x8|8"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T9",
+   "class": "drift",
+   "name": "MAX_LEN_ROOT_BITS",
+   "kind": "added",
+   "changed": "2026-07-14",
+   "olds": [],
+   "q": "In the current development source of zlib-ng, what is the exact value of MAX_LEN_ROOT_BITS? Answer with the value only.",
+   "re": [
+    "0xa|10"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T10",
+   "class": "drift",
+   "name": "BUFSIZE",
+   "kind": "changed",
+   "changed": "2026-06-16",
+   "olds": [
+    "131072",
+    "33792U",
+    "615336U"
+   ],
+   "q": "In the current development source of zlib-ng, what is the exact value of BUFSIZE? Answer with the value only.",
+   "re": [
+    "0x2000|8192|8\\ \\?\\[kK\\]"
+   ],
+   "need": 1
+  }
+ ]
+}

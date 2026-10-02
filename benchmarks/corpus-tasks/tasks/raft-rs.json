@@ -1,0 +1,100 @@
+{
+ "corpus": "raft-rs",
+ "subject": "raft-rs",
+ "pin": "ad13f3d907",
+ "generated": "2026-10-02",
+ "tasks": [
+  {
+   "id": "T1",
+   "class": "drift",
+   "name": "SHRINK_KEEP_CAPACITY",
+   "kind": "added",
+   "changed": "2026-05-13",
+   "olds": [],
+   "q": "In the current development source of raft-rs, what is the exact value of SHRINK_KEEP_CAPACITY? Answer with the value only.",
+   "re": [
+    "0x40|64"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T2",
+   "class": "drift",
+   "name": "SHRINK_EMPTY_CAPACITY_THRESHOLD",
+   "kind": "added",
+   "changed": "2026-05-13",
+   "olds": [],
+   "q": "In the current development source of raft-rs, what is the exact value of SHRINK_EMPTY_CAPACITY_THRESHOLD? Answer with the value only.",
+   "re": [
+    "0x100|256"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T3",
+   "class": "drift",
+   "name": "SHRINK_RATIO",
+   "kind": "added",
+   "changed": "2026-05-13",
+   "olds": [],
+   "q": "In the current development source of raft-rs, what is the exact value of SHRINK_RATIO? Answer with the value only.",
+   "re": [
+    "0x2|2"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T4",
+   "class": "drift",
+   "name": "SHRINK_RESERVED_SIZE_RATIO",
+   "kind": "added",
+   "changed": "2026-05-13",
+   "olds": [],
+   "q": "In the current development source of raft-rs, what is the exact value of SHRINK_RESERVED_SIZE_RATIO? Answer with the value only.",
+   "re": [
+    "0x2|2"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T5",
+   "class": "state",
+   "name": "HEARTBEAT_TICK",
+   "q": "In the current development source of raft-rs, what is the exact value of HEARTBEAT_TICK? Answer with the value only.",
+   "re": [
+    "0x2|2"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T6",
+   "class": "state",
+   "name": "INVALID_INDEX",
+   "q": "In the current development source of raft-rs, what is the exact value of INVALID_INDEX? Answer with the value only.",
+   "re": [
+    "0|0x0"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T7",
+   "class": "state",
+   "name": "INVALID_ID",
+   "q": "In the current development source of raft-rs, what is the exact value of INVALID_ID? Answer with the value only.",
+   "re": [
+    "0|0x0"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T8",
+   "class": "state",
+   "name": "NUM_NODES",
+   "q": "In the current development source of raft-rs, what is the exact value of NUM_NODES? Answer with the value only.",
+   "re": [
+    "0x5|5"
+   ],
+   "need": 1
+  }
+ ]
+}

@@ -1,0 +1,2 @@
+2026-10-02T20:30:18Z code valkey-src CLUSTERMSG_FAILOVER_AUTH_NACK_REASON_REQ_EPOCH_OLD definition value cluster.h --url http://localhost:9200
+2026-10-02T20:30:30Z code valkey-src CLUSTERMSG_FAILOVER_AUTH_NACK_REASON_REQ_EPOCH_OLD cluster.h define failover auth nack reason --url http://localhost:9200

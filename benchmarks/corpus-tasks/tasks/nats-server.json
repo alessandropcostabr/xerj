@@ -1,0 +1,108 @@
+{
+ "corpus": "nats-server",
+ "subject": "nats-server",
+ "pin": "a44c356c42",
+ "generated": "2026-10-02",
+ "tasks": [
+  {
+   "id": "T1",
+   "class": "state",
+   "name": "streamDefaultMaxAtomicBatchInflightPerStream",
+   "q": "In the current development source of nats-server, what is the exact value of streamDefaultMaxAtomicBatchInflightPerStream? Answer with the value only.",
+   "re": [
+    "0x32|50"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T2",
+   "class": "state",
+   "name": "streamDefaultMaxFastBatchInflightPerStream",
+   "q": "In the current development source of nats-server, what is the exact value of streamDefaultMaxFastBatchInflightPerStream? Answer with the value only.",
+   "re": [
+    "0x3e8|1000"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T3",
+   "class": "state",
+   "name": "JSConsumerDeliveryTerminatedAdvisoryType",
+   "q": "In the current development source of nats-server, what is the exact value of JSConsumerDeliveryTerminatedAdvisoryType? Answer with the value only.",
+   "re": [
+    "io\\.nats\\.jetstream\\.advisory\\.v1\\.terminated"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T4",
+   "class": "state",
+   "name": "streamDefaultMaxAtomicBatchInflightTotal",
+   "q": "In the current development source of nats-server, what is the exact value of streamDefaultMaxAtomicBatchInflightTotal? Answer with the value only.",
+   "re": [
+    "0x3e8|1000"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T5",
+   "class": "state",
+   "name": "JSApiConsumerLeaderStepDownResponseType",
+   "q": "In the current development source of nats-server, what is the exact value of JSApiConsumerLeaderStepDownResponseType? Answer with the value only.",
+   "re": [
+    "io\\.nats\\.jetstream\\.api\\.v1\\.consumer_leader_stepdown_respo"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T6",
+   "class": "state",
+   "name": "OCSPResponseCacheDefaultTempFilePrefix",
+   "q": "In the current development source of nats-server, what is the exact value of OCSPResponseCacheDefaultTempFilePrefix? Answer with the value only.",
+   "re": [
+    "ocsprc\\-\\*"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T7",
+   "class": "state",
+   "name": "JSAdvisoryConsumerMaxDeliveryExceedPre",
+   "q": "In the current development source of nats-server, what is the exact value of JSAdvisoryConsumerMaxDeliveryExceedPre? Answer with the value only.",
+   "re": [
+    "\\$JS\\.EVENT\\.ADVISORY\\.CONSUMER\\.MAX_DELIVERIES"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T8",
+   "class": "state",
+   "name": "JSConsumerDeliveryExceededAdvisoryType",
+   "q": "In the current development source of nats-server, what is the exact value of JSConsumerDeliveryExceededAdvisoryType? Answer with the value only.",
+   "re": [
+    "io\\.nats\\.jetstream\\.advisory\\.v1\\.max_deliver"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T9",
+   "class": "state",
+   "name": "JSApiStreamLeaderStepDownResponseType",
+   "q": "In the current development source of nats-server, what is the exact value of JSApiStreamLeaderStepDownResponseType? Answer with the value only.",
+   "re": [
+    "io\\.nats\\.jetstream\\.api\\.v1\\.stream_leader_stepdown_respons"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T10",
+   "class": "state",
+   "name": "JSApiConsumerEvacuatePeerResponseType",
+   "q": "In the current development source of nats-server, what is the exact value of JSApiConsumerEvacuatePeerResponseType? Answer with the value only.",
+   "re": [
+    "io\\.nats\\.jetstream\\.api\\.v1\\.consumer_evacuate_peer_respons"
+   ],
+   "need": 1
+  }
+ ]
+}

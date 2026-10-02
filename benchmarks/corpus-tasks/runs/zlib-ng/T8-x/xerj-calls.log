@@ -1,0 +1,5 @@
+2026-10-02T18:42:29Z code zlib-ng MAX_HOOKS define definition --url http://localhost:9200
+2026-10-02T18:42:33Z code zlib-ng benchmark_data_types.h hooks array num_hooks MAX_HOOKS declaration --url http://localhost:9200
+2026-10-02T18:42:37Z code zlib-ng #define MAX_HOOKS --url http://localhost:9200
+2026-10-02T18:42:37Z code zlib-ng MAX_HOOKS --url http://localhost:9200
+2026-10-02T18:42:45Z code zlib-ng benchmark_data_types.h full header hooks declaration include --url http://localhost:9200

@@ -1,0 +1,2 @@
+2026-10-02T20:54:18Z code nghttp2 NGHTTP2_FRAME_SETTINGS_ENTRY_LENGTH define macro definition --url http://localhost:9200
+2026-10-02T20:54:26Z code nghttp2 frame_hd length settings frame payload length macro entry --url http://localhost:9200

@@ -1,0 +1,4 @@
+2026-10-02T19:16:08Z code zstd X86_FEATURE_BMI2 enum definition value --url http://localhost:9200
+2026-10-02T19:16:20Z code zstd X86_FEATURE_BMI2 bit mask cpu feature flags x86 --url http://localhost:9200
+2026-10-02T19:16:32Z code zstd cpuid runtime detection BMI2 feature enum bitmask SSE2 AVX2 PCLMULQDQ --url http://localhost:9200
+2026-10-02T19:16:43Z code zstd "X86_FEATURE_BMI2" definition macro enum where is X86_FEATURE_BMI2 defined --url http://localhost:9200

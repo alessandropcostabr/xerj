@@ -43,3 +43,22 @@ duckdb already driven
 envoy already driven
 etcd-docs already driven
 ── etcd-src: index 18:26:58
+etcd-src: 10 tasks (10 drift, 0 state)
+── etcd-src: 10 tasks, drive 18:46:53
+etcd-src: done in 289s
+── faiss: index 18:51:42
+faiss: 10 tasks (10 drift, 0 state)
+── faiss: 10 tasks, drive 19:21:50
+faiss: done in 132s
+── flatbuffers: index 19:24:02
+flatbuffers: 10 tasks (10 drift, 0 state)
+── flatbuffers: 10 tasks, drive 20:17:56
+flatbuffers: done in 232s
+freebsd-handbook INDEX-PATHOLOGICAL (giant file: file-8.4.patch)
+github-api-description INDEX-PATHOLOGICAL (giant file: ghes-2.19.deref.json)
+gitlab-runbooks INDEX-PATHOLOGICAL (giant file: mimir-architecture-overview.png)
+google-eng-practices already driven
+── govuk-design-system: index 20:21:49
+govuk-design-system: 0 tasks (0 drift, 0 state)
+── govuk-design-system: 0 tasks, drive 20:27:46
+govuk-design-system: INFEASIBLE (0 tasks)

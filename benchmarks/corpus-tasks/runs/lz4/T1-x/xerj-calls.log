@@ -1,0 +1,2 @@
+2026-10-02T19:21:02Z code lz4 LZ4F_ENDMARK_SIZE definition value --url http://localhost:9200
+2026-10-02T19:21:11Z code lz4 LZ4F_ENDMARK_SIZE 4 endmark size define lz4frame --url http://localhost:9200

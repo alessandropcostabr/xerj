@@ -1,0 +1,20 @@
+{"id": "T1", "answered": true, "hits": 0, "need": 1, "pass": false, "answer": "transactions.remove.expired.transactional.id.cleanup.interval.ms", "seconds": 116, "arm": "p", "xerj_calls": 0, "cost_usd": 0.21460300000000002, "turns": 1, "task": "T1"}
+{"id": "T1", "answered": true, "hits": 1, "need": 1, "pass": true, "answer": "transaction.remove.expired.transaction.cleanup.interval.ms", "seconds": 30, "arm": "x", "xerj_calls": 1, "cost_usd": 0.075312, "turns": 2, "task": "T1"}
+{"id": "T2", "answered": true, "hits": 0, "need": 1, "pass": false, "answer": "unknown", "seconds": 31, "arm": "p", "xerj_calls": 0, "cost_usd": 0.094708, "turns": 1, "task": "T2"}
+{"id": "T2", "answered": true, "hits": 1, "need": 1, "pass": true, "answer": "\"StreamsGroupTopologyDescriptionCleanupEligibleGroups\"", "seconds": 25, "arm": "x", "xerj_calls": 1, "cost_usd": 0.067217, "turns": 2, "task": "T2"}
+{"id": "T3", "answered": true, "hits": 0, "need": 1, "pass": false, "answer": "transactions.abort.timed.out.transaction.cleanup.interval.ms", "seconds": 78, "arm": "p", "xerj_calls": 0, "cost_usd": 0.19389800000000001, "turns": 1, "task": "T3"}
+{"id": "T3", "answered": true, "hits": 1, "need": 1, "pass": true, "answer": "\"transaction.abort.timed.out.transaction.cleanup.interval.ms\"", "seconds": 16, "arm": "x", "xerj_calls": 1, "cost_usd": 0.069302, "turns": 2, "task": "T3"}
+{"id": "T4", "answered": true, "hits": 0, "need": 1, "pass": false, "answer": "unknown", "seconds": 8, "arm": "p", "xerj_calls": 0, "cost_usd": 0.05427800000000001, "turns": 1, "task": "T4"}
+{"id": "T4", "answered": true, "hits": 1, "need": 1, "pass": true, "answer": "\"StreamsGroupTopologyDescriptionCleanupCycleRuns\"", "seconds": 22, "arm": "x", "xerj_calls": 1, "cost_usd": 0.065882, "turns": 2, "task": "T4"}
+{"id": "T5", "answered": true, "hits": 0, "need": 1, "pass": false, "answer": "unknown", "seconds": 24, "arm": "p", "xerj_calls": 0, "cost_usd": 0.072863, "turns": 1, "task": "T5"}
+{"id": "T5", "answered": true, "hits": 1, "need": 1, "pass": true, "answer": "StreamsGroupTopologyDescriptionDeleteSuccess", "seconds": 21, "arm": "x", "xerj_calls": 1, "cost_usd": 0.065932, "turns": 2, "task": "T5"}
+{"id": "T6", "answered": true, "hits": 0, "need": 1, "pass": false, "answer": "remote.log.metadata.initializer.retry.max.timeout.ms", "seconds": 20, "arm": "p", "xerj_calls": 0, "cost_usd": 0.085158, "turns": 1, "task": "T6"}
+{"id": "T6", "answered": true, "hits": 1, "need": 1, "pass": true, "answer": "remote.log.metadata.initialization.retry.max.timeout.ms", "seconds": 19, "arm": "x", "xerj_calls": 1, "cost_usd": 0.076282, "turns": 3, "task": "T6"}
+{"id": "T7", "answered": true, "hits": 1, "need": 1, "pass": true, "answer": "10000", "seconds": 17, "arm": "p", "xerj_calls": 0, "cost_usd": 0.070198, "turns": 1, "task": "T7"}
+{"id": "T7", "answered": true, "hits": 1, "need": 1, "pass": true, "answer": "10000", "seconds": 14, "arm": "x", "xerj_calls": 2, "cost_usd": 0.034768, "turns": 2, "task": "T7"}
+{"id": "T8", "answered": true, "hits": 0, "need": 1, "pass": false, "answer": "replica.alter.log.dirs.quota.window.size.seconds", "seconds": 29, "arm": "p", "xerj_calls": 0, "cost_usd": 0.090017, "turns": 1, "task": "T8"}
+{"id": "T8", "answered": true, "hits": 1, "need": 1, "pass": true, "answer": "\"alter.log.dirs.replication.quota.window.size.seconds\"", "seconds": 47, "arm": "x", "xerj_calls": 4, "cost_usd": 0.14979900000000002, "turns": 5, "task": "T8"}
+{"id": "T9", "answered": true, "hits": 0, "need": 1, "pass": false, "answer": "unknown", "seconds": 12, "arm": "p", "xerj_calls": 0, "cost_usd": 0.064343, "turns": 1, "task": "T9"}
+{"task": "T9"}
+{"id": "T10", "answered": true, "hits": 1, "need": 1, "pass": true, "answer": "1", "seconds": 20, "arm": "p", "xerj_calls": 0, "cost_usd": 0.07740799999999999, "turns": 1, "task": "T10"}
+{"id": "T10", "answered": true, "hits": 1, "need": 1, "pass": true, "answer": "1", "seconds": 12, "arm": "x", "xerj_calls": 2, "cost_usd": 0.067242, "turns": 2, "task": "T10"}

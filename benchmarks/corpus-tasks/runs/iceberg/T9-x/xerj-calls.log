@@ -1,0 +1,2 @@
+2026-10-02T18:52:57Z code iceberg CATALOG_TABLE_CREATION_WAIT_ATTEMPTS_MAX constant value definition --url http://localhost:9200
+2026-10-02T18:53:11Z code iceberg table creation wait attempts sleep catalog test --url http://localhost:9200

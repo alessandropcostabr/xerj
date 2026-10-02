@@ -1,0 +1,4 @@
+2026-10-02T19:07:36Z code kafka-src ALTER_LOG_DIRS_REPLICATION_QUOTA_WINDOW_SIZE_SECONDS_CONFIG definition constant value --url http://localhost:9200
+2026-10-02T19:07:37Z code kafka-src ALTER_LOG_DIRS_REPLICATION_QUOTA_WINDOW_SIZE_SECONDS_CONFIG constant definition value --url http://localhost:9200
+2026-10-02T19:07:50Z code kafka-src ReplicationQuotaManagerConfig alter log dirs replica quota window size seconds broker config --url http://localhost:9200
+2026-10-02T19:07:53Z code kafka-src "alter.log.dirs.replication.quota.window.size.seconds" quota config key --url http://localhost:9200
