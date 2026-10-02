@@ -1,0 +1,2 @@
+2026-10-02T16:37:20Z code capnproto KJ_WARN_REFCOUNTED_ATTACH macro definition value --url http://localhost:9200
+2026-10-02T16:37:28Z code capnproto kj/memory.h KJ_WARN_REFCOUNTED_ATTACH ifndef define refcounted atomic detach --url http://localhost:9200

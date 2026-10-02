@@ -1,0 +1,4 @@
+2026-10-02T16:27:03Z code brotli kMaximalOverread definition constant value --url http://localhost:9200
+2026-10-02T16:27:10Z code brotli kMaximalOverRead overread bytes Java decoder --url http://localhost:9200
+2026-10-02T16:27:13Z code brotli BitReader kMaximalOverRead CAPACITY tail bytes reading ahead --url http://localhost:9200
+2026-10-02T16:27:22Z code brotli BitReader.java CAPACITY kMaximalOverRead = constant declaration READ_CAPACITY --url http://localhost:9200

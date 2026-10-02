@@ -422,3 +422,231 @@ next: xerj corpus index otel-proto
 rebuilding corpus 'parquet-format' from /root/hub-branch/tools/xerj-code/hub/parquet-format.json
   [clone] parquet-format
   [pin] parquet-format -> bf0993925ccf
+          licence=Apache-2.0 sha=bf0993925ccf files=52
+          ! manifest says licence=hint only: Apache-2.0 (verify at pin), checkout reads Apache-2.0 — verify before copying
+
+corpus 'parquet-format': 1 repos at /root/.xerj-code/corpora/parquet-format
+share it: /root/.xerj-code/corpora/parquet-format/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index parquet-format
+2026-10-02T16:07:13Z parquet-format OK depth=476
+2026-10-02T16:07:13Z postgres-src ADD-START
+rebuilding corpus 'postgres-src' from /root/hub-branch/tools/xerj-code/hub/postgres-src.json
+  [clone] postgres-src
+  [pin] postgres-src -> 50d6e533e4d9
+          licence=NONE-FOUND sha=50d6e533e4d9 files=7699
+          ^ NONE-FOUND: adapt the APPROACH, do not copy the code
+          ! manifest says licence=hint only: PostgreSQL Licence (verify at pin), checkout reads NONE-FOUND — verify before copying
+
+corpus 'postgres-src': 1 repos at /root/.xerj-code/corpora/postgres-src
+share it: /root/.xerj-code/corpora/postgres-src/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index postgres-src
+2026-10-02T16:07:54Z postgres-src OK depth=65514
+2026-10-02T16:07:55Z prometheus-src ADD-START
+rebuilding corpus 'prometheus-src' from /root/hub-branch/tools/xerj-code/hub/prometheus-src.json
+  [clone] prometheus-src
+  [pin] prometheus-src -> 7c741e2879db
+          licence=Apache-2.0 sha=7c741e2879db files=1691
+          ! manifest says licence=hint only: Apache-2.0 (verify at pin), checkout reads Apache-2.0 — verify before copying
+
+corpus 'prometheus-src': 1 repos at /root/.xerj-code/corpora/prometheus-src
+share it: /root/.xerj-code/corpora/prometheus-src/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index prometheus-src
+2026-10-02T16:08:03Z prometheus-src OK depth=18768
+2026-10-02T16:08:03Z protobuf ADD-START
+rebuilding corpus 'protobuf' from /root/hub-branch/tools/xerj-code/hub/protobuf.json
+  [clone] protobuf
+  [pin] protobuf -> fb0a6f673c9e
+          licence=BSD sha=fb0a6f673c9e files=3709
+          ! manifest says licence=hint only: BSD-3 (verify at pin), checkout reads BSD — verify before copying
+
+corpus 'protobuf': 1 repos at /root/.xerj-code/corpora/protobuf
+share it: /root/.xerj-code/corpora/protobuf/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index protobuf
+2026-10-02T16:08:18Z protobuf OK depth=24234
+2026-10-02T16:08:18Z quinn CLONE-EXISTS
+2026-10-02T16:08:18Z rabbitmq ADD-START
+rebuilding corpus 'rabbitmq' from /root/hub-branch/tools/xerj-code/hub/rabbitmq.json
+  [clone] rabbitmq
+  [pin] rabbitmq -> f23f19da23ec
+          licence=Apache-2.0/MPL-2.0/UNKNOWN sha=f23f19da23ec files=3715
+          ^ Apache-2.0/MPL-2.0/UNKNOWN: adapt the APPROACH, do not copy the code
+          ! manifest says licence=hint only: MPL-2.0 (verify at pin), checkout reads Apache-2.0/MPL-2.0/UNKNOWN — verify before copying
+
+corpus 'rabbitmq': 1 repos at /root/.xerj-code/corpora/rabbitmq
+share it: /root/.xerj-code/corpora/rabbitmq/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index rabbitmq
+2026-10-02T16:08:38Z rabbitmq OK depth=63162
+2026-10-02T16:08:39Z raft-rs ADD-START
+rebuilding corpus 'raft-rs' from /root/hub-branch/tools/xerj-code/hub/raft-rs.json
+  [clone] raft-rs
+  [pin] raft-rs -> ad13f3d90780
+          licence=Apache-2.0 sha=ad13f3d90780 files=97
+          ! manifest says licence=hint only: Apache-2.0 (verify at pin), checkout reads Apache-2.0 — verify before copying
+
+corpus 'raft-rs': 1 repos at /root/.xerj-code/corpora/raft-rs
+share it: /root/.xerj-code/corpora/raft-rs/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index raft-rs
+2026-10-02T16:08:42Z raft-rs OK depth=756
+2026-10-02T16:08:42Z rocksdb ADD-START
+rebuilding corpus 'rocksdb' from /root/hub-branch/tools/xerj-code/hub/rocksdb.json
+  [clone] rocksdb
+  [pin] rocksdb -> 4cd0450f3106
+          licence=Apache-2.0/BSD/GPL sha=4cd0450f3106 files=2354
+          ^ Apache-2.0/BSD/GPL: adapt the APPROACH, do not copy the code
+          ! manifest says licence=hint only: Apache-2.0 OR GPL-2 dual (verify at pin), checkout reads Apache-2.0/BSD/GPL — verify before copying
+
+corpus 'rocksdb': 1 repos at /root/.xerj-code/corpora/rocksdb
+share it: /root/.xerj-code/corpora/rocksdb/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index rocksdb
+2026-10-02T16:08:55Z rocksdb OK depth=14162
+2026-10-02T16:08:55Z rust-api-guidelines ADD-START
+rebuilding corpus 'rust-api-guidelines' from /root/hub-branch/tools/xerj-code/hub/rust-api-guidelines.json
+  [clone] rust-api-guidelines
+  [pin] rust-api-guidelines -> 97a0969cb07f
+          licence=Apache-2.0/MIT sha=97a0969cb07f files=22
+          ! manifest says licence=hint only: MIT OR Apache-2.0 (verify at pin), checkout reads Apache-2.0/MIT — verify before copying
+
+corpus 'rust-api-guidelines': 1 repos at /root/.xerj-code/corpora/rust-api-guidelines
+share it: /root/.xerj-code/corpora/rust-api-guidelines/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index rust-api-guidelines
+2026-10-02T16:08:57Z rust-api-guidelines OK depth=449
+2026-10-02T16:08:57Z rustls ADD-START
+rebuilding corpus 'rustls' from /root/hub-branch/tools/xerj-code/hub/rustls.json
+  [clone] rustls
+  [pin] rustls -> 7dcbe4c1ae12
+          licence=Apache-2.0/MIT/UNKNOWN sha=7dcbe4c1ae12 files=1065
+          ^ Apache-2.0/MIT/UNKNOWN: adapt the APPROACH, do not copy the code
+          ! manifest says licence=hint only: Apache-2.0 OR MIT (verify at pin), checkout reads Apache-2.0/MIT/UNKNOWN — verify before copying
+
+corpus 'rustls': 1 repos at /root/.xerj-code/corpora/rustls
+share it: /root/.xerj-code/corpora/rustls/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index rustls
+2026-10-02T16:09:03Z rustls OK depth=5596
+2026-10-02T16:09:03Z s2n-tls ADD-START
+rebuilding corpus 's2n-tls' from /root/hub-branch/tools/xerj-code/hub/s2n-tls.json
+  [clone] s2n-tls
+  [pin] s2n-tls -> b170000016fb
+          licence=Apache-2.0 sha=b170000016fb files=8711
+          ! manifest says licence=hint only: Apache-2.0 (verify at pin), checkout reads Apache-2.0 — verify before copying
+
+corpus 's2n-tls': 1 repos at /root/.xerj-code/corpora/s2n-tls
+share it: /root/.xerj-code/corpora/s2n-tls/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index s2n-tls
+2026-10-02T16:09:15Z s2n-tls OK depth=5692
+2026-10-02T16:09:15Z snappy ADD-START
+rebuilding corpus 'snappy' from /root/hub-branch/tools/xerj-code/hub/snappy.json
+  [clone] snappy
+  [pin] snappy -> 9c28114a3886
+          licence=BSD/MIT sha=9c28114a3886 files=53
+          ! manifest says licence=hint only: verify at pin (BSD variants reported), checkout reads BSD/MIT — verify before copying
+
+corpus 'snappy': 1 repos at /root/.xerj-code/corpora/snappy
+share it: /root/.xerj-code/corpora/snappy/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index snappy
+2026-10-02T16:09:18Z snappy OK depth=458
+2026-10-02T16:09:18Z sqlite-src ADD-START
+rebuilding corpus 'sqlite-src' from /root/hub-branch/tools/xerj-code/hub/sqlite-src.json
+  [clone] sqlite-src
+  [pin] sqlite-src -> 9696acb0c77f
+          licence=UNKNOWN sha=9696acb0c77f files=2281
+          ^ UNKNOWN: adapt the APPROACH, do not copy the code
+          ! manifest says licence=hint only: public domain (verify at pin; official read-only fossil→git mirror), checkout reads UNKNOWN — verify before copying
+
+corpus 'sqlite-src': 1 repos at /root/.xerj-code/corpora/sqlite-src
+share it: /root/.xerj-code/corpora/sqlite-src/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index sqlite-src
+2026-10-02T16:09:39Z sqlite-src OK depth=32536
+2026-10-02T16:09:39Z tldr-pages ADD-START
+rebuilding corpus 'tldr-pages' from /root/hub-branch/tools/xerj-code/hub/tldr-pages.json
+  [clone] tldr-pages
+  [pin] tldr-pages -> b328cc85bbe0
+          licence=MIT sha=b328cc85bbe0 files=47490
+          ! manifest says licence=hint only: MIT (verify at pin), checkout reads MIT — verify before copying
+
+corpus 'tldr-pages': 1 repos at /root/.xerj-code/corpora/tldr-pages
+share it: /root/.xerj-code/corpora/tldr-pages/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index tldr-pages
+2026-10-02T16:10:03Z tldr-pages OK depth=24241
+2026-10-02T16:10:04Z twelve-factor ADD-START
+rebuilding corpus 'twelve-factor' from /root/hub-branch/tools/xerj-code/hub/twelve-factor.json
+  [clone] twelve-factor
+  [pin] twelve-factor -> 1385d2c80bac
+          licence=MIT sha=1385d2c80bac files=1070
+          ! manifest says licence=hint only: verify at pin (code MIT reported; content licence separate), checkout reads MIT — verify before copying
+
+corpus 'twelve-factor': 1 repos at /root/.xerj-code/corpora/twelve-factor
+share it: /root/.xerj-code/corpora/twelve-factor/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index twelve-factor
+2026-10-02T16:10:06Z twelve-factor OK depth=795
+2026-10-02T16:10:06Z unicode-cldr ADD-START
+rebuilding corpus 'unicode-cldr' from /root/hub-branch/tools/xerj-code/hub/unicode-cldr.json
+  [clone] unicode-cldr
+  [pin] unicode-cldr -> c1159fe6c671
+          licence=MIT sha=c1159fe6c671 files=9337
+          ! manifest says licence=hint only: Unicode License (permissive — verify at pin), checkout reads MIT — verify before copying
+
+corpus 'unicode-cldr': 1 repos at /root/.xerj-code/corpora/unicode-cldr
+share it: /root/.xerj-code/corpora/unicode-cldr/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index unicode-cldr
+2026-10-02T16:10:38Z unicode-cldr OK depth=18578
+2026-10-02T16:10:38Z valkey-docs ADD-START
+rebuilding corpus 'valkey-docs' from /root/hub-branch/tools/xerj-code/hub/valkey-docs.json
+  [clone] valkey-docs
+  [pin] valkey-docs -> 4852e820d093
+          licence=UNKNOWN sha=4852e820d093 files=726
+          ^ UNKNOWN: adapt the APPROACH, do not copy the code
+          ! manifest says licence=hint only: BSD-3 (verify at pin), checkout reads UNKNOWN — verify before copying
+
+corpus 'valkey-docs': 1 repos at /root/.xerj-code/corpora/valkey-docs
+share it: /root/.xerj-code/corpora/valkey-docs/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index valkey-docs
+2026-10-02T16:10:42Z valkey-docs OK depth=4300
+2026-10-02T16:10:42Z valkey-src ADD-START
+rebuilding corpus 'valkey-src' from /root/hub-branch/tools/xerj-code/hub/valkey-src.json
+  [clone] valkey-src
+  [pin] valkey-src -> f4cbd1c5ef06
+          licence=BSD sha=f4cbd1c5ef06 files=2047
+          ! manifest says licence=hint only: BSD-3 (verify at pin), checkout reads BSD — verify before copying
+
+corpus 'valkey-src': 1 repos at /root/.xerj-code/corpora/valkey-src
+share it: /root/.xerj-code/corpora/valkey-src/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index valkey-src
+2026-10-02T16:10:50Z valkey-src OK depth=14139
+2026-10-02T16:10:50Z w3c-css ADD-START
+rebuilding corpus 'w3c-css' from /root/hub-branch/tools/xerj-code/hub/w3c-css.json
+  [clone] w3c-css
+  [pin] w3c-css -> d06dc03e286c
+          licence=UNKNOWN sha=d06dc03e286c files=3242
+          ^ UNKNOWN: adapt the APPROACH, do not copy the code
+          ! manifest says licence=hint only: W3C document licence (verify redistribution terms at pin), checkout reads UNKNOWN — verify before copying
+
+corpus 'w3c-css': 1 repos at /root/.xerj-code/corpora/w3c-css
+share it: /root/.xerj-code/corpora/w3c-css/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index w3c-css
+2026-10-02T16:11:02Z w3c-css OK depth=34868
+2026-10-02T16:11:03Z whatwg-specs ADD-START
+rebuilding corpus 'whatwg-specs' from /root/hub-branch/tools/xerj-code/hub/whatwg-specs.json
+  [clone] whatwg-specs-1
+  [pin] whatwg-specs-1 -> 6992cb519a02
+          licence=UNKNOWN sha=6992cb519a02 files=132
+          ^ UNKNOWN: adapt the APPROACH, do not copy the code
+          ! manifest says licence=hint only: CC-BY-4.0 (verify per repo at pin), checkout reads UNKNOWN — verify before copying
+  [clone] whatwg-specs-2
+  [pin] whatwg-specs-2 -> 8e14777cfa14
+          licence=UNKNOWN sha=8e14777cfa14 files=32
+          ^ UNKNOWN: adapt the APPROACH, do not copy the code
+          ! manifest says licence=hint only: CC-BY-4.0 (verify), checkout reads UNKNOWN — verify before copying
+
+corpus 'whatwg-specs': 2 repos at /root/.xerj-code/corpora/whatwg-specs
+share it: /root/.xerj-code/corpora/whatwg-specs/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index whatwg-specs
+2026-10-02T16:11:10Z whatwg-specs OK depth=12739
+2026-10-02T16:11:10Z xerj-columnar ADD-START
+rebuilding corpus 'xerj-columnar' from /root/hub-branch/tools/xerj-code/hub/xerj-columnar.json
+  [clone] ClickHouse
+  [pin] ClickHouse -> 31081d9f0501
+          licence=Apache-2.0 sha=31081d9f0501 files=72801
+
+corpus 'xerj-columnar': 1 repos at /root/.xerj-code/corpora/xerj-columnar
+share it: /root/.xerj-code/corpora/xerj-columnar/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index xerj-columnar

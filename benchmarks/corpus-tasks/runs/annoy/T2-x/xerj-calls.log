@@ -1,0 +1,3 @@
+2026-10-02T16:08:00Z code annoy FILE_MAP_EXECUTE definition value mmap windows --url http://localhost:9200
+2026-10-02T16:08:06Z code annoy FILE_MAP_EXECUTE 0x00000020 #define PROT_EXEC __map_mmap_prot_file --url http://localhost:9200
+2026-10-02T16:08:15Z code annoy mman.h top of file defines MAP_FAILED PAGE_READONLY PAGE_READWRITE PAGE_EXECUTE_READWRITE --url http://localhost:9200

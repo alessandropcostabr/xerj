@@ -1,0 +1,140 @@
+{
+ "corpus": "influxdb",
+ "subject": "influxdb",
+ "pin": "06200ef96b",
+ "generated": "2026-10-02",
+ "tasks": [
+  {
+   "id": "T1",
+   "class": "drift",
+   "name": "QUERY_CONCURRENCY_LIMIT_ADVISORY_MIN",
+   "kind": "added",
+   "changed": "2026-09-18",
+   "olds": [],
+   "q": "In the current development source of influxdb, what is the exact value of QUERY_CONCURRENCY_LIMIT_ADVISORY_MIN? Answer with the value only.",
+   "re": [
+    "0x10|16"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T2",
+   "class": "drift",
+   "name": "DEFAULT_MAX_CONCURRENT_QUERIES_FLOOR",
+   "kind": "added",
+   "changed": "2026-09-18",
+   "olds": [],
+   "q": "In the current development source of influxdb, what is the exact value of DEFAULT_MAX_CONCURRENT_QUERIES_FLOOR? Answer with the value only.",
+   "re": [
+    "0x32|50"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T3",
+   "class": "drift",
+   "name": "DEFAULT_MAX_CONCURRENT_QUERIES_PER_CORE",
+   "kind": "added",
+   "changed": "2026-09-18",
+   "olds": [],
+   "q": "In the current development source of influxdb, what is the exact value of DEFAULT_MAX_CONCURRENT_QUERIES_PER_CORE? Answer with the value only.",
+   "re": [
+    "0x4|4"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T4",
+   "class": "drift",
+   "name": "H2_SMALL_FRAME_THRESHOLD",
+   "kind": "added",
+   "changed": "2026-09-18",
+   "olds": [],
+   "q": "In the current development source of influxdb, what is the exact value of H2_SMALL_FRAME_THRESHOLD? Answer with the value only.",
+   "re": [
+    "0x100|256"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T5",
+   "class": "drift",
+   "name": "ENTRIES",
+   "kind": "added",
+   "changed": "2026-09-18",
+   "olds": [],
+   "q": "In the current development source of influxdb, what is the exact value of ENTRIES? Answer with the value only.",
+   "re": [
+    "0x3e8|1000"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T6",
+   "class": "drift",
+   "name": "BATCH_COUNT",
+   "kind": "added",
+   "changed": "2026-09-18",
+   "olds": [],
+   "q": "In the current development source of influxdb, what is the exact value of BATCH_COUNT? Answer with the value only.",
+   "re": [
+    "0x40|64"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T7",
+   "class": "drift",
+   "name": "TAG_VALUES",
+   "kind": "added",
+   "changed": "2026-09-18",
+   "olds": [],
+   "q": "In the current development source of influxdb, what is the exact value of TAG_VALUES? Answer with the value only.",
+   "re": [
+    "0x10|16"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T8",
+   "class": "drift",
+   "name": "METRICS_ENV",
+   "kind": "added",
+   "changed": "2026-09-18",
+   "olds": [],
+   "q": "In the current development source of influxdb, what is the exact value of METRICS_ENV? Answer with the value only.",
+   "re": [
+    "MERGE_BENCH_METRICS"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T9",
+   "class": "drift",
+   "name": "NEVER_HAND_OVER",
+   "kind": "added",
+   "changed": "2026-09-18",
+   "olds": [],
+   "q": "In the current development source of influxdb, what is the exact value of NEVER_HAND_OVER? Answer with the value only.",
+   "re": [
+    "0|0x0"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T10",
+   "class": "drift",
+   "name": "LIMIT",
+   "kind": "changed",
+   "changed": "2026-09-18",
+   "olds": [
+    "1000"
+   ],
+   "q": "In the current development source of influxdb, what is the exact value of LIMIT? Answer with the value only.",
+   "re": [
+    "0x400|1024"
+   ],
+   "need": 1
+  }
+ ]
+}

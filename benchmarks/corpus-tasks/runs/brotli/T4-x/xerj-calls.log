@@ -1,0 +1,3 @@
+2026-10-02T16:26:10Z code brotli BROTLI_MAX_SIMD_QUALITY definition value --url http://localhost:9200
+2026-10-02T16:26:18Z code brotli #define BROTLI_MAX_SIMD_QUALITY_2 hash quality SIMD --url http://localhost:9200
+2026-10-02T16:26:25Z code brotli hash.h define BROTLI_MAX_SIMD_QUALITY_2 11 12 SSENEON simd hasher supported quality levels --url http://localhost:9200

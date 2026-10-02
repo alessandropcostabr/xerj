@@ -1,0 +1,2 @@
+2026-10-02T16:37:16Z code capnproto KJ_ASSERT_ARRAYPTR_COUNTERS definition value macro --url http://localhost:9200
+2026-10-02T16:37:20Z code capnproto #define KJ_ASSERT_ARRAYPTR_COUNTERS kj-debug-assert counter define common.h --url http://localhost:9200

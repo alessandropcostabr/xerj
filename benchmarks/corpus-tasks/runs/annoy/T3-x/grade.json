@@ -1,0 +1,1 @@
+{"id": "T3", "answered": true, "hits": 1, "need": 1, "pass": true, "answer": "\"Compiled on GCC\" (when built with __GNUC__; \"Compiled using MSC\" under _MSC_VER, \"Compiled on unknown platform\" otherwise)", "seconds": 40, "arm": "x", "xerj_calls": 1, "cost_usd": 0.136075, "turns": 5, "task": "T3"}

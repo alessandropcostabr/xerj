@@ -1,0 +1,3 @@
+2026-10-02T16:36:50Z code capnproto KJ_ENABLE_IREQUIRE define value --url http://localhost:9200
+2026-10-02T16:36:54Z code capnproto KJ_ENABLE_IREQUIRE macro defined ifndef --url http://localhost:9200
+2026-10-02T16:37:03Z code capnproto ifndef KJ_ENABLE_IREQUIRE NDEBUG debug mode define default common.h --url http://localhost:9200

@@ -1,0 +1,120 @@
+{
+ "corpus": "capnproto",
+ "subject": "capnproto",
+ "pin": "e866bdbaa3",
+ "generated": "2026-10-02",
+ "tasks": [
+  {
+   "id": "T1",
+   "class": "drift",
+   "name": "KJ_ENABLE_IREQUIRE",
+   "kind": "added",
+   "changed": "2026-09-22",
+   "olds": [],
+   "q": "In the current development source of capnproto, what is the exact value of KJ_ENABLE_IREQUIRE? Answer with the value only.",
+   "re": [
+    "0x1|1"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T2",
+   "class": "drift",
+   "name": "KJ_DEBUG_MEMORY",
+   "kind": "added",
+   "changed": "2026-08-25",
+   "olds": [],
+   "q": "In the current development source of capnproto, what is the exact value of KJ_DEBUG_MEMORY? Answer with the value only.",
+   "re": [
+    "0|0x0"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T3",
+   "class": "drift",
+   "name": "KJ_ASSERT_ARRAYPTR_COUNTERS",
+   "kind": "added",
+   "changed": "2026-08-25",
+   "olds": [],
+   "q": "In the current development source of capnproto, what is the exact value of KJ_ASSERT_ARRAYPTR_COUNTERS? Answer with the value only.",
+   "re": [
+    "0|0x0"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T4",
+   "class": "drift",
+   "name": "KJ_WARN_REFCOUNTED_ATTACH",
+   "kind": "added",
+   "changed": "2025-06-12",
+   "olds": [],
+   "q": "In the current development source of capnproto, what is the exact value of KJ_WARN_REFCOUNTED_ATTACH? Answer with the value only.",
+   "re": [
+    "0|0x0"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T5",
+   "class": "state",
+   "name": "KJ_DEPRECATE_EMPTY_MAYBE_FROM_NULLPTR",
+   "q": "In the current development source of capnproto, what is the exact value of KJ_DEPRECATE_EMPTY_MAYBE_FROM_NULLPTR? Answer with the value only.",
+   "re": [
+    "0x1|1"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T6",
+   "class": "state",
+   "name": "KJ_COMPILER_SUPPORTS_SOURCE_LOCATION",
+   "q": "In the current development source of capnproto, what is the exact value of KJ_COMPILER_SUPPORTS_SOURCE_LOCATION? Answer with the value only.",
+   "re": [
+    "0x1|1"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T7",
+   "class": "state",
+   "name": "KJ_DEPRECATE_KJ_IF_MAYBE",
+   "q": "In the current development source of capnproto, what is the exact value of KJ_DEPRECATE_KJ_IF_MAYBE? Answer with the value only.",
+   "re": [
+    "0x1|1"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T8",
+   "class": "state",
+   "name": "KJ_MSVC_TRADITIONAL_CPP",
+   "q": "In the current development source of capnproto, what is the exact value of KJ_MSVC_TRADITIONAL_CPP? Answer with the value only.",
+   "re": [
+    "0x1|1"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T9",
+   "class": "state",
+   "name": "KJ_STACK_TRACE_MAX_SIZE",
+   "q": "In the current development source of capnproto, what is the exact value of KJ_STACK_TRACE_MAX_SIZE? Answer with the value only.",
+   "re": [
+    "0x20|32"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T10",
+   "class": "state",
+   "name": "KJ_MSVC_BROKEN_DECLTYPE",
+   "q": "In the current development source of capnproto, what is the exact value of KJ_MSVC_BROKEN_DECLTYPE? Answer with the value only.",
+   "re": [
+    "0x1|1"
+   ],
+   "need": 1
+  }
+ ]
+}

@@ -1,0 +1,2 @@
+2026-10-02T16:18:38Z code influxdb METRICS_ENV constant definition value --url http://localhost:9200
+2026-10-02T16:18:52Z code influxdb METRICS_ENV environment variable env::var bench metrics --url http://localhost:9200

@@ -1,0 +1,2 @@
+2026-10-02T16:17:47Z code influxdb H2_SMALL_FRAME_THRESHOLD constant value definition --url http://localhost:9200
+2026-10-02T16:17:54Z code influxdb H2_SMALL_FRAME_THRESHOLD http2 frame size threshold const --url http://localhost:9200

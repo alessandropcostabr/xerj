@@ -1,0 +1,108 @@
+{
+ "corpus": "annoy",
+ "subject": "annoy",
+ "pin": "379f744667",
+ "generated": "2026-10-02",
+ "tasks": [
+  {
+   "id": "T1",
+   "class": "state",
+   "name": "ANNOYLIB_V_ARRAY_SIZE",
+   "q": "In the current development source of annoy, what is the exact value of ANNOYLIB_V_ARRAY_SIZE? Answer with the value only.",
+   "re": [
+    "0x10000|64\\ \\?\\[kK\\]|65536"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T2",
+   "class": "state",
+   "name": "FILE_MAP_EXECUTE",
+   "q": "In the current development source of annoy, what is the exact value of FILE_MAP_EXECUTE? Answer with the value only.",
+   "re": [
+    "0x0020|0x20|32"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T3",
+   "class": "state",
+   "name": "COMPILER_INFO",
+   "q": "In the current development source of annoy, what is the exact value of COMPILER_INFO? Answer with the value only.",
+   "re": [
+    "Compiled\\ using\\ MSC"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T4",
+   "class": "state",
+   "name": "MAP_ANONYMOUS",
+   "q": "In the current development source of annoy, what is the exact value of MAP_ANONYMOUS? Answer with the value only.",
+   "re": [
+    "0x20|32"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T5",
+   "class": "state",
+   "name": "MS_INVALIDATE",
+   "q": "In the current development source of annoy, what is the exact value of MS_INVALIDATE? Answer with the value only.",
+   "re": [
+    "0x4|4"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T6",
+   "class": "state",
+   "name": "MAP_PRIVATE",
+   "q": "In the current development source of annoy, what is the exact value of MAP_PRIVATE? Answer with the value only.",
+   "re": [
+    "0x2|2"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T7",
+   "class": "state",
+   "name": "PROT_WRITE",
+   "q": "In the current development source of annoy, what is the exact value of PROT_WRITE? Answer with the value only.",
+   "re": [
+    "0x2|2"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T8",
+   "class": "state",
+   "name": "MAP_SHARED",
+   "q": "In the current development source of annoy, what is the exact value of MAP_SHARED? Answer with the value only.",
+   "re": [
+    "0x1|1"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T9",
+   "class": "state",
+   "name": "PROT_NONE",
+   "q": "In the current development source of annoy, what is the exact value of PROT_NONE? Answer with the value only.",
+   "re": [
+    "0|0x0"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T10",
+   "class": "state",
+   "name": "PROT_READ",
+   "q": "In the current development source of annoy, what is the exact value of PROT_READ? Answer with the value only.",
+   "re": [
+    "0x1|1"
+   ],
+   "need": 1
+  }
+ ]
+}
