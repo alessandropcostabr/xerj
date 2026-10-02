@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# invocation-counting shim: logs every xerj call the corpus arm makes
+echo "$(date -u +%FT%TZ) $*" >> "${XERJ_CALL_LOG:-/tmp/xerj-calls.log}"
+exec /tmp/xtarget/release/xerj "$@"

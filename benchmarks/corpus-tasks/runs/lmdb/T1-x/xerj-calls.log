@@ -1,0 +1,2 @@
+2026-10-02T13:40:46Z code lmdb MDB_MAGIC meta page magic number constant definition --url http://localhost:9200
+2026-10-02T13:40:52Z code lmdb #define MDB_MAGIC 0x MDB_DATASIGNATURE env_open meta page signature check --url http://localhost:9200

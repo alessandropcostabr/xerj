@@ -1,0 +1,27 @@
+{
+  "corpus": "lmdb",
+  "pin": "700e10f91a",
+  "source_of_truth": "clone at pin, libraries/liblmdb/{mdb.c,lmdb.h} — every expected answer verified against these files 2026-10-02",
+  "tasks": [
+    {"id": "T1", "q": "What is the exact value of the meta-page magic number constant (MDB_MAGIC) in LMDB's source?",
+     "any": ["ANSWER must match 0xBEEFC0DE (case-insensitive hex)"], "re": ["(?i)0x?beefc0de"]},
+    {"id": "T2", "q": "What numeric error code does LMDB return when the environment's reader table is full (MDB_READERS_FULL)?",
+     "re": ["-30790"]},
+    {"id": "T3", "q": "What is LMDB's DEFAULT_MAPSIZE value (bytes) used when no explicit map size is set?",
+     "re": ["1048576|1 ?MiB|1 ?MB\\b"]},
+    {"id": "T4", "q": "What is the numeric value of the MDB_NOLOCK environment flag bitmask in LMDB?",
+     "re": ["(?i)0x400000|4194304"]},
+    {"id": "T5", "q": "Which field of the MDB_env structure records the maximum number of reader slots in the environment?",
+     "re": ["me_maxreaders"]},
+    {"id": "T6", "q": "In LMDB, what happens to the transaction's dirty page list when it grows too large during a write transaction, and which internal functions are involved? Name the mechanism and at least two function/structure names from the source.",
+     "need": 2, "re": ["(?i)spill", "mdb_page_spill", "mdb_page_flush", "(?i)dirty[_ ]list"]},
+    {"id": "T7", "q": "Explain how LMDB readers avoid blocking the writer: what do readers record, in what structure, and when is the mutex actually needed? Use the real field/structure names from the source.",
+     "need": 2, "re": ["(?i)reader table|reader slot", "mr_txnid", "(?i)mutex", "txnid"]},
+    {"id": "T8", "q": "Which LMDB API function sets the map size, and must it be called before or after mdb_env_open()? Answer with the exact function name and the ordering constraint.",
+     "re": ["mdb_env_set_mapsize"]},
+    {"id": "T9", "q": "In LMDB's mdb.c, what is the default compile-time value of MDB_MAXKEYSIZE, and what does the code do at runtime when it has that default value? Name the macro or field used.",
+     "re": ["(?i)me_maxkey|ENV_MAXKEY"]},
+    {"id": "T10", "q": "How does LMDB track and reuse freed pages across transactions? Name the env field that holds the list of reusable free pages and the ID-list utility family used to manage them.",
+     "need": 2, "re": ["me_pghead", "(?i)midl", "(?i)freedb|free db|0[0-3] *\\(.*free"] }
+  ]
+}

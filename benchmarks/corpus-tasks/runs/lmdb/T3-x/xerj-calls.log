@@ -1,0 +1,3 @@
+2026-10-02T13:41:46Z code lmdb DEFAULT_MAPSIZE default map size definition bytes when no mapsize set --url http://localhost:9200
+2026-10-02T13:41:51Z code lmdb mdb_env_create initialize me_mapsize me_psize MB default where mapsize assigned when environment created --url http://localhost:9200
+2026-10-02T13:42:14Z code lmdb me_mapsize assigned DEFAULT_MAPSIZE pages me_psize multiply mdb_env_open --url http://localhost:9200

@@ -1,0 +1,2 @@
+2026-10-02T13:42:01Z code lmdb MDB_NOLOCK environment flag definition mdb.h #define value --url http://localhost:9200
+2026-10-02T13:42:05Z code lmdb #define MDB_NOLOCK 0x100000 dont do any locking environment flags list hex values --url http://localhost:9200
