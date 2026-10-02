@@ -1,0 +1,3 @@
+2026-10-02T16:01:21Z code leveldb kWritableFileBufferSize definition and value --url http://localhost:9200
+2026-10-02T16:01:29Z code leveldb kWritableFileBufferSize constant WritableFile Append buffer size env_posix --url http://localhost:9200
+2026-10-02T16:01:37Z code leveldb constexpr size_t kWritableFileBufferSize maximum size WritableFile buffer definition top of env_posix.cc --url http://localhost:9200

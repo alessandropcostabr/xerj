@@ -1,2 +1,2 @@
-2026-10-02T13:40:46Z code lmdb MDB_MAGIC meta page magic number constant definition --url http://localhost:9200
-2026-10-02T13:40:52Z code lmdb #define MDB_MAGIC 0x MDB_DATASIGNATURE env_open meta page signature check --url http://localhost:9200
+2026-10-02T15:53:51Z code lmdb MDB_MAXKEYSIZE definition maximum key size --url http://localhost:9200
+2026-10-02T15:54:01Z code lmdb #define MDB_MAXKEYSIZE 511 environment maximum key size compile-time constant --url http://localhost:9200

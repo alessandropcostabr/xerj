@@ -1,2 +1,2 @@
-2026-10-02T13:44:00Z code lmdb mdb_env_set_mapsize map size must be called before mdb_env_open --url http://localhost:9200
-2026-10-02T13:44:11Z code lmdb Set the size of the memory map to use for this environment doc comment after mdb_env_create before mdb_env_open --url http://localhost:9200
+2026-10-02T15:56:27Z code lmdb MDB_STDOUT definition value --url http://localhost:9200
+2026-10-02T15:56:35Z code lmdb ifdef _MSC_VER MDB_STDOUT GetStdHandle else define MDB_STDOUT stdout mdb_copy.c mdb_dump.c mdb_stat.c --url http://localhost:9200

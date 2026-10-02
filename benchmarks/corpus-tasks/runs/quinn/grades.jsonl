@@ -1,0 +1,20 @@
+{"id": "T1", "answered": true, "hits": 0, "need": 1, "pass": false, "answer": "unknown", "seconds": 99, "arm": "p", "xerj_calls": 0, "cost_usd": 0.16584800000000002, "turns": 1, "task": "T1"}
+{"id": "T1", "answered": true, "hits": 1, "need": 1, "pass": true, "answer": "16", "seconds": 14, "arm": "x", "xerj_calls": 1, "cost_usd": 0.067373, "turns": 2, "task": "T1"}
+{"id": "T2", "answered": true, "hits": 0, "need": 1, "pass": false, "answer": "unknown", "seconds": 18, "arm": "p", "xerj_calls": 0, "cost_usd": 0.067588, "turns": 1, "task": "T2"}
+{"id": "T2", "answered": true, "hits": 1, "need": 1, "pass": true, "answer": "1280", "seconds": 7, "arm": "x", "xerj_calls": 1, "cost_usd": 0.06880800000000001, "turns": 2, "task": "T2"}
+{"id": "T3", "answered": true, "hits": 0, "need": 1, "pass": false, "answer": "unknown", "seconds": 15, "arm": "p", "xerj_calls": 0, "cost_usd": 0.11337699999999999, "turns": 1, "task": "T3"}
+{"id": "T3", "answered": true, "hits": 1, "need": 1, "pass": true, "answer": "128", "seconds": 10, "arm": "x", "xerj_calls": 1, "cost_usd": 0.067233, "turns": 2, "task": "T3"}
+{"id": "T4", "answered": true, "hits": 0, "need": 1, "pass": false, "answer": "unknown", "seconds": 28, "arm": "p", "xerj_calls": 0, "cost_usd": 0.080758, "turns": 1, "task": "T4"}
+{"id": "T4", "answered": true, "hits": 1, "need": 1, "pass": true, "answer": "32", "seconds": 19, "arm": "x", "xerj_calls": 2, "cost_usd": 0.08387700000000001, "turns": 3, "task": "T4"}
+{"id": "T5", "answered": true, "hits": 0, "need": 1, "pass": false, "answer": "unknown", "seconds": 31, "arm": "p", "xerj_calls": 0, "cost_usd": 0.090788, "turns": 1, "task": "T5"}
+{"id": "T5", "answered": true, "hits": 1, "need": 1, "pass": true, "answer": "1452", "seconds": 10, "arm": "x", "xerj_calls": 1, "cost_usd": 0.067628, "turns": 2, "task": "T5"}
+{"id": "T6", "answered": true, "hits": 0, "need": 1, "pass": false, "answer": "unknown", "seconds": 14, "arm": "p", "xerj_calls": 0, "cost_usd": 0.060802999999999996, "turns": 1, "task": "T6"}
+{"id": "T6", "answered": true, "hits": 1, "need": 1, "pass": true, "answer": "12_000", "seconds": 47, "arm": "x", "xerj_calls": 1, "cost_usd": 0.134382, "turns": 4, "task": "T6"}
+{"id": "T7", "answered": true, "hits": 0, "need": 1, "pass": false, "answer": "unknown", "seconds": 16, "arm": "p", "xerj_calls": 0, "cost_usd": 0.064523, "turns": 1, "task": "T7"}
+{"id": "T7", "answered": true, "hits": 1, "need": 1, "pass": true, "answer": "4_000_000", "seconds": 12, "arm": "x", "xerj_calls": 2, "cost_usd": 0.089332, "turns": 3, "task": "T7"}
+{"id": "T8", "answered": true, "hits": 0, "need": 1, "pass": false, "answer": "8 * 1024 * 1024", "seconds": 23, "arm": "p", "xerj_calls": 0, "cost_usd": 0.07731299999999999, "turns": 1, "task": "T8"}
+{"id": "T8", "answered": true, "hits": 1, "need": 1, "pass": true, "answer": "100", "seconds": 13, "arm": "x", "xerj_calls": 1, "cost_usd": 0.066218, "turns": 2, "task": "T8"}
+{"id": "T9", "answered": true, "hits": 0, "need": 1, "pass": false, "answer": "unknown", "seconds": 21, "arm": "p", "xerj_calls": 0, "cost_usd": 0.07283799999999999, "turns": 1, "task": "T9"}
+{"id": "T9", "answered": true, "hits": 1, "need": 1, "pass": true, "answer": "1024", "seconds": 36, "arm": "x", "xerj_calls": 2, "cost_usd": 0.165302, "turns": 7, "task": "T9"}
+{"id": "T10", "answered": true, "hits": 0, "need": 1, "pass": false, "answer": "unknown", "seconds": 16, "arm": "p", "xerj_calls": 0, "cost_usd": 0.064443, "turns": 1, "task": "T10"}
+{"id": "T10", "answered": true, "hits": 1, "need": 1, "pass": true, "answer": "256", "seconds": 27, "arm": "x", "xerj_calls": 2, "cost_usd": 0.133829, "turns": 5, "task": "T10"}

@@ -1,4 +1,2 @@
-2026-10-02T13:41:37Z code lmdb MDB_READERS_FULL error code numeric value definition --url http://localhost:9200
-2026-10-02T13:41:41Z code lmdb MDB_READERS_FULL define maxreaders reader slots exhausted macro --url http://localhost:9200
-2026-10-02T13:41:46Z code lmdb Environment maxreaders reached error return code lmdb.h error defines MDB_BAD_RSLOT MDB_TXN_FULL --url http://localhost:9200
-2026-10-02T13:41:51Z code lmdb mdb_strerror table Environment maxreaders reached case MDB_READERS_FULL return --url http://localhost:9200
+2026-10-02T15:53:46Z code lmdb KEY_SIZE definition value max key size --url http://localhost:9200
+2026-10-02T15:53:50Z code lmdb #define KEY_SIZE --url http://localhost:9200

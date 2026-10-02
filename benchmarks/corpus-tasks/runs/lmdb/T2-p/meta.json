@@ -1,13 +1,13 @@
 {
  "rc": 0,
- "seconds": 12,
- "cost_usd": 0.057363,
+ "seconds": 40,
+ "cost_usd": 0.159853,
  "num_turns": 1,
  "usage": {
-  "input_tokens": 6843,
+  "input_tokens": 21244,
   "cache_creation_input_tokens": 0,
-  "cache_read_input_tokens": 16896,
-  "output_tokens": 588,
+  "cache_read_input_tokens": 2816,
+  "output_tokens": 2089,
   "server_tool_use": {
    "web_search_requests": 0,
    "web_fetch_requests": 0

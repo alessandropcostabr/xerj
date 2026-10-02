@@ -1,0 +1,1 @@
+{"id": "T8", "answered": true, "hits": 1, "need": 1, "pass": true, "answer": "1 (POSIX branch; on _WIN32 it is GetStdHandle(STD_OUTPUT_HANDLE))", "seconds": 42, "arm": "x", "xerj_calls": 2, "cost_usd": 0.151832, "turns": 6, "task": "T8"}

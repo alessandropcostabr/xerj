@@ -1,4 +1,1 @@
-2026-10-02T13:44:26Z code lmdb MDB_reader structure definition mr_pid mr_tid mr_txnid mr_lock reader slot --url http://localhost:9200
-2026-10-02T13:44:28Z code lmdb MDB_txninfo mti_mutex mti_wmutex mti_txnid mti_numreaders mti_readers shared lock file --url http://localhost:9200
-2026-10-02T13:44:28Z code lmdb mdb_txn_renew0 reader slot registration mutex lock mr_txnid = mti_txnid read transaction --url http://localhost:9200
-2026-10-02T13:44:28Z code lmdb oldest reader txnid reclaim free pages mdb_env_pick_oldest me_pgoldest me_pghead writer does not block readers --url http://localhost:9200
+2026-10-02T15:55:56Z code lmdb MDB_DBIS_BUSY define --url http://localhost:9200

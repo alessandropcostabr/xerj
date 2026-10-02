@@ -35,14 +35,29 @@ absence of one) published.
 
 ## 3. Task suite (10 per corpus)
 
-- Derived **from the pinned clone** — every expected answer was verified against
-  the corpus's own files at the pin before any arm ran (T1 smoke pair excepted,
-  noted above).
-- Mix: exact-detail questions (constants, error codes, flags, field names) where
-  bare-arm recall is unlikely; mechanism questions graded by term-set (≥N of M
-  source-verified terms); one API-contract question.
-- Checkers are regex/term-set over the run's final `ANSWER:` line — no LLM
-  judging, no partial credit negotiation after the fact.
+**Amended 2026-10-02 (post-pilot, pre-scale): suites are generator-derived.**
+The pilot's hand-built lmdb suite measured memorised content (10/10 vs 10/10,
+documented in `runs/lmdb/RESULTS.md`). Its pre-registered design consequence —
+pin-anchored questions — is implemented as `harness/gen_tasks.py`, which mines
+the pinned clone and writes `tasks/<slug>.json`:
+
+- **drift** tasks: constants whose introducing change lies inside the window
+  2024-01-01 → pin (committer dates; `git log HEAD` at the pin, so facts are
+  ancestors of the pin by construction). Kinds: `added` (name first appears in
+  the window — the model has plausibly never seen the name) and `changed`
+  (value changed; `olds` recorded so a bare arm serving the memorised old value
+  is gradable as a *specific wrong answer*, not just a miss).
+- **state** tasks (filler to 10): current constant values at the pin. On famous
+  repos these are expected to tie — that is the null-control behavior, measured
+  not hidden; each task carries its class and per-class scores are reported.
+- Ground truth is mechanical: the value in the working tree at the pin;
+  checkers are regex alternates (hex/dec) over the final `ANSWER:` line — no
+  LLM judging, no partial credit negotiation after the fact.
+- Corpora whose file types yield <4 minable facts (markdown/doc corpora) are
+  recorded as `suite-infeasible (mechanical)` with their count, not run.
+
+The clones used for mining are unshallowed (`git fetch --unshallow`) with the
+working tree left at the pin, so history is complete but facts stay pin-anchored.
 
 ## 4. Arms
 

@@ -1,0 +1,2 @@
+2026-10-02T16:02:19Z code leveldb kBlockTrailerSize definition format.h block trailer size crc type --url http://localhost:9200
+2026-10-02T16:02:23Z code leveldb static const size_t kBlockTrailerSize 1-byte type 32-bit crc constant declaration --url http://localhost:9200

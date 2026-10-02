@@ -1,0 +1,424 @@
+2026-10-02T15:54:37Z TEMPLATE ADD-START
+xerj corpus add: /root/hub-branch/tools/xerj-code/hub/TEMPLATE.json: repo name '<short-name>' is not a plain directory name. It is used as a path under the corpus directory and is then force-checked-out and cleaned, so a name containing '/' or '..' would overwrite files outside the corpus. Allowed: letters, digits, '.', '_' and '-', not starting with '.' or '-'.
+2026-10-02T15:54:37Z TEMPLATE ADD-FAILED
+2026-10-02T15:54:37Z annoy ADD-START
+rebuilding corpus 'annoy' from /root/hub-branch/tools/xerj-code/hub/annoy.json
+  [clone] annoy
+  [pin] annoy -> 379f744667ab
+          licence=Apache-2.0 sha=379f744667ab files=52
+          ! manifest says licence=hint only: verify at pin (Apache-2.0/'Other' reported), checkout reads Apache-2.0 — verify before copying
+
+corpus 'annoy': 1 repos at /root/.xerj-code/corpora/annoy
+share it: /root/.xerj-code/corpora/annoy/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index annoy
+2026-10-02T15:54:40Z annoy OK depth=911
+2026-10-02T15:54:40Z arrow-rs ADD-START
+rebuilding corpus 'arrow-rs' from /root/hub-branch/tools/xerj-code/hub/arrow-rs.json
+  [clone] arrow-rs
+  [pin] arrow-rs -> 73595d587538
+          licence=Apache-2.0 sha=73595d587538 files=919
+          ! manifest says licence=hint only: Apache-2.0 (verify at pin), checkout reads Apache-2.0 — verify before copying
+
+corpus 'arrow-rs': 1 repos at /root/.xerj-code/corpora/arrow-rs
+share it: /root/.xerj-code/corpora/arrow-rs/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index arrow-rs
+2026-10-02T15:54:48Z arrow-rs OK depth=8340
+2026-10-02T15:54:48Z badger ADD-START
+rebuilding corpus 'badger' from /root/hub-branch/tools/xerj-code/hub/badger.json
+  [clone] badger
+  [pin] badger -> 5688f1406ced
+          licence=Apache-2.0 sha=5688f1406ced files=165
+          ! manifest says licence=hint only: MIT (verify at pin — dgraph BUSL era did not reach badger, confirm), checkout reads Apache-2.0 — verify before copying
+
+corpus 'badger': 1 repos at /root/.xerj-code/corpora/badger
+share it: /root/.xerj-code/corpora/badger/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index badger
+2026-10-02T15:54:51Z badger OK depth=1554
+2026-10-02T15:54:51Z boringtun CLONE-EXISTS
+2026-10-02T15:54:51Z brotli ADD-START
+rebuilding corpus 'brotli' from /root/hub-branch/tools/xerj-code/hub/brotli.json
+  [clone] brotli
+  [pin] brotli -> 42a2ed4355bc
+          licence=MIT sha=42a2ed4355bc files=416
+          ! manifest says licence=hint only: MIT (verify at pin), checkout reads MIT — verify before copying
+
+corpus 'brotli': 1 repos at /root/.xerj-code/corpora/brotli
+share it: /root/.xerj-code/corpora/brotli/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index brotli
+2026-10-02T15:54:59Z brotli OK depth=1565
+2026-10-02T15:54:59Z caddy ADD-START
+rebuilding corpus 'caddy' from /root/hub-branch/tools/xerj-code/hub/caddy.json
+  [clone] caddy
+  [pin] caddy -> ac834b5dc70a
+          licence=Apache-2.0 sha=ac834b5dc70a files=684
+          ! manifest says licence=hint only: Apache-2.0 (verify at pin), checkout reads Apache-2.0 — verify before copying
+
+corpus 'caddy': 1 repos at /root/.xerj-code/corpora/caddy
+share it: /root/.xerj-code/corpora/caddy/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index caddy
+2026-10-02T15:55:03Z caddy OK depth=2710
+2026-10-02T15:55:03Z capnproto ADD-START
+rebuilding corpus 'capnproto' from /root/hub-branch/tools/xerj-code/hub/capnproto.json
+  [clone] capnproto
+  [pin] capnproto -> e866bdbaa307
+          licence=MIT sha=e866bdbaa307 files=1231
+          ! manifest says licence=hint only: MIT (verify at pin), checkout reads MIT — verify before copying
+
+corpus 'capnproto': 1 repos at /root/.xerj-code/corpora/capnproto
+share it: /root/.xerj-code/corpora/capnproto/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index capnproto
+2026-10-02T15:55:08Z capnproto OK depth=5430
+2026-10-02T15:55:08Z curl-src ADD-START
+rebuilding corpus 'curl-src' from /root/hub-branch/tools/xerj-code/hub/curl-src.json
+  [clone] curl-src
+  [pin] curl-src -> 39ad9b077170
+          licence=UNKNOWN sha=39ad9b077170 files=4553
+          ^ UNKNOWN: adapt the APPROACH, do not copy the code
+          ! manifest says licence=hint only: curl licence (permissive — verify at pin), checkout reads UNKNOWN — verify before copying
+
+corpus 'curl-src': 1 repos at /root/.xerj-code/corpora/curl-src
+share it: /root/.xerj-code/corpora/curl-src/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index curl-src
+2026-10-02T15:55:19Z curl-src OK depth=39963
+2026-10-02T15:55:20Z dragonboat ADD-START
+rebuilding corpus 'dragonboat' from /root/hub-branch/tools/xerj-code/hub/dragonboat.json
+  [clone] dragonboat
+  [pin] dragonboat -> 076c7f6497dc
+          licence=Apache-2.0 sha=076c7f6497dc files=278
+          ! manifest says licence=hint only: BSD-2 (verify at pin), checkout reads Apache-2.0 — verify before copying
+
+corpus 'dragonboat': 1 repos at /root/.xerj-code/corpora/dragonboat
+share it: /root/.xerj-code/corpora/dragonboat/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index dragonboat
+2026-10-02T15:55:23Z dragonboat OK depth=1528
+2026-10-02T15:55:23Z duckdb ADD-START
+rebuilding corpus 'duckdb' from /root/hub-branch/tools/xerj-code/hub/duckdb.json
+  [clone] duckdb
+  [pin] duckdb -> 2866f801f73d
+          licence=MIT sha=2866f801f73d files=16173
+          ! manifest says licence=hint only: MIT (verify at pin), checkout reads MIT — verify before copying
+
+corpus 'duckdb': 1 repos at /root/.xerj-code/corpora/duckdb
+share it: /root/.xerj-code/corpora/duckdb/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index duckdb
+2026-10-02T15:55:58Z duckdb OK depth=86261
+2026-10-02T15:55:59Z envoy ADD-START
+rebuilding corpus 'envoy' from /root/hub-branch/tools/xerj-code/hub/envoy.json
+  [clone] envoy
+  [pin] envoy -> eb32f1f93e91
+          licence=Apache-2.0 sha=eb32f1f93e91 files=14974
+          ! manifest says licence=hint only: Apache-2.0 (verify at pin), checkout reads Apache-2.0 — verify before copying
+
+corpus 'envoy': 1 repos at /root/.xerj-code/corpora/envoy
+share it: /root/.xerj-code/corpora/envoy/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index envoy
+2026-10-02T15:56:25Z envoy OK depth=28984
+2026-10-02T15:56:25Z etcd-docs CLONE-EXISTS
+2026-10-02T15:56:25Z etcd-src ADD-START
+rebuilding corpus 'etcd-src' from /root/hub-branch/tools/xerj-code/hub/etcd-src.json
+  [clone] etcd-src
+  [pin] etcd-src -> 64f26db45f5f
+          licence=Apache-2.0 sha=64f26db45f5f files=1504
+          ! manifest says licence=hint only: Apache-2.0 (verify at pin), checkout reads Apache-2.0 — verify before copying
+
+corpus 'etcd-src': 1 repos at /root/.xerj-code/corpora/etcd-src
+share it: /root/.xerj-code/corpora/etcd-src/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index etcd-src
+2026-10-02T15:56:33Z etcd-src OK depth=25258
+2026-10-02T15:56:33Z faiss ADD-START
+rebuilding corpus 'faiss' from /root/hub-branch/tools/xerj-code/hub/faiss.json
+  [clone] faiss
+  [pin] faiss -> 0db2f3088643
+          licence=MIT sha=0db2f3088643 files=1110
+          ! manifest says licence=hint only: MIT (verify at pin), checkout reads MIT — verify before copying
+
+corpus 'faiss': 1 repos at /root/.xerj-code/corpora/faiss
+share it: /root/.xerj-code/corpora/faiss/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index faiss
+2026-10-02T15:56:39Z faiss OK depth=2331
+2026-10-02T15:56:39Z flatbuffers ADD-START
+rebuilding corpus 'flatbuffers' from /root/hub-branch/tools/xerj-code/hub/flatbuffers.json
+  [clone] flatbuffers
+  [pin] flatbuffers -> b8431fbcd7a5
+          licence=Apache-2.0 sha=b8431fbcd7a5 files=2283
+          ! manifest says licence=hint only: Apache-2.0 (verify at pin), checkout reads Apache-2.0 — verify before copying
+
+corpus 'flatbuffers': 1 repos at /root/.xerj-code/corpora/flatbuffers
+share it: /root/.xerj-code/corpora/flatbuffers/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index flatbuffers
+2026-10-02T15:56:43Z flatbuffers OK depth=3409
+2026-10-02T15:56:43Z freebsd-handbook ADD-START
+rebuilding corpus 'freebsd-handbook' from /root/hub-branch/tools/xerj-code/hub/freebsd-handbook.json
+  [clone] freebsd-handbook
+  [pin] freebsd-handbook -> 3aa6b19a6f89
+          licence=NONE-FOUND sha=3aa6b19a6f89 files=12738
+          ^ NONE-FOUND: adapt the APPROACH, do not copy the code
+          ! manifest says licence=hint only: FreeBSD Documentation License (permissive — verify at pin), checkout reads NONE-FOUND — verify before copying
+
+corpus 'freebsd-handbook': 1 repos at /root/.xerj-code/corpora/freebsd-handbook
+share it: /root/.xerj-code/corpora/freebsd-handbook/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index freebsd-handbook
+2026-10-02T15:57:15Z freebsd-handbook OK depth=61301
+2026-10-02T15:57:15Z github-api-description ADD-START
+rebuilding corpus 'github-api-description' from /root/hub-branch/tools/xerj-code/hub/github-api-description.json
+  [clone] github-api-description
+  [pin] github-api-description -> 7bdf5f005536
+          licence=MIT sha=7bdf5f005536 files=419
+          ! manifest says licence=hint only: verify at pin (MIT reported), checkout reads MIT — verify before copying
+
+corpus 'github-api-description': 1 repos at /root/.xerj-code/corpora/github-api-description
+share it: /root/.xerj-code/corpora/github-api-description/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index github-api-description
+2026-10-02T16:02:55Z github-api-description OK depth=3824
+2026-10-02T16:02:55Z gitlab-runbooks ADD-START
+rebuilding corpus 'gitlab-runbooks' from /root/hub-branch/tools/xerj-code/hub/gitlab-runbooks.json
+  [clone] gitlab-runbooks
+  [pin] gitlab-runbooks -> caae4426858b
+          licence=MIT sha=caae4426858b files=6327
+          ! manifest says licence=hint only: MIT (verify at pin — hosted on gitlab.com, not github), checkout reads MIT — verify before copying
+
+corpus 'gitlab-runbooks': 1 repos at /root/.xerj-code/corpora/gitlab-runbooks
+share it: /root/.xerj-code/corpora/gitlab-runbooks/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index gitlab-runbooks
+2026-10-02T16:03:12Z gitlab-runbooks OK depth=26494
+2026-10-02T16:03:12Z google-eng-practices CLONE-EXISTS
+2026-10-02T16:03:12Z govuk-design-system ADD-START
+rebuilding corpus 'govuk-design-system' from /root/hub-branch/tools/xerj-code/hub/govuk-design-system.json
+  [clone] govuk-design-system
+  [pin] govuk-design-system -> 283cc58ead97
+          licence=MIT sha=283cc58ead97 files=1054
+          ! manifest says licence=hint only: MIT (verify at pin), checkout reads MIT — verify before copying
+
+corpus 'govuk-design-system': 1 repos at /root/.xerj-code/corpora/govuk-design-system
+share it: /root/.xerj-code/corpora/govuk-design-system/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index govuk-design-system
+2026-10-02T16:03:19Z govuk-design-system OK depth=13079
+2026-10-02T16:03:19Z graphql-spec ADD-START
+rebuilding corpus 'graphql-spec' from /root/hub-branch/tools/xerj-code/hub/graphql-spec.json
+  [clone] graphql-spec
+  [pin] graphql-spec -> 3f1ef8460198
+          licence=MIT sha=3f1ef8460198 files=53
+          ! manifest says licence=hint only: OWFa-1.0 patents + CC-BY-4.0 text (verify at pin), checkout reads MIT — verify before copying
+
+corpus 'graphql-spec': 1 repos at /root/.xerj-code/corpora/graphql-spec
+share it: /root/.xerj-code/corpora/graphql-spec/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index graphql-spec
+2026-10-02T16:03:25Z graphql-spec OK depth=666
+2026-10-02T16:03:25Z iceberg ADD-START
+rebuilding corpus 'iceberg' from /root/hub-branch/tools/xerj-code/hub/iceberg.json
+  [clone] iceberg
+  [pin] iceberg -> 8102f4cb60e2
+          licence=Apache-2.0 sha=8102f4cb60e2 files=6590
+          ! manifest says licence=hint only: Apache-2.0 (verify at pin), checkout reads Apache-2.0 — verify before copying
+
+corpus 'iceberg': 1 repos at /root/.xerj-code/corpora/iceberg
+share it: /root/.xerj-code/corpora/iceberg/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index iceberg
+2026-10-02T16:03:34Z iceberg OK depth=9366
+2026-10-02T16:03:34Z influxdb ADD-START
+rebuilding corpus 'influxdb' from /root/hub-branch/tools/xerj-code/hub/influxdb.json
+  [clone] influxdb
+  [pin] influxdb -> 06200ef96ba8
+          licence=Apache-2.0/MIT sha=06200ef96ba8 files=1845
+          ! manifest says licence=hint only: verify at pin (MIT/Apache reported; iox era changed layout), checkout reads Apache-2.0/MIT — verify before copying
+
+corpus 'influxdb': 1 repos at /root/.xerj-code/corpora/influxdb
+share it: /root/.xerj-code/corpora/influxdb/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index influxdb
+2026-10-02T16:03:46Z influxdb OK depth=49927
+2026-10-02T16:03:47Z json-schema-spec CLONE-EXISTS
+2026-10-02T16:03:47Z kafka-protocol ADD-START
+rebuilding corpus 'kafka-protocol' from /root/hub-branch/tools/xerj-code/hub/kafka-protocol.json
+  [clone] kafka-protocol
+  [pin] kafka-protocol -> 7bf6e996d331
+          licence=Apache-2.0 sha=7bf6e996d331 files=28477
+          ! manifest says licence=hint only: Apache-2.0 (verify which path carries the protocol guide at pin), checkout reads Apache-2.0 — verify before copying
+
+corpus 'kafka-protocol': 1 repos at /root/.xerj-code/corpora/kafka-protocol
+share it: /root/.xerj-code/corpora/kafka-protocol/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index kafka-protocol
+2026-10-02T16:04:10Z kafka-protocol OK depth=134
+2026-10-02T16:04:10Z kafka-src ADD-START
+rebuilding corpus 'kafka-src' from /root/hub-branch/tools/xerj-code/hub/kafka-src.json
+  [clone] kafka-src
+  [pin] kafka-src -> d12941eb5af0
+          licence=Apache-2.0 sha=d12941eb5af0 files=7581
+          ! manifest says licence=hint only: Apache-2.0 (verify at pin), checkout reads Apache-2.0 — verify before copying
+
+corpus 'kafka-src': 1 repos at /root/.xerj-code/corpora/kafka-src
+share it: /root/.xerj-code/corpora/kafka-src/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index kafka-src
+2026-10-02T16:04:35Z kafka-src OK depth=18370
+2026-10-02T16:04:35Z leveldb CLONE-EXISTS
+2026-10-02T16:04:35Z libuv ADD-START
+rebuilding corpus 'libuv' from /root/hub-branch/tools/xerj-code/hub/libuv.json
+  [clone] libuv
+  [pin] libuv -> 49b1c064714b
+          licence=MIT/UNKNOWN sha=49b1c064714b files=483
+          ^ MIT/UNKNOWN: adapt the APPROACH, do not copy the code
+          ! manifest says licence=hint only: MIT (verify at pin), checkout reads MIT/UNKNOWN — verify before copying
+
+corpus 'libuv': 1 repos at /root/.xerj-code/corpora/libuv
+share it: /root/.xerj-code/corpora/libuv/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index libuv
+2026-10-02T16:04:39Z libuv OK depth=5791
+2026-10-02T16:04:39Z lmdb CLONE-EXISTS
+2026-10-02T16:04:39Z lz4 ADD-START
+rebuilding corpus 'lz4' from /root/hub-branch/tools/xerj-code/hub/lz4.json
+  [clone] lz4
+  [pin] lz4 -> 0774d05537f9
+          licence=UNKNOWN sha=0774d05537f9 files=209
+          ^ UNKNOWN: adapt the APPROACH, do not copy the code
+          ! manifest says licence=hint only: BSD-2 (verify at pin), checkout reads UNKNOWN — verify before copying
+
+corpus 'lz4': 1 repos at /root/.xerj-code/corpora/lz4
+share it: /root/.xerj-code/corpora/lz4/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index lz4
+2026-10-02T16:04:42Z lz4 OK depth=3826
+2026-10-02T16:04:42Z mozilla-ssl-configs ADD-START
+rebuilding corpus 'mozilla-ssl-configs' from /root/hub-branch/tools/xerj-code/hub/mozilla-ssl-configs.json
+  [clone] mozilla-ssl-configs
+  [pin] mozilla-ssl-configs -> 34d8441d52dc
+          licence=MPL-2.0 sha=34d8441d52dc files=8
+          ^ MPL-2.0: adapt the APPROACH, do not copy the code
+          ! manifest says licence=hint only: MPL-2.0 (verify at pin), checkout reads MPL-2.0 — verify before copying
+
+corpus 'mozilla-ssl-configs': 1 repos at /root/.xerj-code/corpora/mozilla-ssl-configs
+share it: /root/.xerj-code/corpora/mozilla-ssl-configs/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index mozilla-ssl-configs
+2026-10-02T16:04:45Z mozilla-ssl-configs OK depth=261
+2026-10-02T16:04:45Z msft-api-guidelines ADD-START
+rebuilding corpus 'msft-api-guidelines' from /root/hub-branch/tools/xerj-code/hub/msft-api-guidelines.json
+  [clone] msft-api-guidelines
+  [pin] msft-api-guidelines -> a7022a299442
+          licence=NONE-FOUND sha=a7022a299442 files=42
+          ^ NONE-FOUND: adapt the APPROACH, do not copy the code
+          ! manifest says licence=hint only: verify at pin (CC-BY reported), checkout reads NONE-FOUND — verify before copying
+
+corpus 'msft-api-guidelines': 1 repos at /root/.xerj-code/corpora/msft-api-guidelines
+share it: /root/.xerj-code/corpora/msft-api-guidelines/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index msft-api-guidelines
+2026-10-02T16:04:47Z msft-api-guidelines OK depth=951
+2026-10-02T16:04:47Z msgpack-c ADD-START
+rebuilding corpus 'msgpack-c' from /root/hub-branch/tools/xerj-code/hub/msgpack-c.json
+  [clone] msgpack-c
+  [pin] msgpack-c -> 1cdc1b66fe7f
+          licence=MIT/UNKNOWN sha=1cdc1b66fe7f files=7
+          ^ MIT/UNKNOWN: adapt the APPROACH, do not copy the code
+          ! manifest says licence=hint only: Boost BSL-1.0 dual (verify at pin), checkout reads MIT/UNKNOWN — verify before copying
+
+corpus 'msgpack-c': 1 repos at /root/.xerj-code/corpora/msgpack-c
+share it: /root/.xerj-code/corpora/msgpack-c/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index msgpack-c
+2026-10-02T16:04:50Z msgpack-c OK depth=2498
+2026-10-02T16:04:50Z nats-protocol ADD-START
+rebuilding corpus 'nats-protocol' from /root/hub-branch/tools/xerj-code/hub/nats-protocol.json
+  [clone] nats-protocol
+  [pin] nats-protocol -> 1cb267ca1112
+          licence=Apache-2.0 sha=1cb267ca1112 files=71
+          ! manifest says licence=hint only: Apache-2.0 (verify at pin), checkout reads Apache-2.0 — verify before copying
+
+corpus 'nats-protocol': 1 repos at /root/.xerj-code/corpora/nats-protocol
+share it: /root/.xerj-code/corpora/nats-protocol/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index nats-protocol
+2026-10-02T16:04:53Z nats-protocol OK depth=813
+2026-10-02T16:04:53Z nats-server ADD-START
+rebuilding corpus 'nats-server' from /root/hub-branch/tools/xerj-code/hub/nats-server.json
+  [clone] nats-server
+  [pin] nats-server -> a44c356c4271
+          licence=Apache-2.0 sha=a44c356c4271 files=598
+          ! manifest says licence=hint only: Apache-2.0 (verify at pin), checkout reads Apache-2.0 — verify before copying
+
+corpus 'nats-server': 1 repos at /root/.xerj-code/corpora/nats-server
+share it: /root/.xerj-code/corpora/nats-server/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index nats-server
+2026-10-02T16:05:00Z nats-server OK depth=13401
+2026-10-02T16:05:00Z nghttp2 ADD-START
+rebuilding corpus 'nghttp2' from /root/hub-branch/tools/xerj-code/hub/nghttp2.json
+  [clone] nghttp2
+  [pin] nghttp2 -> 19d06e62185d
+          licence=MIT/UNKNOWN sha=19d06e62185d files=612
+          ^ MIT/UNKNOWN: adapt the APPROACH, do not copy the code
+          ! manifest says licence=hint only: MIT (verify at pin), checkout reads MIT/UNKNOWN — verify before copying
+
+corpus 'nghttp2': 1 repos at /root/.xerj-code/corpora/nghttp2
+share it: /root/.xerj-code/corpora/nghttp2/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index nghttp2
+2026-10-02T16:05:07Z nghttp2 OK depth=9145
+2026-10-02T16:05:07Z nginx ADD-START
+rebuilding corpus 'nginx' from /root/hub-branch/tools/xerj-code/hub/nginx.json
+  [clone] nginx
+  [pin] nginx -> 2b5c2b605b5d
+          licence=BSD sha=2b5c2b605b5d files=547
+          ! manifest says licence=hint only: BSD-2 (verify at pin), checkout reads BSD — verify before copying
+
+corpus 'nginx': 1 repos at /root/.xerj-code/corpora/nginx
+share it: /root/.xerj-code/corpora/nginx/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index nginx
+2026-10-02T16:05:12Z nginx OK depth=8738
+2026-10-02T16:05:12Z openapi-spec ADD-START
+rebuilding corpus 'openapi-spec' from /root/hub-branch/tools/xerj-code/hub/openapi-spec.json
+  [clone] openapi-spec
+  [pin] openapi-spec -> 447c479c9c71
+          licence=Apache-2.0 sha=447c479c9c71 files=120
+          ! manifest says licence=hint only: verify at pin (Apache-2.0 reported), checkout reads Apache-2.0 — verify before copying
+
+corpus 'openapi-spec': 1 repos at /root/.xerj-code/corpora/openapi-spec
+share it: /root/.xerj-code/corpora/openapi-spec/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index openapi-spec
+2026-10-02T16:05:15Z openapi-spec OK depth=4738
+2026-10-02T16:05:15Z openbao ADD-START
+rebuilding corpus 'openbao' from /root/hub-branch/tools/xerj-code/hub/openbao.json
+  [clone] openbao
+  [pin] openbao -> a4f7e569875f
+          licence=MPL-2.0 sha=a4f7e569875f files=5402
+          ^ MPL-2.0: adapt the APPROACH, do not copy the code
+          ! manifest says licence=hint only: MPL-2.0 (verify at pin), checkout reads MPL-2.0 — verify before copying
+
+corpus 'openbao': 1 repos at /root/.xerj-code/corpora/openbao
+share it: /root/.xerj-code/corpora/openbao/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index openbao
+2026-10-02T16:05:28Z openbao OK depth=21188
+2026-10-02T16:05:29Z openbsd-faq ADD-START
+rebuilding corpus 'openbsd-faq' from /root/hub-branch/tools/xerj-code/hub/openbsd-faq.json
+  [clone] openbsd-faq
+  [pin] openbsd-faq -> cab1d91061ff
+          licence=NONE-FOUND sha=cab1d91061ff files=13328
+          ^ NONE-FOUND: adapt the APPROACH, do not copy the code
+          ! manifest says licence=hint only: OpenBSD web content, per-page copyright (verify at pin; FAQ lives at faq/, repo is the www CVS module ~890MB), checkout reads NONE-FOUND — verify before copying
+
+corpus 'openbsd-faq': 1 repos at /root/.xerj-code/corpora/openbsd-faq
+share it: /root/.xerj-code/corpora/openbsd-faq/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index openbsd-faq
+2026-10-02T16:06:23Z openbsd-faq OK depth=32684
+2026-10-02T16:06:23Z openssl ADD-START
+rebuilding corpus 'openssl' from /root/hub-branch/tools/xerj-code/hub/openssl.json
+  [clone] openssl
+  [pin] openssl -> 7ef69a722c12
+          licence=Apache-2.0 sha=7ef69a722c12 files=6150
+          ! manifest says licence=hint only: Apache-2.0 since 3.0 (verify at pin), checkout reads Apache-2.0 — verify before copying
+
+corpus 'openssl': 1 repos at /root/.xerj-code/corpora/openssl
+share it: /root/.xerj-code/corpora/openssl/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index openssl
+2026-10-02T16:07:05Z openssl OK depth=41299
+2026-10-02T16:07:05Z osquery-config-examples CLONE-EXISTS
+2026-10-02T16:07:05Z otel-proto ADD-START
+rebuilding corpus 'otel-proto' from /root/hub-branch/tools/xerj-code/hub/otel-proto.json
+  [clone] otel-proto-1
+  [pin] otel-proto-1 -> b3f75588eb23
+          licence=Apache-2.0 sha=b3f75588eb23 files=58
+          ! manifest says licence=hint only: Apache-2.0 (verify at pin), checkout reads Apache-2.0 — verify before copying
+  [clone] otel-proto-2
+  [pin] otel-proto-2 -> 70550277d98a
+          licence=Apache-2.0 sha=70550277d98a files=748
+          ! manifest says licence=hint only: Apache-2.0 (verify), checkout reads Apache-2.0 — verify before copying
+
+corpus 'otel-proto': 2 repos at /root/.xerj-code/corpora/otel-proto
+share it: /root/.xerj-code/corpora/otel-proto/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index otel-proto
+2026-10-02T16:07:10Z otel-proto OK depth=2431
+2026-10-02T16:07:10Z parquet-format ADD-START
+rebuilding corpus 'parquet-format' from /root/hub-branch/tools/xerj-code/hub/parquet-format.json
+  [clone] parquet-format
+  [pin] parquet-format -> bf0993925ccf

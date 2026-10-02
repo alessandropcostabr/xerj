@@ -1,0 +1,108 @@
+{
+ "corpus": "leveldb",
+ "subject": "leveldb",
+ "pin": "7ee830d02b",
+ "generated": "2026-10-02",
+ "tasks": [
+  {
+   "id": "T1",
+   "class": "state",
+   "name": "kTextCloseOnExecHelperFoundOpenFdCode",
+   "q": "In the current development source of leveldb, what is the exact value of kTextCloseOnExecHelperFoundOpenFdCode? Answer with the value only.",
+   "re": [
+    "0x3f|63"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T2",
+   "class": "state",
+   "name": "kTextCloseOnExecHelperExecFailedCode",
+   "q": "In the current development source of leveldb, what is the exact value of kTextCloseOnExecHelperExecFailedCode? Answer with the value only.",
+   "re": [
+    "0x3d|61"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T3",
+   "class": "state",
+   "name": "kTextCloseOnExecHelperDup2FailedCode",
+   "q": "In the current development source of leveldb, what is the exact value of kTextCloseOnExecHelperDup2FailedCode? Answer with the value only.",
+   "re": [
+    "0x3e|62"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T4",
+   "class": "state",
+   "name": "kForkInChildProcessReturnValue",
+   "q": "In the current development source of leveldb, what is the exact value of kForkInChildProcessReturnValue? Answer with the value only.",
+   "re": [
+    "0|0x0"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T5",
+   "class": "state",
+   "name": "kWritableFileBufferSize",
+   "q": "In the current development source of leveldb, what is the exact value of kWritableFileBufferSize? Answer with the value only.",
+   "re": [
+    "0x10000|64\\ \\?\\[kK\\]|65536"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T6",
+   "class": "state",
+   "name": "kNumNonTableCacheFiles",
+   "q": "In the current development source of leveldb, what is the exact value of kNumNonTableCacheFiles? Answer with the value only.",
+   "re": [
+    "0xa|10"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T7",
+   "class": "state",
+   "name": "kMaxMemCompactLevel",
+   "q": "In the current development source of leveldb, what is the exact value of kMaxMemCompactLevel? Answer with the value only.",
+   "re": [
+    "0x2|2"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T8",
+   "class": "state",
+   "name": "kUsecondsPerSecond",
+   "q": "In the current development source of leveldb, what is the exact value of kUsecondsPerSecond? Answer with the value only.",
+   "re": [
+    "0xf4240|1000000|976\\ \\?\\[kK\\]"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T9",
+   "class": "state",
+   "name": "kReadOnlyFileLimit",
+   "q": "In the current development source of leveldb, what is the exact value of kReadOnlyFileLimit? Answer with the value only.",
+   "re": [
+    "0x4|4"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T10",
+   "class": "state",
+   "name": "kBlockTrailerSize",
+   "q": "In the current development source of leveldb, what is the exact value of kBlockTrailerSize? Answer with the value only.",
+   "re": [
+    "0x5|5"
+   ],
+   "need": 1
+  }
+ ]
+}

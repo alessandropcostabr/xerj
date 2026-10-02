@@ -1,0 +1,1 @@
+{"id": "T9", "answered": true, "hits": 0, "need": 1, "pass": false, "answer": "does not exist in current leveldb (removed in 2019; its former value was 25)", "seconds": 86, "arm": "p", "xerj_calls": 0, "cost_usd": 0.16846300000000003, "turns": 1, "task": "T9"}

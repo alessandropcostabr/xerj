@@ -1,0 +1,108 @@
+{
+ "corpus": "boringtun",
+ "subject": "boringtun",
+ "pin": "6dcc889a95",
+ "generated": "2026-10-02",
+ "tasks": [
+  {
+   "id": "T1",
+   "class": "state",
+   "name": "PEER_HANDSHAKE_RATE_LIMIT",
+   "q": "In the current development source of boringtun, what is the exact value of PEER_HANDSHAKE_RATE_LIMIT? Answer with the value only.",
+   "re": [
+    "0xa|10"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T2",
+   "class": "state",
+   "name": "HANDSHAKE_RATE_LIMIT",
+   "q": "In the current development source of boringtun, what is the exact value of HANDSHAKE_RATE_LIMIT? Answer with the value only.",
+   "re": [
+    "0x64|100"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T3",
+   "class": "state",
+   "name": "IPV4_MIN_HEADER_SIZE",
+   "q": "In the current development source of boringtun, what is the exact value of IPV4_MIN_HEADER_SIZE? Answer with the value only.",
+   "re": [
+    "0x14|20"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T4",
+   "class": "state",
+   "name": "IPV6_MIN_HEADER_SIZE",
+   "q": "In the current development source of boringtun, what is the exact value of IPV6_MIN_HEADER_SIZE? Answer with the value only.",
+   "re": [
+    "0x28|40"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T5",
+   "class": "state",
+   "name": "COOKIE_NONCE_SIZE",
+   "q": "In the current development source of boringtun, what is the exact value of COOKIE_NONCE_SIZE? Answer with the value only.",
+   "re": [
+    "0x18|24"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T6",
+   "class": "state",
+   "name": "HANDSHAKE_INIT_SZ",
+   "q": "In the current development source of boringtun, what is the exact value of HANDSHAKE_INIT_SZ? Answer with the value only.",
+   "re": [
+    "0x94|148"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T7",
+   "class": "state",
+   "name": "HANDSHAKE_RESP_SZ",
+   "q": "In the current development source of boringtun, what is the exact value of HANDSHAKE_RESP_SZ? Answer with the value only.",
+   "re": [
+    "0x5c|92"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T8",
+   "class": "state",
+   "name": "DATA_OVERHEAD_SZ",
+   "q": "In the current development source of boringtun, what is the exact value of DATA_OVERHEAD_SZ? Answer with the value only.",
+   "re": [
+    "0x20|32"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T9",
+   "class": "state",
+   "name": "IPV4_SRC_IP_OFF",
+   "q": "In the current development source of boringtun, what is the exact value of IPV4_SRC_IP_OFF? Answer with the value only.",
+   "re": [
+    "0xc|12"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T10",
+   "class": "state",
+   "name": "IPV4_DST_IP_OFF",
+   "q": "In the current development source of boringtun, what is the exact value of IPV4_DST_IP_OFF? Answer with the value only.",
+   "re": [
+    "0x10|16"
+   ],
+   "need": 1
+  }
+ ]
+}

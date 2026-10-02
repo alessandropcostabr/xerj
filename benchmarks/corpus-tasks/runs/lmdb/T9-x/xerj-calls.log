@@ -1,3 +1,3 @@
-2026-10-02T13:45:07Z code lmdb MDB_MAXKEYSIZE default compile-time value 511 definition --url http://localhost:9200
-2026-10-02T13:45:07Z code lmdb runtime computed max key size from page size env me_maxkey_size MAXKEYSIZE macro --url http://localhost:9200
-2026-10-02T13:45:13Z code lmdb me_maxkey set from pagesize mdb_env_open ps calculation mdb_env_get_maxkeysize return --url http://localhost:9200
+2026-10-02T15:56:59Z code lmdb MDB_STDIN define stdin file descriptor macro definition --url http://localhost:9200
+2026-10-02T15:57:15Z code lmdb mdb_load.c define MDB_STDIN ifdef _WIN32 GetStdHandle else branch fileno stdin --url http://localhost:9200
+2026-10-02T15:57:26Z code lmdb mdb_load.c fileno stdin macro define what comes after the else --url http://localhost:9200

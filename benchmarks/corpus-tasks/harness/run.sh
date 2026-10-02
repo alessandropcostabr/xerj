@@ -8,11 +8,12 @@ RUN="$HERE/runs/$CORPUS/$TID-$ARM"
 rm -rf "$RUN"; mkdir -p "$RUN/scratch"
 Q=$(jq -r --arg t "$TID" '.tasks[] | select(.id==$t) .q' "$HERE/tasks/$CORPUS.json")
 
-COMMON="You are answering one technical question about the LMDB key-value library (OpenLDAP liblmdb). Be precise and brief. You MUST end your reply with a single line of the form 'ANSWER: <your answer>'."
+SUBJ=$(jq -r '.subject // .corpus' "$HERE/tasks/$CORPUS.json")
+COMMON="You are answering one technical question about the $SUBJ source tree. Be precise and brief. You MUST end your reply with a single line of the form 'ANSWER: <your answer>'."
 if [ "$ARM" = "p" ]; then
-  PROMPT="$COMMON You are offline: no network access, and the LMDB source code is not available to you. Answer from your own knowledge; if you do not know, say 'unknown' in the ANSWER line — do not guess a fabricated constant. The question: $Q"
+  PROMPT="$COMMON You are offline: no network access, and its source code is not available to you. Answer from your own knowledge; if you do not know, say 'unknown' in the ANSWER line — do not guess a fabricated constant. The question: $Q"
 else
-  PROMPT="$COMMON A local retrieval node holds the LMDB source corpus (the real source at a pinned commit). Query it from bash like: xerj code lmdb \"<your search query>\" --url http://localhost:9200 . Use it as much as helps; cite what you found. The question: $Q"
+  PROMPT="$COMMON A local retrieval node holds the corpus (the real source at a pinned commit). Query it from bash like: xerj code '$CORPUS' \"<your search query>\" --url http://localhost:9200 . Use it as much as helps; cite what you found. The question: $Q"
 fi
 printf '%s\n' "$PROMPT" > "$RUN/prompt.txt"
 
@@ -39,7 +40,7 @@ PY
 python3 - "$HERE" "$RUN" "$TID" <<'PY'
 import json, sys, pathlib, subprocess
 here, run, tid = pathlib.Path(sys.argv[1]), pathlib.Path(sys.argv[2]), sys.argv[3]
-tasks = json.loads((here/"tasks/lmdb.json").read_text())["tasks"]
+tasks = json.loads((here/f"tasks/{pathlib.Path(run).parent.name}.json").read_text())["tasks"]
 task = next(t for t in tasks if t["id"] == tid)
 out = subprocess.run(["python3", str(here/"harness/check.py"), "/dev/stdin", str(run/"out.json")],
                      input=json.dumps(task), capture_output=True, text=True).stdout

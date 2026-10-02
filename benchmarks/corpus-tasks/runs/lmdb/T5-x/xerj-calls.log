@@ -1,2 +1,2 @@
-2026-10-02T13:42:18Z code lmdb MDB_env structure me_maxreaders maximum number of reader slots field definition --url http://localhost:9200
-2026-10-02T13:42:31Z code lmdb struct MDB_env declaration me_txns me_numreaders me_maxreaders listener mutex fields --url http://localhost:9200
+2026-10-02T15:54:48Z code lmdb MDB_ENV_BUSY flag definition value --url http://localhost:9200
+2026-10-02T15:54:53Z code lmdb #define MDB_ENV_BUSY internal environment flags me_flags --url http://localhost:9200
