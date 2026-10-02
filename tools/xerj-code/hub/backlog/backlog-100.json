@@ -1437,6 +1437,62 @@
      "licence_hint": "BSD-2 (verify at pin)"
     }
    ]
+  },
+  {
+   "slug": "ecfr-title-29",
+   "cat": "STD",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent answering workplace/employment questions queries this for what 29 CFR actually says \u2014 OSHA guardrail height, FMLA 12-month/1250-hour eligibility, FLSA overtime, youth-employment hours (demand: employment-HR Ask-HN volume 57)",
+   "sources": [
+    {
+     "url": "https://www.govinfo.gov/bulkdata/ECFR/title-29/ECFR-title29.xml",
+     "licence_hint": "public domain (US government work, 17 USC 105); pinned mirror github.com/xerj-org/corpus-ecfr-title-29"
+    }
+   ]
+  },
+  {
+   "slug": "ecfr-title-26",
+   "cat": "STD",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent answering federal tax questions queries this for what the Treasury regulations actually say \u2014 de minimis safe harbor, estimated-tax safe harbor, home-office exclusive use (demand: tax Ask-HN volume 40)",
+   "sources": [
+    {
+     "url": "https://www.govinfo.gov/bulkdata/ECFR/title-26/ECFR-title26.xml",
+     "licence_hint": "public domain (US government work, 17 USC 105); pinned mirror github.com/xerj-org/corpus-ecfr-title-26"
+    }
+   ]
+  },
+  {
+   "slug": "ecfr-title-12",
+   "cat": "STD",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent answering consumer-credit or mortgage questions queries this for what Regulation Z / TILA actually says \u2014 higher-priced APR triggers, ability-to-repay/QM, rescission windows, card late-fee safe harbors (demand: consumer-finance Ask-HN volume 71)",
+   "sources": [
+    {
+     "url": "https://www.govinfo.gov/bulkdata/ECFR/title-12/ECFR-title12.xml",
+     "licence_hint": "public domain (US government work, 17 USC 105); pinned mirror github.com/xerj-org/corpus-ecfr-title-12"
+    }
+   ]
+  },
+  {
+   "slug": "uk-legislation",
+   "cat": "STD",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent answering UK-law questions queries this for what the current statute actually says \u2014 Consumer Rights Act remedies, GDPR-adjacent DPA 2018 duties, Building Safety Act duties (demand: legal-courts Ask-HN volume 46; source chosen for best-in-class versioned OGL XML)",
+   "sources": [
+    {
+     "url": "https://www.legislation.gov.uk/ukpga/<year>/<chapter>/data.xml",
+     "licence_hint": "OGL v3.0 (acknowledgement required); pinned mirror github.com/xerj-org/corpus-uk-legislation"
+    }
+   ]
   }
  ]
 }

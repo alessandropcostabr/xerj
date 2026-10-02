@@ -21,9 +21,9 @@ rule applies (sources are checked at fetch time, as G4 requires).
 
 | slug | source | licence | lane | why people want it |
 |------|--------|---------|------|--------------------|
-| `uk-legislation` | legislation.gov.uk (RDF/XML API, every act + amendments since 1267) | OGL / PD | A | the only major legal system publishing full versioned XML openly; amendment drift is built in |
-| `uscode` | Office of Law Revision Counsel US Code XML; community git mirrors exist | PD | A | title-level files, amended per public law |
-| `ecfr-title-29` (etc.) | eCFR daily bulk XML — one corpus per high-traffic title (29 labor/OSHA, 21 food, 40 env, 49 transport) | PD | A | "what does the regulation actually say" is the canonical look-it-up task |
+| `uk-legislation` ✅ **LIVE (2026-10-02)** — [mirror](https://github.com/xerj-org/corpus-uk-legislation): all 418 ukpga 2015–2026, current version, 21k per-section files | legislation.gov.uk (RDF/XML API, every act + amendments since 1267) | OGL / PD | A | the only major legal system publishing full versioned XML openly; amendment drift is built in |
+| `uscode` ⏸ deferred 2026-10-02: OLRC download centre is serving "Under Maintenance" and returns 403 on the zips; the community git mirrors are 2014–2022 stale (useless for current-law lookup); govinfo COMPS is per-act compilations, not per-code-title. Retry OLRC, then mirror per-title XML | Office of Law Revision Counsel US Code XML; community git mirrors exist | PD | A | title-level files, amended per public law |
+| `ecfr-title-12` / `-26` / `-29` ✅ **LIVE (2026-10-02)** — mirrors [t12](https://github.com/xerj-org/corpus-ecfr-title-12) [t26](https://github.com/xerj-org/corpus-ecfr-title-26) [t29](https://github.com/xerj-org/corpus-ecfr-title-29): GPO bulk XML split per § section (12: 7.2k, 26: 6.2k, 29: 7.3k files), picked by demand rank (consumer-finance 71 / employment 57 / tax 40) | eCFR daily bulk XML — one corpus per high-traffic title (29 labor/OSHA, 21 food, 40 env, 49 transport); other titles follow demand | PD | A | "what does the regulation actually say" is the canonical look-it-up task |
 | `eurlex` | EUR-Lex directives/regulations (CELEX-id chunking) | reuse w/ acknowledgement | A | EU-wide; multilingual variants possible later |
 | `de-gesetze` | gesetze-im-internet.de federal laws XML | official works, free | A | German federal statutes, amend-drift |
 | `nz-legislation` | legislation.govt.nz | CC BY 4.0 | A | clean licence, versioned |

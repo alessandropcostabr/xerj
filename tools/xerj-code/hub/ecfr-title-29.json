@@ -1,0 +1,21 @@
+{
+  "corpus": "ecfr-title-29",
+  "cloned_at": "2026-10-02T19:05:00Z",
+  "repos": [
+    {
+      "repo": "ecfr-title-29",
+      "url": "https://github.com/xerj-org/corpus-ecfr-title-29",
+      "licence": "hint only: public domain (US government work \u2014 verified at source)",
+      "sha": "bf0c9b745ab31723b5304ed9bde68aed7b96b9eb",
+      "files": 7341,
+      "bytes": 24222590,
+      "review": {
+        "spdx": "LicenseRef-PublicDomain-USGov",
+        "use": "adapt-with-attribution",
+        "by": "xerj-org",
+        "at": "2026-10-02",
+        "note": "G4 at source: CFR text is a US government work (17 U.S.C. 105; edicts of government not copyrightable); GPO bulk data carries no redistribution restriction. Mirror = pinned snapshot produced by hub/nonit/split_ecfr.py from govinfo ECFR-title29.xml (AMDDATE Sept. 30, 2026); licence verified at the govinfo source, README in the mirror records provenance. | profiler evidence: PROFILER 2026-10-02 nonit-lane \u2014 files=7340 section-level text files, max file <2MB, no vendor assets"
+      }
+    }
+  ]
+}

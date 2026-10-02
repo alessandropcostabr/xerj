@@ -1,0 +1,21 @@
+{
+  "corpus": "uk-legislation",
+  "cloned_at": "2026-10-02T19:20:00Z",
+  "repos": [
+    {
+      "repo": "uk-legislation",
+      "url": "https://github.com/xerj-org/corpus-uk-legislation",
+      "licence": "hint only: OGL v3.0 (verified at source)",
+      "sha": "0575db1cbced2dea4278afcd0ddfe6b64886fda0",
+      "files": 21292,
+      "bytes": 65889819,
+      "review": {
+        "spdx": "OGL-3.0",
+        "use": "adapt-with-attribution",
+        "by": "xerj-org",
+        "at": "2026-10-02",
+        "note": "G4 at source: legislation.gov.uk publishes under the Open Government Licence v3.0 (stated on the site's using-legislation page); OGL requires the acknowledgement sentence, which is reproduced in the mirror README and here: 'Contains public sector information licensed under the Open Government Licence v3.0.' Mirror = pinned snapshot via hub/nonit/build_uk.sh + split_uk.py: all 418 ukpga acts 2015-2026, current revised version (RestrictStartDate 2026-09-30), split per section with act/part/chapter breadcrumbs. | profiler evidence: PROFILER 2026-10-02 nonit-lane \u2014 files=21292, 63MB text (du 118M incl. 4KB blocks), max file <2MB"
+      }
+    }
+  ]
+}

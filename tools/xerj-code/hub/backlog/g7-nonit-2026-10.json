@@ -1,0 +1,54 @@
+{
+  "pre_registered": "2026-10-02T19:30:00Z",
+  "note": "G7 spot-checks for the non-IT wave N1, written BEFORE any retrieval ran against the built corpora. 5 queries per corpus, graded manually relevant/partial/miss on top-5; median >= 3 relevant passes. Expected-answer cites are from the graders' own domain reading of the official sources, not from the corpus index.",
+  "suites": {
+    "ecfr-title-29": [
+      {"q": "At what height does OSHA require guardrails on open-sided floors and platforms?",
+       "expect": "29 CFR 1910.28(b)(1): 4 ft; guardrail criteria in 1910.29"},
+      {"q": "How many months and hours must an employee have worked to be eligible for FMLA leave?",
+       "expect": "29 CFR 825.110: 12 months (not necessarily consecutive) and 1,250 hours in the prior 12"},
+      {"q": "What overtime pay rate do the FLSA regulations require after 40 hours in a workweek?",
+       "expect": "29 CFR 778.107: not less than 1.5 times the regular rate"},
+      {"q": "During which hours may 14- and 15-year-olds work on school days?",
+       "expect": "29 CFR 570.35: outside school hours, 7am-7pm (9pm June 1-Labor Day), 3h school days / 18h school weeks"},
+      {"q": "How far may an employee have to travel to reach portable fire extinguishers?",
+       "expect": "29 CFR 1910.157(d): approx 75 ft travel distance for Class A hazards"}
+    ],
+    "ecfr-title-26": [
+      {"q": "What is the de minimis safe harbor amount for expensing tangible property without an applicable financial statement?",
+       "expect": "26 CFR 1.263(a)-1(f): $5,000 per item/invoice with AFS, $2,500 without"},
+      {"q": "What prior-year safe harbor avoids the estimated tax underpayment penalty?",
+       "expect": "26 CFR 1.6654-2(d): 100% of prior-year tax (110% if AGI > $150k), else 90% current year"},
+      {"q": "What use must a home office satisfy to qualify for the deduction?",
+       "expect": "26 CFR 1.280A-2: exclusive and regular use as principal place of business"},
+      {"q": "How long must employers keep employment tax records?",
+       "expect": "26 CFR 31.6001-1 / related: at least 4 years after the due date or payment date"},
+      {"q": "Which property qualifies for the section 179 expensing election?",
+       "expect": "26 CFR 1.179-1/.179-2: tangible personal property, certain off-the-shelf software, qualified real property"}
+    ],
+    "ecfr-title-12": [
+      {"q": "How far above the average prime offer rate makes a first-lien mortgage higher-priced under Regulation Z?",
+       "expect": "12 CFR 1026.35(a)(1): 1.5 percentage points first-lien (3.5 for first-lien jumbo)"},
+      {"q": "How long does the rescission right last when the required notices were never delivered?",
+       "expect": "12 CFR 1026.23(a)(3): three years after consummation (or sale), forever if never disclosed"},
+      {"q": "Which factors must a creditor verify for ability to repay a Qualified Mortgage?",
+       "expect": "12 CFR 1026.43(c): income/assets, employment, monthly mortgage payments, alimony, debts, DTI/r residual income, credit history"},
+      {"q": "What late-payment fee safe harbors apply to credit card accounts?",
+       "expect": "12 CFR 1026.52(b): safe-harbor dollar amounts, indexed annually"},
+      {"q": "When must a creditor establish an escrow account for a first-lien higher-priced mortgage?",
+       "expect": "12 CFR 1026.35(b)(1): escrow for taxes, insurance, assessments for HPMLs, with exemptions"}
+    ],
+    "uk-legislation": [
+      {"q": "How long does a consumer have the short-term right to reject goods?",
+       "expect": "Consumer Rights Act 2015 s.20/s.22: 30 days, unless goods perish sooner"},
+      {"q": "What pre-contract information must a trader give for a distance contract?",
+       "expect": "CRA 2015 Schedule 2: trader identity, address, main characteristics, total price incl. tax, delivery arrangements, right to cancel"},
+      {"q": "When may a data controller charge a fee for a subject access request?",
+       "expect": "Data Protection Act 2018 s.45/s.46: generally free; reasonable fee for excessive or repeated requests"},
+      {"q": "Which payments to landlords or letting agents are banned as prohibited tenant fees?",
+       "expect": "Tenant Fees Act 2019 s.1 and Schedule 1: banning deposits over set caps, admin, referencing fees"},
+      {"q": "What safety cases and reports must building owners prepare for higher-risk buildings?",
+       "expect": "Building Safety Act 2022: safety case report, registration with the Building Safety Regulator (Part 4)"}
+    ]
+  }
+}

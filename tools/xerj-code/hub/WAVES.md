@@ -175,3 +175,30 @@ not the G4 verdict — lmdb's licence lives in libraries/liblmdb/LICENSE and
 google-eng-practices' is CC-BY-3.0, both recorded in the manifests' review
 blocks. The detector disagreeing with the reviewed manifest is expected; the
 manifest is the record.
+
+## Wave N1 — non-IT lane, demand-ranked — 2026-10-02
+
+First land of the non-IT lane (backlog/backlog-nonit.md), scope chosen by the
+demand study (backlog/demand-2026-10.md), not by intuition: the top Ask-HN/Reddit
+demand domains with no hub coverage were consumer-finance (71), employment-HR
+(57), legal (46), tax (40) — all four map onto government regulation/statute
+text, which is also the cleanest-licence material there is (US PD, UK OGL).
+
+| corpus | G1..G6 | G7 (relevant/5) | status | notes |
+|--------|--------|------------------|--------|-------|
+| ecfr-title-12 | pass (Reg Z clause-level; demand 71) | pending (pre-registered) | live | mirror corpus-ecfr-title-12 @4dc0246c |
+| ecfr-title-26 | pass (58MB part-1 split per §; demand 40) | pending (pre-registered) | live | mirror corpus-ecfr-title-26 @3f3e58c7 |
+| ecfr-title-29 | pass (OSHA/FMLA/FLSA; demand 57) | pending (pre-registered) | live | mirror corpus-ecfr-title-29 @bf0c9b74 |
+| uk-legislation | pass (418 acts 2015–26 current, OGL ack in README) | pending (pre-registered) | live | mirror corpus-uk-legislation @0575db1c |
+| uscode | G5 blocked | not run | deferred | OLRC download centre under maintenance; mirrors stale; COMPS is per-act — retry |
+
+- kills: none. deferrals: uscode (source outage, one line above).
+- G7: 5 queries per corpus pre-registered in backlog/g7-nonit-2026-10.json
+  BEFORE retrieval ran; per the §1 bulk amendment they are due within one full
+  wave cycle — results recorded in this file when graded.
+- shape lesson (G2): GPO ships each eCFR title as ONE XML; title 26's part 1
+  alone is 58MB — the ecma262 single-giant-file failure at corpus scale. Both
+  splitters (hub/nonit/split_ecfr.py, split_uk.py) therefore write one file per
+  §/parliamentary section with breadcrumb headers; max file <2MB everywhere.
+- demand evidence: backlog/demand-2026-10.md (1,000-title Ask-HN sample,
+  44 exact-phrase queries, Reddit spot-checks).
