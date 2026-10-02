@@ -1,21 +1,21 @@
 {
-  "corpus": "arrow-rs",
-  "cloned_at": "2026-10-02T00:49:45Z",
-  "repos": [
-    {
-      "repo": "arrow-rs",
-      "url": "https://github.com/apache/arrow-rs",
-      "licence": "hint only: Apache-2.0 (verify at pin)",
-      "sha": "73595d587538a24dfd5b7025a78d62a555ee5d1c",
-      "files": 921,
-      "bytes": 0,
-      "review": {
-        "spdx": "Apache-2.0",
-        "use": "adapt-with-attribution",
-        "by": "xerj-org",
-        "at": "2026-10-02",
-        "note": "LICENSE.txt at pin: Apache-2.0. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=921; backlog hint: Apache-2.0 (verify at pin); api licence: unknown; evidence: LICENSE.txt\u2192Apache-2.0"
-      }
-    }
-  ]
+ "corpus": "arrow-rs",
+ "cloned_at": "2026-10-02T00:49:45Z",
+ "repos": [
+  {
+   "repo": "arrow-rs",
+   "url": "https://github.com/apache/arrow-rs",
+   "licence": "hint only: Apache-2.0 (verify at pin)",
+   "sha": "73595d587538a24dfd5b7025a78d62a555ee5d1c",
+   "files": 921,
+   "bytes": 21120573,
+   "review": {
+    "spdx": "Apache-2.0",
+    "use": "adapt-with-attribution",
+    "by": "xerj-org",
+    "at": "2026-10-02",
+    "note": "LICENSE.txt at pin: Apache-2.0. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=921; backlog hint: Apache-2.0 (verify at pin); api licence: unknown; evidence: LICENSE.txt\u2192Apache-2.0"
+   }
+  }
+ ]
 }

@@ -1,21 +1,21 @@
 {
-  "corpus": "prometheus-src",
-  "cloned_at": "2026-10-02T00:49:45Z",
-  "repos": [
-    {
-      "repo": "prometheus-src",
-      "url": "https://github.com/prometheus/prometheus",
-      "licence": "hint only: Apache-2.0 (verify at pin)",
-      "sha": "7c741e2879db6b58b8d152f566a8112f0d642bb1",
-      "files": 1691,
-      "bytes": 0,
-      "review": {
-        "spdx": "Apache-2.0",
-        "use": "adapt-with-attribution",
-        "by": "xerj-org",
-        "at": "2026-10-02",
-        "note": "LICENSE at pin: Apache-2.0. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=1691; backlog hint: Apache-2.0 (verify at pin); api licence: unknown; evidence: LICENSE\u2192Apache-2.0; NOTICE\u2192UNKNOWN"
-      }
-    }
-  ]
+ "corpus": "prometheus-src",
+ "cloned_at": "2026-10-02T00:49:45Z",
+ "repos": [
+  {
+   "repo": "prometheus-src",
+   "url": "https://github.com/prometheus/prometheus",
+   "licence": "hint only: Apache-2.0 (verify at pin)",
+   "sha": "7c741e2879db6b58b8d152f566a8112f0d642bb1",
+   "files": 1691,
+   "bytes": 29654309,
+   "review": {
+    "spdx": "Apache-2.0",
+    "use": "adapt-with-attribution",
+    "by": "xerj-org",
+    "at": "2026-10-02",
+    "note": "LICENSE at pin: Apache-2.0. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=1691; backlog hint: Apache-2.0 (verify at pin); api licence: unknown; evidence: LICENSE\u2192Apache-2.0; NOTICE\u2192UNKNOWN"
+   }
+  }
+ ]
 }

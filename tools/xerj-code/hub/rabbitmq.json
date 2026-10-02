@@ -1,21 +1,21 @@
 {
-  "corpus": "rabbitmq",
-  "cloned_at": "2026-10-02T00:49:45Z",
-  "repos": [
-    {
-      "repo": "rabbitmq",
-      "url": "https://github.com/rabbitmq/rabbitmq-server",
-      "licence": "hint only: MPL-2.0 (verify at pin)",
-      "sha": "f23f19da23ec30ae0bb9687532e63635a13642b1",
-      "files": 3715,
-      "bytes": 0,
-      "review": {
-        "spdx": "MPL-2.0 (core) AND Apache-2.0 (OCF parts)",
-        "use": "adapt-with-attribution",
-        "by": "xerj-org",
-        "at": "2026-10-02",
-        "note": "LICENSE at pin: core MPL 2.0 (LICENSE-MPL-RabbitMQ), some OCF files Apache-2.0. File-level copyleft only; snippet use with attribution fine. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=3715; backlog hint: MPL-2.0 (verify at pin); api licence: unknown; evidence: LICENSE\u2192UNKNOWN"
-      }
-    }
-  ]
+ "corpus": "rabbitmq",
+ "cloned_at": "2026-10-02T00:49:45Z",
+ "repos": [
+  {
+   "repo": "rabbitmq",
+   "url": "https://github.com/rabbitmq/rabbitmq-server",
+   "licence": "hint only: MPL-2.0 (verify at pin)",
+   "sha": "f23f19da23ec30ae0bb9687532e63635a13642b1",
+   "files": 3715,
+   "bytes": 63317203,
+   "review": {
+    "spdx": "MPL-2.0 (core) AND Apache-2.0 (OCF parts)",
+    "use": "adapt-with-attribution",
+    "by": "xerj-org",
+    "at": "2026-10-02",
+    "note": "LICENSE at pin: core MPL 2.0 (LICENSE-MPL-RabbitMQ), some OCF files Apache-2.0. File-level copyleft only; snippet use with attribution fine. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=3715; backlog hint: MPL-2.0 (verify at pin); api licence: unknown; evidence: LICENSE\u2192UNKNOWN"
+   }
+  }
+ ]
 }

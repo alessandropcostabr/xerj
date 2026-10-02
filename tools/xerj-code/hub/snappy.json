@@ -1,21 +1,21 @@
 {
-  "corpus": "snappy",
-  "cloned_at": "2026-10-02T00:49:45Z",
-  "repos": [
-    {
-      "repo": "snappy",
-      "url": "https://github.com/google/snappy",
-      "licence": "hint only: verify at pin (BSD variants reported)",
-      "sha": "9c28114a38866f6deeaa826db918293bc28ae410",
-      "files": 55,
-      "bytes": 0,
-      "review": {
-        "spdx": "BSD-3-Clause",
-        "use": "adapt-with-attribution",
-        "by": "xerj-org",
-        "at": "2026-10-02",
-        "note": "COPYING at pin: Google 2011, 3-clause BSD. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=55; backlog hint: verify at pin (BSD variants reported); api licence: unknown; evidence: COPYING\u2192BSD-2"
-      }
-    }
-  ]
+ "corpus": "snappy",
+ "cloned_at": "2026-10-02T00:49:45Z",
+ "repos": [
+  {
+   "repo": "snappy",
+   "url": "https://github.com/google/snappy",
+   "licence": "hint only: verify at pin (BSD variants reported)",
+   "sha": "9c28114a38866f6deeaa826db918293bc28ae410",
+   "files": 55,
+   "bytes": 3377428,
+   "review": {
+    "spdx": "BSD-3-Clause",
+    "use": "adapt-with-attribution",
+    "by": "xerj-org",
+    "at": "2026-10-02",
+    "note": "COPYING at pin: Google 2011, 3-clause BSD. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=55; backlog hint: verify at pin (BSD variants reported); api licence: unknown; evidence: COPYING\u2192BSD-2"
+   }
+  }
+ ]
 }

@@ -1,21 +1,21 @@
 {
-  "corpus": "freebsd-handbook",
-  "cloned_at": "2026-10-02T00:49:45Z",
-  "repos": [
-    {
-      "repo": "freebsd-handbook",
-      "url": "https://github.com/freebsd/freebsd-doc",
-      "licence": "hint only: FreeBSD Documentation License (permissive \u2014 verify at pin)",
-      "sha": "3aa6b19a6f897a9198c4afc13fc52be28c7be778",
-      "files": 12512,
-      "bytes": 0,
-      "review": {
-        "spdx": "FreeBSD-Doc",
-        "use": "adapt-with-attribution",
-        "by": "xerj-org",
-        "at": "2026-10-02",
-        "note": "COPYRIGHT at pin: FreeBSD Project 1994-2026, 2-clause-style documentation licence (source+compiled forms). | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=12512; backlog hint: FreeBSD Documentation License (permissive \u2014 verify at pin); api licence: unknown; evidence: COPYRIGHT\u2192UNKNOWN"
-      }
-    }
-  ]
+ "corpus": "freebsd-handbook",
+ "cloned_at": "2026-10-02T00:49:45Z",
+ "repos": [
+  {
+   "repo": "freebsd-handbook",
+   "url": "https://github.com/freebsd/freebsd-doc",
+   "licence": "hint only: FreeBSD Documentation License (permissive \u2014 verify at pin)",
+   "sha": "3aa6b19a6f897a9198c4afc13fc52be28c7be778",
+   "files": 12512,
+   "bytes": 379408124,
+   "review": {
+    "spdx": "FreeBSD-Doc",
+    "use": "adapt-with-attribution",
+    "by": "xerj-org",
+    "at": "2026-10-02",
+    "note": "COPYRIGHT at pin: FreeBSD Project 1994-2026, 2-clause-style documentation licence (source+compiled forms). | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=12512; backlog hint: FreeBSD Documentation License (permissive \u2014 verify at pin); api licence: unknown; evidence: COPYRIGHT\u2192UNKNOWN"
+   }
+  }
+ ]
 }

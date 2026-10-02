@@ -1,36 +1,36 @@
 {
-  "corpus": "otel-proto",
-  "cloned_at": "2026-10-02T00:49:45Z",
-  "repos": [
-    {
-      "repo": "otel-proto-1",
-      "url": "https://github.com/open-telemetry/opentelemetry-proto",
-      "licence": "hint only: Apache-2.0 (verify at pin)",
-      "sha": "b3f75588eb23c5fca62264edd05d382de49beb1a",
-      "files": 58,
-      "bytes": 0,
-      "review": {
-        "spdx": "Apache-2.0",
-        "use": "adapt-with-attribution",
-        "by": "xerj-org",
-        "at": "2026-10-02",
-        "note": "LICENSE at pin (opentelemetry-proto): Apache-2.0. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=58; backlog hint: Apache-2.0 (verify at pin); api licence: unknown; evidence: LICENSE\u2192Apache-2.0"
-      }
-    },
-    {
-      "repo": "otel-proto-2",
-      "url": "https://github.com/open-telemetry/semantic-conventions",
-      "licence": "hint only: Apache-2.0 (verify)",
-      "sha": "70550277d98a01ca3fe83bcfc3a2dac18a0d98b7",
-      "files": 748,
-      "bytes": 0,
-      "review": {
-        "spdx": "Apache-2.0",
-        "use": "adapt-with-attribution",
-        "by": "xerj-org",
-        "at": "2026-10-02",
-        "note": "LICENSE at pin (semantic-conventions): Apache-2.0. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=748; backlog hint: Apache-2.0 (verify); api licence: unknown; evidence: LICENSE\u2192Apache-2.0"
-      }
-    }
-  ]
+ "corpus": "otel-proto",
+ "cloned_at": "2026-10-02T00:49:45Z",
+ "repos": [
+  {
+   "repo": "otel-proto-1",
+   "url": "https://github.com/open-telemetry/opentelemetry-proto",
+   "licence": "hint only: Apache-2.0 (verify at pin)",
+   "sha": "b3f75588eb23c5fca62264edd05d382de49beb1a",
+   "files": 58,
+   "bytes": 377273,
+   "review": {
+    "spdx": "Apache-2.0",
+    "use": "adapt-with-attribution",
+    "by": "xerj-org",
+    "at": "2026-10-02",
+    "note": "LICENSE at pin (opentelemetry-proto): Apache-2.0. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=58; backlog hint: Apache-2.0 (verify at pin); api licence: unknown; evidence: LICENSE\u2192Apache-2.0"
+   }
+  },
+  {
+   "repo": "otel-proto-2",
+   "url": "https://github.com/open-telemetry/semantic-conventions",
+   "licence": "hint only: Apache-2.0 (verify)",
+   "sha": "70550277d98a01ca3fe83bcfc3a2dac18a0d98b7",
+   "files": 748,
+   "bytes": 7690872,
+   "review": {
+    "spdx": "Apache-2.0",
+    "use": "adapt-with-attribution",
+    "by": "xerj-org",
+    "at": "2026-10-02",
+    "note": "LICENSE at pin (semantic-conventions): Apache-2.0. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=748; backlog hint: Apache-2.0 (verify); api licence: unknown; evidence: LICENSE\u2192Apache-2.0"
+   }
+  }
+ ]
 }

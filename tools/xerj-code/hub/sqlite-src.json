@@ -1,21 +1,21 @@
 {
-  "corpus": "sqlite-src",
-  "cloned_at": "2026-10-02T00:55:03Z",
-  "repos": [
-    {
-      "repo": "sqlite-src",
-      "url": "https://github.com/sqlite/sqlite",
-      "licence": "hint only: public domain (verify at pin; official read-only fossil\u2192git mirror)",
-      "sha": "9696acb0c77f1c1a7a400446686debc1312c94bc",
-      "files": 2281,
-      "bytes": 0,
-      "review": {
-        "spdx": "Public-Domain (SQLite blessing)",
-        "use": "adapt-with-attribution",
-        "by": "xerj-org",
-        "at": "2026-10-02",
-        "note": "LICENSE.md at pin: 'SQLite Is Public Domain', affidavit statement; whole repo public domain per sqlite.org/copyright.html. | profiler evidence: PROFILER 2026-10-02T00:55:03Z trees-only \u2014 files=2281; backlog hint: public domain (verify at pin; official read-only fossil\u2192git mirror); api licence: unknown; evidence: LICENSE.md\u2192UNKNOWN"
-      }
-    }
-  ]
+ "corpus": "sqlite-src",
+ "cloned_at": "2026-10-02T00:55:03Z",
+ "repos": [
+  {
+   "repo": "sqlite-src",
+   "url": "https://github.com/sqlite/sqlite",
+   "licence": "hint only: public domain (verify at pin; official read-only fossil\u2192git mirror)",
+   "sha": "9696acb0c77f1c1a7a400446686debc1312c94bc",
+   "files": 2281,
+   "bytes": 113046360,
+   "review": {
+    "spdx": "Public-Domain (SQLite blessing)",
+    "use": "adapt-with-attribution",
+    "by": "xerj-org",
+    "at": "2026-10-02",
+    "note": "LICENSE.md at pin: 'SQLite Is Public Domain', affidavit statement; whole repo public domain per sqlite.org/copyright.html. | profiler evidence: PROFILER 2026-10-02T00:55:03Z trees-only \u2014 files=2281; backlog hint: public domain (verify at pin; official read-only fossil\u2192git mirror); api licence: unknown; evidence: LICENSE.md\u2192UNKNOWN"
+   }
+  }
+ ]
 }

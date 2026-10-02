@@ -1,21 +1,21 @@
 {
-  "corpus": "envoy",
-  "cloned_at": "2026-10-02T00:49:45Z",
-  "repos": [
-    {
-      "repo": "envoy",
-      "url": "https://github.com/envoyproxy/envoy",
-      "licence": "hint only: Apache-2.0 (verify at pin)",
-      "sha": "eb32f1f93e91d651129470c44811ad908ba7bb41",
-      "files": 14974,
-      "bytes": 0,
-      "review": {
-        "spdx": "Apache-2.0",
-        "use": "adapt-with-attribution",
-        "by": "xerj-org",
-        "at": "2026-10-02",
-        "note": "LICENSE at pin: Apache-2.0. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=14974; backlog hint: Apache-2.0 (verify at pin); api licence: unknown; evidence: LICENSE\u2192Apache-2.0; NOTICE\u2192Apache-2.0"
-      }
-    }
-  ]
+ "corpus": "envoy",
+ "cloned_at": "2026-10-02T00:49:45Z",
+ "repos": [
+  {
+   "repo": "envoy",
+   "url": "https://github.com/envoyproxy/envoy",
+   "licence": "hint only: Apache-2.0 (verify at pin)",
+   "sha": "eb32f1f93e91d651129470c44811ad908ba7bb41",
+   "files": 14974,
+   "bytes": 169281660,
+   "review": {
+    "spdx": "Apache-2.0",
+    "use": "adapt-with-attribution",
+    "by": "xerj-org",
+    "at": "2026-10-02",
+    "note": "LICENSE at pin: Apache-2.0. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=14974; backlog hint: Apache-2.0 (verify at pin); api licence: unknown; evidence: LICENSE\u2192Apache-2.0; NOTICE\u2192Apache-2.0"
+   }
+  }
+ ]
 }

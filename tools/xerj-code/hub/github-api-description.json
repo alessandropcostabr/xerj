@@ -1,21 +1,21 @@
 {
-  "corpus": "github-api-description",
-  "cloned_at": "2026-10-02T00:49:45Z",
-  "repos": [
-    {
-      "repo": "github-api-description",
-      "url": "https://github.com/github/rest-api-description",
-      "licence": "hint only: verify at pin (MIT reported)",
-      "sha": "7bdf5f00553689c2dabb027685cf29081093767e",
-      "files": 419,
-      "bytes": 0,
-      "review": {
-        "spdx": "MIT",
-        "use": "adapt-with-attribution",
-        "by": "xerj-org",
-        "at": "2026-10-02",
-        "note": "LICENSE.md at pin: MIT. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=419; backlog hint: verify at pin (MIT reported); api licence: unknown; evidence: LICENSE.md\u2192MIT"
-      }
-    }
-  ]
+ "corpus": "github-api-description",
+ "cloned_at": "2026-10-02T00:49:45Z",
+ "repos": [
+  {
+   "repo": "github-api-description",
+   "url": "https://github.com/github/rest-api-description",
+   "licence": "hint only: verify at pin (MIT reported)",
+   "sha": "7bdf5f00553689c2dabb027685cf29081093767e",
+   "files": 419,
+   "bytes": 7866761214,
+   "review": {
+    "spdx": "MIT",
+    "use": "adapt-with-attribution",
+    "by": "xerj-org",
+    "at": "2026-10-02",
+    "note": "LICENSE.md at pin: MIT. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=419; backlog hint: verify at pin (MIT reported); api licence: unknown; evidence: LICENSE.md\u2192MIT"
+   }
+  }
+ ]
 }

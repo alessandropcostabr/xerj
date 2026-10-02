@@ -1,21 +1,21 @@
 {
-  "corpus": "faiss",
-  "cloned_at": "2026-10-02T00:49:45Z",
-  "repos": [
-    {
-      "repo": "faiss",
-      "url": "https://github.com/facebookresearch/faiss",
-      "licence": "hint only: MIT (verify at pin)",
-      "sha": "0db2f3088643c2b2d0bc1c3afdba1dc0c40fee1a",
-      "files": 1110,
-      "bytes": 0,
-      "review": {
-        "spdx": "MIT",
-        "use": "adapt-with-attribution",
-        "by": "xerj-org",
-        "at": "2026-10-02",
-        "note": "LICENSE at pin: MIT. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=1110; backlog hint: MIT (verify at pin); api licence: unknown; evidence: LICENSE\u2192MIT"
-      }
-    }
-  ]
+ "corpus": "faiss",
+ "cloned_at": "2026-10-02T00:49:45Z",
+ "repos": [
+  {
+   "repo": "faiss",
+   "url": "https://github.com/facebookresearch/faiss",
+   "licence": "hint only: MIT (verify at pin)",
+   "sha": "0db2f3088643c2b2d0bc1c3afdba1dc0c40fee1a",
+   "files": 1110,
+   "bytes": 10412252,
+   "review": {
+    "spdx": "MIT",
+    "use": "adapt-with-attribution",
+    "by": "xerj-org",
+    "at": "2026-10-02",
+    "note": "LICENSE at pin: MIT. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=1110; backlog hint: MIT (verify at pin); api licence: unknown; evidence: LICENSE\u2192MIT"
+   }
+  }
+ ]
 }

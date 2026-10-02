@@ -391,6 +391,45 @@ and the program doc (PROGRAM-100.md). This site is generated from the registry b
 <code>tools/corpus-hub-site/gen.py</code> — no hand-written corpus pages, ever.</p></section>
 </main>'''
     (OUT / "about.html").write_text(page("About — XERJ Corpus Hub", "How corpora are gated, scored and licenced", about, rel=""))
+    # llms.txt — agent-facing index of the registry, generated like everything
+    # else. Short first screen (study rule 7), no obligation language, every
+    # step verifiable; one block per live corpus with its consume command.
+    live = [c for c in corpora if c["status"] == "live"]
+    imp2, _ = load_impact()
+    lines = [
+        "# XERJ Corpus Hub",
+        "",
+        f"> Reference corpora for agents that must answer from pinned, current, licenced text",
+        f"> rather than memory. {len(live)} live corpora, registry-of-record:",
+        f"> https://github.com/xerj-org/xerj/tree/corpus-hub/tools/xerj-code/hub (this file's",
+        f"> source; it wins on any conflict with this generated page). Last updated: 2026-10-02.",
+        "",
+        "Consume any corpus (no build step, binary indexes from the pinned manifest):",
+        "",
+        "    xerj corpus add --from https://raw.githubusercontent.com/xerj-org/xerj/corpus-hub/tools/xerj-code/hub/<slug>.json",
+        "    xerj corpus index <slug>",
+        '    xerj code <slug> "your question"',
+        "",
+        "Retrieval is lexical-by-default. Scores on the cards are measured, never",
+        "asserted: G7 = 5 pre-registered queries graded on top-5; A/B = drift-anchored",
+        "agent benchmark (bare pass count -> with-corpus pass count).",
+        "",
+        "## Live corpora",
+        "",
+    ]
+    for c in live:
+        files, nbytes, licences = corpus_stats(c)
+        g = graded.get(c["slug"])
+        g7s = f"G7 {g['median']:.1f}/5" if g else (f"G7 {g7[c['slug']]['median']:.1f}/5" if c["slug"] in g7 else "G7 not yet graded")
+        ab = ""
+        r = imp2.get(c["slug"])
+        if r and r.get("status") == "measured":
+            ab = f"; agent A/B {r['p']} -> {r['x']}"
+        lines.append(f"- [{c['slug']}](https://hub.xerj.org/corpus/{c['slug']}): {c['cat']} · {'+'.join(licences) or '?'} · {human_bytes(nbytes)} · {g7s}{ab} — {c['usecase'][:160]}")
+    lines += ["", f"## Also in the registry", "",
+              f"- {len(corpora) - len(live)} rows in candidate/planned/deferred/killed states (visible,",
+              "  not hidden: hub policy is honest statuses) — browse all: https://hub.xerj.org"]
+    (OUT / "llms.txt").write_text("\n".join(lines) + "\n")
     n = len(list((OUT / "corpus").glob("*.html")))
     print(f"generated: index, about, {len(CATS)} category pages, {n} corpus pages -> {OUT}")
 

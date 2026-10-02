@@ -1,21 +1,21 @@
 {
-  "corpus": "graphql-spec",
-  "cloned_at": "2026-10-02T00:49:45Z",
-  "repos": [
-    {
-      "repo": "graphql-spec",
-      "url": "https://github.com/graphql/graphql-spec",
-      "licence": "hint only: OWFa-1.0 patents + CC-BY-4.0 text (verify at pin)",
-      "sha": "3f1ef846019884a8c9c3a32b65ea03168f24ecff",
-      "files": 53,
-      "bytes": 0,
-      "review": {
-        "spdx": "JDF-charter (spec text (c) Facebook 2015-2018 + JDF)",
-        "use": "adapt-with-attribution",
-        "by": "xerj-org",
-        "at": "2026-10-02",
-        "note": "LICENSE.md appendix at pin defers to the JDF technical charter (technical-charter.graphql.org); open-spec terms with attribution. Re-check before any Lane B redistribution. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=53; backlog hint: OWFa-1.0 patents + CC-BY-4.0 text (verify at pin); api licence: unknown; evidence: LICENSE.md\u2192UNKNOWN"
-      }
-    }
-  ]
+ "corpus": "graphql-spec",
+ "cloned_at": "2026-10-02T00:49:45Z",
+ "repos": [
+  {
+   "repo": "graphql-spec",
+   "url": "https://github.com/graphql/graphql-spec",
+   "licence": "hint only: OWFa-1.0 patents + CC-BY-4.0 text (verify at pin)",
+   "sha": "3f1ef846019884a8c9c3a32b65ea03168f24ecff",
+   "files": 53,
+   "bytes": 5279681,
+   "review": {
+    "spdx": "JDF-charter (spec text (c) Facebook 2015-2018 + JDF)",
+    "use": "adapt-with-attribution",
+    "by": "xerj-org",
+    "at": "2026-10-02",
+    "note": "LICENSE.md appendix at pin defers to the JDF technical charter (technical-charter.graphql.org); open-spec terms with attribution. Re-check before any Lane B redistribution. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=53; backlog hint: OWFa-1.0 patents + CC-BY-4.0 text (verify at pin); api licence: unknown; evidence: LICENSE.md\u2192UNKNOWN"
+   }
+  }
+ ]
 }

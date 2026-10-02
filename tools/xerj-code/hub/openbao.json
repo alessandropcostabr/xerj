@@ -1,21 +1,21 @@
 {
-  "corpus": "openbao",
-  "cloned_at": "2026-10-02T00:49:45Z",
-  "repos": [
-    {
-      "repo": "openbao",
-      "url": "https://github.com/openbao/openbao",
-      "licence": "hint only: MPL-2.0 (verify at pin)",
-      "sha": "a4f7e569875f836f246bf9e41aff984741a9693e",
-      "files": 5402,
-      "bytes": 0,
-      "review": {
-        "spdx": "MPL-2.0",
-        "use": "adapt-with-attribution",
-        "by": "xerj-org",
-        "at": "2026-10-02",
-        "note": "DETECTOR FALSE POSITIVE: hinted GPL-2.0 (MPL 2.0 section 3.3 mentions GPL); opened LICENSE at pin: MPL-2.0 (HashiCorp 2015 lineage, MPL fork). | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=5402; backlog hint: MPL-2.0 (verify at pin); api licence: unknown; evidence: LICENSE\u2192GPL-2.0"
-      }
-    }
-  ]
+ "corpus": "openbao",
+ "cloned_at": "2026-10-02T00:49:45Z",
+ "repos": [
+  {
+   "repo": "openbao",
+   "url": "https://github.com/openbao/openbao",
+   "licence": "hint only: MPL-2.0 (verify at pin)",
+   "sha": "a4f7e569875f836f246bf9e41aff984741a9693e",
+   "files": 5402,
+   "bytes": 75988062,
+   "review": {
+    "spdx": "MPL-2.0",
+    "use": "adapt-with-attribution",
+    "by": "xerj-org",
+    "at": "2026-10-02",
+    "note": "DETECTOR FALSE POSITIVE: hinted GPL-2.0 (MPL 2.0 section 3.3 mentions GPL); opened LICENSE at pin: MPL-2.0 (HashiCorp 2015 lineage, MPL fork). | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=5402; backlog hint: MPL-2.0 (verify at pin); api licence: unknown; evidence: LICENSE\u2192GPL-2.0"
+   }
+  }
+ ]
 }

@@ -1,21 +1,21 @@
 {
-  "corpus": "kafka-src",
-  "cloned_at": "2026-10-02T00:49:45Z",
-  "repos": [
-    {
-      "repo": "kafka-src",
-      "url": "https://github.com/apache/kafka",
-      "licence": "hint only: Apache-2.0 (verify at pin)",
-      "sha": "d12941eb5af08aff6a0712a10b85ed04f4211d9d",
-      "files": 7581,
-      "bytes": 0,
-      "review": {
-        "spdx": "Apache-2.0",
-        "use": "adapt-with-attribution",
-        "by": "xerj-org",
-        "at": "2026-10-02",
-        "note": "LICENSE at pin: Apache-2.0. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=7581; backlog hint: Apache-2.0 (verify at pin); api licence: unknown; evidence: LICENSE\u2192Apache-2.0; NOTICE\u2192UNKNOWN"
-      }
-    }
-  ]
+ "corpus": "kafka-src",
+ "cloned_at": "2026-10-02T00:49:45Z",
+ "repos": [
+  {
+   "repo": "kafka-src",
+   "url": "https://github.com/apache/kafka",
+   "licence": "hint only: Apache-2.0 (verify at pin)",
+   "sha": "d12941eb5af08aff6a0712a10b85ed04f4211d9d",
+   "files": 7581,
+   "bytes": 87313286,
+   "review": {
+    "spdx": "Apache-2.0",
+    "use": "adapt-with-attribution",
+    "by": "xerj-org",
+    "at": "2026-10-02",
+    "note": "LICENSE at pin: Apache-2.0. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=7581; backlog hint: Apache-2.0 (verify at pin); api licence: unknown; evidence: LICENSE\u2192Apache-2.0; NOTICE\u2192UNKNOWN"
+   }
+  }
+ ]
 }

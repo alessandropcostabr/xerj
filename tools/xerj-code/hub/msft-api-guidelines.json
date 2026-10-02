@@ -1,21 +1,21 @@
 {
-  "corpus": "msft-api-guidelines",
-  "cloned_at": "2026-10-02T00:49:45Z",
-  "repos": [
-    {
-      "repo": "msft-api-guidelines",
-      "url": "https://github.com/microsoft/api-guidelines",
-      "licence": "hint only: verify at pin (CC-BY reported)",
-      "sha": "a7022a299442a8352431874e63ec4dff548a1b81",
-      "files": 42,
-      "bytes": 0,
-      "review": {
-        "spdx": "CC-BY-4.0",
-        "use": "adapt-with-attribution",
-        "by": "xerj-org",
-        "at": "2026-10-02",
-        "note": "license.txt (lowercase) at pin: CC-BY-4.0; the profiler's uppercase-only name list missed it \u2014 name list fixed. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=42; backlog hint: verify at pin (CC-BY reported); api licence: unknown; evidence: NO TOP-LEVEL LICENCE FILE FOUND \u2014 investigate before review"
-      }
-    }
-  ]
+ "corpus": "msft-api-guidelines",
+ "cloned_at": "2026-10-02T00:49:45Z",
+ "repos": [
+  {
+   "repo": "msft-api-guidelines",
+   "url": "https://github.com/microsoft/api-guidelines",
+   "licence": "hint only: verify at pin (CC-BY reported)",
+   "sha": "a7022a299442a8352431874e63ec4dff548a1b81",
+   "files": 42,
+   "bytes": 626213,
+   "review": {
+    "spdx": "CC-BY-4.0",
+    "use": "adapt-with-attribution",
+    "by": "xerj-org",
+    "at": "2026-10-02",
+    "note": "license.txt (lowercase) at pin: CC-BY-4.0; the profiler's uppercase-only name list missed it \u2014 name list fixed. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=42; backlog hint: verify at pin (CC-BY reported); api licence: unknown; evidence: NO TOP-LEVEL LICENCE FILE FOUND \u2014 investigate before review"
+   }
+  }
+ ]
 }

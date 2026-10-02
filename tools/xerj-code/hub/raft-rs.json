@@ -1,21 +1,21 @@
 {
-  "corpus": "raft-rs",
-  "cloned_at": "2026-10-02T00:49:45Z",
-  "repos": [
-    {
-      "repo": "raft-rs",
-      "url": "https://github.com/tikv/raft-rs",
-      "licence": "hint only: Apache-2.0 (verify at pin)",
-      "sha": "ad13f3d90780f53aea2488c6a4b76c0d334bf136",
-      "files": 97,
-      "bytes": 0,
-      "review": {
-        "spdx": "Apache-2.0",
-        "use": "adapt-with-attribution",
-        "by": "xerj-org",
-        "at": "2026-10-02",
-        "note": "LICENSE at pin: Apache-2.0 (hint BSD-2 wrong). | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=97; backlog hint: Apache-2.0 (verify at pin); api licence: unknown; evidence: LICENSE\u2192Apache-2.0"
-      }
-    }
-  ]
+ "corpus": "raft-rs",
+ "cloned_at": "2026-10-02T00:49:45Z",
+ "repos": [
+  {
+   "repo": "raft-rs",
+   "url": "https://github.com/tikv/raft-rs",
+   "licence": "hint only: Apache-2.0 (verify at pin)",
+   "sha": "ad13f3d90780f53aea2488c6a4b76c0d334bf136",
+   "files": 97,
+   "bytes": 944492,
+   "review": {
+    "spdx": "Apache-2.0",
+    "use": "adapt-with-attribution",
+    "by": "xerj-org",
+    "at": "2026-10-02",
+    "note": "LICENSE at pin: Apache-2.0 (hint BSD-2 wrong). | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=97; backlog hint: Apache-2.0 (verify at pin); api licence: unknown; evidence: LICENSE\u2192Apache-2.0"
+   }
+  }
+ ]
 }

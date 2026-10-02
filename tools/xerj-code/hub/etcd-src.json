@@ -1,21 +1,21 @@
 {
-  "corpus": "etcd-src",
-  "cloned_at": "2026-10-02T00:49:45Z",
-  "repos": [
-    {
-      "repo": "etcd-src",
-      "url": "https://github.com/etcd-io/etcd",
-      "licence": "hint only: Apache-2.0 (verify at pin)",
-      "sha": "64f26db45f5feb2c491a9eb82768a2f41fc857df",
-      "files": 1504,
-      "bytes": 0,
-      "review": {
-        "spdx": "Apache-2.0",
-        "use": "adapt-with-attribution",
-        "by": "xerj-org",
-        "at": "2026-10-02",
-        "note": "LICENSE at pin: Apache-2.0. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=1504; backlog hint: Apache-2.0 (verify at pin); api licence: unknown; evidence: LICENSE\u2192Apache-2.0"
-      }
-    }
-  ]
+ "corpus": "etcd-src",
+ "cloned_at": "2026-10-02T00:49:45Z",
+ "repos": [
+  {
+   "repo": "etcd-src",
+   "url": "https://github.com/etcd-io/etcd",
+   "licence": "hint only: Apache-2.0 (verify at pin)",
+   "sha": "64f26db45f5feb2c491a9eb82768a2f41fc857df",
+   "files": 1504,
+   "bytes": 15225534,
+   "review": {
+    "spdx": "Apache-2.0",
+    "use": "adapt-with-attribution",
+    "by": "xerj-org",
+    "at": "2026-10-02",
+    "note": "LICENSE at pin: Apache-2.0. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=1504; backlog hint: Apache-2.0 (verify at pin); api licence: unknown; evidence: LICENSE\u2192Apache-2.0"
+   }
+  }
+ ]
 }

@@ -1,21 +1,21 @@
 {
-  "corpus": "rust-api-guidelines",
-  "cloned_at": "2026-10-02T00:49:45Z",
-  "repos": [
-    {
-      "repo": "rust-api-guidelines",
-      "url": "https://github.com/rust-lang/api-guidelines",
-      "licence": "hint only: MIT OR Apache-2.0 (verify at pin)",
-      "sha": "97a0969cb07fe4cabb0eed8a56234053f47d83dc",
-      "files": 22,
-      "bytes": 0,
-      "review": {
-        "spdx": "MIT OR Apache-2.0",
-        "use": "adapt-with-attribution",
-        "by": "xerj-org",
-        "at": "2026-10-02",
-        "note": "LICENSE-APACHE + LICENSE-MIT at pin: dual. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=22; backlog hint: MIT OR Apache-2.0 (verify at pin); api licence: unknown; evidence: LICENSE-APACHE\u2192Apache-2.0; LICENSE-MIT\u2192MIT"
-      }
-    }
-  ]
+ "corpus": "rust-api-guidelines",
+ "cloned_at": "2026-10-02T00:49:45Z",
+ "repos": [
+  {
+   "repo": "rust-api-guidelines",
+   "url": "https://github.com/rust-lang/api-guidelines",
+   "licence": "hint only: MIT OR Apache-2.0 (verify at pin)",
+   "sha": "97a0969cb07fe4cabb0eed8a56234053f47d83dc",
+   "files": 22,
+   "bytes": 109308,
+   "review": {
+    "spdx": "MIT OR Apache-2.0",
+    "use": "adapt-with-attribution",
+    "by": "xerj-org",
+    "at": "2026-10-02",
+    "note": "LICENSE-APACHE + LICENSE-MIT at pin: dual. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=22; backlog hint: MIT OR Apache-2.0 (verify at pin); api licence: unknown; evidence: LICENSE-APACHE\u2192Apache-2.0; LICENSE-MIT\u2192MIT"
+   }
+  }
+ ]
 }

@@ -1,21 +1,21 @@
 {
-  "corpus": "influxdb",
-  "cloned_at": "2026-10-02T00:49:45Z",
-  "repos": [
-    {
-      "repo": "influxdb",
-      "url": "https://github.com/influxdata/influxdb",
-      "licence": "hint only: verify at pin (MIT/Apache reported; iox era changed layout)",
-      "sha": "06200ef96ba82c5f6727e5038a83af8e722c6875",
-      "files": 1845,
-      "bytes": 0,
-      "review": {
-        "spdx": "Apache-2.0 OR MIT",
-        "use": "adapt-with-attribution",
-        "by": "xerj-org",
-        "at": "2026-10-02",
-        "note": "LICENSE-APACHE + LICENSE-MIT both at pin: dual. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=1845; backlog hint: verify at pin (MIT/Apache reported; iox era changed layout); api licence: unknown; evidence: LICENSE-APACHE\u2192Apache-2.0; LICENSE-MIT\u2192MIT"
-      }
-    }
-  ]
+ "corpus": "influxdb",
+ "cloned_at": "2026-10-02T00:49:45Z",
+ "repos": [
+  {
+   "repo": "influxdb",
+   "url": "https://github.com/influxdata/influxdb",
+   "licence": "hint only: verify at pin (MIT/Apache reported; iox era changed layout)",
+   "sha": "06200ef96ba82c5f6727e5038a83af8e722c6875",
+   "files": 1845,
+   "bytes": 27345969,
+   "review": {
+    "spdx": "Apache-2.0 OR MIT",
+    "use": "adapt-with-attribution",
+    "by": "xerj-org",
+    "at": "2026-10-02",
+    "note": "LICENSE-APACHE + LICENSE-MIT both at pin: dual. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=1845; backlog hint: verify at pin (MIT/Apache reported; iox era changed layout); api licence: unknown; evidence: LICENSE-APACHE\u2192Apache-2.0; LICENSE-MIT\u2192MIT"
+   }
+  }
+ ]
 }

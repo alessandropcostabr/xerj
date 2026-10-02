@@ -1,21 +1,21 @@
 {
-  "corpus": "msgpack-c",
-  "cloned_at": "2026-10-02T00:49:45Z",
-  "repos": [
-    {
-      "repo": "msgpack-c",
-      "url": "https://github.com/msgpack/msgpack-c",
-      "licence": "hint only: Boost BSL-1.0 dual (verify at pin)",
-      "sha": "1cdc1b66fe7fe2b1ecc1070745abcc406ea16508",
-      "files": 7,
-      "bytes": 0,
-      "review": {
-        "spdx": "BSL-1.0",
-        "use": "adapt-with-attribution",
-        "by": "xerj-org",
-        "at": "2026-10-02",
-        "note": "COPYING + NOTICE at pin: Boost Software License 1.0. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=7; backlog hint: Boost BSL-1.0 dual (verify at pin); api licence: unknown; evidence: COPYING\u2192Boost-BSL-1.0; NOTICE\u2192Boost-BSL-1.0"
-      }
-    }
-  ]
+ "corpus": "msgpack-c",
+ "cloned_at": "2026-10-02T00:49:45Z",
+ "repos": [
+  {
+   "repo": "msgpack-c",
+   "url": "https://github.com/msgpack/msgpack-c",
+   "licence": "hint only: Boost BSL-1.0 dual (verify at pin)",
+   "sha": "1cdc1b66fe7fe2b1ecc1070745abcc406ea16508",
+   "files": 7,
+   "bytes": 29421,
+   "review": {
+    "spdx": "BSL-1.0",
+    "use": "adapt-with-attribution",
+    "by": "xerj-org",
+    "at": "2026-10-02",
+    "note": "COPYING + NOTICE at pin: Boost Software License 1.0. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=7; backlog hint: Boost BSL-1.0 dual (verify at pin); api licence: unknown; evidence: COPYING\u2192Boost-BSL-1.0; NOTICE\u2192Boost-BSL-1.0"
+   }
+  }
+ ]
 }

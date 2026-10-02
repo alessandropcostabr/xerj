@@ -1,21 +1,21 @@
 {
-  "corpus": "flatbuffers",
-  "cloned_at": "2026-10-02T00:49:45Z",
-  "repos": [
-    {
-      "repo": "flatbuffers",
-      "url": "https://github.com/google/flatbuffers",
-      "licence": "hint only: Apache-2.0 (verify at pin)",
-      "sha": "b8431fbcd7a5c71817f314e18b332c0648554efa",
-      "files": 1947,
-      "bytes": 0,
-      "review": {
-        "spdx": "Apache-2.0",
-        "use": "adapt-with-attribution",
-        "by": "xerj-org",
-        "at": "2026-10-02",
-        "note": "LICENSE at pin: Apache-2.0. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=1947; backlog hint: Apache-2.0 (verify at pin); api licence: unknown; evidence: LICENSE\u2192Apache-2.0"
-      }
-    }
-  ]
+ "corpus": "flatbuffers",
+ "cloned_at": "2026-10-02T00:49:45Z",
+ "repos": [
+  {
+   "repo": "flatbuffers",
+   "url": "https://github.com/google/flatbuffers",
+   "licence": "hint only: Apache-2.0 (verify at pin)",
+   "sha": "b8431fbcd7a5c71817f314e18b332c0648554efa",
+   "files": 1947,
+   "bytes": 13631979,
+   "review": {
+    "spdx": "Apache-2.0",
+    "use": "adapt-with-attribution",
+    "by": "xerj-org",
+    "at": "2026-10-02",
+    "note": "LICENSE at pin: Apache-2.0. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=1947; backlog hint: Apache-2.0 (verify at pin); api licence: unknown; evidence: LICENSE\u2192Apache-2.0"
+   }
+  }
+ ]
 }

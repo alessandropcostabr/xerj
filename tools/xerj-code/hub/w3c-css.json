@@ -1,21 +1,21 @@
 {
-  "corpus": "w3c-css",
-  "cloned_at": "2026-10-02T00:49:45Z",
-  "repos": [
-    {
-      "repo": "w3c-css",
-      "url": "https://github.com/w3c/csswg-drafts",
-      "licence": "hint only: W3C document licence (verify redistribution terms at pin)",
-      "sha": "d06dc03e286cadddd43e524a7d2edad62d6a225a",
-      "files": 3242,
-      "bytes": 0,
-      "review": {
-        "spdx": "W3C-Software-And-Document",
-        "use": "adapt-with-attribution",
-        "by": "xerj-org",
-        "at": "2026-10-02",
-        "note": "LICENSE.md at pin: all documents under W3C Software and Document License (BSD-style with notice). | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=3242; backlog hint: W3C document licence (verify redistribution terms at pin); api licence: unknown; evidence: LICENSE.md\u2192UNKNOWN"
-      }
-    }
-  ]
+ "corpus": "w3c-css",
+ "cloned_at": "2026-10-02T00:49:45Z",
+ "repos": [
+  {
+   "repo": "w3c-css",
+   "url": "https://github.com/w3c/csswg-drafts",
+   "licence": "hint only: W3C document licence (verify redistribution terms at pin)",
+   "sha": "d06dc03e286cadddd43e524a7d2edad62d6a225a",
+   "files": 3242,
+   "bytes": 148451877,
+   "review": {
+    "spdx": "W3C-Software-And-Document",
+    "use": "adapt-with-attribution",
+    "by": "xerj-org",
+    "at": "2026-10-02",
+    "note": "LICENSE.md at pin: all documents under W3C Software and Document License (BSD-style with notice). | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=3242; backlog hint: W3C document licence (verify redistribution terms at pin); api licence: unknown; evidence: LICENSE.md\u2192UNKNOWN"
+   }
+  }
+ ]
 }

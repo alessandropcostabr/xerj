@@ -1,21 +1,21 @@
 {
-  "corpus": "postgres-src",
-  "cloned_at": "2026-10-02T00:49:45Z",
-  "repos": [
-    {
-      "repo": "postgres-src",
-      "url": "https://github.com/postgres/postgres",
-      "licence": "hint only: PostgreSQL Licence (verify at pin)",
-      "sha": "50d6e533e4d9a0f70d798c534254007c83c0d428",
-      "files": 7699,
-      "bytes": 0,
-      "review": {
-        "spdx": "PostgreSQL",
-        "use": "adapt-with-attribution",
-        "by": "xerj-org",
-        "at": "2026-10-02",
-        "note": "COPYRIGHT at pin: PostgreSQL Licence (BSD-family). | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=7699; backlog hint: PostgreSQL Licence (verify at pin); api licence: unknown; evidence: COPYRIGHT\u2192ISC"
-      }
-    }
-  ]
+ "corpus": "postgres-src",
+ "cloned_at": "2026-10-02T00:49:45Z",
+ "repos": [
+  {
+   "repo": "postgres-src",
+   "url": "https://github.com/postgres/postgres",
+   "licence": "hint only: PostgreSQL Licence (verify at pin)",
+   "sha": "50d6e533e4d9a0f70d798c534254007c83c0d428",
+   "files": 7699,
+   "bytes": 146658552,
+   "review": {
+    "spdx": "PostgreSQL",
+    "use": "adapt-with-attribution",
+    "by": "xerj-org",
+    "at": "2026-10-02",
+    "note": "COPYRIGHT at pin: PostgreSQL Licence (BSD-family). | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=7699; backlog hint: PostgreSQL Licence (verify at pin); api licence: unknown; evidence: COPYRIGHT\u2192ISC"
+   }
+  }
+ ]
 }

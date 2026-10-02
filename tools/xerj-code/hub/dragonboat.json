@@ -1,21 +1,21 @@
 {
-  "corpus": "dragonboat",
-  "cloned_at": "2026-10-02T00:49:45Z",
-  "repos": [
-    {
-      "repo": "dragonboat",
-      "url": "https://github.com/lni/dragonboat",
-      "licence": "hint only: BSD-2 (verify at pin)",
-      "sha": "076c7f6497dcc18880aed6323246d5079661942c",
-      "files": 278,
-      "bytes": 0,
-      "review": {
-        "spdx": "Apache-2.0",
-        "use": "adapt-with-attribution",
-        "by": "xerj-org",
-        "at": "2026-10-02",
-        "note": "LICENSE at pin: Apache-2.0 (hint BSD-2 wrong). | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=278; backlog hint: BSD-2 (verify at pin); api licence: unknown; evidence: LICENSE\u2192Apache-2.0; NOTICE\u2192UNKNOWN"
-      }
-    }
-  ]
+ "corpus": "dragonboat",
+ "cloned_at": "2026-10-02T00:49:45Z",
+ "repos": [
+  {
+   "repo": "dragonboat",
+   "url": "https://github.com/lni/dragonboat",
+   "licence": "hint only: BSD-2 (verify at pin)",
+   "sha": "076c7f6497dcc18880aed6323246d5079661942c",
+   "files": 278,
+   "bytes": 2588202,
+   "review": {
+    "spdx": "Apache-2.0",
+    "use": "adapt-with-attribution",
+    "by": "xerj-org",
+    "at": "2026-10-02",
+    "note": "LICENSE at pin: Apache-2.0 (hint BSD-2 wrong). | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=278; backlog hint: BSD-2 (verify at pin); api licence: unknown; evidence: LICENSE\u2192Apache-2.0; NOTICE\u2192UNKNOWN"
+   }
+  }
+ ]
 }

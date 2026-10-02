@@ -1,21 +1,21 @@
 {
-  "corpus": "nginx",
-  "cloned_at": "2026-10-02T00:49:45Z",
-  "repos": [
-    {
-      "repo": "nginx",
-      "url": "https://github.com/nginx/nginx",
-      "licence": "hint only: BSD-2 (verify at pin)",
-      "sha": "2b5c2b605b5df669da5dec6749dcc76c07d1315d",
-      "files": 547,
-      "bytes": 0,
-      "review": {
-        "spdx": "BSD-2-Clause",
-        "use": "adapt-with-attribution",
-        "by": "xerj-org",
-        "at": "2026-10-02",
-        "note": "LICENSE at pin: 2-clause BSD. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=547; backlog hint: BSD-2 (verify at pin); api licence: unknown; evidence: LICENSE\u2192BSD-2"
-      }
-    }
-  ]
+ "corpus": "nginx",
+ "cloned_at": "2026-10-02T00:49:45Z",
+ "repos": [
+  {
+   "repo": "nginx",
+   "url": "https://github.com/nginx/nginx",
+   "licence": "hint only: BSD-2 (verify at pin)",
+   "sha": "2b5c2b605b5df669da5dec6749dcc76c07d1315d",
+   "files": 547,
+   "bytes": 8254734,
+   "review": {
+    "spdx": "BSD-2-Clause",
+    "use": "adapt-with-attribution",
+    "by": "xerj-org",
+    "at": "2026-10-02",
+    "note": "LICENSE at pin: 2-clause BSD. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=547; backlog hint: BSD-2 (verify at pin); api licence: unknown; evidence: LICENSE\u2192BSD-2"
+   }
+  }
+ ]
 }

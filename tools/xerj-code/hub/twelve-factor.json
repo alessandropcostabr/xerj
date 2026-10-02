@@ -1,21 +1,21 @@
 {
-  "corpus": "twelve-factor",
-  "cloned_at": "2026-10-02T00:49:45Z",
-  "repos": [
-    {
-      "repo": "twelve-factor",
-      "url": "https://github.com/heroku/12factor",
-      "licence": "hint only: verify at pin (code MIT reported; content licence separate)",
-      "sha": "1385d2c80bac38c25647651f6f5ec769561828dc",
-      "files": 1070,
-      "bytes": 0,
-      "review": {
-        "spdx": "MIT",
-        "use": "adapt-with-attribution",
-        "by": "xerj-org",
-        "at": "2026-10-02",
-        "note": "LICENSE at pin: MIT (site code + content). | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=1070; backlog hint: verify at pin (code MIT reported; content licence separate); api licence: unknown; evidence: LICENSE\u2192MIT"
-      }
-    }
-  ]
+ "corpus": "twelve-factor",
+ "cloned_at": "2026-10-02T00:49:45Z",
+ "repos": [
+  {
+   "repo": "twelve-factor",
+   "url": "https://github.com/heroku/12factor",
+   "licence": "hint only: verify at pin (code MIT reported; content licence separate)",
+   "sha": "1385d2c80bac38c25647651f6f5ec769561828dc",
+   "files": 1070,
+   "bytes": 22881368,
+   "review": {
+    "spdx": "MIT",
+    "use": "adapt-with-attribution",
+    "by": "xerj-org",
+    "at": "2026-10-02",
+    "note": "LICENSE at pin: MIT (site code + content). | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=1070; backlog hint: verify at pin (code MIT reported; content licence separate); api licence: unknown; evidence: LICENSE\u2192MIT"
+   }
+  }
+ ]
 }

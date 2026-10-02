@@ -1,21 +1,21 @@
 {
-  "corpus": "mozilla-ssl-configs",
-  "cloned_at": "2026-10-02T00:49:45Z",
-  "repos": [
-    {
-      "repo": "mozilla-ssl-configs",
-      "url": "https://github.com/mozilla/server-side-tls",
-      "licence": "hint only: MPL-2.0 (verify at pin)",
-      "sha": "34d8441d52dc85f8a8b3e3a0bb7a5ad1a28b47b3",
-      "files": 8,
-      "bytes": 0,
-      "review": {
-        "spdx": "MPL-2.0",
-        "use": "adapt-with-attribution",
-        "by": "xerj-org",
-        "at": "2026-10-02",
-        "note": "DETECTOR FALSE POSITIVE: hinted GPL-2.0 (MPL text mentions GPL); opened LICENSE at pin: Mozilla Public License 2.0. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=8; backlog hint: MPL-2.0 (verify at pin); api licence: unknown; evidence: LICENSE\u2192GPL-2.0"
-      }
-    }
-  ]
+ "corpus": "mozilla-ssl-configs",
+ "cloned_at": "2026-10-02T00:49:45Z",
+ "repos": [
+  {
+   "repo": "mozilla-ssl-configs",
+   "url": "https://github.com/mozilla/server-side-tls",
+   "licence": "hint only: MPL-2.0 (verify at pin)",
+   "sha": "34d8441d52dc85f8a8b3e3a0bb7a5ad1a28b47b3",
+   "files": 8,
+   "bytes": 38027,
+   "review": {
+    "spdx": "MPL-2.0",
+    "use": "adapt-with-attribution",
+    "by": "xerj-org",
+    "at": "2026-10-02",
+    "note": "DETECTOR FALSE POSITIVE: hinted GPL-2.0 (MPL text mentions GPL); opened LICENSE at pin: Mozilla Public License 2.0. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=8; backlog hint: MPL-2.0 (verify at pin); api licence: unknown; evidence: LICENSE\u2192GPL-2.0"
+   }
+  }
+ ]
 }

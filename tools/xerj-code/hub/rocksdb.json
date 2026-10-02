@@ -1,21 +1,21 @@
 {
-  "corpus": "rocksdb",
-  "cloned_at": "2026-10-02T00:49:45Z",
-  "repos": [
-    {
-      "repo": "rocksdb",
-      "url": "https://github.com/facebook/rocksdb",
-      "licence": "hint only: Apache-2.0 OR GPL-2 dual (verify at pin)",
-      "sha": "4cd0450f3106789d0187eca3be3f5442409e8685",
-      "files": 2354,
-      "bytes": 0,
-      "review": {
-        "spdx": "GPL-2.0 OR Apache-2.0 (Apache selected)",
-        "use": "adapt-with-attribution",
-        "by": "xerj-org",
-        "at": "2026-10-02",
-        "note": "README License section at pin: dual GPLv2/Apache-2.0 choose-one; COPYING is the GPLv2 text, Apache-2.0 selected for corpus use. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=2354; backlog hint: Apache-2.0 OR GPL-2 dual (verify at pin); api licence: unknown; evidence: COPYING\u2192LGPL-2.1"
-      }
-    }
-  ]
+ "corpus": "rocksdb",
+ "cloned_at": "2026-10-02T00:49:45Z",
+ "repos": [
+  {
+   "repo": "rocksdb",
+   "url": "https://github.com/facebook/rocksdb",
+   "licence": "hint only: Apache-2.0 OR GPL-2 dual (verify at pin)",
+   "sha": "4cd0450f3106789d0187eca3be3f5442409e8685",
+   "files": 2354,
+   "bytes": 50859738,
+   "review": {
+    "spdx": "GPL-2.0 OR Apache-2.0 (Apache selected)",
+    "use": "adapt-with-attribution",
+    "by": "xerj-org",
+    "at": "2026-10-02",
+    "note": "README License section at pin: dual GPLv2/Apache-2.0 choose-one; COPYING is the GPLv2 text, Apache-2.0 selected for corpus use. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=2354; backlog hint: Apache-2.0 OR GPL-2 dual (verify at pin); api licence: unknown; evidence: COPYING\u2192LGPL-2.1"
+   }
+  }
+ ]
 }

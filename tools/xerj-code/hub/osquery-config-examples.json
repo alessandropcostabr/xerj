@@ -1,21 +1,21 @@
 {
-  "corpus": "osquery-config-examples",
-  "cloned_at": "2026-10-02T00:49:45Z",
-  "repos": [
-    {
-      "repo": "osquery-config-examples",
-      "url": "https://github.com/palantir/osquery-configuration",
-      "licence": "hint only: Apache-2.0 (verify at pin)",
-      "sha": "89c2ae5c7fcad242696e6febb16c05abb0375155",
-      "files": 29,
-      "bytes": 0,
-      "review": {
-        "spdx": "MIT",
-        "use": "adapt-with-attribution",
-        "by": "xerj-org",
-        "at": "2026-10-02",
-        "note": "LICENSE.md at pin: MIT (Palantir). | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=29; backlog hint: Apache-2.0 (verify at pin); api licence: unknown; evidence: LICENSE.md\u2192MIT"
-      }
-    }
-  ]
+ "corpus": "osquery-config-examples",
+ "cloned_at": "2026-10-02T00:49:45Z",
+ "repos": [
+  {
+   "repo": "osquery-config-examples",
+   "url": "https://github.com/palantir/osquery-configuration",
+   "licence": "hint only: Apache-2.0 (verify at pin)",
+   "sha": "89c2ae5c7fcad242696e6febb16c05abb0375155",
+   "files": 29,
+   "bytes": 219700,
+   "review": {
+    "spdx": "MIT",
+    "use": "adapt-with-attribution",
+    "by": "xerj-org",
+    "at": "2026-10-02",
+    "note": "LICENSE.md at pin: MIT (Palantir). | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=29; backlog hint: Apache-2.0 (verify at pin); api licence: unknown; evidence: LICENSE.md\u2192MIT"
+   }
+  }
+ ]
 }

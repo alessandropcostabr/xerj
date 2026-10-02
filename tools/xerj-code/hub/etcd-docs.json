@@ -1,21 +1,21 @@
 {
-  "corpus": "etcd-docs",
-  "cloned_at": "2026-10-02T00:49:45Z",
-  "repos": [
-    {
-      "repo": "etcd-docs",
-      "url": "https://github.com/etcd-io/website",
-      "licence": "hint only: Apache-2.0 (verify at pin)",
-      "sha": "d20f8ae346da60ab6eb6f24f200753b328aa9fcc",
-      "files": 1090,
-      "bytes": 0,
-      "review": {
-        "spdx": "CC-BY-4.0",
-        "use": "adapt-with-attribution",
-        "by": "xerj-org",
-        "at": "2026-10-02",
-        "note": "LICENSE at pin (etcd-io/website): CC-BY-4.0 for docs content. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=1090; backlog hint: Apache-2.0 (verify at pin); api licence: unknown; evidence: LICENSE\u2192CC-BY-4.0"
-      }
-    }
-  ]
+ "corpus": "etcd-docs",
+ "cloned_at": "2026-10-02T00:49:45Z",
+ "repos": [
+  {
+   "repo": "etcd-docs",
+   "url": "https://github.com/etcd-io/website",
+   "licence": "hint only: Apache-2.0 (verify at pin)",
+   "sha": "d20f8ae346da60ab6eb6f24f200753b328aa9fcc",
+   "files": 1090,
+   "bytes": 34378977,
+   "review": {
+    "spdx": "CC-BY-4.0",
+    "use": "adapt-with-attribution",
+    "by": "xerj-org",
+    "at": "2026-10-02",
+    "note": "LICENSE at pin (etcd-io/website): CC-BY-4.0 for docs content. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=1090; backlog hint: Apache-2.0 (verify at pin); api licence: unknown; evidence: LICENSE\u2192CC-BY-4.0"
+   }
+  }
+ ]
 }
