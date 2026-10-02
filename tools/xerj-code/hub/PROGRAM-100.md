@@ -40,6 +40,14 @@ right answer to a sanitisation question" would be a number without a run behind 
 is small; it catches the failure modes that killed #1111's corpus arm (zero invocations,
 prose-vs-code mismatch) at minutes of cost.
 
+**Amendment (2026-10-02, bulk-build session):** when a session lands corpora in bulk (the
+backlog's G1–G3 already judged, profiler evidence in hand), G7 may be recorded as
+`pending` at merge for at most **one full wave cycle**, PROVIDED (a) a stratified sample —
+at least two corpora per category — receives its full 5-query G7 before the bulk lands, so
+systemic shape failures surface immediately; (b) every `pending` G7 is listed in that wave's
+WAVES.md row with a deadline; (c) any corpus whose G7 is still `pending` after one full cycle is
+demoted to `candidate` automatically. Time-bounded debt, on the record — not a quiet waiver.
+
 ## 2. The wave loop
 
 Waves are the batching unit: **one category, ~20 candidates, one PR to `corpus-hub`, one wave
