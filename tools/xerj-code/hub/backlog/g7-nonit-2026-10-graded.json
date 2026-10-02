@@ -148,6 +148,78 @@
      "why": "sec-1.179-1 at rank 1 is the right section family (election mechanics, cost subject to expense) but the property-type enumeration (tangible personal property / off-the-shelf software) is statutory \u2014 26 USC 179(d)(1) \u2014 and appears in no retrieved CFR section"
     }
    ]
+  },
+  "ecfr-title-29": {
+   "graded_at": "2026-10-02T22:40:00Z",
+   "index": "fresh rebuild 21:53:46Z, verified",
+   "median": 5.0,
+   "queries": [
+    {
+     "q": "At what height does OSHA require guardrails on open-sided floors and platforms?",
+     "expect": "29 CFR 1910.28(b)(1): 4 ft; guardrail criteria in 1910.29",
+     "top5": [
+      "part-1910/sec-1910.68",
+      "part-1917/sec-1917.112",
+      "part-1915/sec-1915.73",
+      "part-1910/sec-1910.66",
+      "part-1910/sec-1910.28"
+     ],
+     "grade": "relevant",
+     "why": "sec-1910.28 at rank 5 opens the duty clause with '4 feet (1...' above open-sided floors/platforms"
+    },
+    {
+     "q": "How many months and hours must an employee have worked to be eligible for FMLA leave?",
+     "expect": "29 CFR 825.110: 12 months (not necessarily consecutive) and 1,250 hours in the prior 12",
+     "top5": [
+      "part-825/sec-825.205",
+      "part-825/sec-825.801",
+      "part-825/sec-825.702",
+      "part-825/sec-825.110",
+      "part-825/sec-825.300"
+     ],
+     "grade": "relevant",
+     "why": "sec-825.110 at rank 4: '12 months, and' + '1,250 hours of service during the 12-month period immediately preceding the commencement of the leave'"
+    },
+    {
+     "q": "What overtime pay rate do the FLSA regulations require after 40 hours in a workweek?",
+     "expect": "29 CFR 778.107: not less than 1.5 times the regular rate",
+     "top5": [
+      "part-778/sec-778.311",
+      "part-778/sec-778.313",
+      "part-553/sec-553.28",
+      "part-794/sec-794.141",
+      "part-778/sec-778.112"
+     ],
+     "grade": "relevant",
+     "why": "the canonical 778.107 was not retrieved, but the answer-bearing clause ('one and one-half times ... regular') is present in three retrieved sections (778.311, 553.28, 794.141) \u2014 the rule grades on clause presence, not section number"
+    },
+    {
+     "q": "During which hours may 14- and 15-year-olds work on school days?",
+     "expect": "29 CFR 570.35: outside school hours, 7am-7pm (9pm June 1-Labor Day), 3h school days / 18h school weeks",
+     "top5": [
+      "part-570/sec-570.35",
+      "part-570/sec-570.119",
+      "part-779/sec-779.507",
+      "part-575/sec-575.7",
+      "part-570/sec-570.37"
+     ],
+     "grade": "relevant",
+     "why": "sec-570.35 at rank 1 with the '7 a.m. and 7 p.m.' window text"
+    },
+    {
+     "q": "How far may an employee have to travel to reach portable fire extinguishers?",
+     "expect": "29 CFR 1910.157(d): approx 75 ft travel distance for Class A hazards",
+     "top5": [
+      "part-1915/sec-1915.507",
+      "part-1926/sec-1926.150",
+      "part-1910/sec-1910.157",
+      "part-1910/sec-1910.106",
+      "part-1910/sec-1910.157"
+     ],
+     "grade": "relevant",
+     "why": "sec-1910.157 at ranks 3 and 5: '75 feet (22 ...' travel distance for Class A hazards"
+    }
+   ]
   }
  }
 }
