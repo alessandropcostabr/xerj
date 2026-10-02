@@ -1,0 +1,34 @@
+name: deploy-hub-pages
+
+# hub.xerj.org — the Corpus Hub registry site, generated from registry state.
+# gen.py reads hub manifests + backlog + waves + snapshots; if it regenerates
+# differently than what's deployed, the registry changed and the site should
+# change with it. No hand-written corpus pages.
+on:
+  push:
+    branches: [corpus-hub]
+    paths:
+      - tools/xerj-code/hub/**
+      - tools/xerj-code/hub/backlog/**
+      - tools/packs/**
+      - tools/corpus-hub-site/**
+      - .github/workflows/deploy-hub-pages.yml
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Generate site from registry
+        run: python3 tools/corpus-hub-site/gen.py
+      - name: Validate registry (site must not ship from a red registry)
+        run: python3 tools/xerj-code/hub/validate_hub.py
+      - name: Deploy to Cloudflare Pages
+        run: npx wrangler@3 pages deploy tools/corpus-hub-site/out --project-name=xerj-hub --branch=corpus-hub
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

@@ -1,0 +1,575 @@
+{
+ "provenance": {
+  "date": "2026-10-02",
+  "repo": "benchmarks/corpus-tasks",
+  "branch": "bench/corpus-tasks",
+  "protocol": "benchmarks/corpus-tasks/PROTOCOL.md",
+  "commit": "55829b07c",
+  "note": "P = bare offline arm (instructed to answer honestly, not fabricate); X = same agent with this corpus served via xerj code. Ties are recorded, not hidden."
+ },
+ "rows": [
+  {
+   "corpus": "annoy",
+   "status": "measured",
+   "n": 10,
+   "drift": 0,
+   "p": "5/10",
+   "x": "10/10",
+   "pc": 1.1443269999999999,
+   "xc": 0.946466,
+   "calls": 16,
+   "dp": "-",
+   "dx": "-"
+  },
+  {
+   "corpus": "arrow-rs",
+   "status": "measured",
+   "n": 10,
+   "drift": 10,
+   "p": "0/10",
+   "x": "10/10",
+   "pc": 0.6944760000000001,
+   "xc": 1.035174,
+   "calls": 15,
+   "dp": "0/10",
+   "dx": "10/10"
+  },
+  {
+   "corpus": "badger",
+   "status": "measured",
+   "n": 10,
+   "drift": 5,
+   "p": "4/10",
+   "x": "9/10",
+   "pc": 0.8535599999999999,
+   "xc": 0.703228,
+   "calls": 11,
+   "dp": "0/5",
+   "dx": "4/5"
+  },
+  {
+   "corpus": "boringtun",
+   "status": "measured",
+   "n": 10,
+   "drift": 0,
+   "p": "6/10",
+   "x": "10/10",
+   "pc": 1.1616549999999999,
+   "xc": 0.67995,
+   "calls": 10,
+   "dp": "-",
+   "dx": "-"
+  },
+  {
+   "corpus": "brotli",
+   "status": "measured",
+   "n": 10,
+   "drift": 10,
+   "p": "1/10",
+   "x": "9/10",
+   "pc": 1.0968449999999998,
+   "xc": 1.086748,
+   "calls": 18,
+   "dp": "1/10",
+   "dx": "9/10"
+  },
+  {
+   "corpus": "caddy",
+   "status": "measured",
+   "n": 10,
+   "drift": 10,
+   "p": "0/10",
+   "x": "10/10",
+   "pc": 0.9436849999999999,
+   "xc": 0.8091300000000001,
+   "calls": 15,
+   "dp": "0/10",
+   "dx": "10/10"
+  },
+  {
+   "corpus": "capnproto",
+   "status": "measured",
+   "n": 10,
+   "drift": 4,
+   "p": "1/10",
+   "x": "10/10",
+   "pc": 0.962491,
+   "xc": 1.04949,
+   "calls": 19,
+   "dp": "0/4",
+   "dx": "4/4"
+  },
+  {
+   "corpus": "curl-src",
+   "status": "measured",
+   "n": 10,
+   "drift": 10,
+   "p": "1/10",
+   "x": "10/10",
+   "pc": 1.01813,
+   "xc": 1.171664,
+   "calls": 17,
+   "dp": "1/10",
+   "dx": "10/10"
+  },
+  {
+   "corpus": "dragonboat",
+   "status": "measured",
+   "n": 10,
+   "drift": 0,
+   "p": "0/10",
+   "x": "10/10",
+   "pc": 0.8549500000000001,
+   "xc": 0.835914,
+   "calls": 12,
+   "dp": "-",
+   "dx": "-"
+  },
+  {
+   "corpus": "duckdb",
+   "status": "index-pathological"
+  },
+  {
+   "corpus": "envoy",
+   "status": "index-pathological"
+  },
+  {
+   "corpus": "etcd-docs",
+   "status": "infeasible(?)"
+  },
+  {
+   "corpus": "etcd-src",
+   "status": "measured",
+   "n": 10,
+   "drift": 10,
+   "p": "4/10",
+   "x": "9/10",
+   "pc": 0.7823049999999999,
+   "xc": 1.3250220000000001,
+   "calls": 17,
+   "dp": "4/10",
+   "dx": "9/10"
+  },
+  {
+   "corpus": "faiss",
+   "status": "measured",
+   "n": 10,
+   "drift": 10,
+   "p": "1/10",
+   "x": "10/10",
+   "pc": 0.7990569999999999,
+   "xc": 1.284472,
+   "calls": 26,
+   "dp": "1/10",
+   "dx": "10/10"
+  },
+  {
+   "corpus": "flatbuffers",
+   "status": "measured",
+   "n": 10,
+   "drift": 10,
+   "p": "1/10",
+   "x": "10/10",
+   "pc": 1.3316639999999997,
+   "xc": 1.190018,
+   "calls": 18,
+   "dp": "1/10",
+   "dx": "10/10"
+  },
+  {
+   "corpus": "freebsd-handbook",
+   "status": "index-pathological"
+  },
+  {
+   "corpus": "github-api-description",
+   "status": "index-pathological"
+  },
+  {
+   "corpus": "gitlab-runbooks",
+   "status": "index-pathological"
+  },
+  {
+   "corpus": "google-eng-practices",
+   "status": "infeasible(?)"
+  },
+  {
+   "corpus": "govuk-design-system",
+   "status": "infeasible(?)"
+  },
+  {
+   "corpus": "graphql-spec",
+   "status": "infeasible(?)"
+  },
+  {
+   "corpus": "iceberg",
+   "status": "measured",
+   "n": 10,
+   "drift": 0,
+   "p": "4/10",
+   "x": "10/10",
+   "pc": 0.9839479999999999,
+   "xc": 1.167162,
+   "calls": 17,
+   "dp": "-",
+   "dx": "-"
+  },
+  {
+   "corpus": "influxdb",
+   "status": "measured",
+   "n": 10,
+   "drift": 10,
+   "p": "0/10",
+   "x": "10/10",
+   "pc": 0.699084,
+   "xc": 1.16459,
+   "calls": 21,
+   "dp": "0/10",
+   "dx": "10/10"
+  },
+  {
+   "corpus": "json-schema-spec",
+   "status": "infeasible(?)"
+  },
+  {
+   "corpus": "kafka-protocol",
+   "status": "index-pathological"
+  },
+  {
+   "corpus": "kafka-src",
+   "status": "measured",
+   "n": 10,
+   "drift": 0,
+   "p": "2/10",
+   "x": "9/9",
+   "pc": 1.017474,
+   "xc": 0.6717360000000001,
+   "calls": 14,
+   "dp": "-",
+   "dx": "-"
+  },
+  {
+   "corpus": "leveldb",
+   "status": "measured",
+   "n": 10,
+   "drift": 0,
+   "p": "5/10",
+   "x": "10/10",
+   "pc": 0.927396,
+   "xc": 1.035878,
+   "calls": 16,
+   "dp": "-",
+   "dx": "-"
+  },
+  {
+   "corpus": "libuv",
+   "status": "measured",
+   "n": 10,
+   "drift": 10,
+   "p": "5/10",
+   "x": "10/10",
+   "pc": 1.3037290000000001,
+   "xc": 1.1791369999999999,
+   "calls": 14,
+   "dp": "5/10",
+   "dx": "10/10"
+  },
+  {
+   "corpus": "lmdb",
+   "status": "measured",
+   "n": 10,
+   "drift": 10,
+   "p": "0/10",
+   "x": "9/10",
+   "pc": 1.6071759999999997,
+   "xc": 1.3143019999999999,
+   "calls": 17,
+   "dp": "0/10",
+   "dx": "9/10"
+  },
+  {
+   "corpus": "lz4",
+   "status": "measured",
+   "n": 10,
+   "drift": 10,
+   "p": "3/10",
+   "x": "10/10",
+   "pc": 1.0788,
+   "xc": 0.8140499999999999,
+   "calls": 13,
+   "dp": "3/10",
+   "dx": "10/10"
+  },
+  {
+   "corpus": "mozilla-ssl-configs",
+   "status": "infeasible(?)"
+  },
+  {
+   "corpus": "msft-api-guidelines",
+   "status": "infeasible(?)"
+  },
+  {
+   "corpus": "msgpack-c",
+   "status": "infeasible(?)"
+  },
+  {
+   "corpus": "nats-protocol",
+   "status": "infeasible(?)"
+  },
+  {
+   "corpus": "nats-server",
+   "status": "measured",
+   "n": 10,
+   "drift": 0,
+   "p": "3/10",
+   "x": "10/10",
+   "pc": 1.3462560000000003,
+   "xc": 0.9000039999999999,
+   "calls": 14,
+   "dp": "-",
+   "dx": "-"
+  },
+  {
+   "corpus": "nghttp2",
+   "status": "measured",
+   "n": 10,
+   "drift": 0,
+   "p": "6/10",
+   "x": "10/10",
+   "pc": 1.10177,
+   "xc": 1.06268,
+   "calls": 14,
+   "dp": "-",
+   "dx": "-"
+  },
+  {
+   "corpus": "nginx",
+   "status": "measured",
+   "n": 10,
+   "drift": 10,
+   "p": "0/10",
+   "x": "10/10",
+   "pc": 1.506931,
+   "xc": 1.596925,
+   "calls": 25,
+   "dp": "0/10",
+   "dx": "10/10"
+  },
+  {
+   "corpus": "openapi-spec",
+   "status": "infeasible(?)"
+  },
+  {
+   "corpus": "openbao",
+   "status": "measured",
+   "n": 10,
+   "drift": 0,
+   "p": "1/10",
+   "x": "10/10",
+   "pc": 1.1910649999999998,
+   "xc": 0.8748309999999999,
+   "calls": 13,
+   "dp": "-",
+   "dx": "-"
+  },
+  {
+   "corpus": "openbsd-faq",
+   "status": "index-pathological"
+  },
+  {
+   "corpus": "openssl",
+   "status": "index-pathological"
+  },
+  {
+   "corpus": "osquery-config-examples",
+   "status": "infeasible(?)"
+  },
+  {
+   "corpus": "otel-proto",
+   "status": "infeasible(?)"
+  },
+  {
+   "corpus": "parquet-format",
+   "status": "infeasible(?)"
+  },
+  {
+   "corpus": "postgres-src",
+   "status": "queued"
+  },
+  {
+   "corpus": "prometheus-src",
+   "status": "index-pathological"
+  },
+  {
+   "corpus": "protobuf",
+   "status": "index-pathological"
+  },
+  {
+   "corpus": "quinn",
+   "status": "measured",
+   "n": 10,
+   "drift": 10,
+   "p": "0/10",
+   "x": "10/10",
+   "pc": 0.8582789999999999,
+   "xc": 0.9439819999999999,
+   "calls": 14,
+   "dp": "0/10",
+   "dx": "10/10"
+  },
+  {
+   "corpus": "rabbitmq",
+   "status": "infeasible(?)"
+  },
+  {
+   "corpus": "raft-rs",
+   "status": "measured",
+   "n": 8,
+   "drift": 4,
+   "p": "2/8",
+   "x": "8/8",
+   "pc": 0.796851,
+   "xc": 0.5885999999999999,
+   "calls": 8,
+   "dp": "0/4",
+   "dx": "4/4"
+  },
+  {
+   "corpus": "rocksdb",
+   "status": "measured",
+   "n": 10,
+   "drift": 10,
+   "p": "0/10",
+   "x": "10/10",
+   "pc": 1.1381850000000002,
+   "xc": 1.217438,
+   "calls": 16,
+   "dp": "0/10",
+   "dx": "10/10"
+  },
+  {
+   "corpus": "rust-api-guidelines",
+   "status": "infeasible(?)"
+  },
+  {
+   "corpus": "rust-vulns",
+   "status": "cited-#1111"
+  },
+  {
+   "corpus": "rustls",
+   "status": "index-pathological"
+  },
+  {
+   "corpus": "s2n-tls",
+   "status": "measured",
+   "n": 10,
+   "drift": 10,
+   "p": "1/10",
+   "x": "10/10",
+   "pc": 0.8626550000000002,
+   "xc": 1.179016,
+   "calls": 25,
+   "dp": "1/10",
+   "dx": "10/10"
+  },
+  {
+   "corpus": "snappy",
+   "status": "measured",
+   "n": 10,
+   "drift": 5,
+   "p": "3/10",
+   "x": "10/10",
+   "pc": 1.2094600000000002,
+   "xc": 1.5839029999999998,
+   "calls": 24,
+   "dp": "1/5",
+   "dx": "5/5"
+  },
+  {
+   "corpus": "sqlite-src",
+   "status": "index-pathological"
+  },
+  {
+   "corpus": "tldr-pages",
+   "status": "queued"
+  },
+  {
+   "corpus": "twelve-factor",
+   "status": "infeasible(?)"
+  },
+  {
+   "corpus": "unicode-cldr",
+   "status": "index-pathological"
+  },
+  {
+   "corpus": "valkey-docs",
+   "status": "infeasible(?)"
+  },
+  {
+   "corpus": "valkey-src",
+   "status": "measured",
+   "n": 10,
+   "drift": 0,
+   "p": "0/10",
+   "x": "10/10",
+   "pc": 0.8028950000000001,
+   "xc": 1.234053,
+   "calls": 20,
+   "dp": "-",
+   "dx": "-"
+  },
+  {
+   "corpus": "w3c-css",
+   "status": "index-pathological"
+  },
+  {
+   "corpus": "whatwg-specs",
+   "status": "index-pathological"
+  },
+  {
+   "corpus": "xerj-columnar",
+   "status": "index-pathological"
+  },
+  {
+   "corpus": "xerj-search",
+   "status": "index-pathological"
+  },
+  {
+   "corpus": "xerj-storage",
+   "status": "index-pathological"
+  },
+  {
+   "corpus": "xerj-vector",
+   "status": "queued"
+  },
+  {
+   "corpus": "zalando-restful-api-guidelines",
+   "status": "infeasible(?)"
+  },
+  {
+   "corpus": "zlib-ng",
+   "status": "measured",
+   "n": 10,
+   "drift": 10,
+   "p": "1/10",
+   "x": "8/10",
+   "pc": 0.9444150000000001,
+   "xc": 1.555825,
+   "calls": 23,
+   "dp": "1/10",
+   "dx": "8/10"
+  },
+  {
+   "corpus": "zstd",
+   "status": "measured",
+   "n": 10,
+   "drift": 10,
+   "p": "0/10",
+   "x": "10/10",
+   "pc": 0.8473950000000001,
+   "xc": 1.318181,
+   "calls": 18,
+   "dp": "0/10",
+   "dx": "10/10"
+  }
+ ]
+}
