@@ -1,0 +1,21 @@
+{
+  "corpus": "tldr-pages",
+  "cloned_at": "2026-10-02T00:49:45Z",
+  "repos": [
+    {
+      "repo": "tldr-pages",
+      "url": "https://github.com/tldr-pages/tldr",
+      "licence": "hint only: MIT (verify at pin)",
+      "sha": "b328cc85bbe021e4d815941a77049eda633b1ec9",
+      "files": 39938,
+      "bytes": 0,
+      "review": {
+        "spdx": "MIT",
+        "use": "adapt-with-attribution",
+        "by": "xerj-org",
+        "at": "2026-10-02",
+        "note": "LICENSE.md at pin: MIT. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=39938; backlog hint: MIT (verify at pin); api licence: unknown; evidence: LICENSE.md\u2192MIT"
+      }
+    }
+  ]
+}

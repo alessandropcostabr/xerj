@@ -1,0 +1,21 @@
+{
+  "corpus": "rustls",
+  "cloned_at": "2026-10-02T00:49:45Z",
+  "repos": [
+    {
+      "repo": "rustls",
+      "url": "https://github.com/rustls/rustls",
+      "licence": "hint only: Apache-2.0 OR MIT (verify at pin)",
+      "sha": "7dcbe4c1ae12185237d22e9197583329630a2014",
+      "files": 1065,
+      "bytes": 0,
+      "review": {
+        "spdx": "Apache-2.0 OR MIT",
+        "use": "adapt-with-attribution",
+        "by": "xerj-org",
+        "at": "2026-10-02",
+        "note": "LICENSE-APACHE + LICENSE-MIT at pin: dual. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=1065; backlog hint: Apache-2.0 OR MIT (verify at pin); api licence: unknown; evidence: LICENSE\u2192Apache-2.0; LICENSE-APACHE\u2192Apache-2.0; LICENSE-MIT\u2192MIT"
+      }
+    }
+  ]
+}

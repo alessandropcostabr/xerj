@@ -1,0 +1,21 @@
+{
+  "corpus": "quinn",
+  "cloned_at": "2026-10-02T00:49:45Z",
+  "repos": [
+    {
+      "repo": "quinn",
+      "url": "https://github.com/quinn-rs/quinn",
+      "licence": "hint only: Apache-2.0 OR MIT (verify at pin)",
+      "sha": "7f1c6b55082e77ab72022b6b8cdac18359be7c74",
+      "files": 151,
+      "bytes": 0,
+      "review": {
+        "spdx": "Apache-2.0 OR MIT",
+        "use": "adapt-with-attribution",
+        "by": "xerj-org",
+        "at": "2026-10-02",
+        "note": "LICENSE-APACHE + LICENSE-MIT at pin: dual. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=151; backlog hint: Apache-2.0 OR MIT (verify at pin); api licence: unknown; evidence: LICENSE-APACHE\u2192Apache-2.0; LICENSE-MIT\u2192MIT"
+      }
+    }
+  ]
+}

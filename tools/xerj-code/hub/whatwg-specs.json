@@ -1,0 +1,36 @@
+{
+  "corpus": "whatwg-specs",
+  "cloned_at": "2026-10-02T00:49:45Z",
+  "repos": [
+    {
+      "repo": "whatwg-specs-1",
+      "url": "https://github.com/whatwg/html",
+      "licence": "hint only: CC-BY-4.0 (verify per repo at pin)",
+      "sha": "6992cb519a02db34f653ddd54c50fad2565285f5",
+      "files": 132,
+      "bytes": 0,
+      "review": {
+        "spdx": "CC-BY-4.0",
+        "use": "adapt-with-attribution",
+        "by": "xerj-org",
+        "at": "2026-10-02",
+        "note": "LICENSE at pin (whatwg/html): CC-BY-4.0. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=132; backlog hint: CC-BY-4.0 (verify per repo at pin); api licence: unknown; evidence: LICENSE\u2192CC-BY-4.0"
+      }
+    },
+    {
+      "repo": "whatwg-specs-2",
+      "url": "https://github.com/whatwg/url",
+      "licence": "hint only: CC-BY-4.0 (verify)",
+      "sha": "8e14777cfa145b08a9fb735fe580ec0c366564c3",
+      "files": 32,
+      "bytes": 0,
+      "review": {
+        "spdx": "CC-BY-4.0",
+        "use": "adapt-with-attribution",
+        "by": "xerj-org",
+        "at": "2026-10-02",
+        "note": "LICENSE at pin (whatwg/url): CC-BY-4.0. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=32; backlog hint: CC-BY-4.0 (verify); api licence: unknown; evidence: LICENSE\u2192CC-BY-4.0"
+      }
+    }
+  ]
+}

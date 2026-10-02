@@ -1,0 +1,21 @@
+{
+  "corpus": "boringtun",
+  "cloned_at": "2026-10-02T00:49:45Z",
+  "repos": [
+    {
+      "repo": "boringtun",
+      "url": "https://github.com/cloudflare/boringtun",
+      "licence": "hint only: verify at pin (Apache-2.0/BSD variants reported)",
+      "sha": "6dcc889a95ad82400932f785d874421d70308195",
+      "files": 46,
+      "bytes": 0,
+      "review": {
+        "spdx": "BSD-3-Clause",
+        "use": "adapt-with-attribution",
+        "by": "xerj-org",
+        "at": "2026-10-02",
+        "note": "LICENSE.md at pin: 3-clause BSD, Cloudflare 2019 (hint said Apache/BSD variants). | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=46; backlog hint: verify at pin (Apache-2.0/BSD variants reported); api licence: unknown; evidence: LICENSE.md\u2192BSD-2"
+      }
+    }
+  ]
+}

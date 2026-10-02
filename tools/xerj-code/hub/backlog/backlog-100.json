@@ -1,319 +1,1442 @@
 {
-  "program": "corpus-hub-100",
-  "schema": 1,
-  "opened": "2026-10-02",
-  "note": "licence_hint is a HINT (memory + detector shape), never the verdict. Gate G4 requires a human review block at the pinned SHA; several hints below WILL be wrong — that is the point of the gate. domain is the G1 sentence. cat/lane drive wave assignment (PROGRAM-100.md §4/§8).",
-  "statuses": ["live", "candidate", "planned", "deferred", "killed", "withdrawn"],
-  "cats": ["SEC", "STD", "OPS", "GOOD", "BAD", "DATA", "NET"],
-  "lanes": ["A", "B"],
-  "refreshes": ["pinned", "weekly", "daily"],
-  "corpora": [
-    {"slug": "xerj-search", "cat": "DATA", "lane": "A", "refresh": "pinned", "status": "live",
-     "domain": "an agent working on full-text search internals queries this for how lucene/tantivy/quickwit/meilisearch/sonic/elasticsearch do BM25, merge policy and the ES wire",
-     "sources": [{"url": "see hub/xerj-search.json", "licence_hint": "mixed — per-repo review blocks in the manifest"}]},
-    {"slug": "xerj-storage", "cat": "DATA", "lane": "A", "refresh": "pinned", "status": "live",
-     "domain": "an agent working on storage engines queries this for how sled/fjall/redb do WAL, crash recovery and compaction",
-     "sources": [{"url": "see hub/xerj-storage.json", "licence_hint": "per-repo review blocks in the manifest"}]},
-    {"slug": "xerj-columnar", "cat": "DATA", "lane": "A", "refresh": "pinned", "status": "live",
-     "domain": "an agent working on columnar layouts queries this for how clickhouse does codecs, layout and vectorised scans",
-     "sources": [{"url": "see hub/xerj-columnar.json", "licence_hint": "per-repo review blocks in the manifest"}]},
-    {"slug": "xerj-vector", "cat": "NET", "lane": "A", "refresh": "pinned", "status": "live",
-     "domain": "an agent working on vector search queries this for how qdrant/usearch/instant-distance/hnswlib do HNSW construction, quantisation and filtered kNN",
-     "sources": [{"url": "see hub/xerj-vector.json", "licence_hint": "per-repo review blocks in the manifest"}]},
-    {"slug": "rust-vulns", "cat": "BAD", "lane": "B", "refresh": "daily", "status": "live",
-     "domain": "an agent reviewing Rust code queries this for vulnerability precedent — identity-resolved RUSTSEC/GHSA/CVE advisories with affected functions and fixed versions",
-     "sources": [{"url": "tools/packs/rust-vulns/recipe.toml", "licence_hint": "per-source review blocks in the recipe"}]},
-
-    {"slug": "cisa-kev", "cat": "SEC", "lane": "B", "refresh": "daily", "status": "planned",
-     "domain": "an agent triaging findings queries this for whether a CVE is known-exploited in the wild, with ransomware-use and due-date fields",
-     "sources": [{"url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json", "licence_hint": "public domain (US gov); intake decides fetch mechanism (#1110 Part A owns this pack — coordinate, do not duplicate)"}]},
-    {"slug": "ghsa-db", "cat": "SEC", "lane": "B", "refresh": "weekly", "status": "candidate",
-     "domain": "an agent auditing dependencies across ecosystems queries this for GitHub-reviewed advisories with CVSS and patched ranges",
-     "sources": [{"url": "https://github.com/github/advisory-database", "licence_hint": "CC-BY-4.0 (verify at pin)"}]},
-    {"slug": "osv-ecosystems", "cat": "SEC", "lane": "B", "refresh": "daily", "status": "candidate",
-     "domain": "an agent pinning dependencies queries this for affected-version truth across Go/PyPI/npm, resolved to one record per vulnerability",
-     "sources": [{"url": "https://osv.dev", "licence_hint": "CC-BY-4.0 for OSV data (verify per ecosystem export)"}]},
-    {"slug": "pysec", "cat": "SEC", "lane": "B", "refresh": "weekly", "status": "candidate",
-     "domain": "an agent reviewing Python dependency trees queries this for PYSEC advisory records with fixed versions",
-     "sources": [{"url": "https://github.com/pypa/advisory-database", "licence_hint": "CC-BY-4.0 (verify at pin)"}]},
-    {"slug": "go-vulndb", "cat": "SEC", "lane": "B", "refresh": "weekly", "status": "candidate",
-     "domain": "an agent reviewing Go modules queries this for Go-team-curated advisories with symbols and fixed versions",
-     "sources": [{"url": "https://github.com/golang/vulndb", "licence_hint": "verify at pin (CC-BY-4.0 / BSD variants reported)"}]},
-    {"slug": "mitre-cwe", "cat": "SEC", "lane": "B", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent classifying a finding queries this for the CWE definition, its parents/children and detection notes",
-     "sources": [{"url": "https://cwe.mitre.org/data/xml/cwec_latest.xml.zip", "licence_hint": "MITRE terms — verify redistribution terms at intake"}]},
-    {"slug": "mitre-attck", "cat": "SEC", "lane": "B", "refresh": "weekly", "status": "candidate",
-     "domain": "an agent writing or reviewing detections queries this for technique ids, tactics, detection data-sources and procedure examples",
-     "sources": [{"url": "https://github.com/mitre-attack/attack-stix-data", "licence_hint": "verify at pin (MITRE Free License historically; CC-BY-4.0 reported for current data)"}]},
-    {"slug": "mitre-capec", "cat": "SEC", "lane": "B", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent reasoning about attack surface queries this for attack-pattern enumerations with prerequisites and mitigations",
-     "sources": [{"url": "https://github.com/mitre-attack/capec-stix-data", "licence_hint": "verify at pin"}]},
-    {"slug": "owasp-cheatsheets", "cat": "SEC", "lane": "B", "refresh": "weekly", "status": "candidate",
-     "domain": "an agent implementing an auth/upload/crypto feature queries this for the concrete cheatsheet: header lists, code shapes, test ideas",
-     "sources": [{"url": "https://github.com/OWASP/CheatSheetSeries", "licence_hint": "CC-BY-SA-4.0 (verify at pin; SA term noted for pack emission)"}]},
-    {"slug": "owasp-asvs", "cat": "SEC", "lane": "B", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent reviewing an application's security posture queries this for the ASVS requirement and its verification level",
-     "sources": [{"url": "https://github.com/OWASP/ASVS", "licence_hint": "CC-BY-SA-4.0 (verify at pin)"}]},
-    {"slug": "owasp-wstg", "cat": "SEC", "lane": "B", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent planning a web test pass queries this for test categories, procedures and expected results",
-     "sources": [{"url": "https://github.com/OWASP/wstg", "licence_hint": "CC-BY-SA-4.0 (verify at pin)"}]},
-    {"slug": "nist-sp800-sec", "cat": "SEC", "lane": "B", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent designing a control or wipe procedure queries this for what SP 800-53/61/63/88/207 actually require, clause-level",
-     "sources": [{"url": "https://csrc.nist.gov/pubs/sp/800", "licence_hint": "public domain (US gov work); intake fetches clause text to a local dir, recipe kind=dir"}]},
-    {"slug": "nsa-cyber-advisories", "cat": "SEC", "lane": "B", "refresh": "weekly", "status": "candidate",
-     "domain": "an agent hardening infrastructure queries this for NSA/CISA joint guidance specifics (MTIG, memory-safe roadmaps, KPMs)",
-     "sources": [{"url": "https://github.com/NSAcyber", "licence_hint": "public domain (US gov); pick advisory repos at intake"}]},
-    {"slug": "cisa-alerts", "cat": "SEC", "lane": "B", "refresh": "weekly", "status": "candidate",
-     "domain": "an agent triaging an active campaign queries this for the alert's IOCs, required actions and mitigations",
-     "sources": [{"url": "https://www.cisa.gov/news-events/cybersecurity-advisories", "licence_hint": "public domain (US gov); intake decides fetch mechanism"}]},
-    {"slug": "first-epss", "cat": "SEC", "lane": "B", "refresh": "daily", "status": "candidate",
-     "domain": "an agent prioritising remediation queries this for a CVE's EPSS score and percentile to rank patch order",
-     "sources": [{"url": "https://www.first.org/epss/data-stats", "licence_hint": "verify FIRST data terms at intake"}]},
-
-    {"slug": "ietf-rfc", "cat": "STD", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent implementing or debugging a protocol queries this for what the RFC actually says at clause level (TLP permits unmodified redistribution)",
-     "sources": [{"url": "intake: pick a maintained full-text mirror and review the IETF TLP terms + mirror provenance", "licence_hint": "IETF TLP (redistribution of unmodified text permitted — verify mirror)"}]},
-    {"slug": "whatwg-specs", "cat": "STD", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent building browser-adjacent tooling queries this for the living standard's exact normative statements (html/url/fetch/dom)",
-     "sources": [{"url": "https://github.com/whatwg/html", "licence_hint": "CC-BY-4.0 (verify per repo at pin)"}, {"url": "https://github.com/whatwg/url", "licence_hint": "CC-BY-4.0 (verify)"}]},
-    {"slug": "w3c-css", "cat": "STD", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent working on layout/selector internals queries this for the csswg draft's algorithm text (the resolution and cascade algorithms are unmemorisable prose)",
-     "sources": [{"url": "https://github.com/w3c/csswg-drafts", "licence_hint": "W3C document licence (verify redistribution terms at pin)"}]},
-    {"slug": "ecma262", "cat": "STD", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent building a JS-adjacent tool queries this for the spec's abstract operations and completion-record semantics",
-     "sources": [{"url": "https://github.com/tc39/ecma262", "licence_hint": "ECMA libre licence (verify at pin)"}]},
-    {"slug": "unicode-cldr", "cat": "STD", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent formatting dates/numbers/names queries this for locale-specific CLDR rules and plural/data tables no model recalls",
-     "sources": [{"url": "https://github.com/unicode-org/cldr", "licence_hint": "Unicode License (permissive — verify at pin)"}]},
-    {"slug": "openapi-spec", "cat": "STD", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent generating or validating an API description queries this for the OpenAPI schema's exact keywords and resolution rules",
-     "sources": [{"url": "https://github.com/OAI/OpenAPI-Specification", "licence_hint": "verify at pin (Apache-2.0 reported)"}]},
-    {"slug": "json-schema-spec", "cat": "STD", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent writing validators queries this for the dialect's exact keyword semantics (2019-09 vs 2020-12 differences bite)",
-     "sources": [{"url": "https://github.com/json-schema-org/json-schema-spec", "licence_hint": "verify at pin"}]},
-    {"slug": "graphql-spec", "cat": "STD", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent building a GraphQL server queries this for execution, defer/stream and introspection semantics",
-     "sources": [{"url": "https://github.com/graphql/graphql-spec", "licence_hint": "OWFa-1.0 patents + CC-BY-4.0 text (verify at pin)"}]},
-    {"slug": "nats-protocol", "cat": "STD", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent implementing a NATS client queries this for the wire protocol, verbs and semantics text",
-     "sources": [{"url": "https://github.com/nats-io/nats-architecture-and-design", "licence_hint": "Apache-2.0 (verify at pin)"}]},
-    {"slug": "kafka-protocol", "cat": "STD", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent implementing a Kafka client queries this for the protocol guide's exact request/response schemas and error codes",
-     "sources": [{"url": "https://github.com/apache/kafka-site", "licence_hint": "Apache-2.0 (verify which path carries the protocol guide at pin)"}]},
-    {"slug": "valkey-docs", "cat": "STD", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent building against RESP queries this for command semantics, ranges and error cases (the open post-relicence fork of the Redis docs)",
-     "sources": [{"url": "https://github.com/valkey-io/valkey-doc", "licence_hint": "BSD-3 (verify at pin)"}]},
-    {"slug": "postgres-docs", "cat": "STD", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent writing SQL against Postgres queries this for exact function semantics, GUC defaults and MVCC behaviour by version",
-     "sources": [{"url": "https://github.com/postgres/postgres/tree/master/doc", "licence_hint": "PostgreSQL Licence (verify at pin)"}]},
-    {"slug": "sqlite-docs", "cat": "STD", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent depending on SQLite's exact behaviour queries this for datatype, locking and pragma semantics",
-     "sources": [{"url": "https://www.sqlite.org/docsrc", "licence_hint": "public domain (verify at pin)"}]},
-    {"slug": "mqtt-spec", "cat": "STD", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent implementing an MQTT client/broker queries this for packet formats, QoS state machines and keepalive semantics",
-     "sources": [{"url": "https://github.com/owlmcg/mqtt", "licence_hint": "OASIS specification licence — verify at intake; may resolve to approach-only"}]},
-
-    {"slug": "postmortems", "cat": "OPS", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent designing for failure queries this for how real outages of the same shape started, cascaded and were found",
-     "sources": [{"url": "https://github.com/danluu/post-mortems", "licence_hint": "NO top-level LICENSE found at profiling 2026-10-02 (pin 630562e5) — the MIT hint was WRONG; wave 5 must resolve terms from the README/upstream before G4 can pass, else kill"}]},
-    {"slug": "gitlab-runbooks", "cat": "OPS", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent on call for a SaaS queries this for real alert definitions, escalations and mitigation playbooks from a large production fleet",
-     "sources": [{"url": "https://github.com/gitlab-com/runbooks", "licence_hint": "MIT (verify at pin)"}]},
-    {"slug": "prometheus-docs", "cat": "OPS", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent instrumenting a service queries this for metric semantics, recording-rule patterns and the query language's exact behaviour",
-     "sources": [{"url": "https://github.com/prometheus/prometheus/tree/main/docs", "licence_hint": "Apache-2.0 (verify at pin)"}]},
-    {"slug": "otel-proto", "cat": "OPS", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent wiring telemetry queries this for the exact semantic conventions and proto field semantics",
-     "sources": [{"url": "https://github.com/open-telemetry/opentelemetry-proto", "licence_hint": "Apache-2.0 (verify at pin)"}, {"url": "https://github.com/open-telemetry/semantic-conventions", "licence_hint": "Apache-2.0 (verify)"}]},
-    {"slug": "etcd-docs", "cat": "OPS", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent operating a distributed system queries this for etcd's failure/restore/compaction semantics and tuning guides",
-     "sources": [{"url": "https://github.com/etcd-io/website", "licence_hint": "Apache-2.0 (verify at pin)"}]},
-    {"slug": "freebsd-handbook", "cat": "OPS", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent administering a BSD system queries this for the handbook's exact rc/ZFS/jail/networking procedures",
-     "sources": [{"url": "https://github.com/freebsd/freebsd-doc", "licence_hint": "FreeBSD Documentation License (permissive — verify at pin)"}]},
-    {"slug": "openbsd-faq", "cat": "OPS", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent hardening a Unix host queries this for OpenBSD's exact pf/pledge/unveil usage from the source FAQ",
-     "sources": [{"url": "https://github.com/openbsd/src/tree/master/share/doc/pf", "licence_hint": "BSD/ISC family (verify per path at pin)"}]},
-    {"slug": "tldr-pages", "cat": "OPS", "lane": "A", "refresh": "weekly", "status": "candidate",
-     "domain": "an agent scripting an unfamiliar long-tail tool queries this for its example invocations (popular tools are memorised — G3 value is the tail only)",
-     "sources": [{"url": "https://github.com/tldr-pages/tldr", "licence_hint": "MIT (verify at pin)"}]},
-    {"slug": "school-of-sre", "cat": "OPS", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent stepping into an SRE task queries this for the curriculum's concrete networking/Linux/DB ops explanations",
-     "sources": [{"url": "https://github.com/linkedin/school-of-sre", "licence_hint": "BSD-3 (verify at pin)"}]},
-
-    {"slug": "rust-api-guidelines", "cat": "GOOD", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent designing a Rust library API queries this for the naming/convertibility/error conventions with their reasoning",
-     "sources": [{"url": "https://github.com/rust-lang/api-guidelines", "licence_hint": "MIT OR Apache-2.0 (verify at pin)"}]},
-    {"slug": "google-eng-practices", "cat": "GOOD", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent reviewing code queries this for the review standard's concrete what-to-look-for and clangers",
-     "sources": [{"url": "https://github.com/google/eng-practices", "licence_hint": "CC-BY-4.0 (verify at pin)"}]},
-    {"slug": "msft-api-guidelines", "cat": "GOOD", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent designing a REST surface queries this for the naming/paging/versioning/error rules with examples",
-     "sources": [{"url": "https://github.com/microsoft/api-guidelines", "licence_hint": "verify at pin (CC-BY reported)"}]},
-    {"slug": "zalando-restful-api-guidelines", "cat": "GOOD", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent reviewing an API design queries this for the rule, its intent and propulated exceptions from a fleet of thousands",
-     "sources": [{"url": "https://github.com/zalando/restful-api-guidelines", "licence_hint": "CC-BY-4.0 (verify at pin)"}]},
-    {"slug": "github-api-description", "cat": "GOOD", "lane": "A", "refresh": "weekly", "status": "candidate",
-     "domain": "an agent building a GitHub integration queries this for the machine-readable schema of a huge production REST API (the exemplar OpenGraph/OpenAPI corpus)",
-     "sources": [{"url": "https://github.com/github/rest-api-description", "licence_hint": "verify at pin (MIT reported)"}]},
-    {"slug": "mozilla-ssl-configs", "cat": "GOOD", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent configuring TLS termination queries this for the recommended cipher/protocol sets per server and their security/cost tradeoffs",
-     "sources": [{"url": "https://github.com/mozilla/server-side-tls", "licence_hint": "MPL-2.0 (verify at pin)"}]},
-    {"slug": "osquery-config-examples", "cat": "GOOD", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent writing host detections queries this for battle-tested osquery SQL by objective (suid diffs, persistence paths, launch items)",
-     "sources": [{"url": "https://github.com/palantir/osquery-configuration", "licence_hint": "Apache-2.0 (verify at pin)"}]},
-    {"slug": "govuk-design-system", "cat": "GOOD", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent building accessible UI queries this for the component's exact accessibility criteria and edge cases",
-     "sources": [{"url": "https://github.com/alphagov/govuk-frontend", "licence_hint": "MIT (verify at pin)"}]},
-    {"slug": "twelve-factor", "cat": "GOOD", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent containerising or configuring an app queries this for the factor's exact statement and rationale (G3 borderline: well-known prose — keep only if G7 shows retrieval value)",
-     "sources": [{"url": "https://github.com/heroku/12factor", "licence_hint": "verify at pin (code MIT reported; content licence separate)"}]},
-
-    {"slug": "c-vulns", "cat": "BAD", "lane": "B", "refresh": "weekly", "status": "deferred",
-     "domain": "an agent reviewing C code queries this for version-pinned vulnerable functions and their fix diffs, permissively-licensed projects only",
-     "sources": [{"url": "mined from CVE/GHSA fix commits (kernel and other GPL projects excluded by per-record licence)", "licence_hint": "per-record upstream licence; depends on the #61 S1/S3 harvester"}]},
-    {"slug": "go-vuln-funcs", "cat": "BAD", "lane": "B", "refresh": "weekly", "status": "deferred",
-     "domain": "an agent reviewing Go code queries this for vulnerable symbols with fix diffs (extends go-vulndb's symbols into code records)",
-     "sources": [{"url": "mined from go-vulndb-linked fix commits", "licence_hint": "per-record upstream licence; depends on the #61 harvester"}]},
-    {"slug": "py-vuln-funcs", "cat": "BAD", "lane": "B", "refresh": "weekly", "status": "deferred",
-     "domain": "an agent reviewing Python code queries this for vulnerable functions with fix diffs, PYSEC-linked",
-     "sources": [{"url": "mined from PYSEC/GHSA-linked fix commits", "licence_hint": "per-record upstream licence; depends on the #61 harvester"}]},
-    {"slug": "redos-precedent", "cat": "BAD", "lane": "B", "refresh": "weekly", "status": "candidate",
-     "domain": "an agent vetting regex handling queries this for real ReDoS advisories with the pathological pattern and the bounded rewrite that fixed it",
-     "sources": [{"url": "curated from GHSA/RUSTSEC/PYSEC ReDoS-class advisories", "licence_hint": "CC-BY-4.0 upstream (verify per source)"}]},
-    {"slug": "crypto-misuse-precedent", "cat": "BAD", "lane": "B", "refresh": "weekly", "status": "candidate",
-     "domain": "an agent reviewing crypto call sites queries this for real CWE-327/328/347-class advisories showing the misuse and the corrected construction",
-     "sources": [{"url": "curated from advisory databases by CWE class", "licence_hint": "CC-BY-4.0 upstream (verify per source)"}]},
-
-    {"slug": "duckdb", "cat": "DATA", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent working on query execution queries this for how a real embeddable OLAP engine does join ordering, expression rewrites and memory-aware operators",
-     "sources": [{"url": "https://github.com/duckdb/duckdb", "licence_hint": "MIT (verify at pin)"}]},
-    {"slug": "rocksdb", "cat": "DATA", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent working on LSM stores queries this for compaction, WAL and recovery internals at production scale",
-     "sources": [{"url": "https://github.com/facebook/rocksdb", "licence_hint": "Apache-2.0 OR GPL-2 dual (verify at pin)"}]},
-    {"slug": "leveldb", "cat": "DATA", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent learning LSM internals queries this for the original clean implementation (memtable/sstable/manifest split)",
-     "sources": [{"url": "https://github.com/google/leveldb", "licence_hint": "BSD-3 (verify at pin)"}]},
-    {"slug": "pebble", "cat": "DATA", "lane": "A", "refresh": "pinned", "status": "deferred",
-     "domain": "an agent working on LSM stores queries this for a modern Go LSM with delete/RangeLock semantics",
-     "sources": [{"url": "https://github.com/cockroachdb/pebble", "licence_hint": "VERIFY FIRST — CockroachDB-adjacent licensing has moved; if not permissive, rocksdb+badger cover the domain and this stays deferred"}]},
-    {"slug": "badger", "cat": "DATA", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent working on pure-Go KV stores queries this for its LSM-with-value-log design and transaction implementation",
-     "sources": [{"url": "https://github.com/dgraph-io/badger", "licence_hint": "MIT (verify at pin — dgraph BUSL era did not reach badger, confirm)"}]},
-    {"slug": "lmdb", "cat": "DATA", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent working on memory-mapped B+trees queries this for LMDB's page/cursor/COW mechanics",
-     "sources": [{"url": "https://git.openldap.org/openldap/openldap/tree/mdb.master", "licence_hint": "OpenLDAP Public (permissive-ish — verify at pin)"}]},
-    {"slug": "faiss", "cat": "DATA", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent working on ANN queries this for index construction, IVF/HNSW composition and GPU paths in the reference implementation",
-     "sources": [{"url": "https://github.com/facebookresearch/faiss", "licence_hint": "MIT (verify at pin)"}]},
-    {"slug": "annoy", "cat": "DATA", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent working on read-mostly ANN queries this for the forest-of-trees build and on-disk format",
-     "sources": [{"url": "https://github.com/spotify/annoy", "licence_hint": "verify at pin (Apache-2.0/'Other' reported)"}]},
-    {"slug": "sqlite-src", "cat": "DATA", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent working on embedded DB internals queries this for the btree module, pager and the famously commented test harness",
-     "sources": [{"url": "https://www.sqlite.org/src", "licence_hint": "public domain (verify at pin)"}]},
-    {"slug": "postgres-src", "cat": "DATA", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent working on planners queries this for the real cost model, join ordering and executor nodes",
-     "sources": [{"url": "https://github.com/postgres/postgres", "licence_hint": "PostgreSQL Licence (verify at pin)"}]},
-    {"slug": "parquet-format", "cat": "DATA", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent reading/writing parquet queries this for encodings, logical types and the thrift metadata spec",
-     "sources": [{"url": "https://github.com/apache/parquet-format", "licence_hint": "Apache-2.0 (verify at pin)"}]},
-    {"slug": "arrow-rs", "cat": "DATA", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent working on columnar memory queries this for the Rust arrow arrays, kernels and IPC paths",
-     "sources": [{"url": "https://github.com/apache/arrow-rs", "licence_hint": "Apache-2.0 (verify at pin)"}]},
-    {"slug": "iceberg", "cat": "DATA", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent building lakehouse tables queries this for spec semantics and the reference metadata/manifest handling",
-     "sources": [{"url": "https://github.com/apache/iceberg", "licence_hint": "Apache-2.0 (verify at pin)"}]},
-    {"slug": "kafka-src", "cat": "DATA", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent working on log systems queries this for the log-cleaner, controller and replication protocol internals",
-     "sources": [{"url": "https://github.com/apache/kafka", "licence_hint": "Apache-2.0 (verify at pin)"}]},
-    {"slug": "rabbitmq", "cat": "DATA", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent working on message brokers queries this for queue/exchange routing and mirrored-queue semantics",
-     "sources": [{"url": "https://github.com/rabbitmq/rabbitmq-server", "licence_hint": "MPL-2.0 (verify at pin)"}]},
-    {"slug": "nats-server", "cat": "DATA", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent working on pub/sub queries this for subject-tree routing, jetstream and clustering internals in readable Go",
-     "sources": [{"url": "https://github.com/nats-io/nats-server", "licence_hint": "Apache-2.0 (verify at pin)"}]},
-    {"slug": "etcd-src", "cat": "DATA", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent working on coordination stores queries this for raft integration, watch semantics and backend compaction",
-     "sources": [{"url": "https://github.com/etcd-io/etcd", "licence_hint": "Apache-2.0 (verify at pin)"}]},
-    {"slug": "raft-rs", "cat": "DATA", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent implementing raft queries this for the log/ready/progress state machine the tikv fleet runs on",
-     "sources": [{"url": "https://github.com/tikv/raft-rs", "licence_hint": "Apache-2.0 (verify at pin)"}]},
-    {"slug": "dragonboat", "cat": "DATA", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent implementing multi-raft queries this for the sharded log and snapshot plumbing",
-     "sources": [{"url": "https://github.com/lni/dragonboat", "licence_hint": "BSD-2 (verify at pin)"}]},
-    {"slug": "influxdb", "cat": "DATA", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent working on time series queries this for TSM/flux paths and downsampling semantics",
-     "sources": [{"url": "https://github.com/influxdata/influxdb", "licence_hint": "verify at pin (MIT/Apache reported; iox era changed layout)"}]},
-    {"slug": "prometheus-src", "cat": "DATA", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent working on TSDB queries this for the head-block/WAL/head-compaction paths and PromQL evaluation",
-     "sources": [{"url": "https://github.com/prometheus/prometheus", "licence_hint": "Apache-2.0 (verify at pin)"}]},
-    {"slug": "valkey-src", "cat": "DATA", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent working on in-memory KV queries this for the event-loop, object encoding and replication paths of the open fork",
-     "sources": [{"url": "https://github.com/valkey-io/valkey", "licence_hint": "BSD-3 (verify at pin)"}]},
-
-    {"slug": "rustls", "cat": "NET", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent implementing TLS in Rust queries this for the state machine, cipher dispatch and certificate verification",
-     "sources": [{"url": "https://github.com/rustls/rustls", "licence_hint": "Apache-2.0 OR MIT (verify at pin)"}]},
-    {"slug": "openssl", "cat": "NET", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent debugging TLS/ASN.1 queries this for the reference provider's handshake, BIO and provider internals",
-     "sources": [{"url": "https://github.com/openssl/openssl", "licence_hint": "Apache-2.0 since 3.0 (verify at pin)"}]},
-    {"slug": "s2n-tls", "cat": "NET", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent hardening TLS queries this for the defensively-structured C state machine and its testing approach",
-     "sources": [{"url": "https://github.com/aws/s2n-tls", "licence_hint": "Apache-2.0 (verify at pin)"}]},
-    {"slug": "boringtun", "cat": "NET", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent implementing a VPN data plane queries this for the wireguard protocol implementation and its async runtime use",
-     "sources": [{"url": "https://github.com/cloudflare/boringtun", "licence_hint": "verify at pin (Apache-2.0/BSD variants reported)"}]},
-    {"slug": "quinn", "cat": "NET", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent implementing QUIC queries this for congestion control, stream state and 0-RTT handling in idiomatic Rust",
-     "sources": [{"url": "https://github.com/quinn-rs/quinn", "licence_hint": "Apache-2.0 OR MIT (verify at pin)"}]},
-    {"slug": "nghttp2", "cat": "NET", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent working with HTTP/2 queries this for flow control, HPACK and priority internals in the reference C library",
-     "sources": [{"url": "https://github.com/nghttp2/nghttp2", "licence_hint": "MIT (verify at pin)"}]},
-    {"slug": "curl-src", "cat": "NET", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent writing an HTTP client queries this for protocol handling, auth negotiation and the protocol-selection seams",
-     "sources": [{"url": "https://github.com/curl/curl", "licence_hint": "curl licence (permissive — verify at pin)"}]},
-    {"slug": "libuv", "cat": "NET", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent building an event loop queries this for the polling primitives and async threading patterns",
-     "sources": [{"url": "https://github.com/libuv/libuv", "licence_hint": "MIT (verify at pin)"}]},
-    {"slug": "zstd", "cat": "NET", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent tuning compression queries this for frame/block formats, window and level internals",
-     "sources": [{"url": "https://github.com/facebook/zstd", "licence_hint": "BSD-3 OR GPL-2 dual (verify at pin)"}]},
-    {"slug": "lz4", "cat": "NET", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent needing fast block compression queries this for the block format and decoder loop",
-     "sources": [{"url": "https://github.com/lz4/lz4", "licence_hint": "BSD-2 (verify at pin)"}]},
-    {"slug": "brotli", "cat": "NET", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent working on web content encoding queries this for the static dictionary and transform handling",
-     "sources": [{"url": "https://github.com/google/brotli", "licence_hint": "MIT (verify at pin)"}]},
-    {"slug": "zlib-ng", "cat": "NET", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent working on deflate queries this for the modernised algorithms and SIMD paths",
-     "sources": [{"url": "https://github.com/zlib-ng/zlib-ng", "licence_hint": "zlib (verify at pin)"}]},
-    {"slug": "snappy", "cat": "NET", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent needing cheap compression queries this for the format and the reference encoder decisions",
-     "sources": [{"url": "https://github.com/google/snappy", "licence_hint": "verify at pin (BSD variants reported)"}]},
-    {"slug": "protobuf", "cat": "NET", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent generating or debugging protobuf code queries this for wire format, descriptor handling and the conformance suite",
-     "sources": [{"url": "https://github.com/protocolbuffers/protobuf", "licence_hint": "BSD-3 (verify at pin)"}]},
-    {"slug": "flatbuffers", "cat": "NET", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent designing zero-copy serialisation queries this for the vtable layout and verifier approach",
-     "sources": [{"url": "https://github.com/google/flatbuffers", "licence_hint": "Apache-2.0 (verify at pin)"}]},
-    {"slug": "capnproto", "cat": "NET", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent doing capability RPC queries this for the serialisation layout, promise pipelining and the security hardening history",
-     "sources": [{"url": "https://github.com/capnproto/capnproto", "licence_hint": "MIT (verify at pin)"}]},
-    {"slug": "msgpack-c", "cat": "NET", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent implementing msgpack queries this for the format handling and unpack edge cases",
-     "sources": [{"url": "https://github.com/msgpack/msgpack-c", "licence_hint": "Boost BSL-1.0 dual (verify at pin)"}]},
-    {"slug": "openbao", "cat": "NET", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent working on secret stores queries this for the barrier, seal and lease internals of the open vault fork",
-     "sources": [{"url": "https://github.com/openbao/openbao", "licence_hint": "MPL-2.0 (verify at pin)"}]},
-    {"slug": "caddy", "cat": "NET", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent building a TLS-serving reverse proxy queries this for cert automation and config-reload design",
-     "sources": [{"url": "https://github.com/caddyserver/caddy", "licence_hint": "Apache-2.0 (verify at pin)"}]},
-    {"slug": "envoy", "cat": "NET", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent building a data plane queries this for filter-chain, xDS and overload-manager internals",
-     "sources": [{"url": "https://github.com/envoyproxy/envoy", "licence_hint": "Apache-2.0 (verify at pin)"}]},
-    {"slug": "nginx", "cat": "NET", "lane": "A", "refresh": "pinned", "status": "candidate",
-     "domain": "an agent working on web servers queries this for the event-driven request cycle and module seams (note: very large)",
-     "sources": [{"url": "https://github.com/nginx/nginx", "licence_hint": "BSD-2 (verify at pin)"}]}
-  ]
+ "program": "corpus-hub-100",
+ "schema": 1,
+ "opened": "2026-10-02",
+ "note": "licence_hint is a HINT (memory + detector shape), never the verdict. Gate G4 requires a human review block at the pinned SHA; several hints below WILL be wrong \u2014 that is the point of the gate. domain is the G1 sentence. cat/lane drive wave assignment (PROGRAM-100.md \u00a74/\u00a78).",
+ "statuses": [
+  "live",
+  "candidate",
+  "planned",
+  "deferred",
+  "killed",
+  "withdrawn"
+ ],
+ "cats": [
+  "SEC",
+  "STD",
+  "OPS",
+  "GOOD",
+  "BAD",
+  "DATA",
+  "NET"
+ ],
+ "lanes": [
+  "A",
+  "B"
+ ],
+ "refreshes": [
+  "pinned",
+  "weekly",
+  "daily"
+ ],
+ "corpora": [
+  {
+   "slug": "xerj-search",
+   "cat": "DATA",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent working on full-text search internals queries this for how lucene/tantivy/quickwit/meilisearch/sonic/elasticsearch do BM25, merge policy and the ES wire",
+   "sources": [
+    {
+     "url": "see hub/xerj-search.json",
+     "licence_hint": "mixed \u2014 per-repo review blocks in the manifest"
+    }
+   ]
+  },
+  {
+   "slug": "xerj-storage",
+   "cat": "DATA",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent working on storage engines queries this for how sled/fjall/redb do WAL, crash recovery and compaction",
+   "sources": [
+    {
+     "url": "see hub/xerj-storage.json",
+     "licence_hint": "per-repo review blocks in the manifest"
+    }
+   ]
+  },
+  {
+   "slug": "xerj-columnar",
+   "cat": "DATA",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent working on columnar layouts queries this for how clickhouse does codecs, layout and vectorised scans",
+   "sources": [
+    {
+     "url": "see hub/xerj-columnar.json",
+     "licence_hint": "per-repo review blocks in the manifest"
+    }
+   ]
+  },
+  {
+   "slug": "xerj-vector",
+   "cat": "NET",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent working on vector search queries this for how qdrant/usearch/instant-distance/hnswlib do HNSW construction, quantisation and filtered kNN",
+   "sources": [
+    {
+     "url": "see hub/xerj-vector.json",
+     "licence_hint": "per-repo review blocks in the manifest"
+    }
+   ]
+  },
+  {
+   "slug": "rust-vulns",
+   "cat": "BAD",
+   "lane": "B",
+   "refresh": "daily",
+   "status": "live",
+   "domain": "an agent reviewing Rust code queries this for vulnerability precedent \u2014 identity-resolved RUSTSEC/GHSA/CVE advisories with affected functions and fixed versions",
+   "sources": [
+    {
+     "url": "tools/packs/rust-vulns/recipe.toml",
+     "licence_hint": "per-source review blocks in the recipe"
+    }
+   ]
+  },
+  {
+   "slug": "cisa-kev",
+   "cat": "SEC",
+   "lane": "B",
+   "refresh": "daily",
+   "status": "planned",
+   "domain": "an agent triaging findings queries this for whether a CVE is known-exploited in the wild, with ransomware-use and due-date fields",
+   "sources": [
+    {
+     "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+     "licence_hint": "public domain (US gov); intake decides fetch mechanism (#1110 Part A owns this pack \u2014 coordinate, do not duplicate)"
+    }
+   ]
+  },
+  {
+   "slug": "ghsa-db",
+   "cat": "SEC",
+   "lane": "B",
+   "refresh": "weekly",
+   "status": "candidate",
+   "domain": "an agent auditing dependencies across ecosystems queries this for GitHub-reviewed advisories with CVSS and patched ranges",
+   "sources": [
+    {
+     "url": "https://github.com/github/advisory-database",
+     "licence_hint": "CC-BY-4.0 (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "osv-ecosystems",
+   "cat": "SEC",
+   "lane": "B",
+   "refresh": "daily",
+   "status": "candidate",
+   "domain": "an agent pinning dependencies queries this for affected-version truth across Go/PyPI/npm, resolved to one record per vulnerability",
+   "sources": [
+    {
+     "url": "https://osv.dev",
+     "licence_hint": "CC-BY-4.0 for OSV data (verify per ecosystem export)"
+    }
+   ]
+  },
+  {
+   "slug": "pysec",
+   "cat": "SEC",
+   "lane": "B",
+   "refresh": "weekly",
+   "status": "candidate",
+   "domain": "an agent reviewing Python dependency trees queries this for PYSEC advisory records with fixed versions",
+   "sources": [
+    {
+     "url": "https://github.com/pypa/advisory-database",
+     "licence_hint": "CC-BY-4.0 (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "go-vulndb",
+   "cat": "SEC",
+   "lane": "B",
+   "refresh": "weekly",
+   "status": "candidate",
+   "domain": "an agent reviewing Go modules queries this for Go-team-curated advisories with symbols and fixed versions",
+   "sources": [
+    {
+     "url": "https://github.com/golang/vulndb",
+     "licence_hint": "verify at pin (CC-BY-4.0 / BSD variants reported)"
+    }
+   ]
+  },
+  {
+   "slug": "mitre-cwe",
+   "cat": "SEC",
+   "lane": "B",
+   "refresh": "pinned",
+   "status": "candidate",
+   "domain": "an agent classifying a finding queries this for the CWE definition, its parents/children and detection notes",
+   "sources": [
+    {
+     "url": "https://cwe.mitre.org/data/xml/cwec_latest.xml.zip",
+     "licence_hint": "MITRE terms \u2014 verify redistribution terms at intake"
+    }
+   ]
+  },
+  {
+   "slug": "mitre-attck",
+   "cat": "SEC",
+   "lane": "B",
+   "refresh": "weekly",
+   "status": "candidate",
+   "domain": "an agent writing or reviewing detections queries this for technique ids, tactics, detection data-sources and procedure examples",
+   "sources": [
+    {
+     "url": "https://github.com/mitre-attack/attack-stix-data",
+     "licence_hint": "verify at pin (MITRE Free License historically; CC-BY-4.0 reported for current data)"
+    }
+   ]
+  },
+  {
+   "slug": "mitre-capec",
+   "cat": "SEC",
+   "lane": "B",
+   "refresh": "pinned",
+   "status": "candidate",
+   "domain": "an agent reasoning about attack surface queries this for attack-pattern enumerations with prerequisites and mitigations",
+   "sources": [
+    {
+     "url": "https://github.com/mitre-attack/capec-stix-data",
+     "licence_hint": "verify at pin"
+    }
+   ]
+  },
+  {
+   "slug": "owasp-cheatsheets",
+   "cat": "SEC",
+   "lane": "B",
+   "refresh": "weekly",
+   "status": "candidate",
+   "domain": "an agent implementing an auth/upload/crypto feature queries this for the concrete cheatsheet: header lists, code shapes, test ideas",
+   "sources": [
+    {
+     "url": "https://github.com/OWASP/CheatSheetSeries",
+     "licence_hint": "CC-BY-SA-4.0 (verify at pin; SA term noted for pack emission)"
+    }
+   ]
+  },
+  {
+   "slug": "owasp-asvs",
+   "cat": "SEC",
+   "lane": "B",
+   "refresh": "pinned",
+   "status": "candidate",
+   "domain": "an agent reviewing an application's security posture queries this for the ASVS requirement and its verification level",
+   "sources": [
+    {
+     "url": "https://github.com/OWASP/ASVS",
+     "licence_hint": "CC-BY-SA-4.0 (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "owasp-wstg",
+   "cat": "SEC",
+   "lane": "B",
+   "refresh": "pinned",
+   "status": "candidate",
+   "domain": "an agent planning a web test pass queries this for test categories, procedures and expected results",
+   "sources": [
+    {
+     "url": "https://github.com/OWASP/wstg",
+     "licence_hint": "CC-BY-SA-4.0 (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "nist-sp800-sec",
+   "cat": "SEC",
+   "lane": "B",
+   "refresh": "pinned",
+   "status": "candidate",
+   "domain": "an agent designing a control or wipe procedure queries this for what SP 800-53/61/63/88/207 actually require, clause-level",
+   "sources": [
+    {
+     "url": "https://csrc.nist.gov/pubs/sp/800",
+     "licence_hint": "public domain (US gov work); intake fetches clause text to a local dir, recipe kind=dir"
+    }
+   ]
+  },
+  {
+   "slug": "nsa-cyber-advisories",
+   "cat": "SEC",
+   "lane": "B",
+   "refresh": "weekly",
+   "status": "candidate",
+   "domain": "an agent hardening infrastructure queries this for NSA/CISA joint guidance specifics (MTIG, memory-safe roadmaps, KPMs)",
+   "sources": [
+    {
+     "url": "https://github.com/NSAcyber",
+     "licence_hint": "public domain (US gov); pick advisory repos at intake"
+    }
+   ]
+  },
+  {
+   "slug": "cisa-alerts",
+   "cat": "SEC",
+   "lane": "B",
+   "refresh": "weekly",
+   "status": "candidate",
+   "domain": "an agent triaging an active campaign queries this for the alert's IOCs, required actions and mitigations",
+   "sources": [
+    {
+     "url": "https://www.cisa.gov/news-events/cybersecurity-advisories",
+     "licence_hint": "public domain (US gov); intake decides fetch mechanism"
+    }
+   ]
+  },
+  {
+   "slug": "first-epss",
+   "cat": "SEC",
+   "lane": "B",
+   "refresh": "daily",
+   "status": "candidate",
+   "domain": "an agent prioritising remediation queries this for a CVE's EPSS score and percentile to rank patch order",
+   "sources": [
+    {
+     "url": "https://www.first.org/epss/data-stats",
+     "licence_hint": "verify FIRST data terms at intake"
+    }
+   ]
+  },
+  {
+   "slug": "ietf-rfc",
+   "cat": "STD",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "deferred",
+   "domain": "an agent implementing or debugging a protocol queries this for what the RFC actually says at clause level (TLP permits unmodified redistribution)",
+   "sources": [
+    {
+     "url": "https://www.rfc-editor.org/rfc/rfc-txt.tar.gz",
+     "licence_hint": "IETF TLP (unmodified redistribution permitted); DEFERRED: no maintained full-text git mirror exists (mcpherrinm/rfc-mirror is ~2014-stale) \u2014 needs an http tar.gz dir-fetch recipe, not a manifest"
+    }
+   ]
+  },
+  {
+   "slug": "whatwg-specs",
+   "cat": "STD",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent building browser-adjacent tooling queries this for the living standard's exact normative statements (html/url/fetch/dom)",
+   "sources": [
+    {
+     "url": "https://github.com/whatwg/html",
+     "licence_hint": "CC-BY-4.0 (verify per repo at pin)"
+    },
+    {
+     "url": "https://github.com/whatwg/url",
+     "licence_hint": "CC-BY-4.0 (verify)"
+    }
+   ]
+  },
+  {
+   "slug": "w3c-css",
+   "cat": "STD",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent working on layout/selector internals queries this for the csswg draft's algorithm text (the resolution and cascade algorithms are unmemorisable prose)",
+   "sources": [
+    {
+     "url": "https://github.com/w3c/csswg-drafts",
+     "licence_hint": "W3C document licence (verify redistribution terms at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "ecma262",
+   "cat": "STD",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "candidate",
+   "domain": "an agent building a JS-adjacent tool queries this for the spec's abstract operations and completion-record semantics",
+   "sources": [
+    {
+     "url": "https://github.com/tc39/ecma262",
+     "licence_hint": "G4 passed (CC-BY-4.0 at pin) but G7 FAILED 2026-10-02 (median 0/5 relevant): tc39/ecma262's spec text is ONE 3MB spec.html which the indexer skips as junk \u2014 top hits were FAQ/CONTRIBUTING/package-lock. G2 shape not achieved. Needs section-split intake (ecmarkup clause extraction) or chunker support for giant single-file HTML before re-running G7. Same risk class: whatwg/html source, kafka-site single-page protocol.html \u2014 check those pending G7s first next cycle."
+    }
+   ]
+  },
+  {
+   "slug": "unicode-cldr",
+   "cat": "STD",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent formatting dates/numbers/names queries this for locale-specific CLDR rules and plural/data tables no model recalls",
+   "sources": [
+    {
+     "url": "https://github.com/unicode-org/cldr",
+     "licence_hint": "Unicode License (permissive \u2014 verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "openapi-spec",
+   "cat": "STD",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent generating or validating an API description queries this for the OpenAPI schema's exact keywords and resolution rules",
+   "sources": [
+    {
+     "url": "https://github.com/OAI/OpenAPI-Specification",
+     "licence_hint": "verify at pin (Apache-2.0 reported)"
+    }
+   ]
+  },
+  {
+   "slug": "json-schema-spec",
+   "cat": "STD",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent writing validators queries this for the dialect's exact keyword semantics (2019-09 vs 2020-12 differences bite)",
+   "sources": [
+    {
+     "url": "https://github.com/json-schema-org/json-schema-spec",
+     "licence_hint": "verify at pin"
+    }
+   ]
+  },
+  {
+   "slug": "graphql-spec",
+   "cat": "STD",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent building a GraphQL server queries this for execution, defer/stream and introspection semantics",
+   "sources": [
+    {
+     "url": "https://github.com/graphql/graphql-spec",
+     "licence_hint": "OWFa-1.0 patents + CC-BY-4.0 text (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "nats-protocol",
+   "cat": "STD",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent implementing a NATS client queries this for the wire protocol, verbs and semantics text",
+   "sources": [
+    {
+     "url": "https://github.com/nats-io/nats-architecture-and-design",
+     "licence_hint": "Apache-2.0 (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "kafka-protocol",
+   "cat": "STD",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent implementing a Kafka client queries this for the protocol guide's exact request/response schemas and error codes",
+   "sources": [
+    {
+     "url": "https://github.com/apache/kafka-site",
+     "licence_hint": "Apache-2.0 (verify which path carries the protocol guide at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "valkey-docs",
+   "cat": "STD",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent building against RESP queries this for command semantics, ranges and error cases (the open post-relicence fork of the Redis docs)",
+   "sources": [
+    {
+     "url": "https://github.com/valkey-io/valkey-doc",
+     "licence_hint": "BSD-3 (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "postgres-docs",
+   "cat": "STD",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "killed",
+   "domain": "an agent writing SQL against Postgres queries this for exact function semantics, GUC defaults and MVCC behaviour by version",
+   "sources": [
+    {
+     "url": "superseded by postgres-src",
+     "licence_hint": "killed: same repository as postgres-src \u2014 doc/ is inside it; a second corpus on one repo is padding"
+    }
+   ]
+  },
+  {
+   "slug": "sqlite-docs",
+   "cat": "STD",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "killed",
+   "domain": "an agent depending on SQLite's exact behaviour queries this for datatype, locking and pragma semantics",
+   "sources": [
+    {
+     "url": "superseded by sqlite-src",
+     "licence_hint": "killed: the github mirror's doc/ covers trunk docs; the separate docsrc tree is fossil-wiki source not worth its own corpus"
+    }
+   ]
+  },
+  {
+   "slug": "mqtt-spec",
+   "cat": "STD",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "deferred",
+   "domain": "an agent implementing an MQTT client/broker queries this for packet formats, QoS state machines and keepalive semantics",
+   "sources": [
+    {
+     "url": "https://docs.oasis-open.org/mqtt/mqtt/v5.0/mqtt-v5.0.html",
+     "licence_hint": "OASIS CC-BY-4.0; DEFERRED 2026-10-02: mqtt/mqtt.org is site chrome \u2014 the repo does NOT contain the spec text (verified at pin faab2e8a05, _sites/mqtt-specification.md only links out); needs an http-fetch recipe + chunking decision like ietf-rfc"
+    }
+   ]
+  },
+  {
+   "slug": "postmortems",
+   "cat": "OPS",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "deferred",
+   "domain": "an agent designing for failure queries this for how real outages of the same shape started, cascaded and were found",
+   "sources": [
+    {
+     "url": "https://github.com/danluu/post-mortems",
+     "licence_hint": "DEFERRED 2026-10-02: NO licence at pin 630562e5 (verified) AND the repo is a curated link index (7 files), not the postmortem text \u2014 real content sits on ~1k linked sites each with its own terms. Needs a Lane B curation with per-post licence review."
+    }
+   ]
+  },
+  {
+   "slug": "gitlab-runbooks",
+   "cat": "OPS",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent on call for a SaaS queries this for real alert definitions, escalations and mitigation playbooks from a large production fleet",
+   "sources": [
+    {
+     "url": "https://gitlab.com/gitlab-com/runbooks",
+     "licence_hint": "MIT (verify at pin \u2014 hosted on gitlab.com, not github)"
+    }
+   ]
+  },
+  {
+   "slug": "prometheus-docs",
+   "cat": "OPS",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "killed",
+   "domain": "an agent instrumenting a service queries this for metric semantics, recording-rule patterns and the query language's exact behaviour",
+   "sources": [
+    {
+     "url": "superseded by prometheus-src",
+     "licence_hint": "killed: same repository as prometheus-src \u2014 docs/ is inside it"
+    }
+   ]
+  },
+  {
+   "slug": "otel-proto",
+   "cat": "OPS",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent wiring telemetry queries this for the exact semantic conventions and proto field semantics",
+   "sources": [
+    {
+     "url": "https://github.com/open-telemetry/opentelemetry-proto",
+     "licence_hint": "Apache-2.0 (verify at pin)"
+    },
+    {
+     "url": "https://github.com/open-telemetry/semantic-conventions",
+     "licence_hint": "Apache-2.0 (verify)"
+    }
+   ]
+  },
+  {
+   "slug": "etcd-docs",
+   "cat": "OPS",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent operating a distributed system queries this for etcd's failure/restore/compaction semantics and tuning guides",
+   "sources": [
+    {
+     "url": "https://github.com/etcd-io/website",
+     "licence_hint": "Apache-2.0 (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "freebsd-handbook",
+   "cat": "OPS",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent administering a BSD system queries this for the handbook's exact rc/ZFS/jail/networking procedures",
+   "sources": [
+    {
+     "url": "https://github.com/freebsd/freebsd-doc",
+     "licence_hint": "FreeBSD Documentation License (permissive \u2014 verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "openbsd-faq",
+   "cat": "OPS",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent hardening an OpenBSD host queries this for the pf FAQ's rule grammar, upgrade procedures and faq-page hardening steps",
+   "sources": [
+    {
+     "url": "https://github.com/openbsd/www",
+     "licence_hint": "OpenBSD web content, per-page copyright (verify at pin; FAQ lives at faq/, repo is the www CVS module ~890MB)"
+    }
+   ]
+  },
+  {
+   "slug": "tldr-pages",
+   "cat": "OPS",
+   "lane": "A",
+   "refresh": "weekly",
+   "status": "live",
+   "domain": "an agent scripting an unfamiliar long-tail tool queries this for its example invocations (popular tools are memorised \u2014 G3 value is the tail only)",
+   "sources": [
+    {
+     "url": "https://github.com/tldr-pages/tldr",
+     "licence_hint": "MIT (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "school-of-sre",
+   "cat": "OPS",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "candidate",
+   "domain": "an agent stepping into an SRE task queries this for the curriculum's concrete networking/Linux/DB ops explanations",
+   "sources": [
+    {
+     "url": "https://github.com/linkedin/school-of-sre",
+     "licence_hint": "G4 passed (CC-BY-4.0 at pin) but G7 FAILED 2026-10-02 (median 2.5/5): replication/tcp/troubleshooting queries retrieve, but on-call/incident-response and storage-caching queries score ~1 \u2014 the curriculum has no on-call chapter and caching lives in system_design/scaling.md. G1 domain sentence over-promises; rescope to the curriculum's actual chapters and re-run G7 with in-domain queries (rescope first, no query-shopping)."
+    }
+   ]
+  },
+  {
+   "slug": "rust-api-guidelines",
+   "cat": "GOOD",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent designing a Rust library API queries this for the naming/convertibility/error conventions with their reasoning",
+   "sources": [
+    {
+     "url": "https://github.com/rust-lang/api-guidelines",
+     "licence_hint": "MIT OR Apache-2.0 (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "google-eng-practices",
+   "cat": "GOOD",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent reviewing code queries this for the review standard's concrete what-to-look-for and clangers",
+   "sources": [
+    {
+     "url": "https://github.com/google/eng-practices",
+     "licence_hint": "CC-BY-4.0 (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "msft-api-guidelines",
+   "cat": "GOOD",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent designing a REST surface queries this for the naming/paging/versioning/error rules with examples",
+   "sources": [
+    {
+     "url": "https://github.com/microsoft/api-guidelines",
+     "licence_hint": "verify at pin (CC-BY reported)"
+    }
+   ]
+  },
+  {
+   "slug": "zalando-restful-api-guidelines",
+   "cat": "GOOD",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent reviewing an API design queries this for the rule, its intent and propulated exceptions from a fleet of thousands",
+   "sources": [
+    {
+     "url": "https://github.com/zalando/restful-api-guidelines",
+     "licence_hint": "CC-BY-4.0 (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "github-api-description",
+   "cat": "GOOD",
+   "lane": "A",
+   "refresh": "weekly",
+   "status": "live",
+   "domain": "an agent building a GitHub integration queries this for the machine-readable schema of a huge production REST API (the exemplar OpenGraph/OpenAPI corpus)",
+   "sources": [
+    {
+     "url": "https://github.com/github/rest-api-description",
+     "licence_hint": "verify at pin (MIT reported)"
+    }
+   ]
+  },
+  {
+   "slug": "mozilla-ssl-configs",
+   "cat": "GOOD",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent configuring TLS termination queries this for the recommended cipher/protocol sets per server and their security/cost tradeoffs",
+   "sources": [
+    {
+     "url": "https://github.com/mozilla/server-side-tls",
+     "licence_hint": "MPL-2.0 (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "osquery-config-examples",
+   "cat": "GOOD",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent writing host detections queries this for battle-tested osquery SQL by objective (suid diffs, persistence paths, launch items)",
+   "sources": [
+    {
+     "url": "https://github.com/palantir/osquery-configuration",
+     "licence_hint": "Apache-2.0 (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "govuk-design-system",
+   "cat": "GOOD",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent building accessible UI queries this for the component's exact accessibility criteria and edge cases",
+   "sources": [
+    {
+     "url": "https://github.com/alphagov/govuk-frontend",
+     "licence_hint": "MIT (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "twelve-factor",
+   "cat": "GOOD",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent containerising or configuring an app queries this for the factor's exact statement and rationale (G3 borderline: well-known prose \u2014 keep only if G7 shows retrieval value)",
+   "sources": [
+    {
+     "url": "https://github.com/heroku/12factor",
+     "licence_hint": "verify at pin (code MIT reported; content licence separate)"
+    }
+   ]
+  },
+  {
+   "slug": "c-vulns",
+   "cat": "BAD",
+   "lane": "B",
+   "refresh": "weekly",
+   "status": "deferred",
+   "domain": "an agent reviewing C code queries this for version-pinned vulnerable functions and their fix diffs, permissively-licensed projects only",
+   "sources": [
+    {
+     "url": "mined from CVE/GHSA fix commits (kernel and other GPL projects excluded by per-record licence)",
+     "licence_hint": "per-record upstream licence; depends on the #61 S1/S3 harvester"
+    }
+   ]
+  },
+  {
+   "slug": "go-vuln-funcs",
+   "cat": "BAD",
+   "lane": "B",
+   "refresh": "weekly",
+   "status": "deferred",
+   "domain": "an agent reviewing Go code queries this for vulnerable symbols with fix diffs (extends go-vulndb's symbols into code records)",
+   "sources": [
+    {
+     "url": "mined from go-vulndb-linked fix commits",
+     "licence_hint": "per-record upstream licence; depends on the #61 harvester"
+    }
+   ]
+  },
+  {
+   "slug": "py-vuln-funcs",
+   "cat": "BAD",
+   "lane": "B",
+   "refresh": "weekly",
+   "status": "deferred",
+   "domain": "an agent reviewing Python code queries this for vulnerable functions with fix diffs, PYSEC-linked",
+   "sources": [
+    {
+     "url": "mined from PYSEC/GHSA-linked fix commits",
+     "licence_hint": "per-record upstream licence; depends on the #61 harvester"
+    }
+   ]
+  },
+  {
+   "slug": "redos-precedent",
+   "cat": "BAD",
+   "lane": "B",
+   "refresh": "weekly",
+   "status": "candidate",
+   "domain": "an agent vetting regex handling queries this for real ReDoS advisories with the pathological pattern and the bounded rewrite that fixed it",
+   "sources": [
+    {
+     "url": "curated from GHSA/RUSTSEC/PYSEC ReDoS-class advisories",
+     "licence_hint": "CC-BY-4.0 upstream (verify per source)"
+    }
+   ]
+  },
+  {
+   "slug": "crypto-misuse-precedent",
+   "cat": "BAD",
+   "lane": "B",
+   "refresh": "weekly",
+   "status": "candidate",
+   "domain": "an agent reviewing crypto call sites queries this for real CWE-327/328/347-class advisories showing the misuse and the corrected construction",
+   "sources": [
+    {
+     "url": "curated from advisory databases by CWE class",
+     "licence_hint": "CC-BY-4.0 upstream (verify per source)"
+    }
+   ]
+  },
+  {
+   "slug": "duckdb",
+   "cat": "DATA",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent working on query execution queries this for how a real embeddable OLAP engine does join ordering, expression rewrites and memory-aware operators",
+   "sources": [
+    {
+     "url": "https://github.com/duckdb/duckdb",
+     "licence_hint": "MIT (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "rocksdb",
+   "cat": "DATA",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent working on LSM stores queries this for compaction, WAL and recovery internals at production scale",
+   "sources": [
+    {
+     "url": "https://github.com/facebook/rocksdb",
+     "licence_hint": "Apache-2.0 OR GPL-2 dual (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "leveldb",
+   "cat": "DATA",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent learning LSM internals queries this for the original clean implementation (memtable/sstable/manifest split)",
+   "sources": [
+    {
+     "url": "https://github.com/google/leveldb",
+     "licence_hint": "BSD-3 (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "pebble",
+   "cat": "DATA",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "deferred",
+   "domain": "an agent working on LSM stores queries this for a modern Go LSM with delete/RangeLock semantics",
+   "sources": [
+    {
+     "url": "https://github.com/cockroachdb/pebble",
+     "licence_hint": "VERIFY FIRST \u2014 CockroachDB-adjacent licensing has moved; if not permissive, rocksdb+badger cover the domain and this stays deferred"
+    }
+   ]
+  },
+  {
+   "slug": "badger",
+   "cat": "DATA",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent working on pure-Go KV stores queries this for its LSM-with-value-log design and transaction implementation",
+   "sources": [
+    {
+     "url": "https://github.com/dgraph-io/badger",
+     "licence_hint": "MIT (verify at pin \u2014 dgraph BUSL era did not reach badger, confirm)"
+    }
+   ]
+  },
+  {
+   "slug": "lmdb",
+   "cat": "DATA",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent working on memory-mapped B+trees queries this for LMDB's page/cursor/COW mechanics",
+   "sources": [
+    {
+     "url": "https://github.com/LMDB/lmdb",
+     "licence_hint": "OpenLDAP/ISCL family (verify file at pin; code lives at repo root of the mirror, default branch mdb.master3)"
+    }
+   ]
+  },
+  {
+   "slug": "faiss",
+   "cat": "DATA",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent working on ANN queries this for index construction, IVF/HNSW composition and GPU paths in the reference implementation",
+   "sources": [
+    {
+     "url": "https://github.com/facebookresearch/faiss",
+     "licence_hint": "MIT (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "annoy",
+   "cat": "DATA",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent working on read-mostly ANN queries this for the forest-of-trees build and on-disk format",
+   "sources": [
+    {
+     "url": "https://github.com/spotify/annoy",
+     "licence_hint": "verify at pin (Apache-2.0/'Other' reported)"
+    }
+   ]
+  },
+  {
+   "slug": "sqlite-src",
+   "cat": "DATA",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent working on embedded DB internals queries this for the btree module, pager and the famously commented test harness",
+   "sources": [
+    {
+     "url": "https://github.com/sqlite/sqlite",
+     "licence_hint": "public domain (verify at pin; official read-only fossil\u2192git mirror)"
+    }
+   ]
+  },
+  {
+   "slug": "postgres-src",
+   "cat": "DATA",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent working on planners queries this for the real cost model, join ordering and executor nodes",
+   "sources": [
+    {
+     "url": "https://github.com/postgres/postgres",
+     "licence_hint": "PostgreSQL Licence (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "parquet-format",
+   "cat": "DATA",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent reading/writing parquet queries this for encodings, logical types and the thrift metadata spec",
+   "sources": [
+    {
+     "url": "https://github.com/apache/parquet-format",
+     "licence_hint": "Apache-2.0 (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "arrow-rs",
+   "cat": "DATA",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent working on columnar memory queries this for the Rust arrow arrays, kernels and IPC paths",
+   "sources": [
+    {
+     "url": "https://github.com/apache/arrow-rs",
+     "licence_hint": "Apache-2.0 (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "iceberg",
+   "cat": "DATA",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent building lakehouse tables queries this for spec semantics and the reference metadata/manifest handling",
+   "sources": [
+    {
+     "url": "https://github.com/apache/iceberg",
+     "licence_hint": "Apache-2.0 (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "kafka-src",
+   "cat": "DATA",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent working on log systems queries this for the log-cleaner, controller and replication protocol internals",
+   "sources": [
+    {
+     "url": "https://github.com/apache/kafka",
+     "licence_hint": "Apache-2.0 (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "rabbitmq",
+   "cat": "DATA",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent working on message brokers queries this for queue/exchange routing and mirrored-queue semantics",
+   "sources": [
+    {
+     "url": "https://github.com/rabbitmq/rabbitmq-server",
+     "licence_hint": "MPL-2.0 (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "nats-server",
+   "cat": "DATA",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent working on pub/sub queries this for subject-tree routing, jetstream and clustering internals in readable Go",
+   "sources": [
+    {
+     "url": "https://github.com/nats-io/nats-server",
+     "licence_hint": "Apache-2.0 (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "etcd-src",
+   "cat": "DATA",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent working on coordination stores queries this for raft integration, watch semantics and backend compaction",
+   "sources": [
+    {
+     "url": "https://github.com/etcd-io/etcd",
+     "licence_hint": "Apache-2.0 (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "raft-rs",
+   "cat": "DATA",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent implementing raft queries this for the log/ready/progress state machine the tikv fleet runs on",
+   "sources": [
+    {
+     "url": "https://github.com/tikv/raft-rs",
+     "licence_hint": "Apache-2.0 (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "dragonboat",
+   "cat": "DATA",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent implementing multi-raft queries this for the sharded log and snapshot plumbing",
+   "sources": [
+    {
+     "url": "https://github.com/lni/dragonboat",
+     "licence_hint": "BSD-2 (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "influxdb",
+   "cat": "DATA",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent working on time series queries this for TSM/flux paths and downsampling semantics",
+   "sources": [
+    {
+     "url": "https://github.com/influxdata/influxdb",
+     "licence_hint": "verify at pin (MIT/Apache reported; iox era changed layout)"
+    }
+   ]
+  },
+  {
+   "slug": "prometheus-src",
+   "cat": "DATA",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent working on TSDB queries this for the head-block/WAL/head-compaction paths and PromQL evaluation",
+   "sources": [
+    {
+     "url": "https://github.com/prometheus/prometheus",
+     "licence_hint": "Apache-2.0 (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "valkey-src",
+   "cat": "DATA",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent working on in-memory KV queries this for the event-loop, object encoding and replication paths of the open fork",
+   "sources": [
+    {
+     "url": "https://github.com/valkey-io/valkey",
+     "licence_hint": "BSD-3 (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "rustls",
+   "cat": "NET",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent implementing TLS in Rust queries this for the state machine, cipher dispatch and certificate verification",
+   "sources": [
+    {
+     "url": "https://github.com/rustls/rustls",
+     "licence_hint": "Apache-2.0 OR MIT (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "openssl",
+   "cat": "NET",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent debugging TLS/ASN.1 queries this for the reference provider's handshake, BIO and provider internals",
+   "sources": [
+    {
+     "url": "https://github.com/openssl/openssl",
+     "licence_hint": "Apache-2.0 since 3.0 (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "s2n-tls",
+   "cat": "NET",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent hardening TLS queries this for the defensively-structured C state machine and its testing approach",
+   "sources": [
+    {
+     "url": "https://github.com/aws/s2n-tls",
+     "licence_hint": "Apache-2.0 (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "boringtun",
+   "cat": "NET",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent implementing a VPN data plane queries this for the wireguard protocol implementation and its async runtime use",
+   "sources": [
+    {
+     "url": "https://github.com/cloudflare/boringtun",
+     "licence_hint": "verify at pin (Apache-2.0/BSD variants reported)"
+    }
+   ]
+  },
+  {
+   "slug": "quinn",
+   "cat": "NET",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent implementing QUIC queries this for congestion control, stream state and 0-RTT handling in idiomatic Rust",
+   "sources": [
+    {
+     "url": "https://github.com/quinn-rs/quinn",
+     "licence_hint": "Apache-2.0 OR MIT (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "nghttp2",
+   "cat": "NET",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent working with HTTP/2 queries this for flow control, HPACK and priority internals in the reference C library",
+   "sources": [
+    {
+     "url": "https://github.com/nghttp2/nghttp2",
+     "licence_hint": "MIT (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "curl-src",
+   "cat": "NET",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent writing an HTTP client queries this for protocol handling, auth negotiation and the protocol-selection seams",
+   "sources": [
+    {
+     "url": "https://github.com/curl/curl",
+     "licence_hint": "curl licence (permissive \u2014 verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "libuv",
+   "cat": "NET",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent building an event loop queries this for the polling primitives and async threading patterns",
+   "sources": [
+    {
+     "url": "https://github.com/libuv/libuv",
+     "licence_hint": "MIT (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "zstd",
+   "cat": "NET",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent tuning compression queries this for frame/block formats, window and level internals",
+   "sources": [
+    {
+     "url": "https://github.com/facebook/zstd",
+     "licence_hint": "BSD-3 OR GPL-2 dual (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "lz4",
+   "cat": "NET",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent needing fast block compression queries this for the block format and decoder loop",
+   "sources": [
+    {
+     "url": "https://github.com/lz4/lz4",
+     "licence_hint": "BSD-2 (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "brotli",
+   "cat": "NET",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent working on web content encoding queries this for the static dictionary and transform handling",
+   "sources": [
+    {
+     "url": "https://github.com/google/brotli",
+     "licence_hint": "MIT (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "zlib-ng",
+   "cat": "NET",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent working on deflate queries this for the modernised algorithms and SIMD paths",
+   "sources": [
+    {
+     "url": "https://github.com/zlib-ng/zlib-ng",
+     "licence_hint": "zlib (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "snappy",
+   "cat": "NET",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent needing cheap compression queries this for the format and the reference encoder decisions",
+   "sources": [
+    {
+     "url": "https://github.com/google/snappy",
+     "licence_hint": "verify at pin (BSD variants reported)"
+    }
+   ]
+  },
+  {
+   "slug": "protobuf",
+   "cat": "NET",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent generating or debugging protobuf code queries this for wire format, descriptor handling and the conformance suite",
+   "sources": [
+    {
+     "url": "https://github.com/protocolbuffers/protobuf",
+     "licence_hint": "BSD-3 (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "flatbuffers",
+   "cat": "NET",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent designing zero-copy serialisation queries this for the vtable layout and verifier approach",
+   "sources": [
+    {
+     "url": "https://github.com/google/flatbuffers",
+     "licence_hint": "Apache-2.0 (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "capnproto",
+   "cat": "NET",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent doing capability RPC queries this for the serialisation layout, promise pipelining and the security hardening history",
+   "sources": [
+    {
+     "url": "https://github.com/capnproto/capnproto",
+     "licence_hint": "MIT (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "msgpack-c",
+   "cat": "NET",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent implementing msgpack queries this for the format handling and unpack edge cases",
+   "sources": [
+    {
+     "url": "https://github.com/msgpack/msgpack-c",
+     "licence_hint": "Boost BSL-1.0 dual (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "openbao",
+   "cat": "NET",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent working on secret stores queries this for the barrier, seal and lease internals of the open vault fork",
+   "sources": [
+    {
+     "url": "https://github.com/openbao/openbao",
+     "licence_hint": "MPL-2.0 (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "caddy",
+   "cat": "NET",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent building a TLS-serving reverse proxy queries this for cert automation and config-reload design",
+   "sources": [
+    {
+     "url": "https://github.com/caddyserver/caddy",
+     "licence_hint": "Apache-2.0 (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "envoy",
+   "cat": "NET",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent building a data plane queries this for filter-chain, xDS and overload-manager internals",
+   "sources": [
+    {
+     "url": "https://github.com/envoyproxy/envoy",
+     "licence_hint": "Apache-2.0 (verify at pin)"
+    }
+   ]
+  },
+  {
+   "slug": "nginx",
+   "cat": "NET",
+   "lane": "A",
+   "refresh": "pinned",
+   "status": "live",
+   "domain": "an agent working on web servers queries this for the event-driven request cycle and module seams (note: very large)",
+   "sources": [
+    {
+     "url": "https://github.com/nginx/nginx",
+     "licence_hint": "BSD-2 (verify at pin)"
+    }
+   ]
+  }
+ ]
 }

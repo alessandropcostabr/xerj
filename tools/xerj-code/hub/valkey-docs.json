@@ -1,0 +1,21 @@
+{
+  "corpus": "valkey-docs",
+  "cloned_at": "2026-10-02T00:49:45Z",
+  "repos": [
+    {
+      "repo": "valkey-docs",
+      "url": "https://github.com/valkey-io/valkey-doc",
+      "licence": "hint only: BSD-3 (verify at pin)",
+      "sha": "4852e820d09315c7417ac2902759dd90d662543d",
+      "files": 726,
+      "bytes": 0,
+      "review": {
+        "spdx": "CC-BY-SA-4.0",
+        "use": "approach-only",
+        "by": "xerj-org",
+        "at": "2026-10-02",
+        "note": "LICENSE+COPYRIGHT at pin: CC-BY-SA-4.0 (redis-doc lineage, Sanfilippo). ShareAlike term collides with serving derived snippets \u2014 approach-only; Lane A pointer only. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=726; backlog hint: BSD-3 (verify at pin); api licence: unknown; evidence: COPYRIGHT\u2192CC-BY-SA-4.0; LICENSE\u2192CC-BY-SA-4.0"
+      }
+    }
+  ]
+}

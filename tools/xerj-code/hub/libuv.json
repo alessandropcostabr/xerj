@@ -1,0 +1,21 @@
+{
+  "corpus": "libuv",
+  "cloned_at": "2026-10-02T00:49:45Z",
+  "repos": [
+    {
+      "repo": "libuv",
+      "url": "https://github.com/libuv/libuv",
+      "licence": "hint only: MIT (verify at pin)",
+      "sha": "49b1c064714b412d7f7a2f5e7146c977554e57f9",
+      "files": 483,
+      "bytes": 0,
+      "review": {
+        "spdx": "MIT",
+        "use": "adapt-with-attribution",
+        "by": "xerj-org",
+        "at": "2026-10-02",
+        "note": "LICENSE at pin: MIT. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=483; backlog hint: MIT (verify at pin); api licence: unknown; evidence: LICENSE\u2192MIT"
+      }
+    }
+  ]
+}

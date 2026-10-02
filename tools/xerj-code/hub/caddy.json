@@ -1,0 +1,21 @@
+{
+  "corpus": "caddy",
+  "cloned_at": "2026-10-02T00:49:45Z",
+  "repos": [
+    {
+      "repo": "caddy",
+      "url": "https://github.com/caddyserver/caddy",
+      "licence": "hint only: Apache-2.0 (verify at pin)",
+      "sha": "ac834b5dc70a17dca296f47c78c64587d6631cbb",
+      "files": 684,
+      "bytes": 0,
+      "review": {
+        "spdx": "Apache-2.0",
+        "use": "adapt-with-attribution",
+        "by": "xerj-org",
+        "at": "2026-10-02",
+        "note": "LICENSE at pin: Apache-2.0. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=684; backlog hint: Apache-2.0 (verify at pin); api licence: unknown; evidence: LICENSE\u2192Apache-2.0"
+      }
+    }
+  ]
+}

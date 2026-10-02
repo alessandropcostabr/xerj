@@ -1,0 +1,21 @@
+{
+  "corpus": "openssl",
+  "cloned_at": "2026-10-02T00:49:45Z",
+  "repos": [
+    {
+      "repo": "openssl",
+      "url": "https://github.com/openssl/openssl",
+      "licence": "hint only: Apache-2.0 since 3.0 (verify at pin)",
+      "sha": "7ef69a722c129fe446d7a1fef52ff8f12ccb010b",
+      "files": 6161,
+      "bytes": 0,
+      "review": {
+        "spdx": "Apache-2.0",
+        "use": "adapt-with-attribution",
+        "by": "xerj-org",
+        "at": "2026-10-02",
+        "note": "LICENSE.txt at pin: Apache-2.0 (3.x era). | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=6161; backlog hint: Apache-2.0 since 3.0 (verify at pin); api licence: unknown; evidence: LICENSE.txt\u2192Apache-2.0"
+      }
+    }
+  ]
+}

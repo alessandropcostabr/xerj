@@ -1,0 +1,21 @@
+{
+  "corpus": "badger",
+  "cloned_at": "2026-10-02T00:49:45Z",
+  "repos": [
+    {
+      "repo": "badger",
+      "url": "https://github.com/dgraph-io/badger",
+      "licence": "hint only: MIT (verify at pin \u2014 dgraph BUSL era did not reach badger, confirm)",
+      "sha": "5688f1406cedb8e7cd22401855a90ad6b9ce733c",
+      "files": 165,
+      "bytes": 0,
+      "review": {
+        "spdx": "Apache-2.0",
+        "use": "adapt-with-attribution",
+        "by": "xerj-org",
+        "at": "2026-10-02",
+        "note": "LICENSE at pin: Apache-2.0 \u2014 backlog hint said MIT, evidence over hint (dgraph-era relicence did reach badger). | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=165; backlog hint: MIT (verify at pin \u2014 dgraph BUSL era did not reach badger, confirm); api licence: unknown; evidence: LICENSE\u2192Apache-2.0"
+      }
+    }
+  ]
+}

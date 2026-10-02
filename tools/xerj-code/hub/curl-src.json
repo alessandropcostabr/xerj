@@ -1,0 +1,21 @@
+{
+  "corpus": "curl-src",
+  "cloned_at": "2026-10-02T00:49:45Z",
+  "repos": [
+    {
+      "repo": "curl-src",
+      "url": "https://github.com/curl/curl",
+      "licence": "hint only: curl licence (permissive \u2014 verify at pin)",
+      "sha": "39ad9b0771708c5aff20663a7ef3704bc55510d7",
+      "files": 4553,
+      "bytes": 0,
+      "review": {
+        "spdx": "curl",
+        "use": "adapt-with-attribution",
+        "by": "xerj-org",
+        "at": "2026-10-02",
+        "note": "COPYING at pin: the curl licence (MIT-derived, SPDX: curl). | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=4553; backlog hint: curl licence (permissive \u2014 verify at pin); api licence: unknown; evidence: COPYING\u2192ISC"
+      }
+    }
+  ]
+}

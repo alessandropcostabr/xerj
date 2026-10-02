@@ -1,0 +1,21 @@
+{
+  "corpus": "json-schema-spec",
+  "cloned_at": "2026-10-02T00:49:45Z",
+  "repos": [
+    {
+      "repo": "json-schema-spec",
+      "url": "https://github.com/json-schema-org/json-schema-spec",
+      "licence": "hint only: verify at pin",
+      "sha": "4f56a9900674b27804f0ec32e3b7fdfa4efad695",
+      "files": 66,
+      "bytes": 0,
+      "review": {
+        "spdx": "BSD-2-Clause",
+        "use": "adapt-with-attribution",
+        "by": "xerj-org",
+        "at": "2026-10-02",
+        "note": "LICENSE at pin: BSD-family redistribution text (2-clause shape). | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=66; backlog hint: verify at pin; api licence: unknown; evidence: LICENSE\u2192BSD-2"
+      }
+    }
+  ]
+}

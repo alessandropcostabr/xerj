@@ -1,0 +1,21 @@
+{
+  "corpus": "zstd",
+  "cloned_at": "2026-10-02T00:49:45Z",
+  "repos": [
+    {
+      "repo": "zstd",
+      "url": "https://github.com/facebook/zstd",
+      "licence": "hint only: BSD-3 OR GPL-2 dual (verify at pin)",
+      "sha": "01b7154f1172432f8abe9b3bb9909e14a1176b7d",
+      "files": 660,
+      "bytes": 0,
+      "review": {
+        "spdx": "mixed: BSD-3 (lib) / GPL-2.0 (cli)",
+        "use": "mixed",
+        "by": "xerj-org",
+        "at": "2026-10-02",
+        "note": "LICENSE at pin: BSD (Meta) for lib/; COPYING: GPLv2 for programs \u2014 snippets outside lib/ are approach-only. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=660; backlog hint: BSD-3 OR GPL-2 dual (verify at pin); api licence: unknown; evidence: COPYING\u2192LGPL-2.1; LICENSE\u2192BSD-2"
+      }
+    }
+  ]
+}

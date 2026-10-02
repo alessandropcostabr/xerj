@@ -1,0 +1,21 @@
+{
+  "corpus": "valkey-src",
+  "cloned_at": "2026-10-02T00:49:45Z",
+  "repos": [
+    {
+      "repo": "valkey-src",
+      "url": "https://github.com/valkey-io/valkey",
+      "licence": "hint only: BSD-3 (verify at pin)",
+      "sha": "f4cbd1c5ef06f0dd574799a0a6ab5f5bf57c82a5",
+      "files": 2047,
+      "bytes": 0,
+      "review": {
+        "spdx": "BSD-3-Clause",
+        "use": "adapt-with-attribution",
+        "by": "xerj-org",
+        "at": "2026-10-02",
+        "note": "COPYING at pin: redis-derived 3-clause BSD (valkey fork). | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=2047; backlog hint: BSD-3 (verify at pin); api licence: unknown; evidence: COPYING\u2192BSD-2"
+      }
+    }
+  ]
+}

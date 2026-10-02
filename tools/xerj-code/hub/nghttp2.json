@@ -1,0 +1,21 @@
+{
+  "corpus": "nghttp2",
+  "cloned_at": "2026-10-02T00:49:45Z",
+  "repos": [
+    {
+      "repo": "nghttp2",
+      "url": "https://github.com/nghttp2/nghttp2",
+      "licence": "hint only: MIT (verify at pin)",
+      "sha": "19d06e62185d93d2398d85241cdbb460349bfe44",
+      "files": 616,
+      "bytes": 0,
+      "review": {
+        "spdx": "MIT",
+        "use": "adapt-with-attribution",
+        "by": "xerj-org",
+        "at": "2026-10-02",
+        "note": "COPYING at pin: MIT (LICENSE is a pointer 'See COPYING'). | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=616; backlog hint: MIT (verify at pin); api licence: unknown; evidence: COPYING\u2192MIT; LICENSE\u2192UNKNOWN"
+      }
+    }
+  ]
+}

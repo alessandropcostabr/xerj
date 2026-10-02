@@ -1,0 +1,21 @@
+{
+  "corpus": "protobuf",
+  "cloned_at": "2026-10-02T00:49:45Z",
+  "repos": [
+    {
+      "repo": "protobuf",
+      "url": "https://github.com/protocolbuffers/protobuf",
+      "licence": "hint only: BSD-3 (verify at pin)",
+      "sha": "fb0a6f673c9eb34c674f157300268cac53fa6be9",
+      "files": 3709,
+      "bytes": 0,
+      "review": {
+        "spdx": "BSD-3-Clause",
+        "use": "adapt-with-attribution",
+        "by": "xerj-org",
+        "at": "2026-10-02",
+        "note": "LICENSE at pin: Google 2008 3-clause BSD. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=3709; backlog hint: BSD-3 (verify at pin); api licence: unknown; evidence: LICENSE\u2192BSD-2"
+      }
+    }
+  ]
+}

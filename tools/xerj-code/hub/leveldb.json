@@ -1,0 +1,21 @@
+{
+  "corpus": "leveldb",
+  "cloned_at": "2026-10-02T00:49:45Z",
+  "repos": [
+    {
+      "repo": "leveldb",
+      "url": "https://github.com/google/leveldb",
+      "licence": "hint only: BSD-3 (verify at pin)",
+      "sha": "7ee830d02b623e8ffe0b95d59a74db1e58da04c5",
+      "files": 154,
+      "bytes": 0,
+      "review": {
+        "spdx": "BSD-3-Clause",
+        "use": "adapt-with-attribution",
+        "by": "xerj-org",
+        "at": "2026-10-02",
+        "note": "LICENSE at pin: 3-clause BSD, LevelDB Authors 2011. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=154; backlog hint: BSD-3 (verify at pin); api licence: unknown; evidence: LICENSE\u2192BSD-2"
+      }
+    }
+  ]
+}

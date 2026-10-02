@@ -1,0 +1,21 @@
+{
+  "corpus": "nats-server",
+  "cloned_at": "2026-10-02T00:49:45Z",
+  "repos": [
+    {
+      "repo": "nats-server",
+      "url": "https://github.com/nats-io/nats-server",
+      "licence": "hint only: Apache-2.0 (verify at pin)",
+      "sha": "a44c356c4271a23da98ee83c53c90d3f14f75682",
+      "files": 598,
+      "bytes": 0,
+      "review": {
+        "spdx": "Apache-2.0",
+        "use": "adapt-with-attribution",
+        "by": "xerj-org",
+        "at": "2026-10-02",
+        "note": "LICENSE at pin: Apache-2.0. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=598; backlog hint: Apache-2.0 (verify at pin); api licence: unknown; evidence: LICENSE\u2192Apache-2.0"
+      }
+    }
+  ]
+}

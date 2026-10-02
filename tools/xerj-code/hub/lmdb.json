@@ -1,0 +1,21 @@
+{
+  "corpus": "lmdb",
+  "cloned_at": "2026-10-02T00:55:03Z",
+  "repos": [
+    {
+      "repo": "lmdb",
+      "url": "https://github.com/LMDB/lmdb",
+      "licence": "hint only: OpenLDAP/ISCL family (verify file at pin; code lives at repo root of the mirror, default branch mdb.master3)",
+      "sha": "700e10f91a65fae69520301926fb9819f16d292f",
+      "files": 41,
+      "bytes": 0,
+      "review": {
+        "spdx": "OpenLDAP-2.8",
+        "use": "adapt-with-attribution",
+        "by": "xerj-org",
+        "at": "2026-10-02",
+        "note": "no top-level file; opened libraries/liblmdb/LICENSE (OpenLDAP Public License 2.8) + COPYRIGHT (Howard Chu/Symas). Code lives in libraries/liblmdb/ on the default branch. | profiler evidence: PROFILER 2026-10-02T00:55:03Z trees-only \u2014 files=41; backlog hint: OpenLDAP/ISCL family (verify file at pin; code lives at repo root of the mirror, default branch mdb.master3); api licence: unknown; evidence: NO TOP-LEVEL LICENCE FILE FOUND \u2014 investigate before review"
+      }
+    }
+  ]
+}

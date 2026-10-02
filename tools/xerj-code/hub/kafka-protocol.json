@@ -1,0 +1,21 @@
+{
+  "corpus": "kafka-protocol",
+  "cloned_at": "2026-10-02T00:49:45Z",
+  "repos": [
+    {
+      "repo": "kafka-protocol",
+      "url": "https://github.com/apache/kafka-site",
+      "licence": "hint only: Apache-2.0 (verify which path carries the protocol guide at pin)",
+      "sha": "7bf6e996d33183683add594d7ef76a6f1fc7ca1a",
+      "files": 28477,
+      "bytes": 0,
+      "review": {
+        "spdx": "Apache-2.0",
+        "use": "adapt-with-attribution",
+        "by": "xerj-org",
+        "at": "2026-10-02",
+        "note": "LICENSE at pin: Apache-2.0 (kafka-site, protocol guide included in tree). | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=28477; backlog hint: Apache-2.0 (verify which path carries the protocol guide at pin); api licence: unknown; evidence: LICENSE\u2192Apache-2.0"
+      }
+    }
+  ]
+}

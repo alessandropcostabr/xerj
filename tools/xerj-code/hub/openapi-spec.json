@@ -1,0 +1,21 @@
+{
+  "corpus": "openapi-spec",
+  "cloned_at": "2026-10-02T00:49:45Z",
+  "repos": [
+    {
+      "repo": "openapi-spec",
+      "url": "https://github.com/OAI/OpenAPI-Specification",
+      "licence": "hint only: verify at pin (Apache-2.0 reported)",
+      "sha": "447c479c9c7136918e80a57a258fd6c84f369c7c",
+      "files": 120,
+      "bytes": 0,
+      "review": {
+        "spdx": "Apache-2.0",
+        "use": "adapt-with-attribution",
+        "by": "xerj-org",
+        "at": "2026-10-02",
+        "note": "LICENSE at pin: Apache-2.0. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=120; backlog hint: verify at pin (Apache-2.0 reported); api licence: unknown; evidence: LICENSE\u2192Apache-2.0"
+      }
+    }
+  ]
+}

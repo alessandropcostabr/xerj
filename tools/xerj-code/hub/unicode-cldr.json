@@ -1,0 +1,21 @@
+{
+  "corpus": "unicode-cldr",
+  "cloned_at": "2026-10-02T00:49:45Z",
+  "repos": [
+    {
+      "repo": "unicode-cldr",
+      "url": "https://github.com/unicode-org/cldr",
+      "licence": "hint only: Unicode License (permissive \u2014 verify at pin)",
+      "sha": "c1159fe6c671b0dd4a742502a5a79a6e95cba771",
+      "files": 9337,
+      "bytes": 0,
+      "review": {
+        "spdx": "Unicode-ToU (UTS#35 notice at pin)",
+        "use": "adapt-with-attribution",
+        "by": "xerj-org",
+        "at": "2026-10-02",
+        "note": "LICENSE at pin is the pre-v3 UTS#35 copyright-and-permission notice (internal-copy language for the doc). CLDR data files are redistributed industry-wide under the Unicode ToU/Licence v3; Lane A pointer + attribution OK. Do NOT emit as a Lane B pack without re-review. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=9337; backlog hint: Unicode License (permissive \u2014 verify at pin); api licence: unknown; evidence: LICENSE\u2192MIT"
+      }
+    }
+  ]
+}

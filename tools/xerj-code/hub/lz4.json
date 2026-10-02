@@ -1,0 +1,21 @@
+{
+  "corpus": "lz4",
+  "cloned_at": "2026-10-02T00:49:45Z",
+  "repos": [
+    {
+      "repo": "lz4",
+      "url": "https://github.com/lz4/lz4",
+      "licence": "hint only: BSD-2 (verify at pin)",
+      "sha": "0774d05537f9762f838f7ab541b7765f1a729cb5",
+      "files": 209,
+      "bytes": 0,
+      "review": {
+        "spdx": "mixed: BSD-2 (lib) / GPL-2.0+ (rest)",
+        "use": "mixed",
+        "by": "xerj-org",
+        "at": "2026-10-02",
+        "note": "LICENSE at pin states the split explicitly: lib/ BSD 2-Clause, all other dirs GPL-2.0-or-later; snippets outside lib/ are approach-only. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=209; backlog hint: BSD-2 (verify at pin); api licence: unknown; evidence: LICENSE\u2192UNKNOWN"
+      }
+    }
+  ]
+}
