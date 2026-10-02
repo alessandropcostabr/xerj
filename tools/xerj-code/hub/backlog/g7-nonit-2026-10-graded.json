@@ -1,49 +1,153 @@
 {
-  "suite": "g7-nonit-2026-10.json",
-  "pre_registered": "2026-10-02T19:30:00Z",
-  "grading": "manual, top-5 per query; relevant = answer-bearing clause present in a retrieved section; partial = section retrieved but clause absent; miss = neither",
-  "graded": {
-    "ecfr-title-12": {
-      "graded_at": "2026-10-02T22:05:00Z",
-      "index": "fresh rebuild 21:30:41Z, verified queryable",
-      "median": 5.0,
-      "queries": [
-        {
-          "q": "How far above the average prime offer rate makes a first-lien mortgage higher-priced under Regulation Z?",
-          "expect": "12 CFR 1026.35(a)(1): 1.5 percentage points first-lien (3.5 for first-lien jumbo)",
-          "top5": ["part-226/sec-226.35", "part-1026/sec-1026.35", "part-1003/sec-1003.4", "part-34/sec-34.201", "part-1026/sec-1026.32"],
-          "grade": "relevant",
-          "why": "sec-1026.35 at rank 2 carries the clause: \"1.5 or more percentage points for loans secured by a first lien with a principal obligation at consummation that does not exceed the limit ... for the maximum principal obligation eligible for purchase by Freddie Mac\" (the jumbo 3.5 branch follows)"
-        },
-        {
-          "q": "How long does the rescission right last when the required notices were never delivered?",
-          "expect": "12 CFR 1026.23(a)(3): three years after consummation (or sale), forever if never disclosed",
-          "top5": ["part-1026/sec-1026.15", "part-1026/sec-1026.23", "part-226/sec-226.23", "part-226/sec-226.15", "part-226/sec-1026.15"],
-          "grade": "relevant",
-          "why": "sec-1026.23 at rank 2: \"3 years after consummation, upon transfer of all of the consumer's interest in the property, or upon sale of the property, whichever occurs first\""
-        },
-        {
-          "q": "Which factors must a creditor verify for ability to repay a Qualified Mortgage?",
-          "expect": "12 CFR 1026.43(c): income/assets, employment, monthly mortgage payments, alimony, debts, DTI/r residual income, credit history",
-          "top5": ["part-226/sec-226.34", "part-1026/sec-1026.34", "part-1026/sec-1026.43", "part-226/sec-226.34", "part-1022/sec-1022.30"],
-          "grade": "relevant",
-          "why": "sec-1026.43 at rank 3 contains the verification-factor list (\"current or reasonably expected income\" confirmed present)"
-        },
-        {
-          "q": "What late-payment fee safe harbors apply to credit card accounts?",
-          "expect": "12 CFR 1026.52(b): safe-harbor dollar amounts, indexed annually",
-          "top5": ["part-1026/sec-1026.11", "part-226/sec-226.11", "part-1026/sec-1026.52", "part-1026/sec-1026.51", "part-226/sec-226.9"],
-          "grade": "relevant",
-          "why": "sec-1026.52 at rank 3 carries the late-fee safe harbors (\"Safe harbor\" confirmed present)"
-        },
-        {
-          "q": "When must a creditor establish an escrow account for a first-lien higher-priced mortgage?",
-          "expect": "12 CFR 1026.35(b)(1): escrow for taxes, insurance, assessments for HPMLs, with exemptions",
-          "top5": ["part-226/sec-226.35", "part-1026/sec-1026.35", "part-1026/sec-1026.35", "part-1026/sec-1026.35", "part-1026/sec-1026.20"],
-          "grade": "relevant",
-          "why": "sec-1026.35 at ranks 2-4: \"escrow for property taxes and insurance\""
-        }
-      ]
+ "suite": "g7-nonit-2026-10.json",
+ "pre_registered": "2026-10-02T19:30:00Z",
+ "grading": "manual, top-5 per query; relevant = answer-bearing clause present in a retrieved section; partial = section retrieved but clause absent; miss = neither",
+ "graded": {
+  "ecfr-title-12": {
+   "graded_at": "2026-10-02T22:05:00Z",
+   "index": "fresh rebuild 21:30:41Z, verified queryable",
+   "median": 5.0,
+   "queries": [
+    {
+     "q": "How far above the average prime offer rate makes a first-lien mortgage higher-priced under Regulation Z?",
+     "expect": "12 CFR 1026.35(a)(1): 1.5 percentage points first-lien (3.5 for first-lien jumbo)",
+     "top5": [
+      "part-226/sec-226.35",
+      "part-1026/sec-1026.35",
+      "part-1003/sec-1003.4",
+      "part-34/sec-34.201",
+      "part-1026/sec-1026.32"
+     ],
+     "grade": "relevant",
+     "why": "sec-1026.35 at rank 2 carries the clause: \"1.5 or more percentage points for loans secured by a first lien with a principal obligation at consummation that does not exceed the limit ... for the maximum principal obligation eligible for purchase by Freddie Mac\" (the jumbo 3.5 branch follows)"
+    },
+    {
+     "q": "How long does the rescission right last when the required notices were never delivered?",
+     "expect": "12 CFR 1026.23(a)(3): three years after consummation (or sale), forever if never disclosed",
+     "top5": [
+      "part-1026/sec-1026.15",
+      "part-1026/sec-1026.23",
+      "part-226/sec-226.23",
+      "part-226/sec-226.15",
+      "part-226/sec-1026.15"
+     ],
+     "grade": "relevant",
+     "why": "sec-1026.23 at rank 2: \"3 years after consummation, upon transfer of all of the consumer's interest in the property, or upon sale of the property, whichever occurs first\""
+    },
+    {
+     "q": "Which factors must a creditor verify for ability to repay a Qualified Mortgage?",
+     "expect": "12 CFR 1026.43(c): income/assets, employment, monthly mortgage payments, alimony, debts, DTI/r residual income, credit history",
+     "top5": [
+      "part-226/sec-226.34",
+      "part-1026/sec-1026.34",
+      "part-1026/sec-1026.43",
+      "part-226/sec-226.34",
+      "part-1022/sec-1022.30"
+     ],
+     "grade": "relevant",
+     "why": "sec-1026.43 at rank 3 contains the verification-factor list (\"current or reasonably expected income\" confirmed present)"
+    },
+    {
+     "q": "What late-payment fee safe harbors apply to credit card accounts?",
+     "expect": "12 CFR 1026.52(b): safe-harbor dollar amounts, indexed annually",
+     "top5": [
+      "part-1026/sec-1026.11",
+      "part-226/sec-226.11",
+      "part-1026/sec-1026.52",
+      "part-1026/sec-1026.51",
+      "part-226/sec-226.9"
+     ],
+     "grade": "relevant",
+     "why": "sec-1026.52 at rank 3 carries the late-fee safe harbors (\"Safe harbor\" confirmed present)"
+    },
+    {
+     "q": "When must a creditor establish an escrow account for a first-lien higher-priced mortgage?",
+     "expect": "12 CFR 1026.35(b)(1): escrow for taxes, insurance, assessments for HPMLs, with exemptions",
+     "top5": [
+      "part-226/sec-226.35",
+      "part-1026/sec-1026.35",
+      "part-1026/sec-1026.35",
+      "part-1026/sec-1026.35",
+      "part-1026/sec-1026.20"
+     ],
+     "grade": "relevant",
+     "why": "sec-1026.35 at ranks 2-4: \"escrow for property taxes and insurance\""
     }
+   ]
+  },
+  "ecfr-title-26": {
+   "graded_at": "2026-10-02T22:25:00Z",
+   "index": "fresh rebuild 21:46:12Z, verified",
+   "median": 1.0,
+   "valid_queries": 4,
+   "verdict": "FAIL \u2014 demoted; 1 suite defect excluded (see Q3)",
+   "queries": [
+    {
+     "q": "What is the de minimis safe harbor amount for expensing tangible property without an applicable financial statement?",
+     "expect": "26 CFR 1.263(a)-1(f): $5,000 per item/invoice with AFS, $2,500 without",
+     "top5": [
+      "part-1/sec-1.162-3",
+      "part-1/sec-1.263(a)-1",
+      "part-1/sec-1.263(a)-0",
+      "part-1/sec-1.162-3",
+      "part-1/sec-1.263(a)-1"
+     ],
+     "grade": "relevant",
+     "why": "sec-1.263(a)-1 at rank 2: '$5,000 per invoice (or per item as indicated by the invoice)' and '$2,500 as indicated by the invoice' both present"
+    },
+    {
+     "q": "What prior-year safe harbor avoids the estimated tax underpayment penalty?",
+     "expect": "26 CFR 1.6654-2(d): 100% of prior-year tax (110% if AGI > $150k), else 90% current year",
+     "top5": [
+      "part-1/sec-1.1446-3",
+      "part-1/sec-1.1446-0",
+      "part-1/sec-1.6655-2T",
+      "part-1/sec-1.1446-3",
+      "part-1/sec-1.904-7"
+     ],
+     "grade": "miss",
+     "why": "the answer IS in the corpus (sec-1.6654-2, 43KB, 'preceding taxable year was a year of 12 months and a return showing a liability for tax was filed') but retrieval ranked 1.1446-* and the obsolete temporary corporate installment section 1.6655-2T above it \u2014 paraphrase gap, not a corpus gap"
+    },
+    {
+     "q": "What use must a home office satisfy to qualify for the deduction?",
+     "expect": "26 CFR 1.280A-2: exclusive and regular use as principal place of business",
+     "top5": [
+      "part-1/sec-1.1441-1",
+      "part-1/sec-1.274-5",
+      "part-1/sec-1.280F-6",
+      "part-1/sec-1.817-2",
+      "part-1/sec-1.1503(d)-1"
+     ],
+     "grade": "suite-defect (excluded)",
+     "why": "expect was unattainable: \u00a71.280A-2 exists only as PROPOSED regulations (45 FR 52399, 1980; amended 1983, 1994) \u2014 never finalized. Current eCFR carries only 1.280A-1 and 1.280A-3, so the govinfo bulk XML (and this corpus) correctly omit it. Pre-registration error by the suite author, not a retrieval or corpus defect; excluded from the median and recorded here"
+    },
+    {
+     "q": "How long must employers keep employment tax records?",
+     "expect": "26 CFR 31.6001-1 / related: at least 4 years after the due date or payment date",
+     "top5": [
+      "part-31/sec-31.6001-2",
+      "part-35/sec-35.3405-1T",
+      "part-31/sec-31.6001-3",
+      "part-1/sec-1.274-6T",
+      "part-1/sec-1.475(a)-4"
+     ],
+     "grade": "miss",
+     "why": "retrieved sibling sections 31.6001-2 (rank 1) and 31.6001-3 (rank 3) do not carry the clause; it lives in sec-31.6001-1 ('at least four years after the due date ... or the date such tax is paid, whichever is the later'), which was not retrieved"
+    },
+    {
+     "q": "Which property qualifies for the section 179 expensing election?",
+     "expect": "26 CFR 1.179-1/.179-2: tangible personal property, certain off-the-shelf software, qualified real property",
+     "top5": [
+      "part-1/sec-1.179-1",
+      "part-1/sec-1.179-3",
+      "part-1/sec-1.179-1",
+      "part-1/sec-1.179-3",
+      "part-1/sec-1.179-1"
+     ],
+     "grade": "partial",
+     "why": "sec-1.179-1 at rank 1 is the right section family (election mechanics, cost subject to expense) but the property-type enumeration (tangible personal property / off-the-shelf software) is statutory \u2014 26 USC 179(d)(1) \u2014 and appears in no retrieved CFR section"
+    }
+   ]
   }
+ }
 }

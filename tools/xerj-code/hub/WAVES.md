@@ -187,12 +187,27 @@ text, which is also the cleanest-licence material there is (US PD, UK OGL).
 | corpus | G1..G6 | G7 (relevant/5) | status | notes |
 |--------|--------|------------------|--------|-------|
 | ecfr-title-12 | pass (Reg Z clause-level; demand 71) | **5/5 — pass** (graded 2026-10-02) | live | mirror corpus-ecfr-title-12 @4dc0246c; expected § in top-3 on all 5 queries, per-query grades in backlog/g7-nonit-2026-10-graded.json |
-| ecfr-title-26 | pass (58MB part-1 split per §; demand 40) | pending (pre-registered) | live | mirror corpus-ecfr-title-26 @3f3e58c7 |
+| ecfr-title-26 | pass (58MB part-1 split per §; demand 40) | **1/4 relevant — FAIL → demoted** (graded 2026-10-02; 1 suite defect excluded) | candidate | mirror corpus-ecfr-title-26 @3f3e58c7; see notes below |
 | ecfr-title-29 | pass (OSHA/FMLA/FLSA; demand 57) | pending (pre-registered) | live | mirror corpus-ecfr-title-29 @bf0c9b74 |
 | uk-legislation | pass (418 acts 2015–26 current, OGL ack in README) | pending (pre-registered) | live | mirror corpus-uk-legislation @0575db1c |
 | uscode | G5 blocked | not run | deferred | OLRC download centre under maintenance; mirrors stale; COMPS is per-act — retry |
 
 - kills: none. deferrals: uscode (source outage, one line above).
+- G7 demotion, ecfr-title-26 (1 relevant / 1 partial / 2 miss / 1 excluded):
+  two failure causes, both recorded because they generalise. (1) One
+  pre-registered expect was unattainable — §1.280A-2 exists only as
+  PROPOSED regs (45 FR 52399, 1980), never finalized; the corpus correctly
+  omits it (verified against the govinfo bulk XML and the raw §-list;
+  eCFR carries only 1.280A-1/-3). Suite-author error, query excluded.
+  (2) The real misses are paraphrase gaps: tax questions phrased the way
+  people ask them ("prior-year safe harbor", "home office") share no
+  vocabulary with reg section titles, and the lexical default ranked
+  1.1446-*/1.6655-2T (obsolete temporary) above sec-1.6654-2 which holds
+  the answer. Corpus shape is fine — sec-1.263(a)-1 retrieved + verified
+  when the query carried verbatim terms. Re-test pre-registered: same
+  suite with --embed-mode neural, plus query-expansion, before any
+  reconsideration for live. NOT a corpus kill: the G2 shape and G4/G5
+  pins stand; this is a retrieval-mode finding on the tax domain.
 - G7: 5 queries per corpus pre-registered in backlog/g7-nonit-2026-10.json
   BEFORE retrieval ran; per the §1 bulk amendment they are due within one full
   wave cycle — results recorded in this file when graded.
