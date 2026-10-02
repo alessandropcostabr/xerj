@@ -186,7 +186,7 @@ text, which is also the cleanest-licence material there is (US PD, UK OGL).
 
 | corpus | G1..G6 | G7 (relevant/5) | status | notes |
 |--------|--------|------------------|--------|-------|
-| ecfr-title-12 | pass (Reg Z clause-level; demand 71) | pending (pre-registered) | live | mirror corpus-ecfr-title-12 @4dc0246c |
+| ecfr-title-12 | pass (Reg Z clause-level; demand 71) | **5/5 — pass** (graded 2026-10-02) | live | mirror corpus-ecfr-title-12 @4dc0246c; expected § in top-3 on all 5 queries, per-query grades in backlog/g7-nonit-2026-10-graded.json |
 | ecfr-title-26 | pass (58MB part-1 split per §; demand 40) | pending (pre-registered) | live | mirror corpus-ecfr-title-26 @3f3e58c7 |
 | ecfr-title-29 | pass (OSHA/FMLA/FLSA; demand 57) | pending (pre-registered) | live | mirror corpus-ecfr-title-29 @bf0c9b74 |
 | uk-legislation | pass (418 acts 2015–26 current, OGL ack in README) | pending (pre-registered) | live | mirror corpus-uk-legislation @0575db1c |

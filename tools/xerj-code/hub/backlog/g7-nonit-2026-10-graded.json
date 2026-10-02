@@ -1,0 +1,49 @@
+{
+  "suite": "g7-nonit-2026-10.json",
+  "pre_registered": "2026-10-02T19:30:00Z",
+  "grading": "manual, top-5 per query; relevant = answer-bearing clause present in a retrieved section; partial = section retrieved but clause absent; miss = neither",
+  "graded": {
+    "ecfr-title-12": {
+      "graded_at": "2026-10-02T22:05:00Z",
+      "index": "fresh rebuild 21:30:41Z, verified queryable",
+      "median": 5.0,
+      "queries": [
+        {
+          "q": "How far above the average prime offer rate makes a first-lien mortgage higher-priced under Regulation Z?",
+          "expect": "12 CFR 1026.35(a)(1): 1.5 percentage points first-lien (3.5 for first-lien jumbo)",
+          "top5": ["part-226/sec-226.35", "part-1026/sec-1026.35", "part-1003/sec-1003.4", "part-34/sec-34.201", "part-1026/sec-1026.32"],
+          "grade": "relevant",
+          "why": "sec-1026.35 at rank 2 carries the clause: \"1.5 or more percentage points for loans secured by a first lien with a principal obligation at consummation that does not exceed the limit ... for the maximum principal obligation eligible for purchase by Freddie Mac\" (the jumbo 3.5 branch follows)"
+        },
+        {
+          "q": "How long does the rescission right last when the required notices were never delivered?",
+          "expect": "12 CFR 1026.23(a)(3): three years after consummation (or sale), forever if never disclosed",
+          "top5": ["part-1026/sec-1026.15", "part-1026/sec-1026.23", "part-226/sec-226.23", "part-226/sec-226.15", "part-226/sec-1026.15"],
+          "grade": "relevant",
+          "why": "sec-1026.23 at rank 2: \"3 years after consummation, upon transfer of all of the consumer's interest in the property, or upon sale of the property, whichever occurs first\""
+        },
+        {
+          "q": "Which factors must a creditor verify for ability to repay a Qualified Mortgage?",
+          "expect": "12 CFR 1026.43(c): income/assets, employment, monthly mortgage payments, alimony, debts, DTI/r residual income, credit history",
+          "top5": ["part-226/sec-226.34", "part-1026/sec-1026.34", "part-1026/sec-1026.43", "part-226/sec-226.34", "part-1022/sec-1022.30"],
+          "grade": "relevant",
+          "why": "sec-1026.43 at rank 3 contains the verification-factor list (\"current or reasonably expected income\" confirmed present)"
+        },
+        {
+          "q": "What late-payment fee safe harbors apply to credit card accounts?",
+          "expect": "12 CFR 1026.52(b): safe-harbor dollar amounts, indexed annually",
+          "top5": ["part-1026/sec-1026.11", "part-226/sec-226.11", "part-1026/sec-1026.52", "part-1026/sec-1026.51", "part-226/sec-226.9"],
+          "grade": "relevant",
+          "why": "sec-1026.52 at rank 3 carries the late-fee safe harbors (\"Safe harbor\" confirmed present)"
+        },
+        {
+          "q": "When must a creditor establish an escrow account for a first-lien higher-priced mortgage?",
+          "expect": "12 CFR 1026.35(b)(1): escrow for taxes, insurance, assessments for HPMLs, with exemptions",
+          "top5": ["part-226/sec-226.35", "part-1026/sec-1026.35", "part-1026/sec-1026.35", "part-1026/sec-1026.35", "part-1026/sec-1026.20"],
+          "grade": "relevant",
+          "why": "sec-1026.35 at ranks 2-4: \"escrow for property taxes and insurance\""
+        }
+      ]
+    }
+  }
+}
