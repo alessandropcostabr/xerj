@@ -1,0 +1,20 @@
+{"id": "T1", "answered": true, "hits": 0, "need": 1, "pass": false, "answer": "unknown", "seconds": 34, "arm": "p", "xerj_calls": 0, "cost_usd": 0.10915399999999999, "turns": 1, "task": "T1"}
+{"id": "T1", "answered": true, "hits": 1, "need": 1, "pass": true, "answer": "0", "seconds": 44, "arm": "x", "xerj_calls": 2, "cost_usd": 0.157248, "turns": 6, "task": "T1"}
+{"id": "T2", "answered": true, "hits": 0, "need": 1, "pass": false, "answer": "unknown", "seconds": 25, "arm": "p", "xerj_calls": 0, "cost_usd": 0.076528, "turns": 1, "task": "T2"}
+{"id": "T2", "answered": true, "hits": 1, "need": 1, "pass": true, "answer": "1", "seconds": 17, "arm": "x", "xerj_calls": 1, "cost_usd": 0.073849, "turns": 2, "task": "T2"}
+{"id": "T3", "answered": true, "hits": 0, "need": 1, "pass": false, "answer": "unknown", "seconds": 74, "arm": "p", "xerj_calls": 0, "cost_usd": 0.203183, "turns": 1, "task": "T3"}
+{"id": "T3", "answered": true, "hits": 1, "need": 1, "pass": true, "answer": "2", "seconds": 35, "arm": "x", "xerj_calls": 1, "cost_usd": 0.16246899999999997, "turns": 6, "task": "T3"}
+{"id": "T4", "answered": true, "hits": 0, "need": 1, "pass": false, "answer": "unknown", "seconds": 90, "arm": "p", "xerj_calls": 0, "cost_usd": 0.21685300000000002, "turns": 1, "task": "T4"}
+{"id": "T4", "answered": true, "hits": 1, "need": 1, "pass": true, "answer": "3", "seconds": 32, "arm": "x", "xerj_calls": 2, "cost_usd": 0.169924, "turns": 6, "task": "T4"}
+{"id": "T5", "answered": true, "hits": 0, "need": 1, "pass": false, "answer": "unknown", "seconds": 96, "arm": "p", "xerj_calls": 0, "cost_usd": 0.234448, "turns": 1, "task": "T5"}
+{"id": "T5", "answered": true, "hits": 1, "need": 1, "pass": true, "answer": "4", "seconds": 12, "arm": "x", "xerj_calls": 2, "cost_usd": 0.091158, "turns": 3, "task": "T5"}
+{"id": "T6", "answered": true, "hits": 0, "need": 1, "pass": false, "answer": "unknown", "seconds": 59, "arm": "p", "xerj_calls": 0, "cost_usd": 0.169153, "turns": 1, "task": "T6"}
+{"id": "T6", "answered": true, "hits": 1, "need": 1, "pass": true, "answer": "5", "seconds": 27, "arm": "x", "xerj_calls": 2, "cost_usd": 0.17102499999999998, "turns": 7, "task": "T6"}
+{"id": "T7", "answered": true, "hits": 0, "need": 1, "pass": false, "answer": "unknown", "seconds": 30, "arm": "p", "xerj_calls": 0, "cost_usd": 0.10202299999999999, "turns": 1, "task": "T7"}
+{"id": "T7", "answered": true, "hits": 1, "need": 1, "pass": true, "answer": "undefined \u2014 no macro named NGX_GEOIP_CITY_NAME exists in nginx (nearest existing macros: NGX_GEOIP_CITY_COUNTRY_NAME = 3, NGX_GEOIP_CITY = 6)", "seconds": 58, "arm": "x", "xerj_calls": 7, "cost_usd": 0.277333, "turns": 7, "task": "T7"}
+{"id": "T8", "answered": true, "hits": 0, "need": 1, "pass": false, "answer": "unknown", "seconds": 28, "arm": "p", "xerj_calls": 0, "cost_usd": 0.087033, "turns": 1, "task": "T8"}
+{"id": "T8", "answered": true, "hits": 1, "need": 1, "pass": true, "answer": "7", "seconds": 25, "arm": "x", "xerj_calls": 2, "cost_usd": 0.119739, "turns": 3, "task": "T8"}
+{"id": "T9", "answered": true, "hits": 0, "need": 1, "pass": false, "answer": "unknown", "seconds": 59, "arm": "p", "xerj_calls": 0, "cost_usd": 0.16337800000000002, "turns": 1, "task": "T9"}
+{"id": "T9", "answered": true, "hits": 1, "need": 1, "pass": true, "answer": "8", "seconds": 26, "arm": "x", "xerj_calls": 2, "cost_usd": 0.160869, "turns": 7, "task": "T9"}
+{"id": "T10", "answered": true, "hits": 0, "need": 1, "pass": false, "answer": "unknown", "seconds": 48, "arm": "p", "xerj_calls": 0, "cost_usd": 0.14517800000000003, "turns": 1, "task": "T10"}
+{"id": "T10", "answered": true, "hits": 1, "need": 1, "pass": true, "answer": "9", "seconds": 39, "arm": "x", "xerj_calls": 4, "cost_usd": 0.213311, "turns": 9, "task": "T10"}

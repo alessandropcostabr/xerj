@@ -1,0 +1,108 @@
+{
+ "corpus": "kafka-src",
+ "subject": "kafka-src",
+ "pin": "d12941eb5a",
+ "generated": "2026-10-02",
+ "tasks": [
+  {
+   "id": "T1",
+   "class": "state",
+   "name": "TRANSACTIONS_REMOVE_EXPIRED_TRANSACTIONAL_ID_CLEANUP_INTERVAL_MS_CONFIG",
+   "q": "In the current development source of kafka-src, what is the exact value of TRANSACTIONS_REMOVE_EXPIRED_TRANSACTIONAL_ID_CLEANUP_INTERVAL_MS_CONFIG? Answer with the value only.",
+   "re": [
+    "transaction\\.remove\\.expired\\.transaction\\.cleanup\\.interval"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T2",
+   "class": "state",
+   "name": "STREAMS_GROUP_TOPOLOGY_DESCRIPTION_CLEANUP_ELIGIBLE_GROUPS_SENSOR_NAME",
+   "q": "In the current development source of kafka-src, what is the exact value of STREAMS_GROUP_TOPOLOGY_DESCRIPTION_CLEANUP_ELIGIBLE_GROUPS_SENSOR_NAME? Answer with the value only.",
+   "re": [
+    "StreamsGroupTopologyDescriptionCleanupEligibleGroups"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T3",
+   "class": "state",
+   "name": "TRANSACTIONS_ABORT_TIMED_OUT_TRANSACTION_CLEANUP_INTERVAL_MS_CONFIG",
+   "q": "In the current development source of kafka-src, what is the exact value of TRANSACTIONS_ABORT_TIMED_OUT_TRANSACTION_CLEANUP_INTERVAL_MS_CONFIG? Answer with the value only.",
+   "re": [
+    "transaction\\.abort\\.timed\\.out\\.transaction\\.cleanup\\.interv"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T4",
+   "class": "state",
+   "name": "STREAMS_GROUP_TOPOLOGY_DESCRIPTION_CLEANUP_CYCLE_RUNS_SENSOR_NAME",
+   "q": "In the current development source of kafka-src, what is the exact value of STREAMS_GROUP_TOPOLOGY_DESCRIPTION_CLEANUP_CYCLE_RUNS_SENSOR_NAME? Answer with the value only.",
+   "re": [
+    "StreamsGroupTopologyDescriptionCleanupCycleRuns"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T5",
+   "class": "state",
+   "name": "STREAMS_GROUP_TOPOLOGY_DESCRIPTION_DELETE_SUCCESS_SENSOR_NAME",
+   "q": "In the current development source of kafka-src, what is the exact value of STREAMS_GROUP_TOPOLOGY_DESCRIPTION_DELETE_SUCCESS_SENSOR_NAME? Answer with the value only.",
+   "re": [
+    "StreamsGroupTopologyDescriptionDeleteSuccess"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T6",
+   "class": "state",
+   "name": "REMOTE_LOG_METADATA_INITIALIZATION_RETRY_MAX_TIMEOUT_MS_PROP",
+   "q": "In the current development source of kafka-src, what is the exact value of REMOTE_LOG_METADATA_INITIALIZATION_RETRY_MAX_TIMEOUT_MS_PROP? Answer with the value only.",
+   "re": [
+    "remote\\.log\\.metadata\\.initialization\\.retry\\.max\\.timeout\\."
+   ],
+   "need": 1
+  },
+  {
+   "id": "T7",
+   "class": "state",
+   "name": "DEFAULT_SASL_OAUTHBEARER_JWKS_ENDPOINT_RETRY_BACKOFF_MAX_MS",
+   "q": "In the current development source of kafka-src, what is the exact value of DEFAULT_SASL_OAUTHBEARER_JWKS_ENDPOINT_RETRY_BACKOFF_MAX_MS? Answer with the value only.",
+   "re": [
+    "0x2710|10000|9\\ \\?\\[kK\\]"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T8",
+   "class": "state",
+   "name": "ALTER_LOG_DIRS_REPLICATION_QUOTA_WINDOW_SIZE_SECONDS_CONFIG",
+   "q": "In the current development source of kafka-src, what is the exact value of ALTER_LOG_DIRS_REPLICATION_QUOTA_WINDOW_SIZE_SECONDS_CONFIG? Answer with the value only.",
+   "re": [
+    "alter\\.log\\.dirs\\.replication\\.quota\\.window\\.size\\.seconds"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T9",
+   "class": "state",
+   "name": "STREAMS_GROUP_TOPOLOGY_DESCRIPTION_DELETE_ERROR_SENSOR_NAME",
+   "q": "In the current development source of kafka-src, what is the exact value of STREAMS_GROUP_TOPOLOGY_DESCRIPTION_DELETE_ERROR_SENSOR_NAME? Answer with the value only.",
+   "re": [
+    "StreamsGroupTopologyDescriptionDeleteError"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T10",
+   "class": "state",
+   "name": "DEFAULT_REMOTE_LOG_MANAGER_FETCH_QUOTA_WINDOW_SIZE_SECONDS",
+   "q": "In the current development source of kafka-src, what is the exact value of DEFAULT_REMOTE_LOG_MANAGER_FETCH_QUOTA_WINDOW_SIZE_SECONDS? Answer with the value only.",
+   "re": [
+    "0x1|1"
+   ],
+   "need": 1
+  }
+ ]
+}

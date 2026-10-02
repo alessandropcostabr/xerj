@@ -1,0 +1,7 @@
+2026-10-02T17:59:22Z code s2n-tls S2N_STATE_WITH_SESSION_TICKET definition enum value --url http://localhost:9200
+2026-10-02T17:59:29Z code s2n-tls s2n_connection state machine WITH_SESSION_TICKET #define header api --url http://localhost:9200
+2026-10-02T17:59:36Z code s2n-tls S2N_STATE_WITH_SESSION_TICKET s2n_tls_secrets_version secrets handle bitflag --url http://localhost:9200
+2026-10-02T17:59:45Z code s2n-tls resumption.rs SessionTicketHandler s2n_result_of_get_session_ticket_callback state flag --url http://localhost:9200
+2026-10-02T17:59:54Z code s2n-tls S2N_STATE_WITH_SESSION_TICKET testing resumption set state internal --url http://localhost:9200
+2026-10-02T17:59:57Z code s2n-tls enum s2n_client_ticket_status FULL_SESSION_TICKET_ONE_KEY --url http://localhost:9200
+2026-10-02T18:00:03Z code s2n-tls const S2N_STATE_WITH_SESSION_TICKET u8 resumption.rs line 178 --url http://localhost:9200

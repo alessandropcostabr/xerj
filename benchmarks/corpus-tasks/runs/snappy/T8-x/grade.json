@@ -1,0 +1,1 @@
+{"id": "T8", "answered": true, "hits": 1, "need": 1, "pass": true, "answer": "1 if `__SSE4_2__` is defined, 0 otherwise \u2014 it is conditionally defined, not a single constant", "seconds": 58, "arm": "x", "xerj_calls": 2, "cost_usd": 0.186985, "turns": 5, "task": "T8"}

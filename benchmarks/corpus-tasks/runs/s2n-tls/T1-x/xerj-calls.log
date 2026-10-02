@@ -1,0 +1,2 @@
+2026-10-02T17:59:06Z code s2n-tls TRUSTED_CLIENT_NAME constant definition value --url http://localhost:9200
+2026-10-02T17:59:14Z code s2n-tls TRUSTED_CLIENT_NAME wombat mutual-tls example client server --url http://localhost:9200

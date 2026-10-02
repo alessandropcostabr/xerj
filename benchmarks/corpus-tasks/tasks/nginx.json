@@ -1,0 +1,138 @@
+{
+ "corpus": "nginx",
+ "subject": "nginx",
+ "pin": "2b5c2b605b",
+ "generated": "2026-10-02",
+ "tasks": [
+  {
+   "id": "T1",
+   "class": "drift",
+   "name": "NGX_GEOIP_CITY_CONTINENT_CODE",
+   "kind": "added",
+   "changed": "2026-09-30",
+   "olds": [],
+   "q": "In the current development source of nginx, what is the exact value of NGX_GEOIP_CITY_CONTINENT_CODE? Answer with the value only.",
+   "re": [
+    "0|0x0"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T2",
+   "class": "drift",
+   "name": "NGX_GEOIP_CITY_COUNTRY_CODE",
+   "kind": "added",
+   "changed": "2026-09-30",
+   "olds": [],
+   "q": "In the current development source of nginx, what is the exact value of NGX_GEOIP_CITY_COUNTRY_CODE? Answer with the value only.",
+   "re": [
+    "0x1|1"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T3",
+   "class": "drift",
+   "name": "NGX_GEOIP_CITY_COUNTRY_CODE3",
+   "kind": "added",
+   "changed": "2026-09-30",
+   "olds": [],
+   "q": "In the current development source of nginx, what is the exact value of NGX_GEOIP_CITY_COUNTRY_CODE3? Answer with the value only.",
+   "re": [
+    "0x2|2"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T4",
+   "class": "drift",
+   "name": "NGX_GEOIP_CITY_COUNTRY_NAME",
+   "kind": "added",
+   "changed": "2026-09-30",
+   "olds": [],
+   "q": "In the current development source of nginx, what is the exact value of NGX_GEOIP_CITY_COUNTRY_NAME? Answer with the value only.",
+   "re": [
+    "0x3|3"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T5",
+   "class": "drift",
+   "name": "NGX_GEOIP_CITY_REGION",
+   "kind": "added",
+   "changed": "2026-09-30",
+   "olds": [],
+   "q": "In the current development source of nginx, what is the exact value of NGX_GEOIP_CITY_REGION? Answer with the value only.",
+   "re": [
+    "0x4|4"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T6",
+   "class": "drift",
+   "name": "NGX_GEOIP_CITY_REGION_NAME",
+   "kind": "added",
+   "changed": "2026-09-30",
+   "olds": [],
+   "q": "In the current development source of nginx, what is the exact value of NGX_GEOIP_CITY_REGION_NAME? Answer with the value only.",
+   "re": [
+    "0x5|5"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T7",
+   "class": "drift",
+   "name": "NGX_GEOIP_CITY_NAME",
+   "kind": "added",
+   "changed": "2026-09-30",
+   "olds": [],
+   "q": "In the current development source of nginx, what is the exact value of NGX_GEOIP_CITY_NAME? Answer with the value only.",
+   "re": [
+    "0x6|6"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T8",
+   "class": "drift",
+   "name": "NGX_GEOIP_CITY_POSTAL_CODE",
+   "kind": "added",
+   "changed": "2026-09-30",
+   "olds": [],
+   "q": "In the current development source of nginx, what is the exact value of NGX_GEOIP_CITY_POSTAL_CODE? Answer with the value only.",
+   "re": [
+    "0x7|7"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T9",
+   "class": "drift",
+   "name": "NGX_GEOIP_CITY_LATITUDE",
+   "kind": "added",
+   "changed": "2026-09-30",
+   "olds": [],
+   "q": "In the current development source of nginx, what is the exact value of NGX_GEOIP_CITY_LATITUDE? Answer with the value only.",
+   "re": [
+    "0x8|8"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T10",
+   "class": "drift",
+   "name": "NGX_GEOIP_CITY_LONGITUDE",
+   "kind": "added",
+   "changed": "2026-09-30",
+   "olds": [],
+   "q": "In the current development source of nginx, what is the exact value of NGX_GEOIP_CITY_LONGITUDE? Answer with the value only.",
+   "re": [
+    "0x9|9"
+   ],
+   "need": 1
+  }
+ ]
+}

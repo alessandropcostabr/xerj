@@ -3,5 +3,121 @@
  "subject": "badger",
  "pin": "5688f1406c",
  "generated": "2026-10-02",
- "tasks": []
+ "tasks": [
+  {
+   "id": "T1",
+   "class": "drift",
+   "name": "numFields",
+   "kind": "added",
+   "changed": "2026-08-04",
+   "olds": [],
+   "q": "In the current development source of badger, what is the exact value of numFields? Answer with the value only.",
+   "re": [
+    "0x12c|300"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T2",
+   "class": "drift",
+   "name": "batchSize",
+   "kind": "added",
+   "changed": "2026-08-04",
+   "olds": [],
+   "q": "In the current development source of badger, what is the exact value of batchSize? Answer with the value only.",
+   "re": [
+    "0x1388|4\\ \\?\\[kK\\]|5000"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T3",
+   "class": "drift",
+   "name": "benchmarkRewriteExpiredKeyCount",
+   "kind": "added",
+   "changed": "2026-05-07",
+   "olds": [],
+   "q": "In the current development source of badger, what is the exact value of benchmarkRewriteExpiredKeyCount? Answer with the value only.",
+   "re": [
+    "0x2000|8192|8\\ \\?\\[kK\\]"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T4",
+   "class": "drift",
+   "name": "benchmarkRewriteLiveKeyCount",
+   "kind": "added",
+   "changed": "2026-05-07",
+   "olds": [],
+   "q": "In the current development source of badger, what is the exact value of benchmarkRewriteLiveKeyCount? Answer with the value only.",
+   "re": [
+    "0x1000|4096|4\\ \\?\\[kK\\]"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T5",
+   "class": "drift",
+   "name": "benchmarkRewriteValueThreshold",
+   "kind": "added",
+   "changed": "2026-05-07",
+   "olds": [],
+   "q": "In the current development source of badger, what is the exact value of benchmarkRewriteValueThreshold? Answer with the value only.",
+   "re": [
+    "0x80|128"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T6",
+   "class": "state",
+   "name": "manifestDeletionsRewriteThreshold",
+   "q": "In the current development source of badger, what is the exact value of manifestDeletionsRewriteThreshold? Answer with the value only.",
+   "re": [
+    "0x2710|10000|9\\ \\?\\[kK\\]"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T7",
+   "class": "state",
+   "name": "KeyRegistryRewriteFileName",
+   "q": "In the current development source of badger, what is the exact value of KeyRegistryRewriteFileName? Answer with the value only.",
+   "re": [
+    "REWRITE\\-KEYREGISTRY"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T8",
+   "class": "state",
+   "name": "FILE_FLAG_DELETE_ON_CLOSE",
+   "q": "In the current development source of badger, what is the exact value of FILE_FLAG_DELETE_ON_CLOSE? Answer with the value only.",
+   "re": [
+    "0x04000000|0x4000000|65536\\ \\?\\[kK\\]|67108864"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T9",
+   "class": "state",
+   "name": "FILE_ATTRIBUTE_TEMPORARY",
+   "q": "In the current development source of badger, what is the exact value of FILE_ATTRIBUTE_TEMPORARY? Answer with the value only.",
+   "re": [
+    "0x00000100|0x100|256"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T10",
+   "class": "state",
+   "name": "manifestRewriteFilename",
+   "q": "In the current development source of badger, what is the exact value of manifestRewriteFilename? Answer with the value only.",
+   "re": [
+    "MANIFEST\\-REWRITE"
+   ],
+   "need": 1
+  }
+ ]
 }

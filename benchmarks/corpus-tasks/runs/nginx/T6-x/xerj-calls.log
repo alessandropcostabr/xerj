@@ -1,0 +1,2 @@
+2026-10-02T17:21:05Z code nginx NGX_GEOIP_CITY_REGION_NAME define value geoip module --url http://localhost:9200
+2026-10-02T17:21:08Z code nginx #define NGX_GEOIP_COUNTRY_CODE NGX_GEOIP_COUNTRY_CODE3 NGX_GEOIP_CITY_REGION_NAME macro definitions at top of ngx_http_geoip_module.c --url http://localhost:9200

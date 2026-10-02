@@ -1,0 +1,2 @@
+2026-10-02T18:24:33Z code curl-src CONFIG_RESPONSEMETHOD2 define value --url http://localhost:9200
+2026-10-02T18:24:36Z code curl-src socksd.c CONFIG_RESPONSEMETHOD default response method usep --url http://localhost:9200

@@ -1,0 +1,14 @@
+── nginx: index 17:12:45
+nginx: 10 tasks (10 drift, 0 state)
+── nginx: 10 tasks, drive 17:19:27
+nginx: done in 223s
+── openapi-spec: index 17:23:11
+nginx already driven
+── openapi-spec: index 17:44:05
+openapi-spec: 0 tasks (0 drift, 0 state)
+── openapi-spec: 0 tasks, drive 17:44:12
+openapi-spec: INFEASIBLE (0 tasks)
+── openbao: index 17:44:12
+nginx already driven
+openapi-spec already driven
+── openbao: index 18:26:58

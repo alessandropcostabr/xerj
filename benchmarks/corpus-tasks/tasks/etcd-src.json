@@ -1,0 +1,108 @@
+{
+ "corpus": "etcd-src",
+ "subject": "etcd-src",
+ "pin": "64f26db45f",
+ "generated": "2026-10-02",
+ "tasks": [
+  {
+   "id": "T1",
+   "class": "state",
+   "name": "Auth_RoleRevokePermission_FullMethodName",
+   "q": "In the current development source of etcd-src, what is the exact value of Auth_RoleRevokePermission_FullMethodName? Answer with the value only.",
+   "re": [
+    "/etcdserverpb\\.Auth/RoleRevokePermission"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T2",
+   "class": "state",
+   "name": "Auth_RoleGrantPermission_FullMethodName",
+   "q": "In the current development source of etcd-src, what is the exact value of Auth_RoleGrantPermission_FullMethodName? Answer with the value only.",
+   "re": [
+    "/etcdserverpb\\.Auth/RoleGrantPermission"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T3",
+   "class": "state",
+   "name": "Auth_UserChangePassword_FullMethodName",
+   "q": "In the current development source of etcd-src, what is the exact value of Auth_UserChangePassword_FullMethodName? Answer with the value only.",
+   "re": [
+    "/etcdserverpb\\.Auth/UserChangePassword"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T4",
+   "class": "state",
+   "name": "Maintenance_Defragment_FullMethodName",
+   "q": "In the current development source of etcd-src, what is the exact value of Maintenance_Defragment_FullMethodName? Answer with the value only.",
+   "re": [
+    "/etcdserverpb\\.Maintenance/Defragment"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T5",
+   "class": "state",
+   "name": "Maintenance_MoveLeader_FullMethodName",
+   "q": "In the current development source of etcd-src, what is the exact value of Maintenance_MoveLeader_FullMethodName? Answer with the value only.",
+   "re": [
+    "/etcdserverpb\\.Maintenance/MoveLeader"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T6",
+   "class": "state",
+   "name": "Lease_LeaseTimeToLive_FullMethodName",
+   "q": "In the current development source of etcd-src, what is the exact value of Lease_LeaseTimeToLive_FullMethodName? Answer with the value only.",
+   "re": [
+    "/etcdserverpb\\.Lease/LeaseTimeToLive"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T7",
+   "class": "state",
+   "name": "Cluster_MemberPromote_FullMethodName",
+   "q": "In the current development source of etcd-src, what is the exact value of Cluster_MemberPromote_FullMethodName? Answer with the value only.",
+   "re": [
+    "/etcdserverpb\\.Cluster/MemberPromote"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T8",
+   "class": "state",
+   "name": "Maintenance_Downgrade_FullMethodName",
+   "q": "In the current development source of etcd-src, what is the exact value of Maintenance_Downgrade_FullMethodName? Answer with the value only.",
+   "re": [
+    "/etcdserverpb\\.Maintenance/Downgrade"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T9",
+   "class": "state",
+   "name": "DefaultDistributedTracingServiceName",
+   "q": "In the current development source of etcd-src, what is the exact value of DefaultDistributedTracingServiceName? Answer with the value only.",
+   "re": [
+    "etcd"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T10",
+   "class": "state",
+   "name": "Lease_LeaseKeepAlive_FullMethodName",
+   "q": "In the current development source of etcd-src, what is the exact value of Lease_LeaseKeepAlive_FullMethodName? Answer with the value only.",
+   "re": [
+    "/etcdserverpb\\.Lease/LeaseKeepAlive"
+   ],
+   "need": 1
+  }
+ ]
+}

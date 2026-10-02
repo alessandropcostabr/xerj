@@ -3,5 +3,106 @@
  "subject": "dragonboat",
  "pin": "076c7f6497",
  "generated": "2026-10-02",
- "tasks": []
+ "tasks": [
+  {
+   "id": "T1",
+   "class": "state",
+   "name": "RaftEntryEncodingScheme",
+   "q": "In the current development source of dragonboat, what is the exact value of RaftEntryEncodingScheme? Answer with the value only.",
+   "re": [
+    "colfer"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T2",
+   "class": "state",
+   "name": "recyclableFullChunkType",
+   "q": "In the current development source of dragonboat, what is the exact value of recyclableFullChunkType? Answer with the value only.",
+   "re": [
+    "0x5|5"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T3",
+   "class": "state",
+   "name": "recyclableLastChunkType",
+   "q": "In the current development source of dragonboat, what is the exact value of recyclableLastChunkType? Answer with the value only.",
+   "re": [
+    "0x8|8"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T4",
+   "class": "state",
+   "name": "DefaultKVStoreTypeName",
+   "q": "In the current development source of dragonboat, what is the exact value of DefaultKVStoreTypeName? Answer with the value only.",
+   "re": [
+    "pebble"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T5",
+   "class": "state",
+   "name": "ConcurrentStateMachine",
+   "q": "In the current development source of dragonboat, what is the exact value of ConcurrentStateMachine? Answer with the value only.",
+   "re": [
+    "0x2|2"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T6",
+   "class": "state",
+   "name": "singleNodeHostTestDir",
+   "q": "In the current development source of dragonboat, what is the exact value of singleNodeHostTestDir? Answer with the value only.",
+   "re": [
+    "test_nodehost_dir_safe_to_delete"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T7",
+   "class": "state",
+   "name": "tmpSnapshotDirSuffix",
+   "q": "In the current development source of dragonboat, what is the exact value of tmpSnapshotDirSuffix? Answer with the value only.",
+   "re": [
+    "generating"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T8",
+   "class": "state",
+   "name": "testSnapshotFilename",
+   "q": "In the current development source of dragonboat, what is the exact value of testSnapshotFilename? Answer with the value only.",
+   "re": [
+    "testsnapshot_safe_to_delete\\.tmp"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T9",
+   "class": "state",
+   "name": "SnapshotFlagFilename",
+   "q": "In the current development source of dragonboat, what is the exact value of SnapshotFlagFilename? Answer with the value only.",
+   "re": [
+    "dragonboat\\.snapshot\\.message"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T10",
+   "class": "state",
+   "name": "streamingChanLength",
+   "q": "In the current development source of dragonboat, what is the exact value of streamingChanLength? Answer with the value only.",
+   "re": [
+    "0x4|4"
+   ],
+   "need": 1
+  }
+ ]
 }

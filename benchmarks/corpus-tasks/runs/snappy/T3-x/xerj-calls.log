@@ -1,0 +1,5 @@
+2026-10-02T18:18:12Z code snappy SNAPPY_HAVE_RVV macro definition RISC-V vector extension --url http://localhost:9200
+2026-10-02T18:18:15Z code snappy define SNAPPY_HAVE_RVV __riscv_v_intrinsic riscv vector runtime detection --url http://localhost:9200
+2026-10-02T18:18:18Z code snappy snappy-internal.h SNAPPY_HAVE_RVV guard condition __riscv_v_intrinsic define 1 zero --url http://localhost:9200
+2026-10-02T18:18:27Z code snappy snappy-internal.h lines 45-55 SNAPPY_RVV_1 SNAPPY_RVV_0_7 __riscv_v_intrinsic preprocessor guard before define SNAPPY_HAVE_RVV 1 --url http://localhost:9200
+2026-10-02T18:18:38Z code snappy snappy-internal.h SNAPPY_HAVE_BMI2 SNAPPY_HAVE_SSSE3 define 1 0 x86 target detection macros section beginning of header --url http://localhost:9200

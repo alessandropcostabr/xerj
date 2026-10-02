@@ -1,0 +1,4 @@
+2026-10-02T18:20:45Z code snappy kMaximumTagLength constant value definition --url http://localhost:9200
+2026-10-02T18:20:48Z code snappy kMaximumTagLength --url http://localhost:9200
+2026-10-02T18:20:55Z code snappy snappy-internal.h Lookup tables for decompression code kMaximumTagLength = COPY_1_BYTE_OFFSET char_table declaration --url http://localhost:9200
+2026-10-02T18:20:58Z code snappy Lookup tables for decompression code. Give the exact declaration lines that follow, including kMaximumTagLength --url http://localhost:9200

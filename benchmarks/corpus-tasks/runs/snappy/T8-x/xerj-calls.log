@@ -1,0 +1,2 @@
+2026-10-02T18:20:23Z code snappy SNAPPY_HAVE_X86_CRC32 define macro value --url http://localhost:9200
+2026-10-02T18:20:29Z code snappy crc32 table initialization x86 SSE4.2 _mm_crc32_u64 hardware accelerated CRC --url http://localhost:9200

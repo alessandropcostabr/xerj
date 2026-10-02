@@ -1,0 +1,4 @@
+2026-10-02T18:22:58Z code curl-src CURL_NEGO_AUTH_NONE define value --url http://localhost:9200
+2026-10-02T18:23:07Z code curl-src enum nego_auth CURL_NEGO_AUTH_NONE CURL_NEGO_AUTH_NEGOTIATE urldata.h connstate --url http://localhost:9200
+2026-10-02T18:23:15Z code curl-src http_negotiate.h nego_auth_state enum CURL_NEGO_AUTH_START CURL_NEGO_AUTH_RECV CURL_NEGO_AUTH_SUCC --url http://localhost:9200
+2026-10-02T18:23:19Z code curl-src urldata.h define CURL_NEGO_AUTH_NONE 0U CURL_NEGO_AUTH_SUCC negotiation state macros --url http://localhost:9200

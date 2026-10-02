@@ -1,0 +1,138 @@
+{
+ "corpus": "arrow-rs",
+ "subject": "arrow-rs",
+ "pin": "73595d5875",
+ "generated": "2026-10-02",
+ "tasks": [
+  {
+   "id": "T1",
+   "class": "drift",
+   "name": "COLUMNS",
+   "kind": "added",
+   "changed": "2026-09-30",
+   "olds": [],
+   "q": "In the current development source of arrow-rs, what is the exact value of COLUMNS? Answer with the value only.",
+   "re": [
+    "0x64|100"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T2",
+   "class": "drift",
+   "name": "ARRAY_LEN",
+   "kind": "added",
+   "changed": "2026-09-29",
+   "olds": [],
+   "q": "In the current development source of arrow-rs, what is the exact value of ARRAY_LEN? Answer with the value only.",
+   "re": [
+    "0x2000|8192|8\\ \\?\\[kK\\]"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T3",
+   "class": "drift",
+   "name": "AND_THEN_DENSE_MASK_MIN_LEN",
+   "kind": "added",
+   "changed": "2026-09-27",
+   "olds": [],
+   "q": "In the current development source of arrow-rs, what is the exact value of AND_THEN_DENSE_MASK_MIN_LEN? Answer with the value only.",
+   "re": [
+    "0x2000|8192|8\\ \\?\\[kK\\]"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T4",
+   "class": "drift",
+   "name": "AND_THEN_DENSE_MASK_MAX_DROPPED_FRACTION",
+   "kind": "added",
+   "changed": "2026-09-27",
+   "olds": [],
+   "q": "In the current development source of arrow-rs, what is the exact value of AND_THEN_DENSE_MASK_MAX_DROPPED_FRACTION? Answer with the value only.",
+   "re": [
+    "0x4|4"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T5",
+   "class": "drift",
+   "name": "AND_THEN_DENSE_MASK_MIN_INNER_FRACTION",
+   "kind": "added",
+   "changed": "2026-09-27",
+   "olds": [],
+   "q": "In the current development source of arrow-rs, what is the exact value of AND_THEN_DENSE_MASK_MIN_INNER_FRACTION? Answer with the value only.",
+   "re": [
+    "0x14|20"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T6",
+   "class": "drift",
+   "name": "MASK_AND_THEN_ROWS",
+   "kind": "added",
+   "changed": "2026-09-24",
+   "olds": [],
+   "q": "In the current development source of arrow-rs, what is the exact value of MASK_AND_THEN_ROWS? Answer with the value only.",
+   "re": [
+    "0x2000|8192|8\\ \\?\\[kK\\]"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T7",
+   "class": "drift",
+   "name": "LIKE_ARRAY_SIZE",
+   "kind": "added",
+   "changed": "2026-09-24",
+   "olds": [],
+   "q": "In the current development source of arrow-rs, what is the exact value of LIKE_ARRAY_SIZE? Answer with the value only.",
+   "re": [
+    "0x400|1024"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T8",
+   "class": "drift",
+   "name": "NDV_BATCH_SIZE",
+   "kind": "added",
+   "changed": "2026-09-22",
+   "olds": [],
+   "q": "In the current development source of arrow-rs, what is the exact value of NDV_BATCH_SIZE? Answer with the value only.",
+   "re": [
+    "0x10000|64\\ \\?\\[kK\\]|65536|65_536"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T9",
+   "class": "drift",
+   "name": "NDV_NUM_BATCHES",
+   "kind": "added",
+   "changed": "2026-09-22",
+   "olds": [],
+   "q": "In the current development source of arrow-rs, what is the exact value of NDV_NUM_BATCHES? Answer with the value only.",
+   "re": [
+    "0xa|10"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T10",
+   "class": "drift",
+   "name": "NDV_LOW_CARDINALITY",
+   "kind": "added",
+   "changed": "2026-09-22",
+   "olds": [],
+   "q": "In the current development source of arrow-rs, what is the exact value of NDV_LOW_CARDINALITY? Answer with the value only.",
+   "re": [
+    "0x64|100"
+   ],
+   "need": 1
+  }
+ ]
+}

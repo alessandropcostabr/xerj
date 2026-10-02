@@ -1,0 +1,45 @@
+── rustls: index 17:12:45
+Traceback (most recent call last):
+  File "/workspace/benchmarks/corpus-tasks/harness/gen_tasks.py", line 185, in <module>
+    s = gen(slug)
+        ^^^^^^^^^
+  File "/workspace/benchmarks/corpus-tasks/harness/gen_tasks.py", line 150, in gen
+    drift += [(w, f) for f in drift_facts(w, consts=consts)]
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/benchmarks/corpus-tasks/harness/gen_tasks.py", line 90, in drift_facts
+    log = run(["git", "log", "-E", f"--since={since}", f"--max-count={max_commits}",
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/benchmarks/corpus-tasks/harness/gen_tasks.py", line 29, in run
+    p = subprocess.run(cmd, cwd=cwd, capture_output=True, text=True, timeout=timeout)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/subprocess.py", line 550, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/subprocess.py", line 1207, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/subprocess.py", line 2060, in _communicate
+    self._check_timeout(endtime, orig_timeout, stdout, stderr)
+  File "/usr/lib/python3.11/subprocess.py", line 1251, in _check_timeout
+    raise TimeoutExpired(
+subprocess.TimeoutExpired: Command '['git', 'log', '-E', '--since=2024-01-01', '--max-count=400', '--unified=0', '-G', '#define|const |constexpr', '--format=COMMIT %cd', '--date=short', '-p']' timed out after 600 seconds
+rustls GEN-FAILED
+── s2n-tls: index 17:24:19
+rustls INDEX-PATHOLOGICAL (giant file: rfc-9180-test-vectors.json)
+── s2n-tls: index 17:44:05
+s2n-tls: 10 tasks (10 drift, 0 state)
+── s2n-tls: 10 tasks, drive 17:59:03
+s2n-tls: done in 145s
+school-of-sre already driven
+── snappy: index 18:01:28
+snappy: 10 tasks (5 drift, 5 state)
+── snappy: 10 tasks, drive 18:17:56
+snappy: done in 199s
+sqlite-src INDEX-PATHOLOGICAL (giant file: fuzzdata7.db)
+── tldr-pages: index 18:21:16
+rustls already driven
+s2n-tls already driven
+school-of-sre already driven
+snappy already driven
+sqlite-src already driven
+── tldr-pages: index 18:26:58

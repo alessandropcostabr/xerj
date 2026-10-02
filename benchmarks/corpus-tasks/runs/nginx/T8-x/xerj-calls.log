@@ -1,0 +1,2 @@
+2026-10-02T17:22:07Z code nginx NGX_GEOIP_CITY_POSTAL_CODE definition value geoip --url http://localhost:9200
+2026-10-02T17:22:16Z code nginx #define NGX_GEOIP_CITY_POSTAL_CODE ngx_http_geoip_module.c numeric enum values region postal latitude --url http://localhost:9200

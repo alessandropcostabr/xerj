@@ -1,0 +1,2 @@
+2026-10-02T18:25:07Z code curl-src CPOOL_LIMIT_OK definition connection pool limit value --url http://localhost:9200
+2026-10-02T18:25:16Z code curl-src conncache.c CPOOL_LIMIT_OK bundle limit check num_connections max_total --url http://localhost:9200

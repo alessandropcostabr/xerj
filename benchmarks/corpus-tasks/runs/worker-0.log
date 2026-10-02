@@ -1,0 +1,45 @@
+── arrow-rs: index 17:12:45
+Traceback (most recent call last):
+  File "/workspace/benchmarks/corpus-tasks/harness/gen_tasks.py", line 185, in <module>
+    s = gen(slug)
+        ^^^^^^^^^
+  File "/workspace/benchmarks/corpus-tasks/harness/gen_tasks.py", line 150, in gen
+    drift += [(w, f) for f in drift_facts(w, consts=consts)]
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/benchmarks/corpus-tasks/harness/gen_tasks.py", line 90, in drift_facts
+    log = run(["git", "log", "-E", f"--since={since}", f"--max-count={max_commits}",
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/benchmarks/corpus-tasks/harness/gen_tasks.py", line 29, in run
+    p = subprocess.run(cmd, cwd=cwd, capture_output=True, text=True, timeout=timeout)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/subprocess.py", line 550, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/subprocess.py", line 1207, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/subprocess.py", line 2060, in _communicate
+    self._check_timeout(endtime, orig_timeout, stdout, stderr)
+  File "/usr/lib/python3.11/subprocess.py", line 1251, in _check_timeout
+    raise TimeoutExpired(
+subprocess.TimeoutExpired: Command '['git', 'log', '-E', '--since=2024-01-01', '--max-count=400', '--unified=0', '-G', '#define|const |constexpr', '--format=COMMIT %cd', '--date=short', '-p']' timed out after 600 seconds
+arrow-rs GEN-FAILED
+── curl-src: index 17:22:46
+── arrow-rs: index 17:44:05
+arrow-rs: 10 tasks (10 drift, 0 state)
+── arrow-rs: 10 tasks, drive 17:52:08
+arrow-rs: done in 100s
+── curl-src: index 17:53:49
+curl-src: 10 tasks (10 drift, 0 state)
+── curl-src: 10 tasks, drive 18:22:51
+curl-src: done in 156s
+duckdb INDEX-PATHOLOGICAL (giant file: tpcds_constants.hpp)
+envoy INDEX-PATHOLOGICAL (giant file: GeoIP2-Country-Test.mmdb)
+etcd-docs already driven
+── etcd-src: index 18:25:28
+arrow-rs already driven
+curl-src already driven
+duckdb already driven
+envoy already driven
+etcd-docs already driven
+── etcd-src: index 18:26:58

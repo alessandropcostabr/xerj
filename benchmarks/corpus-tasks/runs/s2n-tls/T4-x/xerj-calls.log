@@ -1,0 +1,5 @@
+2026-10-02T17:59:40Z code s2n-tls S2N_SERIALIZED_FORMAT_TLS12_V3 serialized connection state format version value --url http://localhost:9200
+2026-10-02T17:59:49Z code s2n-tls define S2N_SERIALIZED_FORMAT_TLS12_V3 enum serialization format version header --url http://localhost:9200
+2026-10-02T18:00:04Z code s2n-tls S2N_SERIALIZED_FORMAT_TLS12_V1 S2N_SERIALIZED_FORMAT_TLS12_V2 S2N_SERIALIZED_FORMAT_TLS12_V3 s2n_serial_format_version enum members --url http://localhost:9200
+2026-10-02T18:00:12Z code s2n-tls S2N_SERIALIZED_FORMAT_TLS12_V1 --url http://localhost:9200
+2026-10-02T18:00:14Z code s2n-tls SERIALIZED_FORMAT_TLS12_V3 value serialized_conn tama --url http://localhost:9200

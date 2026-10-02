@@ -1,0 +1,1 @@
+2026-10-02T17:20:08Z code nginx NGX_GEOIP_CITY_COUNTRY_CODE3 define value geoip module --url http://localhost:9200

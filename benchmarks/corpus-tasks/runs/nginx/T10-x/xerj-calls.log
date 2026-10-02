@@ -1,0 +1,4 @@
+2026-10-02T17:22:35Z code nginx NGX_GEOIP_CITY_LONGITUDE define value geoip module --url http://localhost:9200
+2026-10-02T17:22:39Z code nginx #define NGX_GEOIP_CITY_CONTINENT_CODE NGX_GEOIP_CITY_COUNTRY_CODE3 NGX_GEOIP_CITY_REGION_NAME NGX_GEOIP_CITY_POSTAL_CODE NGX_GEOIP_CITY_LATITUDE NGX_GEOIP_CITY_LONGITUDE macro definitions enum --url http://localhost:9200
+2026-10-02T17:22:44Z code nginx geoip module defines beginning NGX_GEOIP_COUNTRY_CODE 0 NGX_GEOIP_COUNTRY_CODE3 1 NGX_GEOIP_COUNTRY_NAME 2 city longitude latitude complete list of geoip defines at top of file --url http://localhost:9200
+2026-10-02T17:22:52Z code nginx NGX_GEOIP_CITY_LONGITUDE --url http://localhost:9200

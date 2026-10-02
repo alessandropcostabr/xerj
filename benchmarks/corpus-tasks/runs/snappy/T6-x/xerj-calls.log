@@ -1,0 +1,2 @@
+2026-10-02T18:19:32Z code snappy SNAPPY_HAVE_VECTOR_BYTE_SHUFFLE definition --url http://localhost:9200
+2026-10-02T18:19:38Z code snappy SNAPPY_HAVE_SSSE3 NEON HAVE_BUILTIN snappy-internal.h preprocessor conditional V128 shuffle byte enabled define 1 --url http://localhost:9200

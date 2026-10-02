@@ -3,5 +3,136 @@
  "subject": "caddy",
  "pin": "ac834b5dc7",
  "generated": "2026-10-02",
- "tasks": []
+ "tasks": [
+  {
+   "id": "T1",
+   "class": "drift",
+   "name": "panicTestHandlerID",
+   "kind": "added",
+   "changed": "2026-08-10",
+   "olds": [],
+   "q": "In the current development source of caddy, what is the exact value of panicTestHandlerID? Answer with the value only.",
+   "re": [
+    "http\\.handlers\\.panic_test"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T2",
+   "class": "drift",
+   "name": "panicLogPrefix",
+   "kind": "added",
+   "changed": "2026-08-10",
+   "olds": [],
+   "q": "In the current development source of caddy, what is the exact value of panicLogPrefix? Answer with the value only.",
+   "re": [
+    "http:\\ panic\\ serving"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T3",
+   "class": "drift",
+   "name": "panicErrorLevel",
+   "kind": "added",
+   "changed": "2026-08-10",
+   "olds": [],
+   "q": "In the current development source of caddy, what is the exact value of panicErrorLevel? Answer with the value only.",
+   "re": [
+    "error"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T4",
+   "class": "drift",
+   "name": "panicListenAddr",
+   "kind": "added",
+   "changed": "2026-08-10",
+   "olds": [],
+   "q": "In the current development source of caddy, what is the exact value of panicListenAddr? Answer with the value only.",
+   "re": [
+    ":9080"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T5",
+   "class": "drift",
+   "name": "panicRequestURL",
+   "kind": "added",
+   "changed": "2026-08-10",
+   "olds": [],
+   "q": "In the current development source of caddy, what is the exact value of panicRequestURL? Answer with the value only.",
+   "re": [
+    "http://localhost:9080/"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T6",
+   "class": "drift",
+   "name": "benchmarkParallelism",
+   "kind": "added",
+   "changed": "2026-06-11",
+   "olds": [],
+   "q": "In the current development source of caddy, what is the exact value of benchmarkParallelism? Answer with the value only.",
+   "re": [
+    "0x4|4"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T7",
+   "class": "drift",
+   "name": "handlerBenchWarmupIterations",
+   "kind": "added",
+   "changed": "2026-06-11",
+   "olds": [],
+   "q": "In the current development source of caddy, what is the exact value of handlerBenchWarmupIterations? Answer with the value only.",
+   "re": [
+    "0x5|5"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T8",
+   "class": "drift",
+   "name": "placeholderRequestBody",
+   "kind": "added",
+   "changed": "2025-12-16",
+   "olds": [],
+   "q": "In the current development source of caddy, what is the exact value of placeholderRequestBody? Answer with the value only.",
+   "re": [
+    "\\{http\\.request\\.body\\}"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T9",
+   "class": "drift",
+   "name": "placeholderRequestBodyBase64",
+   "kind": "added",
+   "changed": "2025-12-16",
+   "olds": [],
+   "q": "In the current development source of caddy, what is the exact value of placeholderRequestBodyBase64? Answer with the value only.",
+   "re": [
+    "\\{http\\.request\\.body_base64\\}"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T10",
+   "class": "drift",
+   "name": "placeholderResponseBody",
+   "kind": "added",
+   "changed": "2025-12-16",
+   "olds": [],
+   "q": "In the current development source of caddy, what is the exact value of placeholderResponseBody? Answer with the value only.",
+   "re": [
+    "\\{http\\.response\\.body\\}"
+   ],
+   "need": 1
+  }
+ ]
 }

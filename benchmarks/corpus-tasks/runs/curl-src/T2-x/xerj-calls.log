@@ -1,0 +1,2 @@
+2026-10-02T18:23:09Z code curl-src CURL_NEGO_AUTH_RECV definition enum value --url http://localhost:9200
+2026-10-02T18:23:22Z code curl-src negotiation state machine CURLNEGOTIATE enum urldata.h http_negotiate --url http://localhost:9200

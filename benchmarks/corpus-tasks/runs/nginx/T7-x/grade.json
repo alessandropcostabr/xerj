@@ -1,0 +1,1 @@
+{"id": "T7", "answered": true, "hits": 1, "need": 1, "pass": true, "answer": "undefined \u2014 no macro named NGX_GEOIP_CITY_NAME exists in nginx (nearest existing macros: NGX_GEOIP_CITY_COUNTRY_NAME = 3, NGX_GEOIP_CITY = 6)", "seconds": 58, "arm": "x", "xerj_calls": 7, "cost_usd": 0.277333, "turns": 7, "task": "T7"}

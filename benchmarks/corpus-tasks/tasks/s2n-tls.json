@@ -1,0 +1,138 @@
+{
+ "corpus": "s2n-tls",
+ "subject": "s2n-tls",
+ "pin": "b170000016",
+ "generated": "2026-10-02",
+ "tasks": [
+  {
+   "id": "T1",
+   "class": "drift",
+   "name": "TRUSTED_CLIENT_NAME",
+   "kind": "added",
+   "changed": "2026-09-30",
+   "olds": [],
+   "q": "In the current development source of s2n-tls, what is the exact value of TRUSTED_CLIENT_NAME? Answer with the value only.",
+   "re": [
+    "www\\.wombat\\.com"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T2",
+   "class": "drift",
+   "name": "SSL_KEY_UPDATE_REQUESTED",
+   "kind": "added",
+   "changed": "2026-09-25",
+   "olds": [],
+   "q": "In the current development source of s2n-tls, what is the exact value of SSL_KEY_UPDATE_REQUESTED? Answer with the value only.",
+   "re": [
+    "0x1|1"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T3",
+   "class": "drift",
+   "name": "S2N_STATE_WITH_SESSION_TICKET",
+   "kind": "added",
+   "changed": "2026-09-15",
+   "olds": [],
+   "q": "In the current development source of s2n-tls, what is the exact value of S2N_STATE_WITH_SESSION_TICKET? Answer with the value only.",
+   "re": [
+    "0x1|1"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T4",
+   "class": "drift",
+   "name": "S2N_SERIALIZED_FORMAT_TLS12_V3",
+   "kind": "added",
+   "changed": "2026-09-15",
+   "olds": [],
+   "q": "In the current development source of s2n-tls, what is the exact value of S2N_SERIALIZED_FORMAT_TLS12_V3? Answer with the value only.",
+   "re": [
+    "0x4|4"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T5",
+   "class": "drift",
+   "name": "S2N_TLS12",
+   "kind": "added",
+   "changed": "2026-09-15",
+   "olds": [],
+   "q": "In the current development source of s2n-tls, what is the exact value of S2N_TLS12? Answer with the value only.",
+   "re": [
+    "0x21|33"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T6",
+   "class": "drift",
+   "name": "POLL_COUNT",
+   "kind": "added",
+   "changed": "2026-09-15",
+   "olds": [],
+   "q": "In the current development source of s2n-tls, what is the exact value of POLL_COUNT? Answer with the value only.",
+   "re": [
+    "0xa|10"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T7",
+   "class": "drift",
+   "name": "S2N_MAX_POLICY_ALIAS_NAMES",
+   "kind": "added",
+   "changed": "2026-09-14",
+   "olds": [],
+   "q": "In the current development source of s2n-tls, what is the exact value of S2N_MAX_POLICY_ALIAS_NAMES? Answer with the value only.",
+   "re": [
+    "0x4|4"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T8",
+   "class": "drift",
+   "name": "HELLO_RETRY_REQUEST_COUNT",
+   "kind": "added",
+   "changed": "2026-09-08",
+   "olds": [],
+   "q": "In the current development source of s2n-tls, what is the exact value of HELLO_RETRY_REQUEST_COUNT? Answer with the value only.",
+   "re": [
+    "hello_retry_request_count"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T9",
+   "class": "drift",
+   "name": "COMPATIBILITY_NEGOTIATED_FIPS20251201",
+   "kind": "added",
+   "changed": "2026-08-27",
+   "olds": [],
+   "q": "In the current development source of s2n-tls, what is the exact value of COMPATIBILITY_NEGOTIATED_FIPS20251201? Answer with the value only.",
+   "re": [
+    "compatibility\\.negotiated\\.fips20251201"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T10",
+   "class": "drift",
+   "name": "COMPATIBILITY_NEGOTIATED_CNSA1",
+   "kind": "added",
+   "changed": "2026-08-27",
+   "olds": [],
+   "q": "In the current development source of s2n-tls, what is the exact value of COMPATIBILITY_NEGOTIATED_CNSA1? Answer with the value only.",
+   "re": [
+    "compatibility\\.negotiated\\.cnsa1"
+   ],
+   "need": 1
+  }
+ ]
+}

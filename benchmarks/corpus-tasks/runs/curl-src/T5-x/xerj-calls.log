@@ -1,0 +1,2 @@
+2026-10-02T18:23:55Z code curl-src CURL_NEGO_AUTH_SUCC define negotiate authentication state --url http://localhost:9200
+2026-10-02T18:23:59Z code curl-src #define CURL_NEGO_AUTH enum GSS-auth negotiate state constants CURLAUTH --url http://localhost:9200

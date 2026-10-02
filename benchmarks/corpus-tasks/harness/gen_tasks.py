@@ -26,7 +26,10 @@ ASSIGN = re.compile(
     r'\s*$')
 
 def run(cmd, cwd=None, timeout=300):
-    p = subprocess.run(cmd, cwd=cwd, capture_output=True, text=True, timeout=timeout)
+    try:
+        p = subprocess.run(cmd, cwd=cwd, capture_output=True, text=True, timeout=timeout)
+    except subprocess.TimeoutExpired:
+        return ""  # drift is best-effort; state tasks still fill the suite
     return p.stdout if p.returncode == 0 else ""
 
 def repo_dirs(slug):
@@ -51,8 +54,19 @@ RS_RE = re.compile(
 CPP_RE = re.compile(  # Google style: static const int kNumShardBits = 4;
     r'^\s*(?:static\s+)?(?:const|constexpr)\s+[A-Za-z_][\w:<>,\s]*?\s(k[A-Z][A-Za-z0-9]{2,})\s*=\s*(-?0x[0-9a-fA-F]+|-?\d[\d_]*|"[^"]{1,60}")\s*;')
 
-def match_const(line):
-    return DEF_RE.match(line) or RS_RE.match(line) or CPP_RE.match(line)
+JAVA_RE = re.compile(  # static final int MAX_FOO = 3;
+    r'^\s*(?:public\s+|private\s+|protected\s+)?static\s+final\s+[A-Za-z_][\w<>\[\],.]*\s+([A-Z][A-Z0-9_]{3,})\s*=\s*(-?0x[0-9a-fA-F]+L?|-?\d+L?|"[^"]{1,60}")\s*;')
+GO_VAL = r'(-?0x[0-9a-fA-F]+|-?\d+(?:\.\d+)?|"[^"]{1,60}")'
+GO_LINE = re.compile(r'^\s*([A-Za-z_][A-Za-z0-9_]{5,})\s*=\s*' + GO_VAL + r'\s*$')
+GO_CONST = re.compile(r'^\s*const\s+([A-Za-z_][A-Za-z0-9_]{5,})(?:\s+\w+)?\s*=\s*' + GO_VAL + r'\s*$')
+
+def match_const(line, go_block=False):
+    m = DEF_RE.match(line) or RS_RE.match(line) or CPP_RE.match(line) or JAVA_RE.match(line)
+    if m:
+        return m
+    if go_block:
+        return GO_LINE.match(line)
+    return GO_CONST.match(line)
 
 SKIP_DIRS = {"vendor", "third_party", "thirdparty", "node_modules", ".git", "test-data"}
 
@@ -61,7 +75,7 @@ def iter_files(work):
     for f in work.rglob("*"):
         if n > 6000:
             return
-        if f.is_file() and f.suffix in (".c", ".h", ".cc", ".cpp", ".hpp", ".rs"):
+        if f.is_file() and f.suffix in (".c", ".h", ".cc", ".cpp", ".hpp", ".rs", ".go", ".java"):
             rel = f.relative_to(work).parts
             if not any(p.lower() in SKIP_DIRS for p in rel[:-1]):
                 n += 1
@@ -71,9 +85,16 @@ def parse_consts(work):
     cur = {}
     for f in iter_files(work):
         try:
+            go = f.suffix == ".go"
+            in_block = False
             for line in f.read_text(errors="ignore").splitlines()[:200000]:
-                m = match_const(line)
-                if m:
+                if go:
+                    if re.match(r'^\s*const\s*\(', line):
+                        in_block = True; continue
+                    if in_block and re.match(r'^\)', line):
+                        in_block = False; continue
+                m = match_const(line, go_block=in_block)
+                if m and not m.group(1).endswith(("import", "package", "return")):
                     cur.setdefault(m.group(1), (m.group(2), str(f.relative_to(work))))
         except OSError:
             pass
@@ -97,7 +118,7 @@ def drift_facts(work, since="2024-01-01", max_commits=400, consts=None):
             continue
         if line[:1] not in ("+", "-") or line.startswith(("+++", "---")):
             continue
-        m = match_const(line[1:])
+        m = match_const(line[1:], go_block=True)
         if not m:
             continue
         name, val = m.group(1), m.group(2)

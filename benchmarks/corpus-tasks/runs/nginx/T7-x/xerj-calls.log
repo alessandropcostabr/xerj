@@ -1,0 +1,7 @@
+2026-10-02T17:21:35Z code nginx NGX_GEOIP_CITY_NAME define value geoip module --url http://localhost:9200
+2026-10-02T17:21:44Z code nginx define NGX_GEOIP_CITY_CONTINENT_CODE NGX_GEOIP_CITY_COUNTRY_CODE NGX_GEOIP_CITY_REGION_NAME macro definitions --url http://localhost:9200
+2026-10-02T17:21:49Z code nginx NGX_GEOIP_CITY 6 NGX_GEOIP_CITY_POSTAL_CODE NGX_GEOIP_CITY_LATITUDE NGX_GEOIP_CITY_LONGITUDE define geoip city variables --url http://localhost:9200
+2026-10-02T17:21:59Z code nginx NGX_GEOIP_CITY_COUNTRY_NAME geoip_city_country_name variable city --url http://localhost:9200
+2026-10-02T17:21:59Z code nginx NGX_GEOIP_CITY_POSTAL_CODE 7 define line geoip_module.c --url http://localhost:9200
+2026-10-02T17:22:11Z code nginx NGX_GEOIP_COUNTRY_CODE NGX_GEOIP_COUNTRY_CODE3 NGX_GEOIP_COUNTRY_NAME define 0 1 2 --url http://localhost:9200
+2026-10-02T17:22:21Z code nginx "NGX_GEOIP_CITY_NAME" exact macro definition geoip --url http://localhost:9200

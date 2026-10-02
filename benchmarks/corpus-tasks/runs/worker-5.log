@@ -1,0 +1,39 @@
+── add zalando-restful-api-guidelines 17:45:33
+share it: /root/.xerj-code/corpora/zalando-restful-api-guidelines/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index zalando-restful-api-guidelines
+  /root/.xerj-code/corpora/zalando-restful-api-guidelines/zalando-restful-api-guidelines depth=1770
+── add zlib-ng 17:45:36
+share it: /root/.xerj-code/corpora/zlib-ng/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index zlib-ng
+  /root/.xerj-code/corpora/zlib-ng/zlib-ng depth=3317
+── add zstd 17:45:41
+share it: /root/.xerj-code/corpora/zstd/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index zstd
+  /root/.xerj-code/corpora/zstd/zstd depth=11512
+── add xerj-vector 17:45:47
+share it: /root/.xerj-code/corpora/xerj-vector/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index xerj-vector
+  /root/.xerj-code/corpora/xerj-vector/instant-distance depth=266
+  /root/.xerj-code/corpora/xerj-vector/usearch depth=2390
+  /root/.xerj-code/corpora/xerj-vector/qdrant depth=6679
+  /root/.xerj-code/corpora/xerj-vector/hnswlib depth=501
+── add xerj-storage 17:46:08
+share it: /root/.xerj-code/corpora/xerj-storage/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index xerj-storage
+  /root/.xerj-code/corpora/xerj-storage/sled depth=4537
+  /root/.xerj-code/corpora/xerj-storage/redb depth=1612
+  /root/.xerj-code/corpora/xerj-storage/fjall depth=2013
+── add xerj-search 17:46:19
+share it: /root/.xerj-code/corpora/xerj-search/corpus.json  (rebuild with xerj corpus add <name> --from <that file>)
+next: xerj corpus index xerj-search
+  /root/.xerj-code/corpora/xerj-search/sonic depth=1083
+  /root/.xerj-code/corpora/xerj-search/quickwit depth=3777
+  /root/.xerj-code/corpora/xerj-search/meilisearch depth=14579
+  /root/.xerj-code/corpora/xerj-search/lucene depth=39456
+  /root/.xerj-code/corpora/xerj-search/tantivy depth=3673
+  /root/.xerj-code/corpora/xerj-search/elasticsearch depth=104011
+── zalando-restful-api-guidelines: index 17:49:46
+zalando-restful-api-guidelines: 0 tasks (0 drift, 0 state)
+── zalando-restful-api-guidelines: 0 tasks, drive 18:17:27
+zalando-restful-api-guidelines: INFEASIBLE (0 tasks)
+── zlib-ng: index 18:17:27

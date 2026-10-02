@@ -1,0 +1,3 @@
+2026-10-02T18:19:57Z code snappy SNAPPY_HAVE_NEON_CRC32 define definition value --url http://localhost:9200
+2026-10-02T18:20:04Z code snappy NEON CRC32 arm aarch64 __ARM_FEATURE_CRC32 snappy.cc macro gate --url http://localhost:9200
+2026-10-02T18:20:19Z code snappy "#define SNAPPY_HAVE_NEON_CRC32" preprocessor conditional define --url http://localhost:9200

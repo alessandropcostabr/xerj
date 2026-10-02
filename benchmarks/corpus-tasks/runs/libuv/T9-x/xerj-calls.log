@@ -1,0 +1,3 @@
+2026-10-02T17:07:32Z code libuv SIZEOF_UV_UTSNAME_T CMakeLists check_type_size define --url http://localhost:9200
+2026-10-02T17:07:32Z code libuv uv_utsname_t typedef struct sysname release version machine field sizes --url http://localhost:9200
+2026-10-02T17:07:38Z code libuv test-sizeof.c SIZEOF_UV_UTSNAME_T ifdef _WIN32 else android sun os define value --url http://localhost:9200

@@ -1,0 +1,19 @@
+── graphql-spec: index 17:12:45
+graphql-spec: 0 tasks (0 drift, 0 state)
+── graphql-spec: 0 tasks, drive 17:14:07
+graphql-spec: INFEASIBLE (0 tasks)
+── iceberg: index 17:14:07
+iceberg: 0 tasks (0 drift, 0 state)
+── iceberg: 0 tasks, drive 17:19:13
+iceberg: INFEASIBLE (0 tasks)
+json-schema-spec already driven
+── kafka-protocol: index 17:19:13
+graphql-spec already driven
+iceberg already driven
+json-schema-spec already driven
+kafka-protocol INDEX-PATHOLOGICAL (giant file: jiunnyanghuang.jpg)
+── kafka-src: index 17:44:05
+kafka-src: 10 tasks (0 drift, 10 state)
+── kafka-src: 10 tasks, drive 18:24:56
+graphql-spec already driven
+── iceberg: index 18:26:58

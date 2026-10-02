@@ -1,0 +1,2 @@
+2026-10-02T17:20:49Z code nginx NGX_GEOIP_CITY_REGION define geoip module value --url http://localhost:9200
+2026-10-02T17:20:53Z code nginx #define NGX_GEOIP_CITY_REGION macro definition constant in ngx_http_geoip_module.c --url http://localhost:9200
