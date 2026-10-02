@@ -191,3 +191,7 @@ __pycache__/
 # in site generation or in any CI gate, and its only output was
 # .dogfood/seo/evidence/, so it follows the captures out of the tree.
 scripts/seo/evidence/
+
+# PROGRAM-100: profiler drafts are local staging (UNREVIEWED) — only reviewed
+# manifests move to hub/<slug>.json and get committed
+tools/xerj-code/hub/drafts/
