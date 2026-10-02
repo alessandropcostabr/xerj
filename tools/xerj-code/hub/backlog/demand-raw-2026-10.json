@@ -1,0 +1,708 @@
+{
+ "sampled": 1000,
+ "volume": {
+  "databases-sql": {
+   "sqlite": {
+    "nbHits": 62,
+    "examples": [
+     [
+      "Ask HN: Have you used SQLite as a primary database?",
+      518,
+      "https://news.ycombinator.com/item?id=31152490"
+     ],
+     [
+      "Ask HN: SQLite in Production?",
+      111,
+      "https://news.ycombinator.com/item?id=39955288"
+     ],
+     [
+      "Ask HN: Are you using SQLite and Litestream in production?",
+      98,
+      "https://news.ycombinator.com/item?id=39065201"
+     ]
+    ]
+   },
+   "postgres": {
+    "nbHits": 147,
+    "examples": [
+     [
+      "Ask HN: Have you ever chosen Postgres over Mongo and regretted it?",
+      233,
+      "https://news.ycombinator.com/item?id=17497164"
+     ],
+     [
+      "Ask HN: It's 2023, how do you choose between MySQL and Postgres?",
+      219,
+      "https://news.ycombinator.com/item?id=35906604"
+     ]
+    ]
+   }
+  },
+  "key-value-storage": {
+   "redis": {
+    "nbHits": 83,
+    "examples": [
+     [
+      "Ask HN: Going from Redis to MySQL. Good idea?",
+      20,
+      "https://news.ycombinator.com/item?id=8478537"
+     ],
+     [
+      "Ask HN:  Is it feasible to use redis as the only datastore?",
+      19,
+      "https://news.ycombinator.com/item?id=3010345"
+     ]
+    ]
+   },
+   "lmdb": {
+    "nbHits": 0,
+    "examples": []
+   }
+  },
+  "web-servers-proxy": {
+   "nginx": {
+    "nbHits": 72,
+    "examples": [
+     [
+      "Ask HN: Where can I find an active help community for Nginx as a solo dev?",
+      19,
+      "https://news.ycombinator.com/item?id=35957204"
+     ]
+    ]
+   },
+   "reverse proxy": {
+    "nbHits": 10,
+    "examples": [
+     [
+      "Ask HN: Good books/courses to learn networking essentials for web developers?",
+      430,
+      "https://news.ycombinator.com/item?id=27650775"
+     ],
+     [
+      "Ask HN: Has anyone had negative experiences with zeromq?",
+      70,
+      "https://news.ycombinator.com/item?id=2428004"
+     ],
+     [
+      "Ask HN: Can I own an IP address and take it with me across providers?",
+      48,
+      "https://news.ycombinator.com/item?id=33785512"
+     ]
+    ]
+   }
+  },
+  "tls-crypto": {
+   "tls certificate": {
+    "nbHits": 1,
+    "examples": [
+     [
+      "Tell HN: Sci-Hub's TLS certificate has started failing",
+      244,
+      "https://news.ycombinator.com/item?id=16951831"
+     ]
+    ]
+   },
+   "openssl": {
+    "nbHits": 18,
+    "examples": [
+     [
+      "Ask HN: How can I get involved with Linux/OpenSSL/GnuPG/etc",
+      103,
+      "https://news.ycombinator.com/item?id=13346359"
+     ],
+     [
+      "Ask HN: Negative OpenSSL sentiments",
+      63,
+      "https://news.ycombinator.com/item?id=7577518"
+     ]
+    ]
+   }
+  },
+  "data-formats": {
+   "parquet": {
+    "nbHits": 4,
+    "examples": [
+     [
+      "Ask HN: How do I improve our data infrastructure?",
+      163,
+      "https://news.ycombinator.com/item?id=19705461"
+     ],
+     [
+      "Ask HN: Is KDB a sane choice for a datalake in 2024?",
+      40,
+      "https://news.ycombinator.com/item?id=40625800"
+     ],
+     [
+      "Ask HN: Distributed SQL engine for ultra-wide tables",
+      23,
+      "https://news.ycombinator.com/item?id=46624190"
+     ]
+    ]
+   },
+   "protobuf": {
+    "nbHits": 7,
+    "examples": [
+     [
+      "Ask HN: Using gRPC+protobuf is painful. Any nice-to-use alternatives?",
+      21,
+      "https://news.ycombinator.com/item?id=15734666"
+     ],
+     [
+      "Ask HN: How is your job search going?",
+      38,
+      "https://news.ycombinator.com/item?id=38462154"
+     ]
+    ]
+   }
+  },
+  "messaging": {
+   "kafka": {
+    "nbHits": 29,
+    "examples": [
+     [
+      "Ask HN: Why do message queue-based architectures seem less popular now?",
+      389,
+      "https://news.ycombinator.com/item?id=40723302"
+     ]
+    ]
+   },
+   "rabbitmq": {
+    "nbHits": 15,
+    "examples": [
+     [
+      "Ask HN: Why do message queue-based architectures seem less popular now?",
+      389,
+      "https://news.ycombinator.com/item?id=40723302"
+     ],
+     [
+      "Ask HN: What are good resources to learn system design?",
+      246,
+      "https://news.ycombinator.com/item?id=24762734"
+     ]
+    ]
+   }
+  },
+  "search-engines": {
+   "elasticsearch": {
+    "nbHits": 22,
+    "examples": [
+     [
+      "Ask HN: Best practices for log format?",
+      137,
+      "https://news.ycombinator.com/item?id=14209168"
+     ],
+     [
+      "Ask HN: What's your preferred logging stack in Kubernetes",
+      72,
+      "https://news.ycombinator.com/item?id=40988637"
+     ]
+    ]
+   },
+   "full-text search": {
+    "nbHits": 9,
+    "examples": [
+     [
+      "Ask HN: Books about full text search?",
+      232,
+      "https://news.ycombinator.com/item?id=33734259"
+     ],
+     [
+      "Ask HN: Bookmarking with _working_ full text search?",
+      15,
+      "https://news.ycombinator.com/item?id=34522362"
+     ],
+     [
+      "Ask HN: What Happened to Pinboard (April '22 edition)?",
+      78,
+      "https://news.ycombinator.com/item?id=31183419"
+     ]
+    ]
+   }
+  },
+  "vector-db": {
+   "vector database": {
+    "nbHits": 6,
+    "examples": [
+     [
+      "Ask HN: How are you doing RAG locally?",
+      413,
+      "https://news.ycombinator.com/item?id=46616529"
+     ],
+     [
+      "Ask HN: Alternatives to Vector DB?",
+      21,
+      "https://news.ycombinator.com/item?id=43401138"
+     ]
+    ]
+   },
+   "qdrant": {
+    "nbHits": 1,
+    "examples": [
+     [
+      "I Replaced My AI Agent's Flat Fact Store with a Graph Database",
+      10,
+      "https://news.ycombinator.com/item?id=48383578"
+     ]
+    ]
+   }
+  },
+  "columnar-olap": {
+   "clickhouse": {
+    "nbHits": 8,
+    "examples": [
+     [
+      "ClickHouse vs. BigQuery",
+      16,
+      "https://news.ycombinator.com/item?id=34767620"
+     ],
+     [
+      "SlothDB a 5X Faster Alternative to DuckDB, ClickHouse DB",
+      13,
+      "https://news.ycombinator.com/item?id=47971921"
+     ]
+    ]
+   },
+   "duckdb": {
+    "nbHits": 7,
+    "examples": [
+     [
+      "Ask HN: Books on designing disk-optimized data structures?",
+      103,
+      "https://news.ycombinator.com/item?id=32965075"
+     ]
+    ]
+   }
+  },
+  "api-design": {
+   "REST API design": {
+    "nbHits": 1,
+    "examples": [
+     [
+      "Ask HN: Specialize or generalize?",
+      12,
+      "https://news.ycombinator.com/item?id=10106110"
+     ]
+    ]
+   },
+   "openapi": {
+    "nbHits": 10,
+    "examples": [
+     [
+      "Ask HN: Have you written or consumed OpenAPI Arazzo specification?",
+      15,
+      "https://news.ycombinator.com/item?id=43158402"
+     ],
+     [
+      "Ask HN: Are there any alternatives to ChatGPT and DALL-E because OpenAPI censors",
+      15,
+      "https://news.ycombinator.com/item?id=35257083"
+     ]
+    ]
+   }
+  },
+  "observability": {
+   "prometheus": {
+    "nbHits": 14,
+    "examples": [
+     [
+      "Ask HN: Best monitoring system?",
+      135,
+      "https://news.ycombinator.com/item?id=12145879"
+     ]
+    ]
+   },
+   "opentelemetry": {
+    "nbHits": 5,
+    "examples": [
+     [
+      "Ask HN: What's Your Opinion on Opentelemetry?",
+      36,
+      "https://news.ycombinator.com/item?id=37980466"
+     ],
+     [
+      "Ask HN: Are You Using OpenTelemetry?",
+      17,
+      "https://news.ycombinator.com/item?id=36392956"
+     ]
+    ]
+   }
+  },
+  "os-sysprog": {
+   "io_uring": {
+    "nbHits": 0,
+    "examples": []
+   },
+   "memory allocator": {
+    "nbHits": 0,
+    "examples": []
+   }
+  },
+  "building-construction": {
+   "building code": {
+    "nbHits": 2,
+    "examples": [
+     [
+      "Ask HN: Any logic based software dev tool which helps building code gradually?",
+      46,
+      "https://news.ycombinator.com/item?id=20431879"
+     ],
+     [
+      "Ask HN: Leagal questions regarding working with Russian developers (USA)",
+      10,
+      "https://news.ycombinator.com/item?id=41203326"
+     ]
+    ]
+   },
+   "contractor": {
+    "nbHits": 152,
+    "examples": [
+     [
+      "Ask HN: How to become a remote contractor?",
+      311,
+      "https://news.ycombinator.com/item?id=17047736"
+     ],
+     [
+      "Ask HN: How to start working as a contractor?",
+      119,
+      "https://news.ycombinator.com/item?id=17359145"
+     ],
+     [
+      "Ask HN: How do you get started as independent consultant or contractor",
+      109,
+      "https://news.ycombinator.com/item?id=30237149"
+     ]
+    ]
+   }
+  },
+  "legal-courts": {
+   "lawsuit": {
+    "nbHits": 39,
+    "examples": [
+     [
+      "Ask HN: I was hit with a patent troll lawsuit, how do I deal with it?",
+      833,
+      "https://news.ycombinator.com/item?id=27579693"
+     ],
+     [
+      "Ask HN: Are McFlurries suddenly back now that lawsuit is pending?",
+      14,
+      "https://news.ycombinator.com/item?id=28581906"
+     ]
+    ]
+   },
+   "small claims court": {
+    "nbHits": 7,
+    "examples": [
+     [
+      "Ask HN: Suing Facebook in small claims?",
+      359,
+      "https://news.ycombinator.com/item?id=35836221"
+     ],
+     [
+      "Ask HN: How do you collect delinquent payment for contract work?",
+      37,
+      "https://news.ycombinator.com/item?id=2825581"
+     ]
+    ]
+   }
+  },
+  "tax": {
+   "tax filing": {
+    "nbHits": 3,
+    "examples": [
+     [
+      "Ask HN: Payroll software with API and automated tax filing?",
+      13,
+      "https://news.ycombinator.com/item?id=3458297"
+     ],
+     [
+      "Ask HN: How do you handle VAT / Sales Tax accounting as B2C SaaS?",
+      97,
+      "https://news.ycombinator.com/item?id=43298663"
+     ],
+     [
+      "Ask HN: Do we need to have payroll in C-Corp ?",
+      12,
+      "https://news.ycombinator.com/item?id=451595"
+     ]
+    ]
+   },
+   "IRS": {
+    "nbHits": 37,
+    "examples": [
+     [
+      "Tell HN: Submit comments to IRS re tax treatment of software dev expenses",
+      461,
+      "https://news.ycombinator.com/item?id=38120388"
+     ],
+     [
+      "Gmail sends IRS and FBI emails to spam",
+      86,
+      "https://news.ycombinator.com/item?id=33014491"
+     ]
+    ]
+   }
+  },
+  "employment-hr": {
+   "overtime": {
+    "nbHits": 36,
+    "examples": [
+     [
+      "Ask HN: How do I deal with the \"unpaid overtime crowd\"?",
+      56,
+      "https://news.ycombinator.com/item?id=7488305"
+     ],
+     [
+      "Ask HN: Are there companies that discourage working overtime?",
+      10,
+      "https://news.ycombinator.com/item?id=9072710"
+     ]
+    ]
+   },
+   "non-compete": {
+    "nbHits": 21,
+    "examples": [
+     [
+      "Ask HN: Has anyone successfully renegotiated an AWS non-compete?",
+      131,
+      "https://news.ycombinator.com/item?id=31041711"
+     ],
+     [
+      "Ask HN: Non-compete agreement advice?",
+      47,
+      "https://news.ycombinator.com/item?id=8645809"
+     ],
+     [
+      "Ask HN: Should I pass on a new job because they want me to sign a non-compete?",
+      46,
+      "https://news.ycombinator.com/item?id=26299188"
+     ]
+    ]
+   }
+  },
+  "aviation": {
+   "private pilot": {
+    "nbHits": 0,
+    "examples": []
+   },
+   "part 107": {
+    "nbHits": 0,
+    "examples": []
+   }
+  },
+  "health-medical": {
+   "medication": {
+    "nbHits": 48,
+    "examples": [
+     [
+      "Ask HN: Dealing with ADHD Without Medication?",
+      61,
+      "https://news.ycombinator.com/item?id=34912360"
+     ],
+     [
+      "Ask HN: Discuss ADHD and your use of medication",
+      60,
+      "https://news.ycombinator.com/item?id=40453713"
+     ],
+     [
+      "Ask HN: Has anyone managed to deal with their ADHD without medication?",
+      14,
+      "https://news.ycombinator.com/item?id=31279358"
+     ]
+    ]
+   },
+   "diagnosis": {
+    "nbHits": 39,
+    "examples": [
+     [
+      "Ask HN: How did an adult ADHD diagnosis help you?",
+      231,
+      "https://news.ycombinator.com/item?id=27514005"
+     ],
+     [
+      "Ask HN: I'm a software engineer going blind, how should I prepare?",
+      3270,
+      "https://news.ycombinator.com/item?id=22918980"
+     ],
+     [
+      "Ask HN: HNers with multiple sclerosis, can we get in touch?",
+      355,
+      "https://news.ycombinator.com/item?id=33297217"
+     ]
+    ]
+   }
+  },
+  "food-safety": {
+   "food safety": {
+    "nbHits": 0,
+    "examples": []
+   },
+   "canning": {
+    "nbHits": 1,
+    "examples": [
+     [
+      "Ask HN: When the fruit bowl is no longer filled",
+      16,
+      "https://news.ycombinator.com/item?id=9841284"
+     ]
+    ]
+   }
+  },
+  "home-diY": {
+   "plumbing": {
+    "nbHits": 18,
+    "examples": [
+     [
+      "Ask HN: Simplest stack to build web apps in 2021?",
+      99,
+      "https://news.ycombinator.com/item?id=29311761"
+     ],
+     [
+      "Ask HN: Should I be a plumber?",
+      72,
+      "https://news.ycombinator.com/item?id=8120135"
+     ]
+    ]
+   },
+   "electrical wiring": {
+    "nbHits": 0,
+    "examples": []
+   }
+  },
+  "consumer-finance": {
+   "credit score": {
+    "nbHits": 5,
+    "examples": [
+     [
+      "Ask HN: Has anyone else looked into their NCTUE credit report?",
+      45,
+      "https://news.ycombinator.com/item?id=17102158"
+     ]
+    ]
+   },
+   "mortgage": {
+    "nbHits": 66,
+    "examples": [
+     [
+      "Ask HN: How do you start a startup in your 30s when you have wife/kids/mortgage?",
+      237,
+      "https://news.ycombinator.com/item?id=33707889"
+     ],
+     [
+      "Ask HN: How fast did you pay off mortgage?",
+      13,
+      "https://news.ycombinator.com/item?id=33559567"
+     ],
+     [
+      "Ask HN: Freelancers in the US: How do you succeed in getting a mortgage?",
+      11,
+      "https://news.ycombinator.com/item?id=9891373"
+     ]
+    ]
+   }
+  },
+  "radio-ham": {
+   "ham radio": {
+    "nbHits": 4,
+    "examples": [
+     [
+      "Ask HN: How Belarus can keep connected despite internet blackout?",
+      307,
+      "https://news.ycombinator.com/item?id=24129059"
+     ],
+     [
+      "Ask HN: Remember FidoNet?",
+      16,
+      "https://news.ycombinator.com/item?id=12216932"
+     ],
+     [
+      "Ask HN: A free \"cell phone\" for use within a few miles of home?",
+      11,
+      "https://news.ycombinator.com/item?id=1018195"
+     ]
+    ]
+   },
+   "amateur radio": {
+    "nbHits": 2,
+    "examples": [
+     [
+      "Ask HN: How many of you hold an amateur radio license in your country?",
+      80,
+      "https://news.ycombinator.com/item?id=47232091"
+     ]
+    ]
+   }
+  }
+ },
+ "matched": {
+  "databases-sql": [
+   [
+    "I built an App to give alerts when your dependencies(Postgres) reach End of Life",
+    2,
+    "https://news.ycombinator.com/item?id=49669898"
+   ]
+  ],
+  "key-value-storage": [
+   [
+    "VortexMQ \u2013 Fast message broker in pure Go with Redis protocol",
+    2,
+    "https://news.ycombinator.com/item?id=49764803"
+   ]
+  ],
+  "web-servers-proxy": [],
+  "tls-crypto": [],
+  "data-formats": [
+   [
+    "Using Protobuf Everywhere",
+    4,
+    "https://news.ycombinator.com/item?id=49891247"
+   ]
+  ],
+  "messaging": [],
+  "search-engines": [],
+  "vector-db": [
+   [
+    "Knowledge Refresh for Production RAG",
+    2,
+    "https://news.ycombinator.com/item?id=49783039"
+   ]
+  ],
+  "columnar-olap": [],
+  "api-design": [],
+  "observability": [],
+  "os-sysprog": [],
+  "building-construction": [],
+  "legal-courts": [
+   [
+    "Ask HN: Are requests/demands coming from AI companies for regulation genuine?",
+    3,
+    "https://news.ycombinator.com/item?id=49722701"
+   ],
+   [
+    "Ask HN: Why the sudden \"AI Regulation\" posts?",
+    3,
+    "https://news.ycombinator.com/item?id=49699816"
+   ]
+  ],
+  "tax": [
+   [
+    "Ask HN: Taxes while living abroad as a US citizen",
+    5,
+    "https://news.ycombinator.com/item?id=49706870"
+   ]
+  ],
+  "employment-hr": [
+   [
+    "Ask HN: If AI disappeared today, how much would you ask for in salary to work?",
+    2,
+    "https://news.ycombinator.com/item?id=49485930"
+   ]
+  ],
+  "aviation": [],
+  "health-medical": [],
+  "food-safety": [],
+  "home-diY": [],
+  "consumer-finance": [],
+  "radio-ham": []
+ }
+}
