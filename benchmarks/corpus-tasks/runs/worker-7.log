@@ -1,2 +1,9 @@
 ── postgres-src: index 21:00:00
 ── postgres-src: index 21:23:13
+postgres-src INDEX-FAILED
+── tldr-pages: index 23:00:22
+tldr-pages INDEX-FAILED
+── xerj-vector: index 23:31:02
+xerj-vector: 10 tasks (8 drift, 2 state)
+── xerj-vector: 10 tasks, drive 23:49:20
+xerj-vector: done in 130s

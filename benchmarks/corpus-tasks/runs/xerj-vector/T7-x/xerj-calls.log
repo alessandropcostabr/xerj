@@ -1,0 +1,2 @@
+2026-10-02T23:50:34Z code xerj-vector THREAD_COUNT constant definition in usearch --url http://localhost:9200
+2026-10-02T23:50:43Z code xerj-vector usearch index_threads THREAD_COUNT default threads --url http://localhost:9200

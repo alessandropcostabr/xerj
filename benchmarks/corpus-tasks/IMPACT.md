@@ -33,9 +33,40 @@ Reading notes (pre-registered in PROTOCOL.md §2, kept here for the roll-up):
   bare arm burns turns reasoning toward a refusal while retrieval answers in
   ~2 turns.
 
+## Wave 3 close — the full 71-corpus universe, terminal (2026-10-03)
+
+All 71 universe corpora (`runs/universe-71.txt`) reached a terminal state.
+Full 71-row table: `python3 harness/report.py`; snapshot consumed by
+hub.xerj.org: `../hub/backlog/impact-snapshot-2026-10-03.json` (71 rows).
+
+| state | count | meaning |
+|-------|-------|---------|
+| measured | 33 | both arms driven, 10 tasks each (328 runs/arm) |
+| index-pathological | 18 | corpus shape defeats the indexer (single >4MB files) — recorded mechanically, not run |
+| infeasible | 19 | suite generator finds no drift/state content (markdown/spec corpora) |
+| cited-#1111 | 1 | rust-vulns measured under the #1111 protocol and cited from it |
+
+**Headline (33 measured corpora, 328 tasks):** bare-P solved **66/328 (20%)**
+vs with-corpus-X **321/327 (98%)** at near-equal mean cost per run
+(**$1.02 vs $1.09**). On the drift-bearing subset — 22 corpora, 196 tasks
+whose answers changed inside 2024-01-01→pin — P solved **19/196 (10%)** vs X
+**190/196 (97%)**. The X arm's 7 misses concentrate in suites whose answers
+sit in giant single files the indexer skips (the same shape class as the
+index-pathological rows) — corpus shape, not retrieval, is the residual
+failure mode, which is why the hub's intakes split section-per-file.
+
+The 18 index-pathological and 19 infeasible rows are findings, not holes:
+they are the measured boundary of what whole-file indexing and
+constant-drift suites respectively support, and both classes feed the
+Corpus Hub's shape rules (section-split intake, G2 >4MB guard).
+
 ## Status
 
 - [x] Pilot (hand-built memorised suite, tie honestly published)
 - [x] Wave 1: 4 code corpora, 80 runs
-- [ ] Waves 2+: remaining live lane-A corpora as prep completes
-      (`runs/PREP.log`); markdown corpora recorded `suite-infeasible`
+- [x] Waves 2–3: full 71-corpus universe terminal (33 measured, 18
+      index-pathological, 19 infeasible, 1 cited-#1111)
+- Ops notes: two server deaths mid-wave (index-time memory exhaustion,
+  #1122) marked corpora INDEX-FAILED with no RESULTS.md — both re-run to
+  terminal after the server returned green (postgres-src measured;
+  tldr-pages infeasible).

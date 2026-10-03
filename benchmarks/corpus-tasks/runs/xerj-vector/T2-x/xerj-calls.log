@@ -1,0 +1,3 @@
+2026-10-02T23:49:25Z code xerj-vector USEARCH_VERSION_PATCH define version header usearch --url http://localhost:9200
+2026-10-02T23:49:32Z code xerj-vector USEARCH_VERSION_MAJOR USEARCH_VERSION_MINOR USEARCH_VERSION_PATCH usearch.h version string --url http://localhost:9200
+2026-10-02T23:49:38Z code xerj-vector #define USEARCH_VERSION_PATCH usearch.h header macro definition value --url http://localhost:9200

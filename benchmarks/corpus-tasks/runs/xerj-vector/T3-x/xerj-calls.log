@@ -1,0 +1,8 @@
+2026-10-02T23:49:35Z code xerj-vector USEARCH_USE_NUMKONG definition value --url http://localhost:9200
+2026-10-02T23:49:47Z code xerj-vector usearch index C++ header USEARCH_USE macro preprocessor definition --url http://localhost:9200
+2026-10-02T23:49:47Z code xerj-vector NUMKONG --url http://localhost:9200
+2026-10-02T23:49:54Z code xerj-vector USEARCH_USE_NUMKONG CMakeLists option default ON OFF --url http://localhost:9200
+2026-10-02T23:49:54Z code xerj-vector USEARCH_USE_FP16LIB USEARCH_USE_SIMSIMD USEARCH_USE_OPENMP preprocessor guard numkong --url http://localhost:9200
+2026-10-02T23:50:03Z code xerj-vector ifndef USEARCH_USE_NUMKONG define default value index.hpp --url http://localhost:9200
+2026-10-02T23:50:03Z code xerj-vector CMakeLists USEARCH_USE_NUMKONG option fetch_declare numkong dependency --url http://localhost:9200
+2026-10-02T23:50:17Z code xerj-vector index_plugins.hpp include numkong/numkong.h pragma once preprocessor check USEARCH_USE_NUMKONG 1 0 --url http://localhost:9200

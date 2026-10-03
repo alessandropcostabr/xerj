@@ -1,0 +1,140 @@
+{
+ "corpus": "xerj-vector",
+ "subject": "qdrant",
+ "pin": "74f3e85b94",
+ "generated": "2026-10-02",
+ "tasks": [
+  {
+   "id": "T1",
+   "class": "drift",
+   "name": "USEARCH_VERSION_MINOR",
+   "kind": "changed",
+   "changed": "2026-07-10",
+   "olds": [
+    "10",
+    "11",
+    "12"
+   ],
+   "q": "In the current development source of usearch, what is the exact value of USEARCH_VERSION_MINOR? Answer with the value only.",
+   "re": [
+    "0x1a|26"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T2",
+   "class": "drift",
+   "name": "USEARCH_VERSION_PATCH",
+   "kind": "changed",
+   "changed": "2026-07-10",
+   "olds": [
+    "1",
+    "10",
+    "11"
+   ],
+   "q": "In the current development source of usearch, what is the exact value of USEARCH_VERSION_PATCH? Answer with the value only.",
+   "re": [
+    "0|0x0"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T3",
+   "class": "drift",
+   "name": "USEARCH_USE_NUMKONG",
+   "kind": "added",
+   "changed": "2026-03-28",
+   "olds": [],
+   "q": "In the current development source of usearch, what is the exact value of USEARCH_USE_NUMKONG? Answer with the value only.",
+   "re": [
+    "0|0x0"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T4",
+   "class": "drift",
+   "name": "defaultTestDimensions",
+   "kind": "added",
+   "changed": "2025-09-03",
+   "olds": [],
+   "q": "In the current development source of usearch, what is the exact value of defaultTestDimensions? Answer with the value only.",
+   "re": [
+    "0x80|128"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T5",
+   "class": "drift",
+   "name": "DIMENSIONS",
+   "kind": "added",
+   "changed": "2025-07-06",
+   "olds": [],
+   "q": "In the current development source of usearch, what is the exact value of DIMENSIONS? Answer with the value only.",
+   "re": [
+    "0x80|128"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T6",
+   "class": "drift",
+   "name": "VECTOR_COUNT",
+   "kind": "added",
+   "changed": "2025-07-06",
+   "olds": [],
+   "q": "In the current development source of usearch, what is the exact value of VECTOR_COUNT? Answer with the value only.",
+   "re": [
+    "0x3e8|1000"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T7",
+   "class": "drift",
+   "name": "THREAD_COUNT",
+   "kind": "added",
+   "changed": "2025-07-06",
+   "olds": [],
+   "q": "In the current development source of usearch, what is the exact value of THREAD_COUNT? Answer with the value only.",
+   "re": [
+    "0x4|4"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T8",
+   "class": "drift",
+   "name": "SZ_DYNAMIC_DISPATCH",
+   "kind": "added",
+   "changed": "2024-02-21",
+   "olds": [],
+   "q": "In the current development source of usearch, what is the exact value of SZ_DYNAMIC_DISPATCH? Answer with the value only.",
+   "re": [
+    "0x1|1"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T9",
+   "class": "state",
+   "name": "COMPRESSED_WITH_VECTORS_HNSW_LINKS_FILE",
+   "q": "In the current development source of hnswlib, what is the exact value of COMPRESSED_WITH_VECTORS_HNSW_LINKS_FILE? Answer with the value only.",
+   "re": [
+    "links_comp_vec\\.bin"
+   ],
+   "need": 1
+  },
+  {
+   "id": "T10",
+   "class": "state",
+   "name": "DEFAULT_MAX_CONCURRENT_COLLECTION_LOADS",
+   "q": "In the current development source of hnswlib, what is the exact value of DEFAULT_MAX_CONCURRENT_COLLECTION_LOADS? Answer with the value only.",
+   "re": [
+    "0x1|1"
+   ],
+   "need": 1
+  }
+ ]
+}

@@ -1,0 +1,2 @@
+2026-10-03T14:30:59Z code postgres-src ECPG_SQLSTATE_USING_CLAUSE_DOES_NOT_MATCH_TARGETS define sql-state.h --url http://localhost:9200
+2026-10-03T14:31:07Z code postgres-src ecpglib_extern.h SQLSTATE defines USING_CLAUSE PARAMETERS 07001 07002 ECPG_SQLSTATE --url http://localhost:9200
