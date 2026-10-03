@@ -1,0 +1,213 @@
+{
+ "record": "g7-repin-remap-2026-10",
+ "registered": "2026-10-03",
+ "what": "expect_file remaps for the four mirror re-pins (tldr-pages, zalando, whatwg-specs, govuk-design-system). The wave-1 suites were authored against the upstream layout; the corpora are now scoped mirrors. QUERIES AND EXPECT CLAUSES ARE UNCHANGED \u2014 only the file location each clause was grep-verified in moved. Every remapped expect_file re-verified (whitespace-normalized substring) against the mirror on disk. Zero exclusions after chapters/compatibility.adoc was restored to the zalando mirror (2c6ef7f) \u2014 the initial scoping had wrongly dropped it as boilerplate.",
+ "remap_methods": {
+  "tldr-pages": "prefix pages/common/ -> pages/",
+  "zalando": "identity \u2014 mirror chapters/ matches the suite paths",
+  "whatwg-specs": "content-located (grep the mirror for the verbatim clause)",
+  "govuk-design-system": "content-located"
+ },
+ "corpora": {
+  "tldr-pages": {
+   "shape_risk": "No content file over 4MB (biggest non-git files are assets, e.g. scripts/pdf/NotoSans-Regular.ttf 556 KB); the shape risk is ~39,849 tiny pages/**/*.md files, not size",
+   "queries": [
+    {
+     "q": "How do I extract a tar archive into a specific target directory?",
+     "expect": "tar xf {{path/to/source.tar.ext}} {{[-C|--directory]}} {{path/to/directory}}",
+     "expect_file": "pages/tar.md",
+     "hard": false,
+     "expect_file_orig": "pages/common/tar.md",
+     "_remap": "prefix pages/common/->pages/",
+     "_remap_hits": 1
+    },
+    {
+     "q": "How do I make curl download a file and keep the original filename from the URL?",
+     "expect": "curl {{[-O|--remote-name]}} {{https://example.com/filename.zip}}",
+     "expect_file": "pages/curl.md",
+     "hard": false,
+     "expect_file_orig": "pages/common/curl.md",
+     "_remap": "prefix pages/common/->pages/",
+     "_remap_hits": 1
+    },
+    {
+     "q": "How do I give the owner of a file permission to execute it?",
+     "expect": "chmod u+x {{path/to/file}}",
+     "expect_file": "pages/chmod.md",
+     "hard": false,
+     "expect_file_orig": "pages/common/chmod.md",
+     "_remap": "prefix pages/common/->pages/",
+     "_remap_hits": 1
+    },
+    {
+     "q": "Which command opens the current user's crontab for editing?",
+     "expect": "- [e]dit the crontab file for the current user:",
+     "expect_file": "pages/crontab.md",
+     "hard": false,
+     "expect_file_orig": "pages/common/crontab.md",
+     "_remap": "prefix pages/common/->pages/",
+     "_remap_hits": 1
+    },
+    {
+     "q": "How do I watch a log file live while a program keeps writing to it?",
+     "expect": "tail {{[-f|--follow]}} {{path/to/file}}",
+     "expect_file": "pages/tail.md",
+     "hard": true,
+     "expect_file_orig": "pages/common/tail.md",
+     "_remap": "prefix pages/common/->pages/",
+     "_remap_hits": 1
+    }
+   ]
+  },
+  "zalando-restful-api-guidelines": {
+   "shape_risk": null,
+   "queries": [
+    {
+     "q": "Why do the Zalando API guidelines prefer cursor-based pagination over offset-based pagination?",
+     "expect": "Offset-based pagination may create duplicates or lead to missing entries",
+     "expect_file": "chapters/pagination.adoc",
+     "hard": false,
+     "expect_file_orig": "chapters/pagination.adoc",
+     "_remap": "identity (mirror layout matches)",
+     "_remap_hits": 1
+    },
+    {
+     "q": "Are Zalando API endpoints allowed to be open, or does every endpoint need protection?",
+     "expect": "Every API endpoint must be protected and armed with authentication and authorization.",
+     "expect_file": "chapters/security.adoc",
+     "hard": false,
+     "expect_file_orig": "chapters/security.adoc",
+     "_remap": "identity (mirror layout matches)",
+     "_remap_hits": 1
+    },
+    {
+     "q": "When a Zalando API needs to change, is adding a new version preferred over compatible extensions?",
+     "expect": "We strongly encourage using compatible API extensions and discourage versioning",
+     "expect_file": "chapters/compatibility.adoc",
+     "hard": false,
+     "expect_file_orig": "chapters/compatibility.adoc",
+     "_remap": "identity (mirror layout matches)",
+     "_remap_hits": 1
+    },
+    {
+     "q": "Which proprietary HTTP header must Zalando services support so that one call can be traced across services?",
+     "expect": "RESTful API endpoints *must* support {X-Flow-ID} header in requests",
+     "expect_file": "chapters/http-headers.adoc",
+     "hard": false,
+     "expect_file_orig": "chapters/http-headers.adoc",
+     "_remap": "identity (mirror layout matches)",
+     "_remap_hits": 1
+    },
+    {
+     "q": "Why do Zalando APIs return JSON fields spelled with underscores instead of camelCase?",
+     "expect": "Property names are restricted to ASCII snake_case strings matching regex `^[a-z_][a-z_0-9]*$`.",
+     "expect_file": "chapters/json-guidelines.adoc",
+     "hard": true,
+     "expect_file_orig": "chapters/json-guidelines.adoc",
+     "_remap": "identity (mirror layout matches)",
+     "_remap_hits": 1
+    }
+   ]
+  },
+  "whatwg-specs": {
+   "shape_risk": "whatwg-specs-1/source is a 7,923,481 B single-file monolith (HTML Standard source); review-drafts/ add 17 .wattsi near-duplicates (5.7-6.3MB each) in the html repo and 17 .bs near-duplicates of url.bs in the url repo",
+   "queries": [
+    {
+     "q": "Are tab and newline characters allowed inside a URL, and what does the URL parser do with them?",
+     "expect": "Remove all <a>ASCII tab or newline</a> from <var>input</var>.",
+     "expect_file": "corpus-whatwg-sections/url/sections/url-parsing.txt",
+     "hard": false,
+     "expect_file_orig": "whatwg-specs-2/url.bs",
+     "_remap": "content-located",
+     "_remap_hits": 1
+    },
+    {
+     "q": "When a URL is serialized, which characters are percent-encoded in the path but left alone in the query?",
+     "expect": "consisting of the <a>query percent-encode set</a> and U+003F (?), U+005E (^), U+0060 (`),",
+     "expect_file": "corpus-whatwg-sections/url/sections/percent-encoded-bytes.txt",
+     "hard": false,
+     "expect_file_orig": "whatwg-specs-2/url.bs",
+     "_remap": "content-located",
+     "_remap_hits": 1
+    },
+    {
+     "q": "Why can't a URL like mailto:foo@example.org be used as the base URL for resolving a relative reference?",
+     "expect": "used as a <a>base URL</a> because it has an <a for=url>opaque path</a>.",
+     "expect_file": "corpus-whatwg-sections/url/sections/writing.txt",
+     "hard": true,
+     "expect_file_orig": "whatwg-specs-2/url.bs",
+     "_remap": "content-located",
+     "_remap_hits": 1
+    },
+    {
+     "q": "For an input control like a range slider, when should the browser fire the change event versus the input event?",
+     "expect": "any time the user commits the change, the user agent must",
+     "expect_file": "corpus-whatwg-sections/html/sections/the-input-element__common-input-element-events.txt",
+     "hard": false,
+     "expect_file_orig": "whatwg-specs-1/source",
+     "_remap": "content-located",
+     "_remap_hits": 1
+    },
+    {
+     "q": "Does an HTML element's id attribute value have to be unique across the whole document?",
+     "expect": "value must be unique amongst all the <span data-x=\"concept-id\">IDs</span> in the element's",
+     "expect_file": "corpus-whatwg-sections/html/sections/global-attributes.txt",
+     "hard": false,
+     "expect_file_orig": "whatwg-specs-1/source",
+     "_remap": "content-located",
+     "_remap_hits": 1
+    }
+   ]
+  },
+  "govuk-design-system": {
+   "shape_risk": "No file over 4MB; biggest file is package-lock.json (1,301,954 B) at repo root; component .yaml files are 186-961 lines each",
+   "queries": [
+    {
+     "q": "How do I show an extra input when a particular radio option is selected?",
+     "expect": "Provide additional content to reveal when the radio is checked.",
+     "expect_file": "corpus-govuk-components/components/radios.txt",
+     "hard": false,
+     "expect_file_orig": "packages/govuk-frontend/src/govuk/components/radios/radios.yaml",
+     "_remap": "content-located",
+     "_remap_hits": 1
+    },
+    {
+     "q": "How do I make a 'None of these' checkbox untick all the other checkboxes?",
+     "expect": "implements a 'None of these' type behaviour via JavaScript when checkboxes are clicked",
+     "expect_file": "corpus-govuk-components/components/checkboxes.txt",
+     "hard": false,
+     "expect_file_orig": "packages/govuk-frontend/src/govuk/components/checkboxes/checkboxes.yaml",
+     "_remap": "content-located",
+     "_remap_hits": 1
+    },
+    {
+     "q": "Should the error summary receive focus when a page with errors loads?",
+     "expect": "Must be focused when the page loads",
+     "expect_file": "corpus-govuk-components/components/error-summary.txt",
+     "hard": false,
+     "expect_file_orig": "packages/govuk-frontend/src/govuk/components/error-summary/error-summary.yaml",
+     "_remap": "content-located",
+     "_remap_hits": 1
+    },
+    {
+     "q": "How do I stop the success notification banner from taking keyboard focus when the page loads?",
+     "expect": "To disable this behaviour, set `disableAutoFocus` to `true`.",
+     "expect_file": "corpus-govuk-components/components/notification-banner.txt",
+     "hard": false,
+     "expect_file_orig": "packages/govuk-frontend/src/govuk/components/notification-banner/notification-banner.yaml",
+     "_remap": "content-located",
+     "_remap_hits": 1
+    },
+    {
+     "q": "The little counter under a textarea telling users how many characters they have left is noisy; can I hide it until they get near the limit?",
+     "expect": "The percentage value of the limit at which point the count message is displayed",
+     "expect_file": "corpus-govuk-components/components/character-count.txt",
+     "hard": true,
+     "expect_file_orig": "packages/govuk-frontend/src/govuk/components/character-count/character-count.yaml",
+     "_remap": "content-located",
+     "_remap_hits": 1
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,42 @@
+{
+ "suite": "g7-ecma262-2026-10",
+ "pre_registered": "2026-10-03",
+ "authoring": "blind — authored from clone reads only, no retrieval run; every expect clause grep-verified (whitespace-normalized substring) in the named file; corpus is the section-split mirror (corpus-ecma262-sections)",
+ "corpora": {
+  "ecma262": {
+   "shape_risk": "Half of the 2,341 section files are under 1 KB (median 1,016 B; largest 27 KB), so ranking cannot lean on length or code density — signal sits in a short emu-clause diluted by the shared template (breadcrumb first line plus <emu-clause>/<h1> header markup) repeated verbatim in every file. Hundreds of near-duplicate per-method sections (iterator .next variants, typed-array and prototype wrappers) reuse boilerplate like \"a normal completion containing\", so abstract-operation queries can tie dozens of files while the definitive step lives in one small file. Facts carried in <emu-note> blocks (527 files, versus 1,395 with <emu-alg> steps and 277 with <emu-grammar> tables) sit in trailing prose a chunker may drop, and inline spec markup (*+0*, |StringNumericLiteral|, _x_, <sub>) blocks naive term matching between a natural-language query and the verbatim text.",
+   "queries": [
+    {
+     "q": "when I enumerate an ordinary object's own property keys, what order is an engine required to produce — do integer-index keys come first, and where do symbols fall",
+     "expect": "For each own property key _propertyKey_ of _obj_ such that _propertyKey_ is an array index, in ascending numeric index order, do",
+     "expect_file": "sections/sec-ordinaryownpropertykeys.txt",
+     "hard": false
+    },
+    {
+     "q": "in spec algorithm steps, what does a question mark prefix on an operation call mean versus an exclamation mark prefix",
+     "expect": "“!” is used to assert that a Completion Record is normal and unwrap it.",
+     "expect_file": "sections/sec-shorthands-for-unwrapping-completion-records.txt",
+     "hard": false
+    },
+    {
+     "q": "which string forms are accepted when converting a string to a number — surrounding whitespace, leading zeros, Infinity — and how does that grammar differ from numeric literal syntax",
+     "expect": "A |StringNumericLiteral| that is empty or contains only white space is converted to *+0*<sub>𝔽</sub>",
+     "expect_file": "sections/sec-tonumber-applied-to-the-string-type.txt",
+     "hard": false
+    },
+    {
+     "q": "when is a parser allowed to pretend a semicolon was present in the source, and which productions are restricted so that a newline forces one",
+     "expect": "a semicolon is never inserted automatically if the semicolon would then be parsed as an empty statement",
+     "expect_file": "sections/sec-rules-of-automatic-semicolon-insertion.txt",
+     "hard": false
+    },
+    {
+     "q": "when two strings are compared with the less-than operator, is the comparison over code points or UTF-16 code units, and does Unicode normalization matter",
+     "expect": "lexicographic ordering by <em>code unit</em> differs from ordering by <em>code point</em> for Strings containing surrogate pairs",
+     "expect_file": "sections/sec-islessthan.txt",
+     "hard": true
+    }
+   ]
+  }
+ }
+}
