@@ -207,8 +207,8 @@
    "domain": "an agent reasoning about attack surface queries this for attack-pattern enumerations with prerequisites and mitigations",
    "sources": [
     {
-     "url": "https://github.com/mitre-attack/capec-stix-data",
-     "licence_hint": "verify at pin"
+     "url": "https://capec.mitre.org/data/xml/capec_latest.xml.zip",
+     "licence_hint": "MITRE terms \u2014 verify redistribution terms at intake (same class as mitre-cwe)"
     }
    ]
   },
