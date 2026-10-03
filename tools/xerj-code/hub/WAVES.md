@@ -230,3 +230,40 @@ text, which is also the cleanest-licence material there is (US PD, UK OGL).
   consolidated current law has moved past the grader's priors; (3)
   title-26's failure is retrieval-mode (lexical paraphrase gap), with
   the neural re-test pre-registered in this file.
+
+## Wave 1 (protocol/standards lane) — first close 2026-10-03: 15 graded, 10 pass, 5 demoted
+
+G7 suites pre-registered in `backlog/g7-wave1-2026-10.json` (commit a23f1c1e,
+BEFORE retrieval ran). These 20 corpora had gone live in the wave-0 bulk flip
+on the 8/10 sample basis; this wave is their per-corpus audit. Graded
+artifact: `backlog/g7-wave1-2026-10-graded.json`. Live count 74 → **69** —
+the audit took back more than the sample promised, which is the system
+working, not backsliding.
+
+Pass (10): openapi-spec 5/5, graphql-spec 5/5, twelve-factor 5/5,
+rust-api-guidelines 5/5, w3c-css 3/5 (+2 same-family), msft-api-guidelines
+4/5, nats-protocol 4/5, valkey-docs 4/5, gitlab-runbooks 3/5,
+mozilla-ssl-configs 3/5 (probation — see graded notes).
+
+Demoted to candidate, manifests removed (5) — each with a pre-registered
+fix, none a content kill: whatwg-specs 0/5 (7.9MB url.bs monolith + 20×
+FAQ.md — section-split mirror), govuk-design-system 0/5 (component YAML
+never retrieved — per-component mirror), otel-proto 0/5 (docs prose
+outranks .proto — proto-only re-scope), zalando 1/5 (compat.adoc crowding
+— guidelines-scoped mirror), tldr-pages 2/5 (30k multilingual dupes —
+pages/common-only mirror).
+
+Pending (5, index chain still running when this closed): freebsd-handbook,
+openbsd-faq, unicode-cldr, kafka-protocol, github-api-description — graded
+against the same pre-registered suite at wave-1 final close; they stay live
+on the wave-0 sample basis until then.
+
+Method notes: (1) a filtered re-run of the retrieval driver once clobbered
+the results file — the driver now merges, and the artifact records that all
+15 results here are from the post-fix single pass; (2) grading is clause
+presence (whitespace-normalised expect in any top-5 hit), then a manual
+audit of every FAIL and borderline — tldr-pages Q4 held at miss after
+reading cron.md (it carries the etymology sentence, not the `crontab -e`
+clause, and crontab.md never surfaced); (3) nats-protocol's pass certifies
+the PINNED repo (ADR collection) — the re-pin to a wire-protocol mirror is
+queued and will require a fresh G7, recorded in the graded notes.

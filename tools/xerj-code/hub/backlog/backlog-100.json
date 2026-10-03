@@ -329,7 +329,7 @@
    "cat": "STD",
    "lane": "A",
    "refresh": "pinned",
-   "status": "live",
+   "status": "candidate",
    "domain": "an agent building browser-adjacent tooling queries this for the living standard's exact normative statements (html/url/fetch/dom)",
    "sources": [
     {
@@ -557,7 +557,7 @@
    "cat": "OPS",
    "lane": "A",
    "refresh": "pinned",
-   "status": "live",
+   "status": "candidate",
    "domain": "an agent wiring telemetry queries this for the exact semantic conventions and proto field semantics",
    "sources": [
     {
@@ -617,7 +617,7 @@
    "cat": "OPS",
    "lane": "A",
    "refresh": "weekly",
-   "status": "live",
+   "status": "candidate",
    "domain": "an agent scripting an unfamiliar long-tail tool queries this for its example invocations (popular tools are memorised \u2014 G3 value is the tail only)",
    "sources": [
     {
@@ -687,7 +687,7 @@
    "cat": "GOOD",
    "lane": "A",
    "refresh": "pinned",
-   "status": "live",
+   "status": "candidate",
    "domain": "an agent reviewing an API design queries this for the rule, its intent and propulated exceptions from a fleet of thousands",
    "sources": [
     {
@@ -743,7 +743,7 @@
    "cat": "GOOD",
    "lane": "A",
    "refresh": "pinned",
-   "status": "live",
+   "status": "candidate",
    "domain": "an agent building accessible UI queries this for the component's exact accessibility criteria and edge cases",
    "sources": [
     {

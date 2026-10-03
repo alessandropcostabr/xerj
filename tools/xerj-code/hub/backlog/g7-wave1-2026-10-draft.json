@@ -1,0 +1,707 @@
+{
+ "suite": "g7-wave1-2026-10",
+ "pre_registered": "2026-10-03",
+ "authoring": "blind — authored from clone reads only, no retrieval run; every expect clause grep-verified in the named file",
+ "corpora": {
+  "whatwg-specs": {
+   "shape_risk": "whatwg-specs-1/source is a 7,923,481 B single-file monolith (HTML Standard source); review-drafts/ add 17 .wattsi near-duplicates (5.7-6.3MB each) in the html repo and 17 .bs near-duplicates of url.bs in the url repo",
+   "queries": [
+    {
+     "q": "Are tab and newline characters allowed inside a URL, and what does the URL parser do with them?",
+     "expect": "Remove all <a>ASCII tab or newline</a> from <var>input</var>.",
+     "expect_file": "whatwg-specs-2/url.bs",
+     "hard": false
+    },
+    {
+     "q": "When a URL is serialized, which characters are percent-encoded in the path but left alone in the query?",
+     "expect": "consisting of the <a>query percent-encode set</a> and U+003F (?), U+005E (^), U+0060 (`),",
+     "expect_file": "whatwg-specs-2/url.bs",
+     "hard": false
+    },
+    {
+     "q": "Why can't a URL like mailto:foo@example.org be used as the base URL for resolving a relative reference?",
+     "expect": "used as a <a>base URL</a> because it has an <a for=url>opaque path</a>.",
+     "expect_file": "whatwg-specs-2/url.bs",
+     "hard": true
+    },
+    {
+     "q": "For an input control like a range slider, when should the browser fire the change event versus the input event?",
+     "expect": "any time the user commits the change, the user agent must",
+     "expect_file": "whatwg-specs-1/source",
+     "hard": false
+    },
+    {
+     "q": "Does an HTML element's id attribute value have to be unique across the whole document?",
+     "expect": "value must be unique amongst all the <span data-x=\"concept-id\">IDs</span> in the element's",
+     "expect_file": "whatwg-specs-1/source",
+     "hard": false
+    }
+   ]
+  },
+  "w3c-css": {
+   "shape_risk": "No text file over 4MB (largest content text: css-color-4/math.js 1.4MB script; css-writing-modes-3 implementation report 937KB html); inflation instead comes from parallel module levels of the same spec (css-text-3/4, mediaqueries-4/5, selectors-4/5) plus per-module issue-report HTML",
+   "queries": [
+    {
+     "q": "What is the difference between repeat(auto-fill) and repeat(auto-fit) in a grid template?",
+     "expect": "any empty repeated tracks are <a>collapsed</a>.",
+     "expect_file": "css-grid-2/Overview.bs",
+     "hard": false
+    },
+    {
+     "q": "Why would I use :where() instead of :is() when both take a selector list?",
+     "expect": "The specificity of a '':where()'' pseudo-class is replaced by zero.",
+     "expect_file": "selectors-4/Overview.bs",
+     "hard": false
+    },
+    {
+     "q": "Why does CSS compute color difference in Oklab instead of CIE Lab?",
+     "expect": "Because Oklab is more perceptually uniform than CIE Lab,",
+     "expect_file": "css-color-4/Overview.bs",
+     "hard": false
+    },
+    {
+     "q": "How can a stylesheet detect whether the user prefers a dark or light color scheme?",
+     "expect": "the user's desire that the page use a [=light color scheme|light=] or [=dark color scheme=].",
+     "expect_file": "mediaqueries-5/Overview.bs",
+     "hard": false
+    },
+    {
+     "q": "Why won't flex items shrink below the size of their content even when the container is too small?",
+     "expect": "To provide a more reasonable default <a>minimum size</a> for <a>flex items</a>,",
+     "expect_file": "css-flexbox-1/Overview.bs",
+     "hard": true
+    }
+   ]
+  },
+  "unicode-cldr": {
+   "shape_risk": "common/uca/CollationTest_CLDR_SHIFTED.txt = 20,125,897 B is the biggest content file (also CollationTest_CLDR_NON_IGNORABLE.txt 18,782,901 B, FractionalUCA.txt 5,542,699 B) - collation test data, never pinned; LDML spec text lives in docs/ldml/*.md",
+   "queries": [
+    {
+     "q": "In CLDR plural rules, what does the operand v mean?",
+     "expect": "the number of visible fraction digits in N, _with_ trailing zeros",
+     "expect_file": "docs/ldml/tr35-numbers.md",
+     "hard": false
+    },
+    {
+     "q": "Which IANA time zone does CLDR map the Windows zone Pacific Standard Time to?",
+     "expect": "<mapZone other=\"Pacific Standard Time\" territory=\"001\" type=\"America/Los_Angeles\"/>",
+     "expect_file": "common/supplemental/windowsZones.xml",
+     "hard": false
+    },
+    {
+     "q": "What is the CLDR pattern for a full date in English, the one used for the full date style?",
+     "expect": "<pattern>EEEE, MMMM d, y</pattern>",
+     "expect_file": "common/main/en.xml",
+     "hard": false
+    },
+    {
+     "q": "Which abbreviations such as U.S.A. does CLDR treat as sentence-break suppressions for English?",
+     "expect": "<suppression>U.S.A.</suppression>",
+     "expect_file": "common/segments/en.xml",
+     "hard": false
+    },
+    {
+     "q": "Where does CLDR keep the rules for writing numbers out as words, like spelling one hundred twenty-three?",
+     "expect": "rulesetGrouping type=\"SpelloutRules\"",
+     "expect_file": "common/rbnf/en.xml",
+     "hard": true
+    }
+   ]
+  },
+  "openapi-spec": {
+   "shape_risk": "No file over 4MB (largest versions/3.2.1.md, 298KB), but 11 near-duplicate version files share heavily overlapping prose - e.g. the operationId clause appears verbatim in 11 versions/*.md - so sibling versions can crowd retrieval",
+   "queries": [
+    {
+     "q": "In an OpenAPI path template like /pets/{petId}, which characters must the petId value not contain unescaped?",
+     "expect": "The value for these path parameters MUST NOT contain any unescaped \"generic syntax\" characters",
+     "expect_file": "versions/3.1.2.md",
+     "hard": false
+    },
+    {
+     "q": "How do I document webhooks that can be sent to consumers outside of a normal API call?",
+     "expect": "The incoming webhooks that MAY be received as part of this API and that the API consumer MAY choose to implement.",
+     "expect_file": "versions/3.1.2.md",
+     "hard": false
+    },
+    {
+     "q": "What is the discriminator object in an OpenAPI schema for?",
+     "expect": "This hint can be used to aid in serialization, deserialization, and validation.",
+     "expect_file": "versions/3.1.2.md",
+     "hard": false
+    },
+    {
+     "q": "If my API description is split across several documents, what do relative file references in them get resolved against?",
+     "expect": "MUST be resolved using the referring document's base URI, which is determined in accordance with",
+     "expect_file": "versions/3.1.2.md",
+     "hard": true
+    },
+    {
+     "q": "Does operationId need to be unique across the whole API description, and is it case-sensitive?",
+     "expect": "The id MUST be unique among all operations described in the API.",
+     "expect_file": "versions/3.1.2.md",
+     "hard": false
+    }
+   ]
+  },
+  "graphql-spec": {
+   "shape_risk": "No file over 4MB; largest content file is published/September2025/index.html (1,112,753 B), one of 7 published HTML snapshots duplicating spec/*.md content",
+   "queries": [
+    {
+     "q": "Does GraphQL support comments in queries, and can they appear anywhere in the document?",
+     "expect": "Comments are {Ignored} like whitespace and may appear after any token, or before",
+     "expect_file": "spec/Section 2 -- Language.md",
+     "hard": false
+    },
+    {
+     "q": "If an object type declares that it implements an interface, must it also define every field the interface defines?",
+     "expect": "must include a field of the same name for every field defined in",
+     "expect_file": "spec/Section 3 -- Type System.md",
+     "hard": false
+    },
+    {
+     "q": "What does the __typename meta-field return, and on which types can you query it?",
+     "expect": "`__typename: String!` on any Object, Interface, or Union. It returns the name of",
+     "expect_file": "spec/Section 4 -- Introspection.md",
+     "hard": false
+    },
+    {
+     "q": "What does a server do with the parent object when a field the schema says can never be null produces null during execution?",
+     "expect": "raises an _execution error_ then that error must propagate to the parent",
+     "expect_file": "spec/Section 6 -- Execution.md",
+     "hard": true
+    },
+    {
+     "q": "If a GraphQL operation completes successfully with no errors, should the errors entry still be included in the response?",
+     "expect": "completed without raising any errors, this entry must not be present.",
+     "expect_file": "spec/Section 7 -- Response.md",
+     "hard": false
+    }
+   ]
+  },
+  "nats-protocol": {
+   "shape_risk": "53 ADRs + README, all small (largest adr/ADR-51.md = 26 KB); no large-file risk; note slug says 'protocol' but repo is nats-io/nats-architecture-and-design = ADRs only, no wire-protocol spec",
+   "queries": [
+    {
+     "q": "How does a NATS client learn that its server has entered lame duck mode?",
+     "expect": "If the `ldm` property is set to true, the server has entered _lame_duck_mode_ and the client should initiate an orderly self-disconnect or close.",
+     "expect_file": "adr/ADR-5.md",
+     "hard": false
+    },
+    {
+     "q": "How do I set a TTL on an individual JetStream message?",
+     "expect": "We will allow a message to supply a TTL using a header called `Nats-TTL`",
+     "expect_file": "adr/ADR-43.md",
+     "hard": false
+    },
+    {
+     "q": "Can JetStream pull consumer priority groups be configured on a push consumer?",
+     "expect": "This is only supported on Pull Consumers, configuring this on a Push consumer must raise an error.",
+     "expect_file": "adr/ADR-42.md",
+     "hard": false
+    },
+    {
+     "q": "What is the risk of running a JetStream stream with async persistence mode?",
+     "expect": "An increased chance of data loss during any disruption to the server",
+     "expect_file": "adr/ADR-56.md",
+     "hard": false
+    },
+    {
+     "q": "If I write a value to a NATS KV bucket and immediately read the same key back, will I see my own write?",
+     "expect": "We do not provide read-after-write consistency.",
+     "expect_file": "adr/ADR-8.md",
+     "hard": true
+    }
+   ]
+  },
+  "kafka-protocol": {
+   "shape_risk": "content/en = 2,848 files / 44 MB with heavy per-version duplication (31 copies of design/protocol.md across version dirs) plus 36 static/<version>/ full clones (25,570 files / 750 MB, mostly images); largest content/en text file is content/en/43/generated/protocol_messages.html at 738,333 B - no >4MB text file under content/en (the 3.4MB javadoc index-all.html exists only under static/)",
+   "queries": [
+    {
+     "q": "Does Kafka guarantee that requests sent over a single TCP connection are processed in order?",
+     "expect": "The broker's request processing allows only a single in-flight request per connection in order to guarantee this ordering.",
+     "expect_file": "content/en/43/design/protocol.md",
+     "hard": false
+    },
+    {
+     "q": "How is a null value encoded for a NULLABLE_STRING field in the Kafka wire protocol?",
+     "expect": "A null value is encoded with length of -1 and there are no following bytes.",
+     "expect_file": "content/en/43/generated/protocol_types.html",
+     "hard": false
+    },
+    {
+     "q": "What are the allowed values for acks in a Kafka produce request?",
+     "expect": "Allowed values: 0 for no acknowledgments, 1 for only the leader and -1 for the full ISR.",
+     "expect_file": "content/en/43/generated/protocol_messages.html",
+     "hard": false
+    },
+    {
+     "q": "Should consumer applications receive Kafka control records?",
+     "expect": "Control records should not be passed on to applications.",
+     "expect_file": "content/en/43/implementation/message-format.md",
+     "hard": false
+    },
+    {
+     "q": "If all replicas of a Kafka partition are lost and only a stale replica recovers, can it take over as leader?",
+     "expect": "Choose the first replica (not necessarily in the ISR) that comes back to life as the leader.",
+     "expect_file": "content/en/43/design/design.md",
+     "hard": true
+    }
+   ]
+  },
+  "valkey-docs": {
+   "shape_risk": "No file over 4MB (checked whole tree incl. commands/ with 438 files); topics/ contains non-text .png/.gif charts and there are clients/libraries/modules dirs of code - noise, not risk",
+   "queries": [
+    {
+     "q": "How many Sentinel instances do you need at minimum for a robust deployment?",
+     "expect": "You need at least three Sentinel instances for a robust deployment.",
+     "expect_file": "topics/sentinel.md",
+     "hard": false
+    },
+    {
+     "q": "How much data can be lost with appendfsync everysec?",
+     "expect": "Fast enough and you may lose 1 second of data if there is a disaster.",
+     "expect_file": "topics/persistence.md",
+     "hard": false
+    },
+    {
+     "q": "When are expired keys actually removed, only when a client tries to access them?",
+     "expect": "Valkey reclaims expired keys in two ways: on access and in the background in what is called the \"active expire key\" cycles.",
+     "expect_file": "commands/expire.md",
+     "hard": false
+    },
+    {
+     "q": "How can I add an entry to a stream and keep it from growing without bound?",
+     "expect": "effectively capping the stream with an arbitrary threshold",
+     "expect_file": "commands/xadd.md",
+     "hard": false
+    },
+    {
+     "q": "While walking all keys with a cursor, can the same key come back more than once?",
+     "expect": "A given element may be returned multiple times.",
+     "expect_file": "commands/scan.md",
+     "hard": true
+    }
+   ]
+  },
+  "rust-api-guidelines": {
+   "shape_risk": null,
+   "queries": [
+    {
+     "q": "In a Rust type name, should an acronym like UUID stay uppercase, or is Uuid preferred?",
+     "expect": "acronyms and contractions of compound words count as one word: use `Uuid` rather than `UUID`",
+     "expect_file": "src/naming.md",
+     "hard": false
+    },
+    {
+     "q": "For a Rust library's conversions, why implement From rather than Into?",
+     "expect": "These traits have a blanket impl based on `From` and `TryFrom`.",
+     "expect_file": "src/interoperability.md",
+     "hard": false
+    },
+    {
+     "q": "Why should unwrap() not appear in rustdoc code examples?",
+     "expect": "Like it or not, example code is often copied verbatim by users.",
+     "expect_file": "src/documentation.md",
+     "hard": false
+    },
+    {
+     "q": "In Rust, what does the most basic conventional constructor look like?",
+     "expect": "A constructor in its most basic form is a `new` method with no arguments.",
+     "expect_file": "src/predictability.md",
+     "hard": false
+    },
+    {
+     "q": "How do I stop users of my crate from implementing my trait themselves, so I can keep changing it without a major version bump?",
+     "expect": "Some traits are only meant to be implemented within the crate that defines them.",
+     "expect_file": "src/future-proofing.md",
+     "hard": true
+    }
+   ]
+  },
+  "msft-api-guidelines": {
+   "shape_risk": null,
+   "queries": [
+    {
+     "q": "Do the Azure REST API guidelines require even POST operations to be idempotent so clients can retry failed requests safely?",
+     "expect": "to enable customers to write fault-tolerant applications, _all_ service operations (including POST) **must** be idempotent.",
+     "expect_file": "azure/Guidelines.md",
+     "hard": false
+    },
+    {
+     "q": "Once Azure ships a new GA API version, how long can the older preview API versions stay around before they must be retired?",
+     "expect": "**DO** retire all prior preview API versions 90 days after a new GA or preview API version is released.",
+     "expect_file": "azure/VersioningGuidelines.md",
+     "hard": false
+    },
+    {
+     "q": "In Microsoft Graph, what must a service put in the response when a collection is too big to return on a single page?",
+     "expect": "the serialization payload MUST contain the opaque URL for the next page as appropriate.",
+     "expect_file": "graph/articles/collections.md",
+     "hard": false
+    },
+    {
+     "q": "How slow does a Microsoft Graph API call have to be before it should be designed as a long-running operation?",
+     "expect": "Any API call that is expected to take longer than one second in the 99th percentile should use the long running operations pattern.",
+     "expect_file": "graph/patterns/long-running-operations.md",
+     "hard": false
+    },
+    {
+     "q": "How much notice do I get before a Microsoft Graph API I depend on stops working?",
+     "expect": "and a Sunset header (with the date of two years beyond the deprecation date) to the response.",
+     "expect_file": "graph/articles/deprecation.md",
+     "hard": true
+    }
+   ]
+  },
+  "zalando-restful-api-guidelines": {
+   "shape_risk": null,
+   "queries": [
+    {
+     "q": "Why do the Zalando API guidelines prefer cursor-based pagination over offset-based pagination?",
+     "expect": "Offset-based pagination may create duplicates or lead to missing entries",
+     "expect_file": "chapters/pagination.adoc",
+     "hard": false
+    },
+    {
+     "q": "Are Zalando API endpoints allowed to be open, or does every endpoint need protection?",
+     "expect": "Every API endpoint must be protected and armed with authentication and authorization.",
+     "expect_file": "chapters/security.adoc",
+     "hard": false
+    },
+    {
+     "q": "When a Zalando API needs to change, is adding a new version preferred over compatible extensions?",
+     "expect": "We strongly encourage using compatible API extensions and discourage versioning",
+     "expect_file": "chapters/compatibility.adoc",
+     "hard": false
+    },
+    {
+     "q": "Which proprietary HTTP header must Zalando services support so that one call can be traced across services?",
+     "expect": "RESTful API endpoints *must* support {X-Flow-ID} header in requests",
+     "expect_file": "chapters/http-headers.adoc",
+     "hard": false
+    },
+    {
+     "q": "Why do Zalando APIs return JSON fields spelled with underscores instead of camelCase?",
+     "expect": "Property names are restricted to ASCII snake_case strings matching regex `^[a-z_][a-z_0-9]*$`.",
+     "expect_file": "chapters/json-guidelines.adoc",
+     "hard": true
+    }
+   ]
+  },
+  "github-api-description": {
+   "shape_risk": "EXTREME: canonical descriptions/api.github.com/api.github.com.json = 13,010,301 B (pretty-printed, 347,185 lines); descriptions/ also holds ~30 near-duplicate variants (ghec.json 14,239,652 B; 28 ghes-* dirs 22-295 MB) and dereferenced/ copies up to 82,672,603 B",
+   "queries": [
+    {
+     "q": "What is the maximum number of results per page you can request from a GitHub REST API listing endpoint?",
+     "expect": "The number of results per page (max 100).",
+     "expect_file": "descriptions/api.github.com/api.github.com.json",
+     "hard": false
+    },
+    {
+     "q": "Does calling the endpoint that reports my remaining GitHub API quota use up part of that quota?",
+     "expect": "Accessing this endpoint does not count against your REST API rate limit.",
+     "expect_file": "descriptions/api.github.com/api.github.com.json",
+     "hard": true
+    },
+    {
+     "q": "In the GitHub REST search API, what can go into the q query parameter besides plain keywords?",
+     "expect": "The query contains one or more search keywords and qualifiers.",
+     "expect_file": "descriptions/api.github.com/api.github.com.json",
+     "hard": false
+    },
+    {
+     "q": "How do I list only closed issues with the GitHub REST API instead of just the open ones?",
+     "expect": "Indicates the state of the issues to return.",
+     "expect_file": "descriptions/api.github.com/api.github.com.json",
+     "hard": false
+    },
+    {
+     "q": "When merging a pull request through the GitHub REST API, how do I choose between a merge commit, squash, or rebase?",
+     "expect": "The merge method to use.",
+     "expect_file": "descriptions/api.github.com/api.github.com.json",
+     "hard": false
+    }
+   ]
+  },
+  "mozilla-ssl-configs": {
+   "shape_risk": "THIN: ~6 content files total; README.md and ssl-config-generator/index.html are 'content has moved' stubs, json/server-side-tls-conf.json is a byte-duplicate of server-side-tls-conf-5.0.json (only href differs), so 3 of 5 expects pin to the same 4.5KB JSON; no file >4MB",
+   "queries": [
+    {
+     "q": "Which TLS versions does the Mozilla intermediate configuration allow?",
+     "expect": "\"tls_versions\": [\"TLSv1.2\", \"TLSv1.3\"],",
+     "expect_file": "json/server-side-tls-conf-5.0.json",
+     "hard": false
+    },
+    {
+     "q": "What is the oldest client that can still connect to a server using the modern configuration?",
+     "expect": "\"oldest_clients\": [\"Firefox 63\", \"Android 10.0\", \"Chrome 70\", \"Edge 75\", \"Java 11\", \"OpenSSL 1.1.1\", \"Opera 57\", \"Safari 12.1\"],",
+     "expect_file": "json/server-side-tls-conf-5.0.json",
+     "hard": false
+    },
+    {
+     "q": "Which TLS versions did the old configuration allow in version 4.0 of the recommendations?",
+     "expect": "\"tls_versions\": [\"TLSv1.2\", \"TLSv1.1\", \"TLSv1\", \"SSLv3\" ],",
+     "expect_file": "json/server-side-tls-conf-4.0.json",
+     "hard": false
+    },
+    {
+     "q": "Where are the current JSON server-side TLS recommendations maintained now that this repository is only historical?",
+     "expect": "The current JSON recommendations can be found at https://github.com/tlsref/data/tree/master/docs/guidelines",
+     "expect_file": "json/README.md",
+     "hard": false
+    },
+    {
+     "q": "How big do my Diffie-Hellman parameters need to be if I still have to support ancient clients?",
+     "expect": "\"dh_param_size\": 1024,",
+     "expect_file": "json/server-side-tls-conf-5.0.json",
+     "hard": true
+    }
+   ]
+  },
+  "govuk-design-system": {
+   "shape_risk": "No file over 4MB; biggest file is package-lock.json (1,301,954 B) at repo root; component .yaml files are 186-961 lines each",
+   "queries": [
+    {
+     "q": "How do I show an extra input when a particular radio option is selected?",
+     "expect": "Provide additional content to reveal when the radio is checked.",
+     "expect_file": "packages/govuk-frontend/src/govuk/components/radios/radios.yaml",
+     "hard": false
+    },
+    {
+     "q": "How do I make a 'None of these' checkbox untick all the other checkboxes?",
+     "expect": "implements a 'None of these' type behaviour via JavaScript when checkboxes are clicked",
+     "expect_file": "packages/govuk-frontend/src/govuk/components/checkboxes/checkboxes.yaml",
+     "hard": false
+    },
+    {
+     "q": "Should the error summary receive focus when a page with errors loads?",
+     "expect": "Must be focused when the page loads",
+     "expect_file": "packages/govuk-frontend/src/govuk/components/error-summary/error-summary.yaml",
+     "hard": false
+    },
+    {
+     "q": "How do I stop the success notification banner from taking keyboard focus when the page loads?",
+     "expect": "To disable this behaviour, set `disableAutoFocus` to `true`.",
+     "expect_file": "packages/govuk-frontend/src/govuk/components/notification-banner/notification-banner.yaml",
+     "hard": false
+    },
+    {
+     "q": "The little counter under a textarea telling users how many characters they have left is noisy; can I hide it until they get near the limit?",
+     "expect": "The percentage value of the limit at which point the count message is displayed",
+     "expect_file": "packages/govuk-frontend/src/govuk/components/character-count/character-count.yaml",
+     "hard": true
+    }
+   ]
+  },
+  "twelve-factor": {
+   "shape_risk": "No file over 4MB; all expects pinned to content/en/ only - the tree carries dozens of translations of the same factors plus onetrust JS, so a translated page can outrank content/en/ in top-5 while not containing the English clause",
+   "queries": [
+    {
+     "q": "Where does a twelve-factor app store its config?",
+     "expect": "The twelve-factor app stores config in *environment variables***",
+     "expect_file": "content/en/config.md",
+     "hard": false
+    },
+    {
+     "q": "Should a twelve-factor app write and rotate its own log files?",
+     "expect": "A twelve-factor app never concerns itself with routing or storage of its output stream.",
+     "expect_file": "content/en/logs.md",
+     "hard": false
+    },
+    {
+     "q": "Are sticky sessions acceptable in a twelve-factor app?",
+     "expect": "Sticky sessions are a violation of twelve-factor and should never be used or relied upon.",
+     "expect_file": "content/en/processes.md",
+     "hard": false
+    },
+    {
+     "q": "What should a worker process do on graceful shutdown?",
+     "expect": "For a worker process, graceful shutdown is achieved by returning the current job to the work queue.",
+     "expect_file": "content/en/disposability.md",
+     "hard": false
+    },
+    {
+     "q": "It works on my machine but breaks in production: which gaps does the twelve-factor methodology say cause this?",
+     "expect": "Developers may be using a stack like Nginx, SQLite, and OS X, while the production deploy uses Apache, MySQL, and Linux.",
+     "expect_file": "content/en/dev-prod-parity.md",
+     "hard": true
+    }
+   ]
+  },
+  "gitlab-runbooks": {
+   "shape_risk": "6,327 files excl. .git (3,400 yml, 970 md, 810 jsonnet); largest text file is reference-architectures/get-hybrid/config/prometheus-rules/service-rules.yml at 740 KB - no >1MB text file in this snapshot",
+   "queries": [
+    {
+     "q": "What is the difference between a TrafficAbsent alert and a TrafficCessation alert?",
+     "expect": "This alert signifies that the SLI is reporting a cessation of traffic; the signal is present, but is zero.",
+     "expect_file": "docs/alerts/TrafficAbsent.md",
+     "hard": false
+    },
+    {
+     "q": "How quickly are high-urgency Sidekiq jobs supposed to start executing?",
+     "expect": "`high`-urgency workloads need to start execution 5s after scheduling",
+     "expect_file": "docs/sidekiq/sidekiq-queueing-apdex.md",
+     "hard": false
+    },
+    {
+     "q": "What happens if a GitLab Postgres database reaches transaction ID wraparound?",
+     "expect": "When wraparound occurs, the database will automatically shutdown to prevent data loss, causing a full outage.",
+     "expect_file": "docs/patroni/pg_xid_wraparound_alert.md",
+     "hard": false
+    },
+    {
+     "q": "What am I supposed to do when the SSLCertExpiresSoon alert fires?",
+     "expect": "Check SSL for specified nodes and consider reissuing certificate.",
+     "expect_file": "mimir-rules/gitlab-gprd/blackbox_alerts.yml",
+     "hard": false
+    },
+    {
+     "q": "I am on call and alerts are firing for many unrelated components at once - what does that usually point to?",
+     "expect": "When there are alerts for several services at the same time, this is usually a signal that a piece of shared infrastructure is broken",
+     "expect_file": "docs/tutorials/diagnosis.md",
+     "hard": true
+    }
+   ]
+  },
+  "otel-proto": {
+   "shape_risk": "Two repos: otel-proto-1 = 58 files (largest docs/specification.md 39.5 KB), otel-proto-2 = 748 files (largest text package-lock.json 230 KB); no >4MB files; note otel-proto-2/docs/gen-ai/*.md are relocation stubs",
+   "queries": [
+    {
+     "q": "Which OTLP span kind should I use for a component that publishes a message to a queue?",
+     "expect": "Indicates that the span describes a producer sending a message to a broker.",
+     "expect_file": "otel-proto-1/opentelemetry/proto/trace/v1/trace.proto",
+     "hard": false
+    },
+    {
+     "q": "Why does OTLP wrap attribute arrays in a separate ArrayValue message instead of a repeated field in AnyValue?",
+     "expect": "since oneof in AnyValue does not allow repeated fields.",
+     "expect_file": "otel-proto-1/opentelemetry/proto/common/v1/common.proto",
+     "hard": false
+    },
+    {
+     "q": "How should HTTP spans be named according to the OpenTelemetry semantic conventions?",
+     "expect": "HTTP span names SHOULD be `{method} {target}` if there is a (low-cardinality) `target` available.",
+     "expect_file": "otel-proto-2/docs/http/http-spans.md",
+     "hard": false
+    },
+    {
+     "q": "Should the raw database query text be recorded on spans by default?",
+     "expect": "The `db.query.text` SHOULD be collected by default only if there is sanitization that excludes sensitive information.",
+     "expect_file": "otel-proto-2/docs/db/database-spans.md",
+     "hard": false
+    },
+    {
+     "q": "In OTLP, how do I tell a Sum metric that only ever goes up from one that can also go down?",
+     "expect": "Represents whether the sum is monotonic.",
+     "expect_file": "otel-proto-1/opentelemetry/proto/metrics/v1/metrics.proto",
+     "hard": true
+    }
+   ]
+  },
+  "freebsd-handbook": {
+   "shape_risk": "website/content/en/news/2012-compromise/sha256.sums.20121118.txt = 3,068,155 B and md5.sums.20121118.txt = 2,277,400 B checksum dumps; also 27.8 MB website/static/security/patches/EN-26:15/openssl-14.3.patch; all expects pinned under documentation/content/en/books/handbook/ only",
+   "queries": [
+    {
+     "q": "Which command lists the jails that are running on a FreeBSD host?",
+     "expect": "To list the jails that are running on the host system, the command man:jls[8] can be used:",
+     "expect_file": "documentation/content/en/books/handbook/jails/_index.adoc",
+     "hard": false
+    },
+    {
+     "q": "How do I enable the PF firewall at boot on FreeBSD?",
+     "expect": "Start by adding `pf_enable=yes` to [.filename]#/etc/rc.conf#:",
+     "expect_file": "documentation/content/en/books/handbook/firewalls/_index.adoc",
+     "hard": false
+    },
+    {
+     "q": "Which command shows the status of a user's print jobs on FreeBSD?",
+     "expect": "man:lpq[1] shows the status of a user's print jobs.",
+     "expect_file": "documentation/content/en/books/handbook/printing/_index.adoc",
+     "hard": false
+    },
+    {
+     "q": "How can I reset a forgotten root password on FreeBSD?",
+     "expect": "It can also be used to reset the `root` password when it is unknown.",
+     "expect_file": "documentation/content/en/books/handbook/boot/_index.adoc",
+     "hard": false
+    },
+    {
+     "q": "How can I use a FreeBSD machine with a wireless card as a wifi hotspot for other devices?",
+     "expect": "# ifconfig wlan0 create wlandev ath0 wlanmode hostap",
+     "expect_file": "documentation/content/en/books/handbook/advanced-networking/_index.adoc",
+     "hard": true
+    }
+   ]
+  },
+  "openbsd-faq": {
+   "shape_risk": "openssh/releasenotes.html = 758,241 B (out of faq/ scope, not pinned); papers/*.pdf binaries up to 33.6 MB (bsdcan2019_unwind.pdf); no pinned expect file exceeds 36 KB",
+   "queries": [
+    {
+     "q": "Is keep state on by default for PF filter rules?",
+     "expect": "This option is the default for all filter rules.",
+     "expect_file": "faq/pf/filter.html",
+     "hard": false
+    },
+    {
+     "q": "Why does OpenBSD only use half of my CPU cores by default?",
+     "expect": "To mitigate this, OpenBSD disables running code on any detected SMT cores",
+     "expect_file": "faq/faq10.html",
+     "hard": false
+    },
+    {
+     "q": "How do I configure a static IPv4 address for a network interface on OpenBSD so it comes up at boot?",
+     "expect": "inet 10.0.0.38 255.255.255.0",
+     "expect_file": "faq/faq6.html",
+     "hard": false
+    },
+    {
+     "q": "How do I install a package such as rsync on OpenBSD?",
+     "expect": "pkg_add rsync",
+     "expect_file": "faq/faq15.html",
+     "hard": false
+    },
+    {
+     "q": "How do I make OpenBSD come up with a graphical login screen at boot instead of a text console?",
+     "expect": "rcctl enable xenodm",
+     "expect_file": "faq/faq11.html",
+     "hard": true
+    }
+   ]
+  },
+  "tldr-pages": {
+   "shape_risk": "No content file over 4MB (biggest non-git files are assets, e.g. scripts/pdf/NotoSans-Regular.ttf 556 KB); the shape risk is ~39,849 tiny pages/**/*.md files, not size",
+   "queries": [
+    {
+     "q": "How do I extract a tar archive into a specific target directory?",
+     "expect": "tar xf {{path/to/source.tar.ext}} {{[-C|--directory]}} {{path/to/directory}}",
+     "expect_file": "pages/common/tar.md",
+     "hard": false
+    },
+    {
+     "q": "How do I make curl download a file and keep the original filename from the URL?",
+     "expect": "curl {{[-O|--remote-name]}} {{https://example.com/filename.zip}}",
+     "expect_file": "pages/common/curl.md",
+     "hard": false
+    },
+    {
+     "q": "How do I give the owner of a file permission to execute it?",
+     "expect": "chmod u+x {{path/to/file}}",
+     "expect_file": "pages/common/chmod.md",
+     "hard": false
+    },
+    {
+     "q": "Which command opens the current user's crontab for editing?",
+     "expect": "- [e]dit the crontab file for the current user:",
+     "expect_file": "pages/common/crontab.md",
+     "hard": false
+    },
+    {
+     "q": "How do I watch a log file live while a program keeps writing to it?",
+     "expect": "tail {{[-f|--follow]}} {{path/to/file}}",
+     "expect_file": "pages/common/tail.md",
+     "hard": true
+    }
+   ]
+  }
+ }
+}
