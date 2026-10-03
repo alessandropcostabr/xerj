@@ -2,7 +2,7 @@
  "program": "corpus-hub-100",
  "schema": 1,
  "opened": "2026-10-02",
- "note": "licence_hint is a HINT (memory + detector shape), never the verdict. Gate G4 requires a human review block at the pinned SHA; several hints below WILL be wrong \u2014 that is the point of the gate. domain is the G1 sentence. cat/lane drive wave assignment (PROGRAM-100.md \u00a74/\u00a78).",
+ "note": "licence_hint is a HINT (memory + detector shape), never the verdict. Gate G4 requires a human review block at the pinned SHA; several hints below WILL be wrong — that is the point of the gate. domain is the G1 sentence. cat/lane drive wave assignment (PROGRAM-100.md §4/§8).",
  "statuses": [
   "live",
   "candidate",
@@ -40,7 +40,7 @@
    "sources": [
     {
      "url": "see hub/xerj-search.json",
-     "licence_hint": "mixed \u2014 per-repo review blocks in the manifest"
+     "licence_hint": "mixed — per-repo review blocks in the manifest"
     }
    ]
   },
@@ -92,7 +92,7 @@
    "lane": "B",
    "refresh": "daily",
    "status": "live",
-   "domain": "an agent reviewing Rust code queries this for vulnerability precedent \u2014 identity-resolved RUSTSEC/GHSA/CVE advisories with affected functions and fixed versions",
+   "domain": "an agent reviewing Rust code queries this for vulnerability precedent — identity-resolved RUSTSEC/GHSA/CVE advisories with affected functions and fixed versions",
    "sources": [
     {
      "url": "tools/packs/rust-vulns/recipe.toml",
@@ -110,7 +110,7 @@
    "sources": [
     {
      "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
-     "licence_hint": "public domain (US gov); intake decides fetch mechanism (#1110 Part A owns this pack \u2014 coordinate, do not duplicate)"
+     "licence_hint": "public domain (US gov); intake decides fetch mechanism (#1110 Part A owns this pack — coordinate, do not duplicate)"
     }
    ]
   },
@@ -180,7 +180,7 @@
    "sources": [
     {
      "url": "https://cwe.mitre.org/data/xml/cwec_latest.xml.zip",
-     "licence_hint": "MITRE terms \u2014 verify redistribution terms at intake"
+     "licence_hint": "MITRE terms — verify redistribution terms at intake"
     }
    ]
   },
@@ -208,7 +208,7 @@
    "sources": [
     {
      "url": "https://capec.mitre.org/data/xml/capec_latest.xml.zip",
-     "licence_hint": "MITRE terms \u2014 verify redistribution terms at intake (same class as mitre-cwe)"
+     "licence_hint": "MITRE terms — verify redistribution terms at intake (same class as mitre-cwe)"
     }
    ]
   },
@@ -320,7 +320,7 @@
    "sources": [
     {
      "url": "https://www.rfc-editor.org/rfc/rfc-txt.tar.gz",
-     "licence_hint": "IETF TLP (unmodified redistribution permitted); DEFERRED: no maintained full-text git mirror exists (mcpherrinm/rfc-mirror is ~2014-stale) \u2014 needs an http tar.gz dir-fetch recipe, not a manifest"
+     "licence_hint": "IETF TLP (unmodified redistribution permitted); DEFERRED: no maintained full-text git mirror exists (mcpherrinm/rfc-mirror is ~2014-stale) — needs an http tar.gz dir-fetch recipe, not a manifest"
     }
    ]
   },
@@ -333,12 +333,8 @@
    "domain": "an agent building browser-adjacent tooling queries this for the living standard's exact normative statements (html/url/fetch/dom)",
    "sources": [
     {
-     "url": "https://github.com/whatwg/html",
-     "licence_hint": "CC-BY-4.0 (verify per repo at pin)"
-    },
-    {
-     "url": "https://github.com/whatwg/url",
-     "licence_hint": "CC-BY-4.0 (verify)"
+     "url": "https://github.com/xerj-org/corpus-whatwg-sections",
+     "licence_hint": "RE-PINNED after G7 fail 2026-10-02 (mirror fix): upstream whatwg/html+url are multi-MB single-page specs — whole-file indexing skips what it cannot chunk (the ecma262 G2 failure class). Mirror = html split into 753 section files + url into 36 (breadcrumb header, verbatim bodies), dual licence per source: CC-BY-4.0 text / BSD-3-Clause code (hand-verified per repo). Upstream SHAs pinned in the mirror README. Suite re-runs with expect_file remapped to section paths."
     }
    ]
   },
@@ -365,8 +361,8 @@
    "domain": "an agent building a JS-adjacent tool queries this for the spec's abstract operations and completion-record semantics",
    "sources": [
     {
-     "url": "https://github.com/tc39/ecma262",
-     "licence_hint": "G4 passed (CC-BY-4.0 at pin) but G7 FAILED 2026-10-02 (median 0/5 relevant): tc39/ecma262's spec text is ONE 3MB spec.html which the indexer skips as junk \u2014 top hits were FAQ/CONTRIBUTING/package-lock. G2 shape not achieved. Needs section-split intake (ecmarkup clause extraction) or chunker support for giant single-file HTML before re-running G7. Same risk class: whatwg/html source, kafka-site single-page protocol.html \u2014 check those pending G7s first next cycle."
+     "url": "https://github.com/xerj-org/corpus-ecma262-sections",
+     "licence_hint": "LICENCE CORRECTED 2026-10-03 (the row previously claimed 'CC-BY-4.0 at pin' — wrong): GitHub reports tc39/ecma262 as NOASSERTION; the actual terms are Ecma's ALTERNATIVE copyright notice for the spec text (permissive-with-conditions: copy/modify/distribute for any purpose without fee, provided the full notice text stays viewable, pre-existing disclaimers carry, and changes are stated — derived from the W3C Software and Document Notice) plus Ecma's BSD-style software policy for code portions. The mirror carries NOTICE.md with the full notice and the changes statement, so redistribution is within the grant. G2 fix = section split: 2,341 files (one per emu-clause/emu-annex/emu-intro), upstream SHA pinned in the mirror README."
     }
    ]
   },
@@ -380,7 +376,7 @@
    "sources": [
     {
      "url": "https://github.com/unicode-org/cldr",
-     "licence_hint": "Unicode License (permissive \u2014 verify at pin)"
+     "licence_hint": "Unicode License (permissive — verify at pin)"
     }
    ]
   },
@@ -478,7 +474,7 @@
    "sources": [
     {
      "url": "superseded by postgres-src",
-     "licence_hint": "killed: same repository as postgres-src \u2014 doc/ is inside it; a second corpus on one repo is padding"
+     "licence_hint": "killed: same repository as postgres-src — doc/ is inside it; a second corpus on one repo is padding"
     }
    ]
   },
@@ -506,7 +502,7 @@
    "sources": [
     {
      "url": "https://docs.oasis-open.org/mqtt/mqtt/v5.0/mqtt-v5.0.html",
-     "licence_hint": "OASIS CC-BY-4.0; DEFERRED 2026-10-02: mqtt/mqtt.org is site chrome \u2014 the repo does NOT contain the spec text (verified at pin faab2e8a05, _sites/mqtt-specification.md only links out); needs an http-fetch recipe + chunking decision like ietf-rfc"
+     "licence_hint": "OASIS CC-BY-4.0; DEFERRED 2026-10-02: mqtt/mqtt.org is site chrome — the repo does NOT contain the spec text (verified at pin faab2e8a05, _sites/mqtt-specification.md only links out); needs an http-fetch recipe + chunking decision like ietf-rfc"
     }
    ]
   },
@@ -520,7 +516,7 @@
    "sources": [
     {
      "url": "https://github.com/danluu/post-mortems",
-     "licence_hint": "DEFERRED 2026-10-02: NO licence at pin 630562e5 (verified) AND the repo is a curated link index (7 files), not the postmortem text \u2014 real content sits on ~1k linked sites each with its own terms. Needs a Lane B curation with per-post licence review."
+     "licence_hint": "DEFERRED 2026-10-02: NO licence at pin 630562e5 (verified) AND the repo is a curated link index (7 files), not the postmortem text — real content sits on ~1k linked sites each with its own terms. Needs a Lane B curation with per-post licence review."
     }
    ]
   },
@@ -534,7 +530,7 @@
    "sources": [
     {
      "url": "https://gitlab.com/gitlab-com/runbooks",
-     "licence_hint": "MIT (verify at pin \u2014 hosted on gitlab.com, not github)"
+     "licence_hint": "MIT (verify at pin — hosted on gitlab.com, not github)"
     }
    ]
   },
@@ -548,7 +544,7 @@
    "sources": [
     {
      "url": "superseded by prometheus-src",
-     "licence_hint": "killed: same repository as prometheus-src \u2014 docs/ is inside it"
+     "licence_hint": "killed: same repository as prometheus-src — docs/ is inside it"
     }
    ]
   },
@@ -562,11 +558,7 @@
    "sources": [
     {
      "url": "https://github.com/open-telemetry/opentelemetry-proto",
-     "licence_hint": "Apache-2.0 (verify at pin)"
-    },
-    {
-     "url": "https://github.com/open-telemetry/semantic-conventions",
-     "licence_hint": "Apache-2.0 (verify)"
+     "licence_hint": "RE-PINNED (scope fix) after G7 fail 2026-10-02: dropped open-telemetry/semantic-conventions from the corpus — its markdown docs diluted proto-field queries and its content duplicates opentelemetry-spec. Apache-2.0 (hand-verified). Corpus is now the proto repo alone; suite expect_files unchanged (they were proto files)."
     }
    ]
   },
@@ -594,7 +586,7 @@
    "sources": [
     {
      "url": "https://github.com/freebsd/freebsd-doc",
-     "licence_hint": "FreeBSD Documentation License (permissive \u2014 verify at pin)"
+     "licence_hint": "FreeBSD Documentation License (permissive — verify at pin)"
     }
    ]
   },
@@ -618,11 +610,11 @@
    "lane": "A",
    "refresh": "weekly",
    "status": "candidate",
-   "domain": "an agent scripting an unfamiliar long-tail tool queries this for its example invocations (popular tools are memorised \u2014 G3 value is the tail only)",
+   "domain": "an agent scripting an unfamiliar long-tail tool queries this for its example invocations (popular tools are memorised — G3 value is the tail only)",
    "sources": [
     {
-     "url": "https://github.com/tldr-pages/tldr",
-     "licence_hint": "MIT (verify at pin)"
+     "url": "https://github.com/xerj-org/corpus-tldr-common",
+     "licence_hint": "RE-PINNED after G7 fail 2026-10-02 (mirror fix): upstream tldr-pages/tldr detector said MIT but the LICENSE is CC-BY-4.0 (hand-verified); full tree is ~40k pages across 30+ locales and the G7 miss was dilution — queries retrieved locale forks of the wrong page. Mirror = pages/common ONLY (4,705 en pages, the curated core), upstream SHA pinned in its README. Same wave-1 suite re-runs; expect_file paths remapped to pages/common layout, clauses and queries unchanged."
     }
    ]
   },
@@ -632,11 +624,11 @@
    "lane": "A",
    "refresh": "pinned",
    "status": "candidate",
-   "domain": "an agent stepping into an SRE task queries this for the curriculum's concrete networking/Linux/DB ops explanations",
+   "domain": "an agent stepping into an SRE task queries this for the curriculum's concrete replication/signals/messaging/git/networking fundamentals (no incident-response or caching chapters exist — do not query for them)",
    "sources": [
     {
      "url": "https://github.com/linkedin/school-of-sre",
-     "licence_hint": "G4 passed (CC-BY-4.0 at pin) but G7 FAILED 2026-10-02 (median 2.5/5): replication/tcp/troubleshooting queries retrieve, but on-call/incident-response and storage-caching queries score ~1 \u2014 the curriculum has no on-call chapter and caching lives in system_design/scaling.md. G1 domain sentence over-promises; rescope to the curriculum's actual chapters and re-run G7 with in-domain queries (rescope first, no query-shopping)."
+     "licence_hint": "G4 licence hand-check 2026-10-03: repo LICENSE file = CC-BY-4.0 (detector said UNKNOWN). G7 fail 2026-10-02 was a G1 over-promise, not a corpus defect: the prior suite queried on-call/incident-response and storage-caching chapters that do not exist. Domain sentence rescoped to the actual curriculum; re-scoped suite (in-domain queries only, blind-authored from clone reads, 5/5 expects grep-verified) pre-registered at backlog/g7-sre-2026-10.json BEFORE any re-retrieval. Corpus itself unchanged (same upstream SHA)."
     }
    ]
   },
@@ -691,8 +683,8 @@
    "domain": "an agent reviewing an API design queries this for the rule, its intent and propulated exceptions from a fleet of thousands",
    "sources": [
     {
-     "url": "https://github.com/zalando/restful-api-guidelines",
-     "licence_hint": "CC-BY-4.0 (verify at pin)"
+     "url": "https://github.com/xerj-org/corpus-zalando-guidelines",
+     "licence_hint": "RE-PINNED after G7 fail 2026-10-02 (mirror fix): detector said UNKNOWN; LICENSE is CC-BY-4.0 (hand-verified). Upstream ships 21 chapters as ONE 1.1MB README monolith the indexer skips; mirror = one file per chapter, upstream SHA pinned. Same suite re-runs with expect_file remapped to the chapter files."
     }
    ]
   },
@@ -747,8 +739,8 @@
    "domain": "an agent building accessible UI queries this for the component's exact accessibility criteria and edge cases",
    "sources": [
     {
-     "url": "https://github.com/alphagov/govuk-frontend",
-     "licence_hint": "MIT (verify at pin)"
+     "url": "https://github.com/xerj-org/corpus-govuk-components",
+     "licence_hint": "RE-PINNED after G7 fail 2026-10-02 (mirror fix): upstream alphagov/govuk-frontend buries the accessibility criteria in a 100k-line SCSS/Nunjucks app tree; queries hit macros not criteria. Mirror = the 39 component READMEs (where the criteria actually live), MIT (hand-verified). Upstream SHA pinned in the mirror README."
     }
    ]
   },
@@ -758,7 +750,7 @@
    "lane": "A",
    "refresh": "pinned",
    "status": "live",
-   "domain": "an agent containerising or configuring an app queries this for the factor's exact statement and rationale (G3 borderline: well-known prose \u2014 keep only if G7 shows retrieval value)",
+   "domain": "an agent containerising or configuring an app queries this for the factor's exact statement and rationale (G3 borderline: well-known prose — keep only if G7 shows retrieval value)",
    "sources": [
     {
      "url": "https://github.com/heroku/12factor",
@@ -888,7 +880,7 @@
    "sources": [
     {
      "url": "https://github.com/cockroachdb/pebble",
-     "licence_hint": "VERIFY FIRST \u2014 CockroachDB-adjacent licensing has moved; if not permissive, rocksdb+badger cover the domain and this stays deferred"
+     "licence_hint": "VERIFY FIRST — CockroachDB-adjacent licensing has moved; if not permissive, rocksdb+badger cover the domain and this stays deferred"
     }
    ]
   },
@@ -902,7 +894,7 @@
    "sources": [
     {
      "url": "https://github.com/dgraph-io/badger",
-     "licence_hint": "MIT (verify at pin \u2014 dgraph BUSL era did not reach badger, confirm)"
+     "licence_hint": "MIT (verify at pin — dgraph BUSL era did not reach badger, confirm)"
     }
    ]
   },
@@ -958,7 +950,7 @@
    "sources": [
     {
      "url": "https://github.com/sqlite/sqlite",
-     "licence_hint": "public domain (verify at pin; official read-only fossil\u2192git mirror)"
+     "licence_hint": "public domain (verify at pin; official read-only fossil→git mirror)"
     }
    ]
   },
@@ -1238,7 +1230,7 @@
    "sources": [
     {
      "url": "https://github.com/curl/curl",
-     "licence_hint": "curl licence (permissive \u2014 verify at pin)"
+     "licence_hint": "curl licence (permissive — verify at pin)"
     }
    ]
   },
@@ -1444,7 +1436,7 @@
    "lane": "A",
    "refresh": "pinned",
    "status": "live",
-   "domain": "an agent answering workplace/employment questions queries this for what 29 CFR actually says \u2014 OSHA guardrail height, FMLA 12-month/1250-hour eligibility, FLSA overtime, youth-employment hours (demand: employment-HR Ask-HN volume 57)",
+   "domain": "an agent answering workplace/employment questions queries this for what 29 CFR actually says — OSHA guardrail height, FMLA 12-month/1250-hour eligibility, FLSA overtime, youth-employment hours (demand: employment-HR Ask-HN volume 57)",
    "sources": [
     {
      "url": "https://www.govinfo.gov/bulkdata/ECFR/title-29/ECFR-title29.xml",
@@ -1458,14 +1450,14 @@
    "lane": "A",
    "refresh": "pinned",
    "status": "candidate",
-   "domain": "an agent answering federal tax questions queries this for what the Treasury regulations actually say \u2014 de minimis safe harbor, estimated-tax safe harbor, home-office exclusive use (demand: tax Ask-HN volume 40)",
+   "domain": "an agent answering federal tax questions queries this for what the Treasury regulations actually say — de minimis safe harbor, estimated-tax safe harbor, home-office exclusive use (demand: tax Ask-HN volume 40)",
    "sources": [
     {
      "url": "https://www.govinfo.gov/bulkdata/ECFR/title-26/ECFR-title26.xml",
      "licence_hint": "public domain (US government work, 17 USC 105); pinned mirror github.com/xerj-org/corpus-ecfr-title-26"
     }
    ],
-   "note": "G7 1/4 relevant (2026-10-02): paraphrase gap under lexical retrieval on tax phrasing; suite defect excluded (\u00a71.280A-2 proposed-only). Re-test pre-registered with neural embed mode. Pins and shape stand (WAVES.md wave N1)."
+   "note": "G7 1/4 relevant (2026-10-02): paraphrase gap under lexical retrieval on tax phrasing; suite defect excluded (§1.280A-2 proposed-only). Re-test pre-registered with neural embed mode. Pins and shape stand (WAVES.md wave N1)."
   },
   {
    "slug": "ecfr-title-12",
@@ -1473,7 +1465,7 @@
    "lane": "A",
    "refresh": "pinned",
    "status": "live",
-   "domain": "an agent answering consumer-credit or mortgage questions queries this for what Regulation Z / TILA actually says \u2014 higher-priced APR triggers, ability-to-repay/QM, rescission windows, card late-fee safe harbors (demand: consumer-finance Ask-HN volume 71)",
+   "domain": "an agent answering consumer-credit or mortgage questions queries this for what Regulation Z / TILA actually says — higher-priced APR triggers, ability-to-repay/QM, rescission windows, card late-fee safe harbors (demand: consumer-finance Ask-HN volume 71)",
    "sources": [
     {
      "url": "https://www.govinfo.gov/bulkdata/ECFR/title-12/ECFR-title12.xml",
@@ -1487,7 +1479,7 @@
    "lane": "A",
    "refresh": "pinned",
    "status": "live",
-   "domain": "an agent answering UK-law questions queries this for what the current statute actually says \u2014 Consumer Rights Act remedies, GDPR-adjacent DPA 2018 duties, Building Safety Act duties (demand: legal-courts Ask-HN volume 46; source chosen for best-in-class versioned OGL XML)",
+   "domain": "an agent answering UK-law questions queries this for what the current statute actually says — Consumer Rights Act remedies, GDPR-adjacent DPA 2018 duties, Building Safety Act duties (demand: legal-courts Ask-HN volume 46; source chosen for best-in-class versioned OGL XML)",
    "sources": [
     {
      "url": "https://www.legislation.gov.uk/ukpga/<year>/<chapter>/data.xml",

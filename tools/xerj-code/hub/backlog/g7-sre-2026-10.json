@@ -1,0 +1,42 @@
+{
+ "suite": "g7-sre-2026-10",
+ "pre_registered": "2026-10-03",
+ "authoring": "blind — authored from clone reads only, no retrieval run; every expect clause grep-verified (whitespace-normalized substring) in the named file; queries re-scoped to chapters that actually exist in the curriculum after the prior suite assumed non-existent on-call/incident-response material",
+ "corpora": {
+  "school-of-sre": {
+   "shape_risk": "No large-file risk (103 md files under courses/ total 692,115 B; biggest is level101/security/network_security.md at 43,460 B) — the dilution risk is per-topic fragmentation into intro/key_concepts/further_reading/conclusion files where intros and conclusions are 0.2-2 KB stubs, and much of the bulk of the substantive files is pasted console output (SHOW REPLICA STATUS dumps, dig/tcpdump transcripts) rather than prose.",
+   "queries": [
+    {
+     "q": "In semi-synchronous MySQL replication, what happens to a transaction on the primary before control returns to the session?",
+     "expect": "a commit performed on the primary host is blocked until at least one replica acknowledges it",
+     "expect_file": "courses/level101/databases_sql/replication.md",
+     "hard": false
+    },
+    {
+     "q": "What advantage do realtime signals have over standard signals when the same signal is sent to a process more than once?",
+     "expect": "If multiple instances of a realtime signal are sent to a process, then the signal is delivered multiple times",
+     "expect_file": "courses/level102/system_calls_and_signals/signals.md",
+     "hard": false
+    },
+    {
+     "q": "In a messaging system, what happens to poison pill messages instead of them just being thrown away?",
+     "expect": "Instead of discarding problematic messages, they are redirected to a DLQ, allowing engineers to analyze and resolve the issues",
+     "expect_file": "courses/level101/messagequeue/key_concepts.md",
+     "hard": false
+    },
+    {
+     "q": "Under the hood, what actually is a branch in git?",
+     "expect": "Branch names (human readable) are pointers to those commits in the tree",
+     "expect_file": "courses/level101/git/branches.md",
+     "hard": false
+    },
+    {
+     "q": "We changed a DNS record to retire a backend server — when is it actually safe to shut the server down?",
+     "expect": "the servers can be removed from the pool only after waiting till TTL post the changes are made to DNS records",
+     "expect_file": "courses/level101/linux_networking/dns.md",
+     "hard": true
+    }
+   ]
+  }
+ }
+}
