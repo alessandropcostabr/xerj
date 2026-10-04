@@ -1,0 +1,42 @@
+{
+  "suite": "g7-nist-sp800-2026-10",
+  "pre_registered": "2026-10-04",
+  "authoring": "blind — authored from clone reads only, no retrieval run; every expect clause grep-verified (whitespace-normalized substring) in the named file; corpus is corpus-nist-sp800 @be10498971b7dd8c37c074c262820953aa4b2cd5 (63 + oscal 53r5/171r3/172r3/218 + csf2)",
+  "corpora": {
+    "nist-sp800-sec": {
+      "shape_risk": "sp800-53r5 is 328 near-identically structured OSCAL renders (324 controls + 4 baselines) over 20 families sharing one 4-line id/title/family/class header: 'Statement:' appears in 301/328, 'Guidance:' in 300/328, 'Parameters:' in 259/328, the case-insensitive 'the organization' statement scaffolding in 147/328, and the boilerplate citation string '(National Institute of Standards and Technology, Gaithersburg, MD)' in 218/328 — lexical hits concentrate in undifferentiated scaffolding rather than content. The same rule text is re-rendered across trees: sp800-171r3/3.5.12 ('Change default authenticators at first use') is a one-word-different twin of sp800-53r5/IA-5 ('Changing default authenticators prior to first use'), and both carry the same 'easily discoverable, and present a significant risk' guidance differing only by a hyphen ('well known' vs 'well-known'), with a third factory-default mention in sp800-53r5/SA-4.txt. The prose dirs (sp800-63, 92 .md files with distinct section titles and 41 FAQ files keyed by question frontmatter; median 2,026 B vs 3,554 B for the OSCAL controls) carry far more distinctive shapes, so mis-retrieval risk sits almost entirely in the OSCAL trees (53r5/171r3/172r3), which is why the hard query targets a 53r5 control whose span has near-duplicates in two other files.",
+      "queries": [
+        {
+          "q": "How short can a password be if we let the user pick it themselves?",
+          "expect": "Memorized secrets SHALL be at least 8 characters in length if chosen by the subscriber",
+          "expect_file": "sp800-63/sp800-63b/sec5_authenticators.md",
+          "hard": false
+        },
+        {
+          "q": "Can we let people recover their account by answering security questions?",
+          "expect": "Response to sets of knowledge-based questions is a form of knowledge-based authentication (KBA), and is not allowed",
+          "expect_file": "sp800-63/faq/63B/kbareset.md",
+          "hard": false
+        },
+        {
+          "q": "Do we have to change the passwords vendors ship on new equipment before we start using it?",
+          "expect": "Changing default authenticators prior to first use",
+          "expect_file": "sp800-53r5/IA-5.txt",
+          "hard": true
+        },
+        {
+          "q": "What do we have to put on a flash drive that holds CUI so people know how to treat it?",
+          "expect": "Mark system media that contain CUI to indicate distribution limitations, handling caveats, and applicable CUI markings.",
+          "expect_file": "sp800-171r3/3.8.4.txt",
+          "hard": false
+        },
+        {
+          "q": "How often should we go back and check whether our software security requirements are still current?",
+          "expect": "Review and update security requirements at least annually, or sooner if there are new requirements from internal or external sources",
+          "expect_file": "sp800-218/PO.1.txt",
+          "hard": false
+        }
+      ]
+    }
+  }
+}
