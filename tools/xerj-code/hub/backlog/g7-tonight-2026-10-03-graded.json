@@ -308,6 +308,160 @@
    "pass": 2,
    "relevant": 2,
    "verdict": "FAIL"
+  },
+  "mitre-capec": {
+   "queries": [
+    {
+     "q": "In a challenge-response login, how do we stop an attacker who opens a second connection and bounces the server's own challenge straight back at it?",
+     "hard": false,
+     "verdict": "pass",
+     "hit": "corpus-mitre-capec/CAPEC-90.md",
+     "expect_file": "CAPEC-90.md",
+     "top5": [
+      "corpus-mitre-capec/CAPEC-90.md",
+      "corpus-mitre-capec/CAPEC-33.md",
+      "corpus-mitre-capec/CAPEC-466.md",
+      "corpus-mitre-capec/CAPEC-273.md",
+      "corpus-mitre-capec/CAPEC-34.md"
+     ]
+    },
+    {
+     "q": "What kind of access does an intruder need up front before they can tamper with a vendor's patch distribution and push malware out to already-deployed customers?",
+     "hard": false,
+     "verdict": "pass",
+     "hit": "corpus-mitre-capec/CAPEC-669.md",
+     "expect_file": "CAPEC-669.md",
+     "top5": [
+      "corpus-mitre-capec/CAPEC-672.md",
+      "corpus-mitre-capec/CAPEC-522.md",
+      "corpus-mitre-capec/CAPEC-669.md",
+      "corpus-mitre-capec/CAPEC-671.md",
+      "corpus-mitre-capec/CAPEC-34.md"
+     ]
+    },
+    {
+     "q": "How do I defend a program that writes files with predictable names in a shared directory against someone planting a link to another file at that exact path?",
+     "hard": false,
+     "verdict": "pass",
+     "hit": "corpus-mitre-capec/CAPEC-132.md",
+     "expect_file": "CAPEC-132.md",
+     "top5": [
+      "corpus-mitre-capec/CAPEC-23.md",
+      "corpus-mitre-capec/CAPEC-177.md",
+      "corpus-mitre-capec/CAPEC-132.md",
+      "corpus-mitre-capec/CAPEC-149.md",
+      "corpus-mitre-capec/CAPEC-132.md"
+     ]
+    },
+    {
+     "q": "What can an attacker accomplish by masquerading as a device the victim already has an established short-range wireless connection with, rather than going through a fresh pairing?",
+     "hard": true,
+     "verdict": "miss",
+     "hit": null,
+     "expect_file": "CAPEC-667.md",
+     "top5": [
+      "corpus-mitre-capec/CAPEC-115.md",
+      "corpus-mitre-capec/CAPEC-301.md",
+      "corpus-mitre-capec/CAPEC-326.md",
+      "corpus-mitre-capec/CAPEC-89.md",
+      "corpus-mitre-capec/CAPEC-646.md"
+     ]
+    },
+    {
+     "q": "Why does one bad answer planted in a shared name-resolution or browser cache keep serving the attacker's content long after the initial corruption happens?",
+     "hard": false,
+     "verdict": "miss",
+     "hit": null,
+     "expect_file": "CAPEC-141.md",
+     "top5": [
+      "corpus-mitre-capec/CAPEC-275.md",
+      "corpus-mitre-capec/CAPEC-464.md",
+      "corpus-mitre-capec/CAPEC-275.md",
+      "corpus-mitre-capec/CAPEC-465.md",
+      "corpus-mitre-capec/CAPEC-187.md"
+     ]
+    }
+   ],
+   "pass": 3,
+   "relevant": 3,
+   "verdict": "PASS"
+  },
+  "mitre-cwe": {
+   "queries": [
+    {
+     "q": "if an application concatenates a request parameter straight into a database query string without escaping it, which weakness is that",
+     "hard": false,
+     "verdict": "pass",
+     "hit": "corpus-mitre-cwe/weaknesses/CWE-89.md",
+     "expect_file": "weaknesses/CWE-89.md",
+     "top5": [
+      "corpus-mitre-cwe/weaknesses/CWE-116.md",
+      "corpus-mitre-cwe/weaknesses/CWE-79.md",
+      "corpus-mitre-cwe/weaknesses/CWE-209.md",
+      "corpus-mitre-cwe/weaknesses/CWE-89.md",
+      "corpus-mitre-cwe/weaknesses/CWE-610.md"
+     ]
+    },
+    {
+     "q": "why is it risky to build a file path directly from a client-supplied filename",
+     "hard": false,
+     "verdict": "pass",
+     "hit": "corpus-mitre-cwe/weaknesses/CWE-22.md",
+     "expect_file": "weaknesses/CWE-22.md",
+     "top5": [
+      "corpus-mitre-cwe/weaknesses/CWE-98.md",
+      "corpus-mitre-cwe/weaknesses/CWE-706.md",
+      "corpus-mitre-cwe/weaknesses/CWE-22.md",
+      "corpus-mitre-cwe/weaknesses/CWE-36.md",
+      "corpus-mitre-cwe/weaknesses/CWE-732.md"
+     ]
+    },
+    {
+     "q": "how can a malicious site get a logged in user's browser to submit a request the user never intended",
+     "hard": false,
+     "verdict": "miss",
+     "hit": null,
+     "expect_file": "weaknesses/CWE-352.md",
+     "top5": [
+      "corpus-mitre-cwe/weaknesses/CWE-610.md",
+      "corpus-mitre-cwe/weaknesses/CWE-113.md",
+      "corpus-mitre-cwe/weaknesses/CWE-113.md",
+      "corpus-mitre-cwe/weaknesses/CWE-74.md",
+      "corpus-mitre-cwe/weaknesses/CWE-113.md"
+     ]
+    },
+    {
+     "q": "is a fixed password or api key embedded directly in source code a catalogued weakness",
+     "hard": false,
+     "verdict": "pass",
+     "hit": "corpus-mitre-cwe/weaknesses/CWE-798.md",
+     "expect_file": "weaknesses/CWE-798.md",
+     "top5": [
+      "corpus-mitre-cwe/weaknesses/CWE-587.md",
+      "corpus-mitre-cwe/weaknesses/CWE-920.md",
+      "corpus-mitre-cwe/weaknesses/CWE-1391.md",
+      "corpus-mitre-cwe/weaknesses/CWE-798.md",
+      "corpus-mitre-cwe/weaknesses/CWE-506.md"
+     ]
+    },
+    {
+     "q": "what is the weakness where a stale session id still works after the user logs out or changes their password",
+     "hard": true,
+     "verdict": "miss",
+     "hit": null,
+     "expect_file": "weaknesses/CWE-613.md",
+     "top5": [
+      "corpus-mitre-cwe/weaknesses/CWE-640.md",
+      "corpus-mitre-cwe/weaknesses/CWE-262.md",
+      "corpus-mitre-cwe/weaknesses/CWE-645.md",
+      "corpus-mitre-cwe/weaknesses/CWE-263.md",
+      "corpus-mitre-cwe/weaknesses/CWE-6.md"
+     ]
+    }
+   ],
+   "pass": 3,
+   "relevant": 3,
+   "verdict": "PASS"
   }
  }
 }

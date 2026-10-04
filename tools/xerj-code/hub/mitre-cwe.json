@@ -1,0 +1,21 @@
+{
+ "corpus": "mitre-cwe",
+ "cloned_at": "2026-10-04T14:31:01Z",
+ "repos": [
+  {
+   "repo": "corpus-mitre-cwe",
+   "url": "https://github.com/xerj-org/corpus-mitre-cwe",
+   "licence": "UNKNOWN",
+   "sha": "364b6e86f2eaffb3c9b55a4ec83119fe764d4d91",
+   "files": 1454,
+   "bytes": 2185610,
+   "review": {
+    "spdx": "MITRE Terms of Use (permissive, notice-preserving)",
+    "use": "adapt-with-attribution",
+    "by": "xerj-org",
+    "at": "2026-10-04",
+    "note": "LICENSE-TERMS carries the verbatim grant: non-exclusive royalty-free license for research/development/commercial purposes; any copy authorized provided MITRE's copyright designation and license are reproduced. Condition satisfied in-mirror. Detector records UNKNOWN (not a standard OSS licence). G7 graded 2026-10-04: 3/5 relevant on the pre-registered suite (backlog/g7-mitre-<slug>-2026-10.json; graded results in backlog/g7-tonight-2026-10-03-graded.json)."
+   }
+  }
+ ]
+}

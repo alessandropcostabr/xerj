@@ -175,7 +175,7 @@
    "cat": "SEC",
    "lane": "B",
    "refresh": "pinned",
-   "status": "candidate",
+   "status": "live",
    "domain": "an agent classifying a finding queries this for the CWE definition, its parents/children and detection notes",
    "sources": [
     {
@@ -203,7 +203,7 @@
    "cat": "SEC",
    "lane": "B",
    "refresh": "pinned",
-   "status": "candidate",
+   "status": "live",
    "domain": "an agent reasoning about attack surface queries this for attack-pattern enumerations with prerequisites and mitigations",
    "sources": [
     {

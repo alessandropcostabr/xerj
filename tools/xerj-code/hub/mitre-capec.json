@@ -1,0 +1,21 @@
+{
+ "corpus": "mitre-capec",
+ "cloned_at": "2026-10-04T14:31:06Z",
+ "repos": [
+  {
+   "repo": "corpus-mitre-capec",
+   "url": "https://github.com/xerj-org/corpus-mitre-capec",
+   "licence": "UNKNOWN",
+   "sha": "c59d35cdb52c0b0aed47cd0fef3e194b2a8f40ed",
+   "files": 619,
+   "bytes": 844154,
+   "review": {
+    "spdx": "MITRE Terms of Use (permissive, notice-preserving)",
+    "use": "adapt-with-attribution",
+    "by": "xerj-org",
+    "at": "2026-10-04",
+    "note": "LICENSE-TERMS carries the verbatim grant: non-exclusive royalty-free license for research/development/commercial purposes; any copy authorized provided MITRE's copyright designation and license are reproduced. Condition satisfied in-mirror. Detector records UNKNOWN (not a standard OSS licence). G7 graded 2026-10-04: 3/5 relevant on the pre-registered suite (backlog/g7-mitre-<slug>-2026-10.json; graded results in backlog/g7-tonight-2026-10-03-graded.json)."
+   }
+  }
+ ]
+}
