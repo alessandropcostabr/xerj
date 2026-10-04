@@ -1,0 +1,42 @@
+{
+  "suite": "g7-dailymed-2026-10",
+  "pre_registered": "2026-10-04",
+  "authoring": "blind — authored from clone reads only, no retrieval run; every expect clause grep-verified (whitespace-normalized substring) in the named file; corpus is corpus-dailymed @21a87b3cbed4 (first 1,000 SPLs)",
+  "corpora": {
+    "dailymed": {
+      "shape_risk": "The corpus is 18,729 section files in which one drug recurs as many near-identical generic labels: carbamazepine spans 309 files across 79 SETIDs, tadalafil 291 files across 12 SETIDs, metformin 193 across 23, tamsulosin 87 across 8, so a query can retrieve the right drug from the wrong label and still miss the graded span. Measured on this suite's expects: the tadalafil nitrate guidance 'before nitrate administration is considered' occurs in 16 files but the exact 19-word expect in only 6 files across 4 SETIDs (the other 10 reword it), the metformin expect span is verbatim-duplicated in exactly 2 of 193 metformin files, and 'intraoperative floppy iris' appears in 11 files across 4 tamsulosin SETIDs while the patient-information phrasing used as expect is unique to 1 of 87 tamsulosin files. Brand labels invert the hazard — ELIQUIS is a single SETID (76 files) and its 24-hour epidural-catheter sentence and the Tyrvaya dry-eye sentence are each verbatim-unique to 1 file, so difficulty there comes from paraphrase distance, not sibling crowding.",
+      "queries": [
+        {
+          "q": "The eye doctor gave me a Tyrvaya nasal spray — what condition is it actually supposed to treat?",
+          "expect": "nasal spray is indicated for the treatment of the signs and symptoms of dry eye disease",
+          "expect_file": "01/014c93dc-5737-479c-a9f0-aaadac1ac298__1-indications-and-usage.txt",
+          "hard": false
+        },
+        {
+          "q": "Is it okay to split or chew my metformin extended-release tablet if it's hard to swallow?",
+          "expect": "Swallow metformin hydrochloride extended-release tablets whole and never crush, cut or chew.",
+          "expect_file": "c3/c3dfa8a1-d10a-4a1a-8eba-5f4e2a5a2949__2-1-adult-dosage.txt",
+          "hard": false
+        },
+        {
+          "q": "Someone on Eliquis still has an epidural catheter in after surgery — how long after their last dose can it come out?",
+          "expect": "Indwelling epidural or intrathecal catheters should not be removed earlier than 24 hours after the last administration of ELIQUIS.",
+          "expect_file": "41/41a133ef-e461-48ad-8221-b735bdd0ec25__5-3-spinal-epidural-anesthesia-or-puncture.txt",
+          "hard": false
+        },
+        {
+          "q": "My husband took a tadalafil tablet and now has bad chest pain — how long do we have to wait before giving nitroglycerin?",
+          "expect": "at least 48 hours should have elapsed after the last dose of tadalafil tablets before nitrate administration is considered",
+          "expect_file": "23/2354c3e2-7b5f-4fdd-bbf2-7fa3c57686f8__5-1-cardiovascular.txt",
+          "hard": false
+        },
+        {
+          "q": "I've been on tamsulosin for my prostate for years and I'm having cataract surgery next month — what should I warn the eye surgeon about?",
+          "expect": "a condition called intraoperative floppy iris syndrome (IFIS) can happen if you take or have taken tamsulosin hydrochloride capsules",
+          "expect_file": "96/9631351f-66f4-45e5-a866-1e59311bd4d7__patient-information.txt",
+          "hard": true
+        }
+      ]
+    }
+  }
+}
