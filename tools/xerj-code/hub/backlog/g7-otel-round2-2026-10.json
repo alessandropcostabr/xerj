@@ -1,0 +1,48 @@
+{
+ "record": "g7-otel-round2-2026-10",
+ "registered": "2026-10-05",
+ "what": "otel round-2 re-scope pre-registered BEFORE retrieval: corpus re-grown to BOTH repos (opentelemetry-proto @b3f75588 + semantic-conventions @60a64b66; the 2026-10-02 scope fix that dropped semconv over-corrected \u2014 the suite's Q3/Q4 expect http/database span docs that live only there). QUERIES AND EXPECT CLAUSES UNCHANGED \u2014 expect_file prefix remap only: otel-proto-1/ -> opentelemetry-proto/, otel-proto-2/ -> semantic-conventions/. Every remapped expect re-verified (whitespace-normalized substring) against the clone on disk.",
+ "prediction": "3-4/5 with #1137+#1139 in the retrieval path (semconv docs now answerable; proto queries still risk specification.md crowding but the per-file cap holds it to 2 slots)",
+ "queries": [
+  {
+   "q": "Which OTLP span kind should I use for a component that publishes a message to a queue?",
+   "expect": "Indicates that the span describes a producer sending a message to a broker.",
+   "expect_file": "opentelemetry-proto/opentelemetry/proto/trace/v1/trace.proto",
+   "hard": false,
+   "expect_file_round1": "otel-proto-1/opentelemetry/proto/trace/v1/trace.proto",
+   "_verify_hits": 1
+  },
+  {
+   "q": "Why does OTLP wrap attribute arrays in a separate ArrayValue message instead of a repeated field in AnyValue?",
+   "expect": "since oneof in AnyValue does not allow repeated fields.",
+   "expect_file": "opentelemetry-proto/opentelemetry/proto/common/v1/common.proto",
+   "hard": false,
+   "expect_file_round1": "otel-proto-1/opentelemetry/proto/common/v1/common.proto",
+   "_verify_hits": 1
+  },
+  {
+   "q": "How should HTTP spans be named according to the OpenTelemetry semantic conventions?",
+   "expect": "HTTP span names SHOULD be `{method} {target}` if there is a (low-cardinality) `target` available.",
+   "expect_file": "semantic-conventions/docs/http/http-spans.md",
+   "hard": false,
+   "expect_file_round1": "otel-proto-2/docs/http/http-spans.md",
+   "_verify_hits": 1
+  },
+  {
+   "q": "Should the raw database query text be recorded on spans by default?",
+   "expect": "The `db.query.text` SHOULD be collected by default only if there is sanitization that excludes sensitive information.",
+   "expect_file": "semantic-conventions/docs/db/database-spans.md",
+   "hard": false,
+   "expect_file_round1": "otel-proto-2/docs/db/database-spans.md",
+   "_verify_hits": 1
+  },
+  {
+   "q": "In OTLP, how do I tell a Sum metric that only ever goes up from one that can also go down?",
+   "expect": "Represents whether the sum is monotonic.",
+   "expect_file": "opentelemetry-proto/opentelemetry/proto/metrics/v1/metrics.proto",
+   "hard": true,
+   "expect_file_round1": "otel-proto-1/opentelemetry/proto/metrics/v1/metrics.proto",
+   "_verify_hits": 1
+  }
+ ]
+}

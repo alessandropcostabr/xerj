@@ -562,7 +562,7 @@
    "sources": [
     {
      "url": "https://github.com/open-telemetry/opentelemetry-proto",
-     "licence_hint": "RE-PINNED (scope fix) after G7 fail 2026-10-02: dropped open-telemetry/semantic-conventions from the corpus \u2014 its markdown docs diluted proto-field queries and its content duplicates opentelemetry-spec. Apache-2.0 (hand-verified). Corpus is now the proto repo alone; suite expect_files unchanged (they were proto files)."
+     "licence_hint": "RE-PINNED (scope fix) after G7 fail 2026-10-02: dropped open-telemetry/semantic-conventions from the corpus \u2014 its markdown docs diluted proto-field queries and its content duplicates opentelemetry-spec. Apache-2.0 (hand-verified). Corpus is now the proto repo alone; suite expect_files unchanged (they were proto files). ROUND 2 re-pinned 2026-10-05: the 2026-10-02 scope fix over-corrected \u2014 semconv docs are the only source for HTTP/database span conventions. Corpus = opentelemetry-proto @b3f75588 + semantic-conventions @60a64b66 (2,660 records). Remap g7-otel-round2-2026-10.json pre-registered before retrieval (all 5 clauses verified on disk); prediction 3-4/5 with engine #1137/#1139."
     }
    ]
   },
