@@ -84,14 +84,14 @@
      "q": "Does Kafka guarantee that requests sent over a single TCP connection are processed in order?",
      "hard": false,
      "verdict": "pass",
-     "hit": "kafka-protocol/content/en/25/design/protocol.md",
+     "hit": "corpus-kafka-docs/43/design/protocol.md",
      "expect_file": "content/en/43/design/protocol.md",
      "top5": [
-      "kafka-protocol/content/en/25/design/protocol.md",
-      "kafka-protocol/content/en/32/design/protocol.md",
-      "kafka-protocol/content/en/22/design/protocol.md",
-      "kafka-protocol/content/en/11/design/protocol.md",
-      "kafka-protocol/content/en/26/design/protocol.md"
+      "corpus-kafka-docs/43/design/protocol.md",
+      "corpus-kafka-docs/43/design/protocol.md",
+      "corpus-kafka-docs/43/design/design.md",
+      "corpus-kafka-docs/43/design/design.md",
+      "corpus-kafka-docs/43/getting-started/introduction.md"
      ]
     },
     {
@@ -101,11 +101,11 @@
      "hit": null,
      "expect_file": "content/en/43/generated/protocol_types.html",
      "top5": [
-      "kafka-protocol/content/en/0102/getting-started/upgrade.md",
-      "kafka-protocol/content/en/24/getting-started/upgrade.md",
-      "kafka-protocol/content/en/23/getting-started/upgrade.md",
-      "kafka-protocol/content/en/35/getting-started/upgrade.md",
-      "kafka-protocol/content/en/30/getting-started/upgrade.md"
+      "corpus-kafka-docs/43/implementation/message-format.md",
+      "corpus-kafka-docs/43/kafka-connect/user-guide.md",
+      "corpus-kafka-docs/43/design/protocol.md",
+      "corpus-kafka-docs/43/design/protocol.md",
+      "corpus-kafka-docs/43/kafka-connect/user-guide.md"
      ]
     },
     {
@@ -115,45 +115,45 @@
      "hit": null,
      "expect_file": "content/en/43/generated/protocol_messages.html",
      "top5": [
-      "kafka-protocol/static/31/javadoc/org/apache/kafka/clients/producer/KafkaProducer.html",
-      "kafka-protocol/static/31/javadoc/org/apache/kafka/clients/producer/KafkaProducer.html",
-      "kafka-protocol/content/en/42/design/design.md",
-      "kafka-protocol/content/en/43/design/design.md",
-      "kafka-protocol/content/en/42/design/design.md"
+      "corpus-kafka-docs/43/design/design.md",
+      "corpus-kafka-docs/43/design/design.md",
+      "corpus-kafka-docs/43/design/protocol.md",
+      "corpus-kafka-docs/43/security/encryption-and-authentication-using-ssl.md",
+      "corpus-kafka-docs/43/design/protocol.md"
      ]
     },
     {
      "q": "Should consumer applications receive Kafka control records?",
      "hard": false,
-     "verdict": "miss",
-     "hit": null,
+     "verdict": "pass",
+     "hit": "corpus-kafka-docs/43/implementation/message-format.md",
      "expect_file": "content/en/43/implementation/message-format.md",
      "top5": [
-      "kafka-protocol/static/40/javadoc/org/apache/kafka/clients/consumer/KafkaConsumer.html",
-      "kafka-protocol/static/43/javadoc/org/apache/kafka/clients/consumer/KafkaConsumer.html",
-      "kafka-protocol/static/41/javadoc/org/apache/kafka/clients/consumer/KafkaConsumer.html",
-      "kafka-protocol/static/42/javadoc/org/apache/kafka/clients/consumer/KafkaConsumer.html",
-      "kafka-protocol/content/en/36/streams/developer-guide/memory-mgmt.md"
+      "corpus-kafka-docs/43/streams/developer-guide/memory-mgmt.md",
+      "corpus-kafka-docs/43/implementation/message-format.md",
+      "corpus-kafka-docs/43/design/design.md",
+      "corpus-kafka-docs/43/design/design.md",
+      "corpus-kafka-docs/43/streams/core-concepts.md"
      ]
     },
     {
      "q": "If all replicas of a Kafka partition are lost and only a stale replica recovers, can it take over as leader?",
      "hard": true,
      "verdict": "pass",
-     "hit": "kafka-protocol/content/en/23/design/design.md",
+     "hit": "corpus-kafka-docs/43/design/design.md",
      "expect_file": "content/en/43/design/design.md",
      "top5": [
-      "kafka-protocol/content/en/23/design/design.md",
-      "kafka-protocol/content/en/0110/design/design.md",
-      "kafka-protocol/content/en/33/design/design.md",
-      "kafka-protocol/content/en/21/design/design.md",
-      "kafka-protocol/content/en/28/design/design.md"
+      "corpus-kafka-docs/43/design/design.md",
+      "corpus-kafka-docs/43/design/design.md",
+      "corpus-kafka-docs/43/operations/basic-kafka-operations.md",
+      "corpus-kafka-docs/43/operations/eligible-leader-replicas.md",
+      "corpus-kafka-docs/43/operations/basic-kafka-operations.md"
      ]
     }
    ],
-   "pass": 2,
-   "relevant": 2,
-   "verdict": "FAIL"
+   "pass": 3,
+   "relevant": 3,
+   "verdict": "PASS"
   },
   "openbsd-faq": {
    "queries": [
@@ -164,10 +164,10 @@
      "hit": "openbsd-faq/faq/pf/filter.html",
      "expect_file": "faq/pf/filter.html",
      "top5": [
-      "openbsd-faq/faq/pf/filter.html",
-      "openbsd-faq/faq/pf/options.html",
-      "openbsd-faq/faq/pf/filter.html",
-      "openbsd-faq/faq/pf/options.html",
+      "openbsd-faq/papers/asiabsdcon07-ipsec/mgp00073.txt:2",
+      "openbsd-faq/papers/ven05-henning/mgp00015.txt:2",
+      "openbsd-faq/papers/fosdem2k3-pf.mgp:340",
+      "openbsd-faq/papers/fosdem2k3-pf.mgp:158",
       "openbsd-faq/faq/pf/filter.html"
      ]
     },
@@ -180,9 +180,9 @@
      "top5": [
       "openbsd-faq/faq/faq10.html",
       "openbsd-faq/faq/faq10.html",
-      "openbsd-faq/papers/cuug2007/mgp00008.txt",
-      "openbsd-faq/faq/faq10.html",
-      "openbsd-faq/papers/eurobsdcon2023-espie-cache.pdf"
+      "openbsd-faq/papers/eurobsdcon2018-mandoc.roff:1651",
+      "openbsd-faq/papers/bsdcan18-mandoc.roff:571",
+      "openbsd-faq/papers/cuug2007/mgp00008.txt"
      ]
     },
     {
@@ -192,25 +192,25 @@
      "hit": "openbsd-faq/faq/faq6.html",
      "expect_file": "faq/faq6.html",
      "top5": [
+      "openbsd-faq/papers/bgpd_sucon04/mgp00028.txt:2",
       "openbsd-faq/faq/pf/nat.html",
+      "openbsd-faq/papers/eurobsd2012/phessler-rdomains/mgp00002.txt:2",
       "openbsd-faq/faq/faq6.html",
-      "openbsd-faq/faq/pf/nat.html",
-      "openbsd-faq/faq/faq6.html",
-      "openbsd-faq/papers/httpd-asiabsdcon2015.pdf"
+      "openbsd-faq/papers/opencon07-complex/mgp00002.txt:2"
      ]
     },
     {
      "q": "How do I install a package such as rsync on OpenBSD?",
      "hard": false,
-     "verdict": "pass",
-     "hit": "openbsd-faq/faq/faq15.html",
+     "verdict": "miss",
+     "hit": null,
      "expect_file": "faq/faq15.html",
      "top5": [
-      "openbsd-faq/faq/faq15.html",
-      "openbsd-faq/papers/bsdcan-signify.html",
-      "openbsd-faq/faq/ports/ports.html",
-      "openbsd-faq/faq/upgrade38.html",
-      "openbsd-faq/papers/auug2002-ssh.pdf"
+      "openbsd-faq/advisories/sslUSA:121",
+      "openbsd-faq/papers/eurobsdcon_2010_pkg_add/mgp00017.txt:1",
+      "openbsd-faq/papers/eurobsd2012/espie-dpb/mgp00028.txt:1",
+      "openbsd-faq/openssh/openssh_pr.txt:1",
+      "openbsd-faq/papers/bsdcan14-mandoc.roff:1231"
      ]
     },
     {
@@ -221,15 +221,15 @@
      "expect_file": "faq/faq11.html",
      "top5": [
       "openbsd-faq/faq/faq7.html",
+      "openbsd-faq/papers/eurobsd2005/niallo-uwe/mgp00027.txt:2",
       "openbsd-faq/faq/faq7.html",
-      "openbsd-faq/faq/faq7.html",
-      "openbsd-faq/plus49.html",
-      "openbsd-faq/faq/faq7.html"
+      "openbsd-faq/papers/bgpd_sucon04/mgp00028.txt:2",
+      "openbsd-faq/papers/eurobsd2005/niallo-uwe/mgp00019.txt:2"
      ]
     }
    ],
-   "pass": 4,
-   "relevant": 4,
+   "pass": 3,
+   "relevant": 3,
    "verdict": "PASS"
   },
   "unicode-cldr": {
@@ -395,11 +395,11 @@
      "hit": "corpus-mitre-cwe/weaknesses/CWE-89.md",
      "expect_file": "weaknesses/CWE-89.md",
      "top5": [
+      "corpus-mitre-cwe/weaknesses/CWE-532.md:1",
       "corpus-mitre-cwe/weaknesses/CWE-116.md",
       "corpus-mitre-cwe/weaknesses/CWE-79.md",
       "corpus-mitre-cwe/weaknesses/CWE-209.md",
-      "corpus-mitre-cwe/weaknesses/CWE-89.md",
-      "corpus-mitre-cwe/weaknesses/CWE-610.md"
+      "corpus-mitre-cwe/weaknesses/CWE-89.md"
      ]
     },
     {
@@ -411,37 +411,37 @@
      "top5": [
       "corpus-mitre-cwe/weaknesses/CWE-98.md",
       "corpus-mitre-cwe/weaknesses/CWE-706.md",
+      "corpus-mitre-cwe/weaknesses/CWE-400.md:51",
       "corpus-mitre-cwe/weaknesses/CWE-22.md",
-      "corpus-mitre-cwe/weaknesses/CWE-36.md",
-      "corpus-mitre-cwe/weaknesses/CWE-732.md"
+      "corpus-mitre-cwe/weaknesses/CWE-36.md"
      ]
     },
     {
      "q": "how can a malicious site get a logged in user's browser to submit a request the user never intended",
      "hard": false,
-     "verdict": "miss",
-     "hit": null,
+     "verdict": "pass",
+     "hit": "corpus-mitre-cwe/weaknesses/CWE-352.md:1",
      "expect_file": "weaknesses/CWE-352.md",
      "top5": [
       "corpus-mitre-cwe/weaknesses/CWE-610.md",
       "corpus-mitre-cwe/weaknesses/CWE-113.md",
       "corpus-mitre-cwe/weaknesses/CWE-113.md",
-      "corpus-mitre-cwe/weaknesses/CWE-74.md",
-      "corpus-mitre-cwe/weaknesses/CWE-113.md"
+      "corpus-mitre-cwe/weaknesses/CWE-352.md:1",
+      "corpus-mitre-cwe/weaknesses/CWE-74.md"
      ]
     },
     {
      "q": "is a fixed password or api key embedded directly in source code a catalogued weakness",
      "hard": false,
-     "verdict": "pass",
-     "hit": "corpus-mitre-cwe/weaknesses/CWE-798.md",
+     "verdict": "miss",
+     "hit": null,
      "expect_file": "weaknesses/CWE-798.md",
      "top5": [
+      "corpus-mitre-cwe/weaknesses/CWE-540.md:1",
+      "corpus-mitre-cwe/weaknesses/CWE-321.md:1",
+      "corpus-mitre-cwe/weaknesses/CWE-95.md:1",
       "corpus-mitre-cwe/weaknesses/CWE-587.md",
-      "corpus-mitre-cwe/weaknesses/CWE-920.md",
-      "corpus-mitre-cwe/weaknesses/CWE-1391.md",
-      "corpus-mitre-cwe/weaknesses/CWE-798.md",
-      "corpus-mitre-cwe/weaknesses/CWE-506.md"
+      "corpus-mitre-cwe/weaknesses/CWE-541.md:1"
      ]
     },
     {
@@ -461,6 +461,468 @@
    ],
    "pass": 3,
    "relevant": 3,
+   "verdict": "PASS"
+  },
+  "otel-proto": {
+   "queries": [
+    {
+     "q": "Which OTLP span kind should I use for a component that publishes a message to a queue?",
+     "hard": false,
+     "verdict": "miss",
+     "hit": null,
+     "expect_file": "opentelemetry-proto/opentelemetry/proto/trace/v1/trace.proto",
+     "top5": [
+      "semantic-conventions/docs/messaging/messaging-spans.md",
+      "opentelemetry-proto/docs/specification.md",
+      "semantic-conventions/docs/general/trace.md",
+      "semantic-conventions/docs/messaging/messaging-spans.md",
+      "semantic-conventions/docs/messaging/gcp-pubsub.md"
+     ]
+    },
+    {
+     "q": "Why does OTLP wrap attribute arrays in a separate ArrayValue message instead of a repeated field in AnyValue?",
+     "hard": false,
+     "verdict": "pass",
+     "hit": "opentelemetry-proto/opentelemetry/proto/common/v1/common.proto:35",
+     "expect_file": "opentelemetry-proto/opentelemetry/proto/common/v1/common.proto",
+     "top5": [
+      "opentelemetry-proto/opentelemetry/proto/common/v1/common.proto:35",
+      "opentelemetry-proto/docs/specification.md",
+      "opentelemetry-proto/docs/specification.md",
+      "opentelemetry-proto/CONTRIBUTING.md",
+      "opentelemetry-proto/CHANGELOG.md"
+     ]
+    },
+    {
+     "q": "How should HTTP spans be named according to the OpenTelemetry semantic conventions?",
+     "hard": false,
+     "verdict": "miss",
+     "hit": null,
+     "expect_file": "semantic-conventions/docs/http/http-spans.md",
+     "top5": [
+      "semantic-conventions/CHANGELOG.md",
+      "semantic-conventions/docs/rpc/grpc.md",
+      "semantic-conventions/CHANGELOG.md",
+      "semantic-conventions/docs/general/trace.md",
+      "semantic-conventions/docs/non-normative/code-generation.md"
+     ]
+    },
+    {
+     "q": "Should the raw database query text be recorded on spans by default?",
+     "hard": false,
+     "verdict": "miss",
+     "hit": null,
+     "expect_file": "semantic-conventions/docs/db/database-spans.md",
+     "top5": [
+      "semantic-conventions/model/db/registry.yaml:68",
+      "semantic-conventions/model/db/registry.yaml:33",
+      "semantic-conventions/docs/db/cassandra.md",
+      "semantic-conventions/docs/db/elasticsearch.md",
+      "semantic-conventions/docs/db/oracledb.md"
+     ]
+    },
+    {
+     "q": "In OTLP, how do I tell a Sum metric that only ever goes up from one that can also go down?",
+     "hard": true,
+     "verdict": "miss",
+     "hit": null,
+     "expect_file": "opentelemetry-proto/opentelemetry/proto/metrics/v1/metrics.proto",
+     "top5": [
+      "semantic-conventions/docs/non-normative/groups/system/design-philosophy.md",
+      "semantic-conventions/docs/how-to-write-conventions/resource-and-entities.md:193",
+      "semantic-conventions/docs/non-normative/groups/system/design-philosophy.md",
+      "semantic-conventions/internal/tools/tools.go",
+      "semantic-conventions/docs/general/naming.md"
+     ]
+    }
+   ],
+   "pass": 1,
+   "relevant": 1,
+   "verdict": "FAIL"
+  },
+  "zalando-restful-api-guidelines": {
+   "queries": [
+    {
+     "q": "Why do the Zalando API guidelines prefer cursor-based pagination over offset-based pagination?",
+     "hard": false,
+     "verdict": "pass",
+     "hit": "corpus-zalando-guidelines/chapters/pagination.txt:1",
+     "expect_file": "chapters/pagination.txt",
+     "top5": [
+      "corpus-zalando-guidelines/chapters/pagination.txt:1",
+      "corpus-zalando-guidelines/chapters/pagination.txt:45",
+      "corpus-zalando-guidelines/chapters/best-practices.txt:108",
+      "corpus-zalando-guidelines/chapters/urls.txt:324",
+      "corpus-zalando-guidelines/chapters/best-practices.txt:1"
+     ]
+    },
+    {
+     "q": "Are Zalando API endpoints allowed to be open, or does every endpoint need protection?",
+     "hard": false,
+     "verdict": "pass",
+     "hit": "corpus-zalando-guidelines/chapters/security.txt:38",
+     "expect_file": "chapters/security.txt",
+     "top5": [
+      "corpus-zalando-guidelines/chapters/security.txt:38",
+      "corpus-zalando-guidelines/chapters/security.txt:1",
+      "corpus-zalando-guidelines/chapters/compatibility.txt",
+      "corpus-zalando-guidelines/chapters/http-status-codes-and-errors.txt:296",
+      "corpus-zalando-guidelines/chapters/performance.txt:191"
+     ]
+    },
+    {
+     "q": "When a Zalando API needs to change, is adding a new version preferred over compatible extensions?",
+     "hard": false,
+     "verdict": "pass",
+     "hit": "corpus-zalando-guidelines/chapters/compatibility.txt",
+     "expect_file": "chapters/compatibility.txt",
+     "top5": [
+      "corpus-zalando-guidelines/chapters/events.txt:397",
+      "corpus-zalando-guidelines/chapters/events.txt:360",
+      "corpus-zalando-guidelines/chapters/compatibility.txt",
+      "corpus-zalando-guidelines/chapters/meta-information.txt:1",
+      "corpus-zalando-guidelines/chapters/best-practices.txt:337"
+     ]
+    },
+    {
+     "q": "Which proprietary HTTP header must Zalando services support so that one call can be traced across services?",
+     "hard": false,
+     "verdict": "pass",
+     "hit": "corpus-zalando-guidelines/chapters/http-headers.txt:380",
+     "expect_file": "chapters/http-headers.txt",
+     "top5": [
+      "corpus-zalando-guidelines/chapters/http-headers.txt:380",
+      "corpus-zalando-guidelines/chapters/http-headers.txt:419",
+      "corpus-zalando-guidelines/chapters/compatibility.txt",
+      "corpus-zalando-guidelines/chapters/http-requests.txt:306",
+      "corpus-zalando-guidelines/chapters/http-status-codes-and-errors.txt:690"
+     ]
+    },
+    {
+     "q": "Why do Zalando APIs return JSON fields spelled with underscores instead of camelCase?",
+     "hard": true,
+     "verdict": "pass",
+     "hit": "corpus-zalando-guidelines/chapters/json-guidelines.txt:84",
+     "expect_file": "chapters/json-guidelines.txt",
+     "top5": [
+      "corpus-zalando-guidelines/chapters/json-guidelines.txt:84",
+      "corpus-zalando-guidelines/chapters/events.txt:39",
+      "corpus-zalando-guidelines/chapters/compatibility.txt",
+      "corpus-zalando-guidelines/chapters/http-status-codes-and-errors.txt:296",
+      "corpus-zalando-guidelines/chapters/urls.txt:324"
+     ]
+    }
+   ],
+   "pass": 5,
+   "relevant": 5,
+   "verdict": "PASS"
+  },
+  "tldr-pages": {
+   "queries": [
+    {
+     "q": "How do I extract a tar archive into a specific target directory?",
+     "hard": false,
+     "verdict": "pass",
+     "hit": "corpus-tldr-common/pages/tar.md",
+     "expect_file": "pages/tar.md",
+     "top5": [
+      "corpus-tldr-common/pages/dtrx.md",
+      "corpus-tldr-common/pages/ptargrep.md",
+      "corpus-tldr-common/pages/tar.md",
+      "corpus-tldr-common/pages/unzip.md",
+      "corpus-tldr-common/pages/atool.md"
+     ]
+    },
+    {
+     "q": "How do I make curl download a file and keep the original filename from the URL?",
+     "hard": false,
+     "verdict": "pass",
+     "hit": "corpus-tldr-common/pages/curl.md",
+     "expect_file": "pages/curl.md",
+     "top5": [
+      "corpus-tldr-common/pages/wcurl.md",
+      "corpus-tldr-common/pages/curl.md",
+      "corpus-tldr-common/pages/wget.md",
+      "corpus-tldr-common/pages/you-get.md",
+      "corpus-tldr-common/pages/wget2.md"
+     ]
+    },
+    {
+     "q": "How do I give the owner of a file permission to execute it?",
+     "hard": false,
+     "verdict": "miss",
+     "hit": null,
+     "expect_file": "pages/chmod.md",
+     "top5": [
+      "corpus-tldr-common/pages/pueue-add.md",
+      "corpus-tldr-common/pages/brave.md",
+      "corpus-tldr-common/pages/chgrp.md",
+      "corpus-tldr-common/pages/for.md",
+      "corpus-tldr-common/pages/yadm-perms.md"
+     ]
+    },
+    {
+     "q": "Which command opens the current user's crontab for editing?",
+     "hard": false,
+     "verdict": "miss",
+     "hit": null,
+     "expect_file": "pages/crontab.md",
+     "top5": [
+      "corpus-tldr-common/pages/cron.md",
+      "corpus-tldr-common/pages/pinta.md",
+      "corpus-tldr-common/pages/npm-edit.md",
+      "corpus-tldr-common/pages/pueue-edit.md",
+      "corpus-tldr-common/pages/nix-edit.md"
+     ]
+    },
+    {
+     "q": "How do I watch a log file live while a program keeps writing to it?",
+     "hard": true,
+     "verdict": "miss",
+     "hit": null,
+     "expect_file": "pages/tail.md",
+     "top5": [
+      "corpus-tldr-common/pages/goreload.md",
+      "corpus-tldr-common/pages/continue.md",
+      "corpus-tldr-common/pages/disown.md",
+      "corpus-tldr-common/pages/texliveonfly.md",
+      "corpus-tldr-common/pages/while.md"
+     ]
+    }
+   ],
+   "pass": 2,
+   "relevant": 2,
+   "verdict": "FAIL"
+  },
+  "whatwg-specs": {
+   "queries": [
+    {
+     "q": "Are tab and newline characters allowed inside a URL, and what does the URL parser do with them?",
+     "hard": false,
+     "verdict": "pass",
+     "hit": "corpus-whatwg-sections/url/sections/url-parsing.txt:42",
+     "expect_file": "corpus-whatwg-sections/url/sections/url-parsing.txt",
+     "top5": [
+      "corpus-whatwg-sections/html/sections/text.txt",
+      "corpus-whatwg-sections/url/sections/url-rendering-i18n.txt",
+      "corpus-whatwg-sections/html/sections/the-script-element.txt",
+      "corpus-whatwg-sections/url/sections/url-parsing.txt:42",
+      "corpus-whatwg-sections/html/sections/the-base-element.txt"
+     ]
+    },
+    {
+     "q": "When a URL is serialized, which characters are percent-encoded in the path but left alone in the query?",
+     "hard": false,
+     "verdict": "pass",
+     "hit": "corpus-whatwg-sections/url/sections/percent-encoded-bytes.txt:84",
+     "expect_file": "corpus-whatwg-sections/url/sections/percent-encoded-bytes.txt",
+     "top5": [
+      "corpus-whatwg-sections/html/sections/dependencies__urls.txt",
+      "corpus-whatwg-sections/url/sections/url-rendering-i18n.txt",
+      "corpus-whatwg-sections/url/sections/percent-encoded-bytes.txt:84",
+      "corpus-whatwg-sections/url/sections/url-writing.txt:121",
+      "corpus-whatwg-sections/html/sections/form-submission-2.txt:478"
+     ]
+    },
+    {
+     "q": "Why can't a URL like mailto:foo@example.org be used as the base URL for resolving a relative reference?",
+     "hard": true,
+     "verdict": "pass",
+     "hit": "corpus-whatwg-sections/url/sections/writing.txt:216",
+     "expect_file": "corpus-whatwg-sections/url/sections/writing.txt",
+     "top5": [
+      "corpus-whatwg-sections/url/sections/writing.txt:216",
+      "corpus-whatwg-sections/html/sections/javascript-specification-host-hooks.txt",
+      "corpus-whatwg-sections/html/sections/typed-items.txt",
+      "corpus-whatwg-sections/url/sections/url-class.txt:81",
+      "corpus-whatwg-sections/html/sections/resolving-urls.txt:1"
+     ]
+    },
+    {
+     "q": "For an input control like a range slider, when should the browser fire the change event versus the input event?",
+     "hard": false,
+     "verdict": "pass",
+     "hit": "corpus-whatwg-sections/html/sections/the-input-element__common-input-element-events.txt",
+     "expect_file": "corpus-whatwg-sections/html/sections/the-input-element__common-input-element-events.txt",
+     "top5": [
+      "corpus-whatwg-sections/html/sections/the-input-element__common-input-element-events.txt",
+      "corpus-whatwg-sections/html/sections/the-input-element__common-input-element-events.txt",
+      "corpus-whatwg-sections/html/sections/events-2.txt",
+      "corpus-whatwg-sections/html/sections/the-input-element__checkbox-state-type-checkbox.txt:1",
+      "corpus-whatwg-sections/html/sections/the-input-element-as-a-range-control.txt"
+     ]
+    },
+    {
+     "q": "Does an HTML element's id attribute value have to be unique across the whole document?",
+     "hard": false,
+     "verdict": "pass",
+     "hit": "corpus-whatwg-sections/html/sections/global-attributes.txt",
+     "expect_file": "corpus-whatwg-sections/html/sections/global-attributes.txt",
+     "top5": [
+      "corpus-whatwg-sections/html/sections/global-attributes.txt",
+      "corpus-whatwg-sections/html/sections/introduction-10.txt:44",
+      "corpus-whatwg-sections/html/sections/items.txt",
+      "corpus-whatwg-sections/html/sections/resource-metadata-management.txt",
+      "corpus-whatwg-sections/html/sections/realms-and-their-counterparts.txt"
+     ]
+    }
+   ],
+   "pass": 5,
+   "relevant": 5,
+   "verdict": "PASS"
+  },
+  "ecma262": {
+   "queries": [
+    {
+     "q": "when I enumerate an ordinary object's own property keys, what order is an engine required to produce \u2014 do integer-index keys come first, and where do symbols fall",
+     "hard": false,
+     "verdict": "pass",
+     "hit": "corpus-ecma262-sections/sections/sec-ordinaryownpropertykeys.txt",
+     "expect_file": "sections/sec-ordinaryownpropertykeys.txt",
+     "top5": [
+      "corpus-ecma262-sections/sections/sec-ordinaryownpropertykeys.txt",
+      "corpus-ecma262-sections/sections/sec-string-exotic-objects-ownpropertykeys.txt",
+      "corpus-ecma262-sections/sections/sec-typedarray-ownpropertykeys.txt",
+      "corpus-ecma262-sections/sections/sec-object-type.txt",
+      "corpus-ecma262-sections/sections/sec-weakmap-objects.txt"
+     ]
+    },
+    {
+     "q": "in spec algorithm steps, what does a question mark prefix on an operation call mean versus an exclamation mark prefix",
+     "hard": false,
+     "verdict": "miss",
+     "hit": null,
+     "expect_file": "sections/sec-shorthands-for-unwrapping-completion-records.txt",
+     "top5": [
+      "corpus-ecma262-sections/sections/sec-grammatical-parameters.txt:66",
+      "corpus-ecma262-sections/sections/sec-implicit-normal-completion.txt",
+      "corpus-ecma262-sections/sections/sec-prefix-increment-operator.txt",
+      "corpus-ecma262-sections/sections/sec-prefix-decrement-operator.txt",
+      "corpus-ecma262-sections/sections/sec-strict-mode-of-ecmascript.txt"
+     ]
+    },
+    {
+     "q": "which string forms are accepted when converting a string to a number \u2014 surrounding whitespace, leading zeros, Infinity \u2014 and how does that grammar differ from numeric literal syntax",
+     "hard": false,
+     "verdict": "pass",
+     "hit": "corpus-ecma262-sections/sections/sec-tonumber-applied-to-the-string-type.txt:1",
+     "expect_file": "sections/sec-tonumber-applied-to-the-string-type.txt",
+     "top5": [
+      "corpus-ecma262-sections/sections/sec-tonumber-applied-to-the-string-type.txt:1",
+      "corpus-ecma262-sections/sections/sec-numeric-string-grammar.txt",
+      "corpus-ecma262-sections/sections/sec-syntactic-grammar.txt",
+      "corpus-ecma262-sections/sections/sec-ecmascript-language-types-string-type.txt",
+      "corpus-ecma262-sections/sections/sec-additions-and-changes-that-introduce-incompatibilities-with-prior-editions.txt"
+     ]
+    },
+    {
+     "q": "when is a parser allowed to pretend a semicolon was present in the source, and which productions are restricted so that a newline forces one",
+     "hard": false,
+     "verdict": "pass",
+     "hit": "corpus-ecma262-sections/sections/sec-rules-of-automatic-semicolon-insertion.txt",
+     "expect_file": "sections/sec-rules-of-automatic-semicolon-insertion.txt",
+     "top5": [
+      "corpus-ecma262-sections/sections/sec-rules-of-automatic-semicolon-insertion.txt",
+      "corpus-ecma262-sections/sections/sec-syntactic-grammar.txt",
+      "corpus-ecma262-sections/sections/sec-interesting-cases-of-automatic-semicolon-insertion.txt",
+      "corpus-ecma262-sections/sections/sec-agent-clusters.txt",
+      "corpus-ecma262-sections/sections/sec-asi-cases-with-no-lineterminator-here.txt"
+     ]
+    },
+    {
+     "q": "when two strings are compared with the less-than operator, is the comparison over code points or UTF-16 code units, and does Unicode normalization matter",
+     "hard": true,
+     "verdict": "miss",
+     "hit": null,
+     "expect_file": "sections/sec-islessthan.txt",
+     "top5": [
+      "corpus-ecma262-sections/sections/sec-pattern-semantics.txt",
+      "corpus-ecma262-sections/sections/sec-literals-string-literals.txt:1",
+      "corpus-ecma262-sections/sections/sec-ecmascript-language-types-string-type.txt",
+      "corpus-ecma262-sections/sections/sec-quotejsonstring.txt:1",
+      "corpus-ecma262-sections/sections/sec-trimstring.txt"
+     ]
+    }
+   ],
+   "pass": 3,
+   "relevant": 3,
+   "verdict": "PASS"
+  },
+  "school-of-sre": {
+   "queries": [
+    {
+     "q": "In semi-synchronous MySQL replication, what happens to a transaction on the primary before control returns to the session?",
+     "hard": false,
+     "verdict": "pass",
+     "hit": "school-of-sre/courses/level101/databases_sql/replication.md",
+     "expect_file": "courses/level101/databases_sql/replication.md",
+     "top5": [
+      "school-of-sre/courses/level101/databases_sql/replication.md",
+      "school-of-sre/courses/level101/databases_sql/replication.md",
+      "school-of-sre/courses/level101/databases_sql/operations.md",
+      "school-of-sre/courses/level101/databases_sql/concepts.md",
+      "school-of-sre/courses/level101/databases_sql/operations.md"
+     ]
+    },
+    {
+     "q": "What advantage do realtime signals have over standard signals when the same signal is sent to a process more than once?",
+     "hard": false,
+     "verdict": "pass",
+     "hit": "school-of-sre/courses/level102/system_calls_and_signals/signals.md",
+     "expect_file": "courses/level102/system_calls_and_signals/signals.md",
+     "top5": [
+      "school-of-sre/courses/level102/system_calls_and_signals/signals.md",
+      "school-of-sre/courses/level102/system_calls_and_signals/signals.md",
+      "school-of-sre/courses/level102/system_calls_and_signals/conclusion.md",
+      "school-of-sre/courses/level101/metrics_and_monitoring/introduction.md",
+      "school-of-sre/courses/level102/system_calls_and_signals/system_calls.md"
+     ]
+    },
+    {
+     "q": "In a messaging system, what happens to poison pill messages instead of them just being thrown away?",
+     "hard": false,
+     "verdict": "pass",
+     "hit": "school-of-sre/courses/level101/messagequeue/key_concepts.md",
+     "expect_file": "courses/level101/messagequeue/key_concepts.md",
+     "top5": [
+      "school-of-sre/courses/level101/messagequeue/key_concepts.md",
+      "school-of-sre/courses/level101/messagequeue/key_concepts.md",
+      "school-of-sre/courses/level101/messagequeue/intro.md",
+      "school-of-sre/courses/level101/messagequeue/intro.md",
+      "school-of-sre/courses/level102/system_troubleshooting_and_performance/troubleshooting.md"
+     ]
+    },
+    {
+     "q": "Under the hood, what actually is a branch in git?",
+     "hard": false,
+     "verdict": "pass",
+     "hit": "school-of-sre/courses/level101/git/branches.md",
+     "expect_file": "courses/level101/git/branches.md",
+     "top5": [
+      "school-of-sre/courses/level101/git/git-basics.md",
+      "school-of-sre/courses/level101/git/branches.md",
+      "school-of-sre/courses/level101/git/git-basics.md",
+      "school-of-sre/courses/level101/git/branches.md",
+      "school-of-sre/courses/level102/continuous_integration_and_continuous_delivery/introduction.md"
+     ]
+    },
+    {
+     "q": "We changed a DNS record to retire a backend server \u2014 when is it actually safe to shut the server down?",
+     "hard": true,
+     "verdict": "pass",
+     "hit": "school-of-sre/courses/level101/linux_networking/dns.md",
+     "expect_file": "courses/level101/linux_networking/dns.md",
+     "top5": [
+      "school-of-sre/courses/level101/databases_sql/operations.md",
+      "school-of-sre/courses/level101/linux_networking/dns.md",
+      "school-of-sre/courses/level101/databases_nosql/key_concepts.md",
+      "school-of-sre/courses/level102/networking/scale.md:114",
+      "school-of-sre/courses/level101/security/network_security.md"
+     ]
+    }
+   ],
+   "pass": 5,
+   "relevant": 5,
    "verdict": "PASS"
   }
  }

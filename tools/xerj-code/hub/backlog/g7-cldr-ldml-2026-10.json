@@ -1,0 +1,42 @@
+[
+ {
+  "q": "In CLDR plural rules, what does the operand v mean?",
+  "expect": "the number of visible fraction digits in N, _with_ trailing zeros",
+  "expect_file": "docs/ldml/tr35-numbers.md",
+  "hard": false,
+  "expect_file_round1": "docs/ldml/tr35-numbers.md",
+  "_verify_hits": 1
+ },
+ {
+  "q": "Which IANA time zone does CLDR map the Windows zone Pacific Standard Time to?",
+  "expect": "<mapZone other=\"Pacific Standard Time\" territory=\"001\" type=\"America/Los_Angeles\"/>",
+  "expect_file": "common/supplemental/windowsZones.xml",
+  "hard": false,
+  "expect_file_round1": "common/supplemental/windowsZones.xml",
+  "_verify_hits": 1
+ },
+ {
+  "q": "What is the CLDR pattern for a full date in English, the one used for the full date style?",
+  "expect": "<pattern>EEEE, MMMM d, y</pattern>",
+  "expect_file": "common/main/en/dates.xml",
+  "hard": false,
+  "expect_file_round1": "common/main/en.xml",
+  "_verify_hits": 1
+ },
+ {
+  "q": "Which abbreviations such as U.S.A. does CLDR treat as sentence-break suppressions for English?",
+  "expect": "<suppression>U.S.A.</suppression>",
+  "expect_file": "common/segments/en.xml",
+  "hard": false,
+  "expect_file_round1": "common/segments/en.xml",
+  "_verify_hits": 1
+ },
+ {
+  "q": "Where does CLDR keep the rules for writing numbers out as words, like spelling one hundred twenty-three?",
+  "expect": "rulesetGrouping type=\"SpelloutRules\"",
+  "expect_file": "common/rbnf/en.xml",
+  "hard": true,
+  "expect_file_round1": "common/rbnf/en.xml",
+  "_verify_hits": 1
+ }
+]
