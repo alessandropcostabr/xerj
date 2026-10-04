@@ -1,0 +1,52 @@
+{
+ "record": "g7-zalando-txt-2026-10",
+ "registered": "2026-10-05",
+ "what": "zalando round-2 granularity fix pre-registered BEFORE retrieval: chapters .adoc -> .txt (git mv, content byte-identical, mirror commit 88cdfdb) so each chapter is ONE whole-file record instead of ~9 asciidoc section records (compatibility's sections crowded every top-5 in the 1/5 run). QUERIES AND EXPECT CLAUSES UNCHANGED \u2014 expect_file suffix .adoc -> .txt only, each re-verified as whitespace-normalized substring against the .txt on disk.",
+ "prediction": "3-4/5 (one record per chapter removes self-crowding; remaining risk = cross-chapter lexical overlap)",
+ "corpora": {
+  "zalando-restful-api-guidelines": {
+   "queries": [
+    {
+     "q": "Why do the Zalando API guidelines prefer cursor-based pagination over offset-based pagination?",
+     "expect": "Offset-based pagination may create duplicates or lead to missing entries",
+     "expect_file": "chapters/pagination.txt",
+     "hard": false,
+     "expect_file_round1": "chapters/pagination.adoc",
+     "_verify_hits": 1
+    },
+    {
+     "q": "Are Zalando API endpoints allowed to be open, or does every endpoint need protection?",
+     "expect": "Every API endpoint must be protected and armed with authentication and authorization.",
+     "expect_file": "chapters/security.txt",
+     "hard": false,
+     "expect_file_round1": "chapters/security.adoc",
+     "_verify_hits": 1
+    },
+    {
+     "q": "When a Zalando API needs to change, is adding a new version preferred over compatible extensions?",
+     "expect": "We strongly encourage using compatible API extensions and discourage versioning",
+     "expect_file": "chapters/compatibility.txt",
+     "hard": false,
+     "expect_file_round1": "chapters/compatibility.adoc",
+     "_verify_hits": 1
+    },
+    {
+     "q": "Which proprietary HTTP header must Zalando services support so that one call can be traced across services?",
+     "expect": "RESTful API endpoints *must* support {X-Flow-ID} header in requests",
+     "expect_file": "chapters/http-headers.txt",
+     "hard": false,
+     "expect_file_round1": "chapters/http-headers.adoc",
+     "_verify_hits": 1
+    },
+    {
+     "q": "Why do Zalando APIs return JSON fields spelled with underscores instead of camelCase?",
+     "expect": "Property names are restricted to ASCII snake_case strings matching regex `^[a-z_][a-z_0-9]*$`.",
+     "expect_file": "chapters/json-guidelines.txt",
+     "hard": true,
+     "expect_file_round1": "chapters/json-guidelines.adoc",
+     "_verify_hits": 1
+    }
+   ]
+  }
+ }
+}
