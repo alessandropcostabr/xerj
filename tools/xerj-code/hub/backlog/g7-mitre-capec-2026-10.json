@@ -1,0 +1,42 @@
+{
+  "suite": "g7-mitre-capec-2026-10",
+  "pre_registered": "2026-10-04",
+  "authoring": "blind — authored from clone reads only, no retrieval run; every expect clause grep-verified (whitespace-normalized substring) in the named file; corpus is the MITRE CAPEC v3.9 split mirror corpus-mitre-capec @c59d35cdb52c",
+  "corpora": {
+    "mitre-capec": {
+      "shape_risk": "615 Attack_Pattern files (CAPEC-1..CAPEC-702, plus README.md and splitter at root), median 1,298.5 B and largest CAPEC-80.md at 5,301 B, so every doc is small and single-topic — most queries retrieve several plausible candidates rather than none. All 615 files open with the byte-identical 'Type: Attack Pattern · Abstraction · Status · Likelihood_Of_Attack · Typical_Severity' header, 125 of 615 have no Prerequisites section at all (56 are DEPRECATED stubs as small as 169 B), and whole Solutions/Mitigations sections repeat verbatim across patterns (CAPEC-197 and CAPEC-491 carry a byte-identical mitigation block; the 'Use libraries and templates that minimize unfiltered input' sentence appears verbatim in 6 files) — so mitigation-flavoured queries can topically match many files while the graded expect span exists in exactly one, a precision hazard rather than a recall one.",
+      "queries": [
+        {
+          "q": "In a challenge-response login, how do we stop an attacker who opens a second connection and bounces the server's own challenge straight back at it?",
+          "expect": "Introducing a random nonce with each new connection ensures that the attacker cannot employ two connections to attack the authentication protocol",
+          "expect_file": "CAPEC-90.md",
+          "hard": false
+        },
+        {
+          "q": "What kind of access does an intruder need up front before they can tamper with a vendor's patch distribution and push malware out to already-deployed customers?",
+          "expect": "An adversary would need to have penetrated an organization’s software update infrastructure including gaining access to components supporting the configuration management of software versions",
+          "expect_file": "CAPEC-669.md",
+          "hard": false
+        },
+        {
+          "q": "How do I defend a program that writes files with predictable names in a shared directory against someone planting a link to another file at that exact path?",
+          "expect": "Check for the existence of files to be created, if in existence verify they are neither symlinks nor hard links before opening them",
+          "expect_file": "CAPEC-132.md",
+          "hard": false
+        },
+        {
+          "q": "What can an attacker accomplish by masquerading as a device the victim already has an established short-range wireless connection with, rather than going through a fresh pairing?",
+          "expect": "disguises the MAC address of their Bluetooth enabled device to one for which there exists an active and trusted connection and authenticates successfully",
+          "expect_file": "CAPEC-667.md",
+          "hard": true
+        },
+        {
+          "q": "Why does one bad answer planted in a shared name-resolution or browser cache keep serving the attacker's content long after the initial corruption happens?",
+          "expect": "Until the cache is refreshed, most applications or clients will treat the corrupted cache value as valid",
+          "expect_file": "CAPEC-141.md",
+          "hard": false
+        }
+      ]
+    }
+  }
+}

@@ -179,8 +179,8 @@
    "domain": "an agent classifying a finding queries this for the CWE definition, its parents/children and detection notes",
    "sources": [
     {
-     "url": "https://cwe.mitre.org/data/xml/cwec_latest.xml.zip",
-     "licence_hint": "MITRE terms — verify redistribution terms at intake"
+     "url": "https://github.com/xerj-org/corpus-mitre-cwe",
+     "licence_hint": "Built 2026-10-04 from cwec_latest.xml.zip → cwec_v4.20.xml (18,192,305 B; Version 4.20, Date 2026-04-30). Split: 1,450 element files (969 weaknesses/422 categories/59 views), largest 13,431 B, no caps triggered. TERMS (termsofuse.html, verbatim in LICENSE-TERMS): non-exclusive royalty-free license for research/development/commercial purposes; any copy authorized on condition MITRE's copyright designation + license are reproduced — condition satisfied. Detector reads licence as UNKNOWN (MITRE data terms are not a standard OSS licence); mirrors are retrieved-from. Suite g7-mitre-cwe-2026-10.json pre-registered (5 queries, 1 hard: symptom-words absent from the target file — the lexical risk named in shape note)."
     }
    ]
   },
@@ -207,8 +207,8 @@
    "domain": "an agent reasoning about attack surface queries this for attack-pattern enumerations with prerequisites and mitigations",
    "sources": [
     {
-     "url": "https://capec.mitre.org/data/xml/capec_latest.xml.zip",
-     "licence_hint": "MITRE terms — verify redistribution terms at intake (same class as mitre-cwe)"
+     "url": "https://github.com/xerj-org/corpus-mitre-capec",
+     "licence_hint": "Built 2026-10-04 — NOTE upstream layout changed: /data/xml/capec_latest.xml.zip 404s; current = bare XML /data/xml/capec_latest.xml (3,849,998 B) + archive zip. Version 3.9 (Date 2023-01-24). Split: 615 CAPEC-N.md at root, largest 5,301 B; v3.x has no separate Summary element (Description carries it — README notes). Same MITRE terms class as cwe (verbatim in LICENSE-TERMS). Suite g7-mitre-capec-2026-10.json pre-registered (5 queries, 1 hard; precision-hazard shape note: verbatim-shared mitigation blocks across patterns)."
     }
    ]
   },

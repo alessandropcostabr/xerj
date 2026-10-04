@@ -1,0 +1,42 @@
+{
+  "suite": "g7-mitre-cwe-2026-10",
+  "pre_registered": "2026-10-04",
+  "authoring": "blind — authored from clone reads only, no retrieval run; every expect clause grep-verified (whitespace-normalized substring) in the named file; corpus is the MITRE CWE v4.20 split mirror corpus-mitre-cwe @364b6e86f2ea",
+  "corpora": {
+    "mitre-cwe": {
+      "shape_risk": "1,450 markdown files (969 weaknesses, 422 categories, 59 views) under an identical skeleton — all 969 weakness files open with '## Description' and 935 carry '## Relationships' — with weakness files at median 1,300 B, p90 4,276 B, and a 13,431 B maximum (CWE-492). Near-duplicate spec boilerplate is heavy: 54 weakness titles are 'Improper Neutralization' variants, 49 files share the phrase 'neutralize or incorrectly neutralizes', and 7 injection siblings (CWE-74/77/78/89/90/94/917) share the verbatim clause 'externally-influenced input from an upstream component', so family boilerplate can outrank the specific member an agent needs. Symptom-word queries are the other miss risk: the hard query's pivots ('logs out', 'password') appear zero times in CWE-613 while 30 weakness files mention 'session', so lexical retrieval must rank the expiration file above fixation/repeated-logon neighbors without any direct term overlap.",
+      "queries": [
+        {
+          "q": "if an application concatenates a request parameter straight into a database query string without escaping it, which weakness is that",
+          "expect": "The product constructs all or part of an SQL command using externally-influenced input from an upstream component",
+          "expect_file": "weaknesses/CWE-89.md",
+          "hard": false
+        },
+        {
+          "q": "why is it risky to build a file path directly from a client-supplied filename",
+          "expect": "uses external input to construct a pathname that is intended to identify a file or directory that is located underneath a restricted parent directory",
+          "expect_file": "weaknesses/CWE-22.md",
+          "hard": false
+        },
+        {
+          "q": "how can a malicious site get a logged in user's browser to submit a request the user never intended",
+          "expect": "The web application does not, or cannot, sufficiently verify whether a request was intentionally provided by the user who sent the request",
+          "expect_file": "weaknesses/CWE-352.md",
+          "hard": false
+        },
+        {
+          "q": "is a fixed password or api key embedded directly in source code a catalogued weakness",
+          "expect": "The product contains hard-coded credentials, such as a password or cryptographic key.",
+          "expect_file": "weaknesses/CWE-798.md",
+          "hard": false
+        },
+        {
+          "q": "what is the weakness where a stale session id still works after the user logs out or changes their password",
+          "expect": "permits an attacker to reuse old session credentials or session IDs for authorization",
+          "expect_file": "weaknesses/CWE-613.md",
+          "hard": true
+        }
+      ]
+    }
+  }
+}
