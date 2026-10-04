@@ -263,8 +263,12 @@
    "domain": "an agent designing a control or wipe procedure queries this for what SP 800-53/61/63/88/207 actually require, clause-level",
    "sources": [
     {
-     "url": "https://csrc.nist.gov/pubs/sp/800",
-     "licence_hint": "public domain (US gov work); intake fetches clause text to a local dir, recipe kind=dir"
+     "url": "https://github.com/usnistgov/800-63-3",
+     "licence_hint": "INTAKE RE-SCOPED 2026-10-04 from source survey (planned csrc.nist.gov/pubs/sp/800 is 404; CSRC has no bulk API and per-pub downloads are PDF-only — the famous prose pubs are unfetchable as text). Build instead from GitHub text sources: usnistgov/800-63-3 (SP 800-63-3 + vols A/B/C + FAQ as per-section Jekyll markdown — licence 'NIST Technical Series Publications': USG work, worldwide perpetual royalty-free reprint right granted, attribute 'Republished courtesy of NIST', third-party portions may carry copyright) + usnistgov/oscal-content (SP 800-53r5 + 4 baselines, 800-171r3, 800-172r3, 800-218, CSF 2.0 as OSCAL JSON — LICENSE.md is worldwide public domain + CC0-1.0, cleanest). Chunk OSCAL at control level. 10-13 documents; pin commit SHAs. TRAP: usnistgov/zero-trust-architecture contains NO 800-207 text (verified all branches — stubs + a different NCCoE practice guide)."
+    },
+    {
+     "url": "https://github.com/usnistgov/oscal-content",
+     "licence_hint": "see 800-63-3 entry"
     }
    ]
   },
@@ -273,12 +277,12 @@
    "cat": "SEC",
    "lane": "B",
    "refresh": "weekly",
-   "status": "candidate",
+   "status": "deferred",
    "domain": "an agent hardening infrastructure queries this for NSA/CISA joint guidance specifics (MTIG, memory-safe roadmaps, KPMs)",
    "sources": [
     {
-     "url": "https://github.com/NSAcyber",
-     "licence_hint": "public domain (US gov); pick advisory repos at intake"
+     "url": "https://www.nsa.gov/Cybersecurity/Cybersecurity-Advisories-Guidance",
+     "licence_hint": "DEFERRED 2026-10-04 on survey evidence: NSA advisories are PDF-only on media.defense.gov, both nsa.gov and media.defense.gov 403 non-browser clients (Akamai), and no licence-clean text mirror exists. GitHub NSAcyber org = 39 tool/guidance repos, NOT advisories. Re-scope candidate if a slot is needed: 'nsacyber-guidance' = the ~10 config-guidance repos' markdown (CC0/§105 verified on spot-checked repos, but several repos lack LICENSE files — per-repo read required; Hardware-and-Firmware-Security-Guidance has none). Do not name any such corpus 'advisories'."
     }
    ]
   },
@@ -291,8 +295,8 @@
    "domain": "an agent triaging an active campaign queries this for the alert's IOCs, required actions and mitigations",
    "sources": [
     {
-     "url": "https://www.cisa.gov/news-events/cybersecurity-advisories",
-     "licence_hint": "public domain (US gov); intake decides fetch mechanism"
+     "url": "https://www.cisa.gov/cybersecurity-advisories/all.xml",
+     "licence_hint": "INTAKE PATH FOUND 2026-10-04 (survey): the remembered v1 JSON API is 404 (site migration). Full-text RSS exists at /cybersecurity-advisories/all.xml (complete advisory text in <description>; siblings ics-advisories.xml, ics-medical-advisories.xml). Archive = 508 paginated listing HTML pages, ~5,087 advisories, full text in HTML per page. US federal works (17 USC 105) public domain — CAVEAT: joint advisories co-published with foreign partners (ASD/NCSC et al.) may carry partner-nation copyright, per-partner terms unverified. TRAP: www.cisa.gov 403s curl even with browser UA (Akamai TLS fingerprinting) — fetcher must be browser-grade (WebFetch works). Scope the backfill; poll all.xml for incremental."
     }
    ]
   },
@@ -445,8 +449,8 @@
    "domain": "an agent implementing a Kafka client queries this for the protocol guide's exact request/response schemas and error codes",
    "sources": [
     {
-     "url": "https://github.com/apache/kafka-site",
-     "licence_hint": "DEMOTED from live 2026-10-04 by measured G7 (2/5 relevant; graded file g7-tonight-2026-10-03-graded.json). Apache-2.0 (verify which path carries the protocol guide at pin) | G7 FAIL 2026-10-04 (2/5 relevant) — dilution, not coverage: the kafka-site repo vendors ~20 versioned javadoc trees under static/ (the index is 24,763 files, 184k records, mostly javadoc copies) which outrank the actual protocol docs on every miss; the two passes were the design/protocol.md queries. FIX pre-registered: scoped mirror = content/en/ only (current protocol docs + per-version dirs), drop static/ javadoc entirely. Same class as the tldr locale-fork fix."
+     "url": "https://github.com/xerj-org/corpus-kafka-docs",
+     "licence_hint": "RE-PINNED after G7 fail 2026-10-04 (mirror fix): scope = CURRENT docs only — content/en/43 + the current root docs (141 files, 3.4MB) from kafka-site @7bf6e996. static/ (750MB, ~20 vendored javadoc copies) dropped, and the 40 old doc-version dirs dropped (AMENDMENT pre-retrieval to the original note, which ambiguously said '+ per-version dirs': the graded Q2 miss retrieved upgrade.md from three different old versions ahead of the answer — version clones are dilution the same way locale forks were in tldr). Apache-2.0 at pin (LICENSE verbatim). Same wave-1 suite re-runs; expect_files under content/en/43/ suffix-match the mirror's 43/ paths — no remap needed."
     }
    ]
   },
