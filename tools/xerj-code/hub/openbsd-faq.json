@@ -1,20 +1,20 @@
 {
  "corpus": "openbsd-faq",
- "cloned_at": "2026-10-02T00:56:18Z",
+ "cloned_at": "2026-10-02T16:06:18Z",
  "repos": [
   {
    "repo": "openbsd-faq",
    "url": "https://github.com/openbsd/www",
-   "licence": "hint only: OpenBSD web content, per-page copyright (verify at pin; FAQ lives at faq/, repo is the www CVS module ~890MB)",
+   "licence": "NONE-FOUND",
    "sha": "cab1d91061fffb93c39822b9938ee373620a6cb3",
    "files": 13328,
    "bytes": 797752418,
    "review": {
-    "spdx": "OpenBSD per-page copyright",
+    "spdx": "ISC-style per-chapter grants",
     "use": "adapt-with-attribution",
     "by": "xerj-org",
-    "at": "2026-10-02",
-    "note": "no LICENSE at pin cab1d91061; www module pages carry (c) OpenBSD notices, redistributable with notice retained. Corpus core is faq/ (98 pages) incl. the pf FAQ (faq6). | profiler evidence: PROFILER 2026-10-02T00:56:18Z trees-only \u2014 files=13328; backlog hint: OpenBSD web content, per-page copyright (verify at pin; FAQ lives at faq/, repo is the www CVS module ~890MB); api licence: unknown; evidence: NO TOP-LEVEL LICENCE FILE FOUND \u2014 investigate before review"
+    "at": "2026-10-04",
+    "note": "No repo-level LICENSE (detector: NONE-FOUND); each FAQ chapter carries an ISC-style grant \u2014 'Permission to use, copy, modify, and distribute this documentation for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies' (faq15: Mestdagh 2005-2009; faq17: Breuil 2018; per-chapter holders). Notices are preserved in-file by the verbatim clone. G7 graded 2026-10-03/04: 4/5 relevant. Evidence: backlog/g7-tonight-2026-10-03-graded.json."
    }
   }
  ]

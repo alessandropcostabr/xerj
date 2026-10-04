@@ -371,12 +371,12 @@
    "cat": "STD",
    "lane": "A",
    "refresh": "pinned",
-   "status": "live",
+   "status": "candidate",
    "domain": "an agent formatting dates/numbers/names queries this for locale-specific CLDR rules and plural/data tables no model recalls",
    "sources": [
     {
      "url": "https://github.com/unicode-org/cldr",
-     "licence_hint": "Unicode License (permissive — verify at pin)"
+     "licence_hint": "DEMOTED from live 2026-10-04 by measured G7 (2/5 relevant; graded file g7-tonight-2026-10-03-graded.json). Unicode License (permissive — verify at pin) | G7 FAIL 2026-10-04 (2/5 relevant) — shape: the answers live in per-locale data XML (common/main/en.xml ~700KB — over whole-file chunk limits; common/segments/en.xml; common/rbnf/en.xml) while hits are docs/*.md prose and tools/cldr-code Java tooling. FIX pre-registered: scoped mirror = docs/ldml (tr35 specs) + common/supplemental (verified: Q2 pass) + the en locale's giant XML split per LDML top-level element (dates/numbers/segments/rbnf one file each), tools/ dropped. Same splitter class as ecma262."
     }
    ]
   },
@@ -441,12 +441,12 @@
    "cat": "STD",
    "lane": "A",
    "refresh": "pinned",
-   "status": "live",
+   "status": "candidate",
    "domain": "an agent implementing a Kafka client queries this for the protocol guide's exact request/response schemas and error codes",
    "sources": [
     {
      "url": "https://github.com/apache/kafka-site",
-     "licence_hint": "Apache-2.0 (verify which path carries the protocol guide at pin)"
+     "licence_hint": "DEMOTED from live 2026-10-04 by measured G7 (2/5 relevant; graded file g7-tonight-2026-10-03-graded.json). Apache-2.0 (verify which path carries the protocol guide at pin) | G7 FAIL 2026-10-04 (2/5 relevant) — dilution, not coverage: the kafka-site repo vendors ~20 versioned javadoc trees under static/ (the index is 24,763 files, 184k records, mostly javadoc copies) which outrank the actual protocol docs on every miss; the two passes were the design/protocol.md queries. FIX pre-registered: scoped mirror = content/en/ only (current protocol docs + per-version dirs), drop static/ javadoc entirely. Same class as the tldr locale-fork fix."
     }
    ]
   },

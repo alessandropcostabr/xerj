@@ -1,11 +1,11 @@
 {
  "corpus": "github-api-description",
- "cloned_at": "2026-10-02T00:49:45Z",
+ "cloned_at": "2026-10-02T16:02:50Z",
  "repos": [
   {
    "repo": "github-api-description",
    "url": "https://github.com/github/rest-api-description",
-   "licence": "hint only: verify at pin (MIT reported)",
+   "licence": "MIT",
    "sha": "7bdf5f00553689c2dabb027685cf29081093767e",
    "files": 419,
    "bytes": 7866761214,
@@ -13,8 +13,8 @@
     "spdx": "MIT",
     "use": "adapt-with-attribution",
     "by": "xerj-org",
-    "at": "2026-10-02",
-    "note": "LICENSE.md at pin: MIT. | profiler evidence: PROFILER 2026-10-02T00:49:45Z trees-only \u2014 files=419; backlog hint: verify at pin (MIT reported); api licence: unknown; evidence: LICENSE.md\u2192MIT"
+    "at": "2026-10-04",
+    "note": "LICENSE.md at pin: MIT (README names it). G7 graded 2026-10-03/04: 3/5 relevant (3 pass) on the pre-registered wave-1 suite \u2014 protocol.html + descriptions surfaced; the schema-enum queries graded on hit content. Evidence: backlog/g7-tonight-2026-10-03-graded.json."
    }
   }
  ]

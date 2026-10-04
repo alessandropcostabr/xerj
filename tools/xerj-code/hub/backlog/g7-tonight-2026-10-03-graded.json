@@ -1,0 +1,313 @@
+{
+ "graded_at": "2026-10-03",
+ "corpora": {
+  "github-api-description": {
+   "queries": [
+    {
+     "q": "What is the maximum number of results per page you can request from a GitHub REST API listing endpoint?",
+     "hard": false,
+     "verdict": "miss",
+     "hit": null,
+     "expect_file": "descriptions/api.github.com/api.github.com.json",
+     "top5": [
+      "github-api-description/descriptions/ghes-2.19/ghes-2.19.yaml",
+      "github-api-description/descriptions/ghes-2.18/ghes-2.18.yaml",
+      "github-api-description/descriptions/ghes-2.21/ghes-2.21.yaml",
+      "github-api-description/descriptions/ghes-2.20/ghes-2.20.yaml",
+      "github-api-description/descriptions/ghes-2.18/dereferenced/ghes-2.18.deref.yaml"
+     ]
+    },
+    {
+     "q": "Does calling the endpoint that reports my remaining GitHub API quota use up part of that quota?",
+     "hard": true,
+     "verdict": "pass",
+     "hit": "github-api-description/descriptions/ghes-2.18/dereferenced/ghes-2.18.deref.yaml",
+     "expect_file": "descriptions/api.github.com/api.github.com.json",
+     "top5": [
+      "github-api-description/descriptions/ghes-2.18/dereferenced/ghes-2.18.deref.yaml",
+      "github-api-description/descriptions/ghes-2.20/dereferenced/ghes-2.20.deref.yaml",
+      "github-api-description/descriptions/ghes-2.21/dereferenced/ghes-2.21.deref.yaml",
+      "github-api-description/descriptions/ghes-2.19/dereferenced/ghes-2.19.deref.yaml",
+      "github-api-description/descriptions/ghes-2.21/ghes-2.21.yaml"
+     ]
+    },
+    {
+     "q": "In the GitHub REST search API, what can go into the q query parameter besides plain keywords?",
+     "hard": false,
+     "verdict": "pass",
+     "hit": "github-api-description/descriptions/ghes-2.18/dereferenced/ghes-2.18.deref.yaml",
+     "expect_file": "descriptions/api.github.com/api.github.com.json",
+     "top5": [
+      "github-api-description/descriptions/ghes-2.18/dereferenced/ghes-2.18.deref.yaml",
+      "github-api-description/descriptions/ghes-2.20/dereferenced/ghes-2.20.deref.yaml",
+      "github-api-description/descriptions/ghes-2.21/dereferenced/ghes-2.21.deref.yaml",
+      "github-api-description/descriptions/ghes-2.19/dereferenced/ghes-2.19.deref.yaml",
+      "github-api-description/descriptions/ghes-2.18/dereferenced/ghes-2.18.deref.yaml"
+     ]
+    },
+    {
+     "q": "How do I list only closed issues with the GitHub REST API instead of just the open ones?",
+     "hard": false,
+     "verdict": "pass",
+     "hit": "github-api-description/descriptions/ghes-2.18/dereferenced/ghes-2.18.deref.yaml",
+     "expect_file": "descriptions/api.github.com/api.github.com.json",
+     "top5": [
+      "github-api-description/descriptions/ghes-2.18/dereferenced/ghes-2.18.deref.yaml",
+      "github-api-description/descriptions/ghes-2.20/dereferenced/ghes-2.20.deref.yaml",
+      "github-api-description/descriptions/ghes-2.21/dereferenced/ghes-2.21.deref.yaml",
+      "github-api-description/descriptions/ghes-2.19/dereferenced/ghes-2.19.deref.yaml",
+      "github-api-description/descriptions/ghes-2.19/ghes-2.19.yaml"
+     ]
+    },
+    {
+     "q": "When merging a pull request through the GitHub REST API, how do I choose between a merge commit, squash, or rebase?",
+     "hard": false,
+     "verdict": "miss",
+     "hit": null,
+     "expect_file": "descriptions/api.github.com/api.github.com.json",
+     "top5": [
+      "github-api-description/descriptions/ghes-2.18/dereferenced/ghes-2.18.deref.yaml",
+      "github-api-description/descriptions/ghes-2.20/dereferenced/ghes-2.20.deref.yaml",
+      "github-api-description/descriptions/ghes-2.21/dereferenced/ghes-2.21.deref.yaml",
+      "github-api-description/descriptions/ghes-2.19/dereferenced/ghes-2.19.deref.yaml",
+      "github-api-description/descriptions/ghes-2.19/ghes-2.19.yaml"
+     ]
+    }
+   ],
+   "pass": 3,
+   "relevant": 3,
+   "verdict": "PASS"
+  },
+  "kafka-protocol": {
+   "queries": [
+    {
+     "q": "Does Kafka guarantee that requests sent over a single TCP connection are processed in order?",
+     "hard": false,
+     "verdict": "pass",
+     "hit": "kafka-protocol/content/en/25/design/protocol.md",
+     "expect_file": "content/en/43/design/protocol.md",
+     "top5": [
+      "kafka-protocol/content/en/25/design/protocol.md",
+      "kafka-protocol/content/en/32/design/protocol.md",
+      "kafka-protocol/content/en/22/design/protocol.md",
+      "kafka-protocol/content/en/11/design/protocol.md",
+      "kafka-protocol/content/en/26/design/protocol.md"
+     ]
+    },
+    {
+     "q": "How is a null value encoded for a NULLABLE_STRING field in the Kafka wire protocol?",
+     "hard": false,
+     "verdict": "miss",
+     "hit": null,
+     "expect_file": "content/en/43/generated/protocol_types.html",
+     "top5": [
+      "kafka-protocol/content/en/0102/getting-started/upgrade.md",
+      "kafka-protocol/content/en/24/getting-started/upgrade.md",
+      "kafka-protocol/content/en/23/getting-started/upgrade.md",
+      "kafka-protocol/content/en/35/getting-started/upgrade.md",
+      "kafka-protocol/content/en/30/getting-started/upgrade.md"
+     ]
+    },
+    {
+     "q": "What are the allowed values for acks in a Kafka produce request?",
+     "hard": false,
+     "verdict": "miss",
+     "hit": null,
+     "expect_file": "content/en/43/generated/protocol_messages.html",
+     "top5": [
+      "kafka-protocol/static/31/javadoc/org/apache/kafka/clients/producer/KafkaProducer.html",
+      "kafka-protocol/static/31/javadoc/org/apache/kafka/clients/producer/KafkaProducer.html",
+      "kafka-protocol/content/en/42/design/design.md",
+      "kafka-protocol/content/en/43/design/design.md",
+      "kafka-protocol/content/en/42/design/design.md"
+     ]
+    },
+    {
+     "q": "Should consumer applications receive Kafka control records?",
+     "hard": false,
+     "verdict": "miss",
+     "hit": null,
+     "expect_file": "content/en/43/implementation/message-format.md",
+     "top5": [
+      "kafka-protocol/static/40/javadoc/org/apache/kafka/clients/consumer/KafkaConsumer.html",
+      "kafka-protocol/static/43/javadoc/org/apache/kafka/clients/consumer/KafkaConsumer.html",
+      "kafka-protocol/static/41/javadoc/org/apache/kafka/clients/consumer/KafkaConsumer.html",
+      "kafka-protocol/static/42/javadoc/org/apache/kafka/clients/consumer/KafkaConsumer.html",
+      "kafka-protocol/content/en/36/streams/developer-guide/memory-mgmt.md"
+     ]
+    },
+    {
+     "q": "If all replicas of a Kafka partition are lost and only a stale replica recovers, can it take over as leader?",
+     "hard": true,
+     "verdict": "pass",
+     "hit": "kafka-protocol/content/en/23/design/design.md",
+     "expect_file": "content/en/43/design/design.md",
+     "top5": [
+      "kafka-protocol/content/en/23/design/design.md",
+      "kafka-protocol/content/en/0110/design/design.md",
+      "kafka-protocol/content/en/33/design/design.md",
+      "kafka-protocol/content/en/21/design/design.md",
+      "kafka-protocol/content/en/28/design/design.md"
+     ]
+    }
+   ],
+   "pass": 2,
+   "relevant": 2,
+   "verdict": "FAIL"
+  },
+  "openbsd-faq": {
+   "queries": [
+    {
+     "q": "Is keep state on by default for PF filter rules?",
+     "hard": false,
+     "verdict": "pass",
+     "hit": "openbsd-faq/faq/pf/filter.html",
+     "expect_file": "faq/pf/filter.html",
+     "top5": [
+      "openbsd-faq/faq/pf/filter.html",
+      "openbsd-faq/faq/pf/options.html",
+      "openbsd-faq/faq/pf/filter.html",
+      "openbsd-faq/faq/pf/options.html",
+      "openbsd-faq/faq/pf/filter.html"
+     ]
+    },
+    {
+     "q": "Why does OpenBSD only use half of my CPU cores by default?",
+     "hard": false,
+     "verdict": "pass",
+     "hit": "openbsd-faq/faq/faq10.html",
+     "expect_file": "faq/faq10.html",
+     "top5": [
+      "openbsd-faq/faq/faq10.html",
+      "openbsd-faq/faq/faq10.html",
+      "openbsd-faq/papers/cuug2007/mgp00008.txt",
+      "openbsd-faq/faq/faq10.html",
+      "openbsd-faq/papers/eurobsdcon2023-espie-cache.pdf"
+     ]
+    },
+    {
+     "q": "How do I configure a static IPv4 address for a network interface on OpenBSD so it comes up at boot?",
+     "hard": false,
+     "verdict": "pass",
+     "hit": "openbsd-faq/faq/faq6.html",
+     "expect_file": "faq/faq6.html",
+     "top5": [
+      "openbsd-faq/faq/pf/nat.html",
+      "openbsd-faq/faq/faq6.html",
+      "openbsd-faq/faq/pf/nat.html",
+      "openbsd-faq/faq/faq6.html",
+      "openbsd-faq/papers/httpd-asiabsdcon2015.pdf"
+     ]
+    },
+    {
+     "q": "How do I install a package such as rsync on OpenBSD?",
+     "hard": false,
+     "verdict": "pass",
+     "hit": "openbsd-faq/faq/faq15.html",
+     "expect_file": "faq/faq15.html",
+     "top5": [
+      "openbsd-faq/faq/faq15.html",
+      "openbsd-faq/papers/bsdcan-signify.html",
+      "openbsd-faq/faq/ports/ports.html",
+      "openbsd-faq/faq/upgrade38.html",
+      "openbsd-faq/papers/auug2002-ssh.pdf"
+     ]
+    },
+    {
+     "q": "How do I make OpenBSD come up with a graphical login screen at boot instead of a text console?",
+     "hard": true,
+     "verdict": "miss",
+     "hit": null,
+     "expect_file": "faq/faq11.html",
+     "top5": [
+      "openbsd-faq/faq/faq7.html",
+      "openbsd-faq/faq/faq7.html",
+      "openbsd-faq/faq/faq7.html",
+      "openbsd-faq/plus49.html",
+      "openbsd-faq/faq/faq7.html"
+     ]
+    }
+   ],
+   "pass": 4,
+   "relevant": 4,
+   "verdict": "PASS"
+  },
+  "unicode-cldr": {
+   "queries": [
+    {
+     "q": "In CLDR plural rules, what does the operand v mean?",
+     "hard": false,
+     "verdict": "pass",
+     "hit": "unicode-cldr/docs/ldml/tr35-numbers.md",
+     "expect_file": "docs/ldml/tr35-numbers.md",
+     "top5": [
+      "unicode-cldr/docs/ldml/tr35-numbers.md",
+      "unicode-cldr/docs/ldml/tr35-numbers.md",
+      "unicode-cldr/docs/ldml/tr35-numbers.md",
+      "unicode-cldr/docs/site/index/cldr-spec/collation-guidelines.md",
+      "unicode-cldr/docs/ldml/tr35-numbers.md"
+     ]
+    },
+    {
+     "q": "Which IANA time zone does CLDR map the Windows zone Pacific Standard Time to?",
+     "hard": false,
+     "verdict": "pass",
+     "hit": "unicode-cldr/docs/ldml/tr35-dates.md",
+     "expect_file": "common/supplemental/windowsZones.xml",
+     "top5": [
+      "unicode-cldr/docs/site/development/development-process/design-proposals/extended-windows-olson-zid-mapping.md",
+      "unicode-cldr/docs/ldml/tr35-dates.md",
+      "unicode-cldr/docs/site/development/development-process/design-proposals/extended-windows-olson-zid-mapping.md",
+      "unicode-cldr/docs/ldml/tr35-dates.md",
+      "unicode-cldr/docs/ldml/tr35-dates.md"
+     ]
+    },
+    {
+     "q": "What is the CLDR pattern for a full date in English, the one used for the full date style?",
+     "hard": false,
+     "verdict": "miss",
+     "hit": null,
+     "expect_file": "common/main/en.xml",
+     "top5": [
+      "unicode-cldr/tools/cldr-code/src/main/java/org/unicode/cldr/test/ExampleGenerator.java",
+      "unicode-cldr/tools/cldr-code/src/main/java/org/unicode/cldr/test/CheckDates.java",
+      "unicode-cldr/docs/site/translation/date-time/date-time-patterns.md",
+      "unicode-cldr/tools/cldr-code/src/main/java/org/unicode/cldr/util/CLDRFile.java",
+      "unicode-cldr/tools/cldr-code/src/test/java/org/unicode/cldr/unittest/TestExampleGenerator.java"
+     ]
+    },
+    {
+     "q": "Which abbreviations such as U.S.A. does CLDR treat as sentence-break suppressions for English?",
+     "hard": false,
+     "verdict": "miss",
+     "hit": null,
+     "expect_file": "common/segments/en.xml",
+     "top5": [
+      "unicode-cldr/docs/ldml/tr35-general.md",
+      "unicode-cldr/docs/site/translation/displaynames/locale-option-names-key.md",
+      "unicode-cldr/docs/site/development/development-process/design-proposals/specifying-text-break-variants-in-locale-ids.md",
+      "unicode-cldr/tools/cldr-code/src/main/java/org/unicode/cldr/test/ExampleGenerator.java",
+      "unicode-cldr/docs/site/development/development-process/design-proposals/specifying-text-break-variants-in-locale-ids.md"
+     ]
+    },
+    {
+     "q": "Where does CLDR keep the rules for writing numbers out as words, like spelling one hundred twenty-three?",
+     "hard": true,
+     "verdict": "miss",
+     "hit": null,
+     "expect_file": "common/rbnf/en.xml",
+     "top5": [
+      "unicode-cldr/docs/ldml/tr35-numbers.md",
+      "unicode-cldr/docs/ldml/tr35-numbers.md",
+      "unicode-cldr/tools/cldr-code/src/main/java/org/unicode/cldr/json/Ldml2JsonConverter.java",
+      "unicode-cldr/tools/cldr-apps/src/main/java/org/unicode/cldr/web/SurveyAjax.java",
+      "unicode-cldr/docs/ldml/tr35-numbers.md"
+     ]
+    }
+   ],
+   "pass": 2,
+   "relevant": 2,
+   "verdict": "FAIL"
+  }
+ }
+}
